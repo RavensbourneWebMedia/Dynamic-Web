@@ -240,3 +240,19 @@
 	{
 		float: right;
 	}
+
+/* APPS */
+	
+	#apps h1,
+	#apps h2
+	{
+		position: relative;
+		top: 20px;
+	}
+
+	#apps img
+	{
+		width: 21%;
+		border-radius: 40px;
+		margin: 0 10px;
+	}

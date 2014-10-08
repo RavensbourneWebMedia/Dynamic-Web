@@ -1,4 +1,4 @@
-# Presention
+# Week 1
 
 
 ## Dynamic Web
@@ -14,26 +14,32 @@ Passively **consume** vs actively **make**.
 
 ## Two words about myself
 
+Matteo
+
+[@baddeo](https://twitter.com/baddeo)
+
 
 ## 200+ words every week
 
 AKA *Blogging* on [Fourthfloor.me](http://fourthfloor.me)
 
-**Each week** you will be given a topic about which to write, based on the weekly lecture.
+* **Each week** you will be given a topic about which to write (at least **200 words**), based on the weekly lecture.
 
-Your **final mark** will be based on the blog, as well as the project.
+* Your **final mark** will be based on your blog, as well as your project.
 
-**WIP screenshots**, **hyperlinks**, **research**, **tweets**..
+* Include **work-in-progress screenshots**, **hyperlinks**, **research**, **tweets**..
 
-Tag your posts with **WEB14203**
+* Tag your posts with **WEB14203**
 
 
 ## Week 1 - Oct 2
 
 #### Brief
 
-* **Languages** of the Web: HTML + CSS + JS
+* The Web and its **languages**: HTML + CSS + JS.
 * Start making an **app**.
+* Brief: make an app that helps people **make a decision**.
+
 
 ## Week 2 - Oct 9
 
@@ -42,6 +48,7 @@ Tag your posts with **WEB14203**
 * Principles of **programming**. 
 * Adding **behaviour** to the app. 
 * **Brainstorming** app ideas.
+
 
 ## Week 3 - Oct 16
 
@@ -202,15 +209,11 @@ A **server** is a computer that is always on. Receives requests and cooks respon
 
 Different **languages**, different **concerns** (or jobs/purposes)
 
-HTML → structure and content 
-
-CSS → style and design 
-
-JS → behaviour and logic
-
-**RECIPE analogy** (ingredients - serving suggestions - method)
-
-(what - how - when/if)
+HTML | CSS | JS
+------------ | ------------- | ------------
+structure and content | style and design   | behaviour and logic
+what | how | if
+ingredients | serving suggestions | method
 
 
 ## Become Web-literate

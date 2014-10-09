@@ -33,9 +33,9 @@ The app must take in some human **input**, use **code** to manipulate it, and th
 You can use **data** from the Web to help people make a decision.
 
 
-## Brainstorming
+## Inspiring apps
 
-**Inspiring apps** that help people make decisions
+They help people make decisions
 
 Context | App | Data
 ------------ | ------------- | ------------
@@ -44,8 +44,12 @@ Going out (using buses) | [Jump](http://www.jumpbusapp.com/) | [TFL](https://www
 Going out | [Authentic weather](http://authenticweather.com/)| [Wunderground](http://www.wunderground.com/weather/api)?
 Staying in (cooking) | [What should I make for dinner?](https://itunes.apple.com/gb/app/what-should-i-make-for-dinner/id432085816?mt=8) | some [recipes data](https://www.google.co.uk/#q=recipes+api)
 
-- [ ] comparison sites?
-- [ ] brainswarming exercise
+
+## Brainswarming
+
+From *brainstorming* to [**brainswarming**](http://blogs.hbr.org/2014/03/why-you-should-stop-brainstorming/)
+
+![](http://ahauniverse.weebly.com/uploads/2/5/0/7/25073890/4899131_orig.png)
 
 
 ## Remember HTML + CSS + JavaScript?
@@ -66,14 +70,12 @@ Today we're focusing on **JavaScript**
 Let's pretend I'm a **robot** and you have to **code me**.
 
 * **Mission**: find an object in the room, pick it up.
-* I only understand these **commands**: `walk(steps)` and `turn(degrees)`
+* I only understand these **commands**: `walk(steps)`, `turn(degrees)` and `grab(object)`
 * I can answer **questions**, only with a `yes` or `no`
 
 People usually start with very *specific instructions* (eg: walk 3 steps, turn 45 degrees, walk 2 steps..)
 
 We can then make these instructions more *abstract* and *flexible* with **logic** and **functions**.
-
-- [ ] Slide to show the game rules	
 	
 
 ## Let's talk about POP
@@ -107,45 +109,12 @@ From [Codecademy's introduction to functions](http://www.codecademy.com/courses/
 
 To better understand how variables, functions and logic work, let's build a **paper-scissors-stone** game.
 
-    var userChoice = prompt("Do you choose rock, paper or scissors?");
-	var computerChoice = Math.random();
-	
-	if (computerChoice < 0.34) {
-		computerChoice = "rock";
-	} else if(computerChoice <= 0.67) {
-		computerChoice = "paper";
-	} else {
-		computerChoice = "scissors";
-	} 
-	
-	console.log("Computer: " + computerChoice);
-	compare(userChoice, computerChoice)
-	
-	function compare(choice1, choice2)
-	{
-	    if (choice1 == choice2) return "The result is a tie!";
-	    
-	    if (choice1 == "rock")
-	    {
-	        if (choice2 == "scissors") return choice1
-	        else return choice2
-	    }    
-	    else if (choice1 == "paper")
-	    {
-	        if (choice2 == "rock") return choice1
-	        else return choice2
-	    }
-	    else if (choice1 == "scissors")
-	    {
-	        if (choice2 == "paper") return choice1
-	        else return choice2
-	    }
-	}
+Here's [the game we built on CodePen](http://codepen.io/baddeo/debug/hcwCv)
 
 
 ## Homework
 
-* **Draw the Web**!
+**Draw the Web** and post a picture of it on the blog!
 
 
 

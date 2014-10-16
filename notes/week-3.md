@@ -128,8 +128,8 @@ Beyond *yourselfie*, apps that use APIs with a purpose:
 
 **Write about your app idea** on the blog. 
 
-* Post pictures of your initial brain*swarm*. 
-* The idea may have changed since the first brain*swarm*: tell us **how it's evolving**.
+* Post pictures of your initial *brainswarm*. 
+* The idea may have changed since the first *brainswarm*: tell us **how it's evolving**.
 * Describe how you intend to **move the idea forward**.
 * [OPTIONAL] Write about data and/or *APIs* you are considering to use.
 * Your app can be serious or humorous :)

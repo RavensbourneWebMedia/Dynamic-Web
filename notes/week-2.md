@@ -103,10 +103,10 @@ From [Codecademy's introduction to functions](http://www.codecademy.com/courses/
 
 >And the **output** will be a different cake each time.
 
->It is tedious to have to repeat to your freind the same `bake` instructions every time. What if we could just say `bake(180 degrees, 20 minutes)` and your friend would know to execute those three steps? That is exactly what a function is!
+>It is tedious to have to repeat to your friend the same `bake` instructions every time. What if we could just say `bake(180 degrees, 20 minutes)` and your friend would know to execute those three steps? That is exactly what a function is!
 
 
-## Turn your app into a game
+## Code a game
 
 To better understand how variables, functions and logic work, let's build a **paper-scissors-stone** game.
 

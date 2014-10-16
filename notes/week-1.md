@@ -232,8 +232,8 @@ Being Web-literate will enable you to use the Web as an **open platform**, a pla
 The Web is full of resources: **open-source** code and **open data** that you can use to make amazing apps!
 
 * Free? Why?
-* What is **open-source**? Libraries (jQuery), GitHub, reputation economy..
-* What is **open data**? APIs, WikiPedia
+* What is **open-source**? Libraries (eg: [jQuery](http://jquery.com/), [Reveal.JS](http://lab.hakim.se/reveal-js/#/)), reputation economy..
+* What is **open data**? WikiPedia, APIs..
 
 
 ## Your brief

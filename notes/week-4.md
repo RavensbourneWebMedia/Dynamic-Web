@@ -3,7 +3,7 @@
 ## Today
 
 * **Pair-feedback on app ideas** (to be continued on the blog).
-* [MozBug](mzl.la/mozbug)
+* [MozBug](mzl.la/mozbug) and the real-time database behind it ([Firebase](http://firebase.com))
 
 
 ## Ideas ideas ideas
@@ -53,6 +53,6 @@ A [refresher](http://bit.ly/wm14203-refresher) and a [tutorial](http://bit.ly/wm
 [MozBug](mzl.la/mozbug) is a Twitter-based crowd-documentation tool, served with a competitive topping (aka *gamification*).
 
 
-## Homework
+# Assignment for next week!
 
 **[MozFest](http://2014.mozillafestival.org/)**: what did you find interesting and helpful? Share your Mozfest experience and include at least two links and one picture.

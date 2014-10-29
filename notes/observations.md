@@ -11,3 +11,8 @@
 * `String concatenation`, `variables` and `object navigation` still a bit confusing/unknown, but they're getting there
 * Using the Flickr API to give a *Pictionary-style* answer worked well :) I think anything that yields tangible/visible (images), surprising results is a win!
 * Explained [`jQuery.ajax()`](http://api.jquery.com/jquery.ajax/) by mentioning the cleaning product, football club and Greek hero
+
+## 23.10
+
+* Pair presentations with *yes, and* worked well
+* Codecademy fail: people drifted off. Let's see if these kind of resources work as *homework assignment*.

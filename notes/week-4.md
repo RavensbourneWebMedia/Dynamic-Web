@@ -14,7 +14,7 @@ If you want to have **good ideas** you must [have **many ideas**](https://medium
 
 **Most** of them will be **wrong**, and what you have to learn is which ones to throw away.
 
-Ideas are often “scraching your own itch”, and as such, the things that seem to work are scratchy apps.
+Ideas are often “scratching your own itch”, and as such, the things that seem to work are scratchy apps.
 
 It’s fine to scratch your own itch, but are you really **passionate about an idea**?
 
@@ -33,7 +33,7 @@ It’s fine to scratch your own itch, but are you really **passionate about an i
 * **Why** would they not use a {insert something} instead?
 * Are there **other apps** you find inspiring/relevant? Put links and images/screenshots aplenty
 
-- [Jot down your ideas on this Google Document](bit.ly/web14203-app-ideas)
+- [Jot down your ideas on this Google Document](http://bit.ly/web14203-app-ideas)
 
 ### Presentations
 

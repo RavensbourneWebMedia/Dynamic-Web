@@ -1,3 +1,7 @@
+
 decks/.sass-cache
 decks/plugin/notes/.sass-cache
 notes/*.html
+
+.DS_Store
+

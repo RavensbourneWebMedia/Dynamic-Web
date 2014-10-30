@@ -43,6 +43,9 @@ Looking at [your first blog post](http://www.fourthfloor.me/blogs/staak/2014/10/
 * `I personally feel i need more practise with JS to understand better how variables, functions and logic work.` That's what we (well, I) want to read: **personal observations**, as opposed to a flat log of what happened in class (we know what happened in class already, we were there).
 * Your post has 2 sections: one about Rock-paper-scissors in JS, and the other about *brainswarming*. It would be really good if you divided it up visually, using headings to summarise your post at a glance.
 
+![](http://www.fourthfloor.me/blogs/ksalazar/files/2014/10/IMG_5247.jpg)
+
+
 
 ### [Harry](http://www.fourthfloor.me/blogs/hfoster/2014/10/22/week-1/)
 
@@ -61,6 +64,9 @@ Looking at [your first blog post](http://www.fourthfloor.me/blogs/staak/2014/10/
 * Can we haz **big images** please?
 * I like the idea of a *conversational* interface, eg `Something more recent`, `Yay!`, `I have already seen this`: it gives your app a **personality** (whilst still collecting data)
 * Perhaps you could elaborate a bit more on the ideas that you jotted down. Your blog seems to work like a **personal notebook**, which is great. Even better if we (the readers) could understand more from it, and being able to suggest ideas and inspirations. What do you think?
+
+![](http://www.fourthfloor.me/blogs/mmercier/files/2014/10/App-Brainswarming-1024x574.jpg)
+
 
 
 ### [Callum](http://www.fourthfloor.me/blogs/cholland/2014/10/16/dynamic-web-week-3/)
@@ -98,8 +104,26 @@ I will ask them to you individually during the tutorials.
 * Is your app **location-aware**?
 
 
-## Mozfest anyone?
 
+
+
+
+
+
+
+
+
+## GitHub
+
+It's not a *hub of gits*. What is it then?
+
+Why do we need it? Because when you think it's time to back up your files, it's too late.
+
+Can we not use DropBox instead? Yes, however Git is more powerful. It allows you to **collaborate**
+
+
+1. Download [SourceTree](http://www.sourcetreeapp.com/)
+* Sign up to GitHub 
 
 
 
@@ -113,5 +137,29 @@ Upload your designs to your 4F blog
 
 ### Examples & inspirations
 
-- [ ] Single page sites (eg breathapp)
+#### Single-page
+
+- http://breathapp.com/
+- http://somebodyapp.com/
+- http://www.spelltower.com/
+- http://timehop.com/
+
+
 - [ ] Good app descriptions from App Store and Google Play?
+
+
+
+
+## 4F probs
+
+* the post page looks ok, but the feed page breaks the formatting
+* painful on the eye
+* time constraint
+* not mobile-friendly
+* word count not a concern
+
+
+* dont' `regurgitate`
+* don't keep your posts in a box, open them up (with links)
+
+

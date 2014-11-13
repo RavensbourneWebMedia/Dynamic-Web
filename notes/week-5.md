@@ -2,12 +2,28 @@
 
 ## Today
 
-* Blog reviews
+* Blog and ideas review
 * Individual tutorials 
 * Workshop: [GitHub](https://github.com/)
 
 
-## Blogs
+## App ideas 
+
+[Initial ideas on this Google Document](http://bit.ly/web14203-app-ideas)
+
+### Questions
+
+I will ask them to you individually during the tutorials.
+
+* What's the **interface** going to be like?
+* Where is the **data** coming from? 
+* Is your app **location-aware**?
+
+[Tutorials feedback here](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-5-tutorials.md)
+
+
+
+## Blogs and ideas
 
 ### [Burak](http://www.fourthfloor.me/blogs/bozdemir/2014/10/22/my-app-idea/)
 
@@ -81,27 +97,15 @@ Looking at [your first blog post](http://www.fourthfloor.me/blogs/staak/2014/10/
 * `I found the whole task of brainswarming useful as it was extremely useful...` avoid repetition and keep it short: if you can say it in one sentence instead of two, then do it!
 
 
-### General observations
-
-* Nobody uses **[links](http://en.wikipedia.org/wiki/Hyperlink)**. Why? The Web wouldn't be a Web without links!
-* Please don't write a primary school log of what we've done in class. We know what we've done in class already. Tell us what you've learned and why you think it's **relevant**. Or **boring**, or **confusing**.
-* Aim to **explain and entertain**. Make it enjoyable for people to read. Remember that you're primarily wirting for yourself, but it's much more fun to write with **someone else** in mind!
-* **Paragraphs** are a good thing! When you see a block of text that is longer than 5 lines (eg on FB), do you want to read it? Or do you find yourself skimming over it?  
-* Use headings, sub-headings, bold and italics and links to give your posts some **visual rythm**. 
-* **Images**: make them big! There's nothing more painful (typographically) than squinting your eyes to try and make sense of a image, with text wrapping around it.
-* You can **ask questions** in your posts, from the obvious `What do you think?` to the specific `Which colours should I use for my app's background?`. **Involve** your reader(s)! 
 
 
 
-[Jot down your ideas on this Google Document](http://bit.ly/web14203-app-ideas)
 
-## Questions for everyone
 
-I will ask them to you individually during the tutorials.
 
-* What's the **interface** going to be like?
-* Where is the **data** coming from? 
-* Is your app **location-aware**?
+
+
+
 
 
 
@@ -124,6 +128,17 @@ Can we not use DropBox instead? Yes, however Git is more powerful. It allows you
 
 1. Download [SourceTree](http://www.sourcetreeapp.com/)
 * Sign up to GitHub 
+* Clean up the global .gitignore (remove DS_Store)
+
+### The workflow
+
+1. Commit
+2. Pull
+3. Push
+
+Branches?
+
+
 
 
 
@@ -137,23 +152,37 @@ Upload your designs to your 4F blog
 
 ### Examples & inspirations
 
-#### Single-page
-
-- http://breathapp.com/
-- http://somebodyapp.com/
-- http://www.spelltower.com/
-- http://timehop.com/
-
-
-- [ ] Good app descriptions from App Store and Google Play?
+- [Breath](http://breathapp.com/)
+- [Somebody](http://somebodyapp.com/)
+- [Spell Tower](http://www.spelltower.com/)
+- [TimeHop](http://timehop.com/)
 
 
 
+## Blog review
 
-## 4F probs
+### General observations
 
-* the post page looks ok, but the feed page breaks the formatting
+* Nobody uses **[links](http://en.wikipedia.org/wiki/Hyperlink)**. Why? The Web wouldn't be a Web without links!
+* Please don't write a primary school log of what we've done in class. We know what we've done in class already. Tell us what you've learned and why you think it's **relevant**. Or **boring**, or **confusing**.
+* Aim to **explain and entertain**. Make it enjoyable for people to read. Remember that you're primarily wirting for yourself, but it's much more fun to write with **someone else** in mind!
+* **Paragraphs** are a good thing! When you see a block of text that is longer than 5 lines (eg on FB), do you want to read it? Or do you find yourself skimming over it?  
+* Use headings, sub-headings, bold and italics and links to give your posts some **visual rythm**. 
+* **Images**: make them big! There's nothing more painful (typographically) than squinting your eyes to try and make sense of a image, with text wrapping around it.
+* You can **ask questions** in your posts, from the obvious `What do you think?` to the specific `Which colours should I use for my app's background?`. **Involve** your reader(s)! 
+
+## 4F problemz
+
+Discussing the FourthFloor blogging platform, and why students mildly hate it.
+
+The editing and reading **experiences are disconnected**: 
+
+* what you see is NOT what you get..
+* the sigle post page looks ok, but the feed page breaks the formatting
 * painful on the eye
+
+
+
 * time constraint
 * not mobile-friendly
 * word count not a concern

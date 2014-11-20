@@ -1,0 +1,18 @@
+body {
+    background-color: #f9c588;
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#mainmap {
+    width: 100%;
+}
+
+html, body, #mainmap {
+    height: 100%;
+}

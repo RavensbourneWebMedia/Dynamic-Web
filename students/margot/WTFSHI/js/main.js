@@ -22,4 +22,8 @@ $("#hide").click(function(){
   $("#welcome").hide("slow");
   $("#time").show("slow")
 });
+$("#show").click(function(){
+  $("#time").hide("slow");
+  $("#pageShow").show("slow")
+});
 //When clicking "enter" button, first page disappears & time demand appears

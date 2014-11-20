@@ -12,6 +12,25 @@
     margin-left: 3em;
 }
 
-#time{
-    display:none;
+#clock{
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../img/time.png");
+	width: 305px;
+	height: 304px;
 }
+#movie, #show, #or{
+	float: left;
+}
+#time{
+   display:none;
+   
+ }
+ #pageShow{
+ 	display:none;
+ 	/*font-size: 20px;
+ 	font-weight: bold;
+ 	text-align: center;*/
+  }
+

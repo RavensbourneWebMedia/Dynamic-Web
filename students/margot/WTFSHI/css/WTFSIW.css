@@ -1,0 +1,17 @@
+#welcome{
+    display:block;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+}
+.undertitle {
+    text-align: left;
+    float: left;
+    margin-left: 3em;
+}
+
+#time{
+    display:none;
+}

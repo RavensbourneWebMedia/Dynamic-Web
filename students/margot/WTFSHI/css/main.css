@@ -22,16 +22,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-.title{
-    text-align: center;
-    font-weight: bold;
-    font-size: 5em;
-}
-.undertitle {
-    text-align: left;
-    float: left;
-    margin-left: 3em;
-}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.

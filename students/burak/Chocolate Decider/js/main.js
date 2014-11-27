@@ -32,12 +32,20 @@ $.getJSON(spreadsheetURL, function(result)
 			contains:
 			{
 				dairy: row.gsx$dairy.$t,
-				nuts: row.gsx$nuts.$t
+				nuts: row.gsx$nuts.$t,
+				gluten: row.gsx$gluten.$t,
+				raisin: row.gsx$gluten.$t,
+				
 				// TODO add all other allergies
 			},
 			moods:
 			{
-				dark: Number(row.gsx$darkmood.$t) // convert to number
+				dark: Number(row.gsx$darkmood.$t),
+				happy: Number(row.gsx$happymood.$t),
+				weird: Number(row.gsx$weirdmood.$t),
+				confused :Number(row.gsx$confusedmood.$t),
+				upset: Number(row.gsx$upsetmood.$t),
+				 // convert to number
 				// TODO add all other moods
 			}
 		}
@@ -108,7 +116,7 @@ function filterProducts()
 
 		console.log(filteredProducts)
 
-
+		// do we still have products, ie is filteredProducts empty?
 
 
 
@@ -137,8 +145,8 @@ function displayResults()
 
 	$("#next").click(function()
 	{
-	  // $("#secondpage").hide();
-	  // $("#thirdpage").show();
+	  $("#secondpage").hide();
+	  $("#thirdpage").show();
 	  filterProducts()
 	});
 

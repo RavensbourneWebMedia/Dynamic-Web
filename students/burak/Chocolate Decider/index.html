@@ -32,24 +32,24 @@
 
         <p hidden>This is the <a href="https://docs.google.com/spreadsheets/d/1TBRpVkTzhPRTlPZr_JexswiX5vp6YBu2dVUikPyEo78/pubhtml?gid=0&single=true">spreadsheet </a></p>
 
-        <p id="loading"> Be patient mate, we're loading chocolates!</p>
+        <p id="loading"> Chocolates Loading......</p>
 
         </div> 
 
         <div style="display:none;" id="secondpage">
         <h2>Chocolate Decider</h2> 
         <img src="http://i.gyazo.com/daab0466805a039e34f215aa0a44448e.png" alt="logo" style="width:150px;height:150px">
-        <p> What are you alergic to?</p>
-        <form>
-        <input type="checkbox" name="choice1" value="nuts">Nuts
-       <br>
-        <input type="checkbox" name="choice2" value="dairy">Dairy
-        <br>
-        <input type="checkbox" name="choice3" value="gluten">Gluten
-        <br>
-        <input type="checkbox" name="choice4" value="raisins">Raisins
-        <br>
-        <input type="checkbox" name="choice5" value="nothing">Nothing
+        <p> What are you allergic to?</p>
+        <form id="allergies">
+            <input type="checkbox" name="choice1" value="nuts">Nuts
+           <br>
+            <input type="checkbox" name="choice2" value="dairy">Dairy
+            <br>
+            <input type="checkbox" name="choice3" value="gluten">Gluten
+            <br>
+            <input type="checkbox" name="choice4" value="raisin">Raisin
+            <br>
+        <!-- <input type="checkbox" name="choice5" value="nothing">Nothing -->
         </form>
 
 
@@ -84,10 +84,10 @@
         <div style="display:none;" id="fourthpage">
         <h2>Chocolate Decider</h2> 
         <img src="http://i.gyazo.com/daab0466805a039e34f215aa0a44448e.png" alt="logo" style="width:150px;height:150px">
-        <p> You should eat..... </p>
+        <p id="message"> You should eat..... </p>
         
-       
-        <button id= "startagain" type="startagain">Start Again</button> 
+       <br>
+        <button id= "startagain" type="startagain">Start Again </button> 
 
        
 
@@ -153,10 +153,7 @@ document.getElementById(id).style.display = visibility;
 
 
 
-</div>
-
-
--->
+</div>-->
 
 
 

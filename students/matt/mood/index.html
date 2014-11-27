@@ -24,62 +24,13 @@
         <!-- Add your site or application content here -->
         <h1>mood</h1>
 
-        <!-- <button onclick="getLocation()">Try It</button> -->
-
-        <!-- <p id="demo"></p> -->
-
-        <script>
-            
-            // var x = document.getElementById("demo");
-            // $('#id')
-
-            function getLocation() 
-            {
-                if (navigator.geolocation) 
-                {
-                    console.log('getLocation running')
-                    navigator.geolocation.getCurrentPosition(showPosition);
-                } 
-                else 
-                { 
-                    alert("Geolocation is not supported by this browser.");
-                }
-            }
-
-            function showPosition(position) 
-            {
-                console.log('cool, we haz geolocation data')
-                // x.innerHTML = "Latitude: " + position.coords.latitude +     "<br>Longitude: " + position.coords.longitude; 
-
-                var weatherURL = 'http://api.openweathermap.org/data/2.5/forecast?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&callback=?'
-
-                console.log('we are about to call this weather API ' + weatherURL)
-
-                $.getJSON(weatherURL, function(response)
-                {
-
-                    // Store the wether forecast on the device's cache
-                    // for those offline sad  sad moments..
-                    localStorage.weatherCache = JSON.stringify({
-                        timestamp:(new Date()).getTime(),   // getTime() returns milliseconds
-                        data: response
-                    });
-
-                    console.log('here is the weather object')
-                    console.log(response)
-
-                });
-            }
-
-            // run the thing without us having to click a damn button
-            getLocation();
-
-        </script>
+        <p id="message"></p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <!--<script src="js/main.js"></script>-->
+        <script src="js/geolocation.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>

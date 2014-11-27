@@ -116,9 +116,26 @@ button, input {
     font-family: raleway;
 }
 
+#wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
 
+#time {
+    float: left;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
 
-
+#content {
+    max-width: 1000px;
+    margin: auto;
+    left: 1%;
+    right: 1%;
+    position: absolute;
+}
 
 
 

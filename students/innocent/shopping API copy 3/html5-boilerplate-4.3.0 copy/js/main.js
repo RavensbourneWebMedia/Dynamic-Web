@@ -1,7 +1,9 @@
-//https://docs.google.com/spreadsheets/d/1UpRlR6gSbhk91jwsqzub9ECPg-sNVpqtZJk29OaWzPs/pubhtml?gid=0&single=true
-
 console.log('main.js up and running')
 
+// let's create a few variables
+var products = [] // an array (list), empty for now
+
+//https://docs.google.com/spreadsheets/d/1UpRlR6gSbhk91jwsqzub9ECPg-sNVpqtZJk29OaWzPs/pubhtml?gid=0&single=true
 //the spreadsheet URL
 var spreadsheetURL = "https://spreadsheets.google.com/feeds/list/"
 spreadsheetURL += "1UpRlR6gSbhk91jwsqzub9ECPg-sNVpqtZJk29OaWzPs" // public key
@@ -19,19 +21,25 @@ $.getJSON(spreadsheetURL, function(result){
 	$.each(productSpec, function(index,row)
 	{
 		console.log(row)
-		var id = row.gsx$productid.$t
-		var product = row.gsx$product.$t
-        var screen = row.gsx$screensize.$t
-        var memory = row.gsx$memory.$t
-        var processor = row.gsx$processor.$t
-        var retailer = row.gsx$retailer.$t
-        var price = row.gsx$price.$t
-		console.log(product + screen + memory + processor + " is available at" + retailer + " for " + price)
-		var sentence = product + screen + memory + processor + " is available at" + retailer + " for " + price
-		var li = "<li>" + sentence + "</li>"
-		$("ul#bargain") .append(li)
-     
+
+        var productDataObject = {} // an object (empty)
+		productDataObject.id = row.gsx$productid.$t
+		productDataObject.type = row.gsx$product.$t
+        productDataObject.screen = row.gsx$screensize.$t
+        productDataObject.memory = row.gsx$memory.$t
+        productDataObject.processor = row.gsx$processor.$t
+        productDataObject.retailer = row.gsx$retailer.$t
+        productDataObject.price = row.gsx$price.$t
+
+		// console.log(product + screen + memory + processor + " is available at" + retailer + " for " + price)
+		displayProduct(productDataObject)
+
+        // populate the array of products
+        // see http://www.w3schools.com/jsref/jsref_push.asp
+        products.push(productDataObject)
 	})
+
+    console.log(products)
 
 	$("#loading").fadeOut()
 })
@@ -71,6 +79,13 @@ $('form').on('submit', function(e)
     //var store =$(type + screen + memory + processor + text)
     //console.log(store)
     
-    // loop through the products and select the ones with product.type == type
-    
+    // loop through the products and select the ones with product.type == type  
 })
+
+// this displays product data in the UL
+function displayProduct(productDataObject)
+{
+    var sentence = productDataObject.type + productDataObject.screen + productDataObject.memory + productDataObject.processor + " is available at" + productDataObject.retailer + " for " + productDataObject.price
+    var li = "<li>" + sentence + "</li>"
+    $("ul#bargain").append(li)
+}

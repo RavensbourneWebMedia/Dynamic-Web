@@ -75,8 +75,9 @@ $.getJSON (spreadsheetURL, function(result){
     
     //log test
     console.log(coffeeshop + " is rated " + coffeerating)
-    })
-    
+    })  
+        $( ".logolg"  ).fadeOut( "slow" );
+    $( ".cover"  ).fadeOut( "slow" ); 
 })
 
 // Set leaflet map view to current location and zoom level

@@ -1,3 +1,7 @@
+
+body {
+  background-color: #F0FFFF;
+}
 #welcome{
     display:block;
 }
@@ -10,27 +14,61 @@
     text-align: left;
     float: left;
     margin-left: 3em;
+    font-family: inherit;
+}
+#hide{
+  background-color: #C6DEFF;
+  float: right;
+  margin-right: 100px;
+  width:25%;
+  height: 50%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #clock{
 	float: left;
-	margin-left: auto;
-	margin-right: auto;
 	background-image: url("../img/time.png");
 	width: 305px;
 	height: 304px;
 }
-#movie, #show, #or{
+#movie, #tv{
+  width: 100%;
 	float: left;
+  display: block;
 }
+
+#or{
+  text-align: center;
+}
+
 #time{
    display:none;
-   
+   width: 305px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
  }
- #pageShow{
+
+ #pagetv{
  	display:none;
- 	/*font-size: 20px;
+ 	font-size: 20px;
  	font-weight: bold;
- 	text-align: center;*/
+ 	text-align: center;
   }
 
+  #moviepage{
+    display: none;
+  }
+
+#hide, #tv, #movie {
+  cursor: pointer;
+
+}
+.movieOpening{
+  text-align: center;
+  font-size: 30px;
+
+}

@@ -9,11 +9,29 @@ spreadsheetURL += "public/values?alt=json" //JSON stuff
 
 console.log(spreadsheetURL)
 
+//define coffee shop waypoint icon
+var coffeeIcon = L.icon({
+    iconUrl: '../js/img/marker.png',
+
+    iconSize:     [30, 60], // size of the icon
+    iconAnchor:   [18, 50], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -50] // point from which the popup should open relative to the iconAnchor
+});
+
+//define your location waypoint icon
+var coffeeIcon2 = L.icon({
+    iconUrl: '../js/img/marker2.png',
+
+    iconSize:     [45, 90], // size of the icon
+    iconAnchor:   [22, 86], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -85] // point from which the popup should open relative to the iconAnchor
+});
+
 //Use JQuery to get a certain file from URL
 //Once we have that file, do something
 $.getJSON (spreadsheetURL, function(result){
     console.log(result)
-    
+    //show location on map
     var coffeeData = result.feed.entry
     $.each(coffeeData, function(index, coffee){
     console.log(coffee)
@@ -33,12 +51,13 @@ $.getJSON (spreadsheetURL, function(result){
     var coffeeloyalty = coffee.gsx$loyalty.$t
     console.log(coffeeloyalty)
     //add a marker to map
-    var marker = L.marker([coffeelongitude, coffeelatitude]).addTo(map);
-    marker.bindPopup(coffeeshop + "<br>" + "Rating: " + coffeerating ).openPopup();
+    var marker = L.marker([coffeelongitude, coffeelatitude], {icon: coffeeIcon}).addTo(map);
+    marker.bindPopup(coffeeshop + "<br>" + "Rating: " + coffeerating  + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'><br>Get directions</a>");
     
     //log test
     console.log(coffeeshop + " is rated " + coffeerating)
     })
+    
 })
 
 // Set leaflet map view to current location and zoom level
@@ -51,20 +70,36 @@ L.tileLayer('watercolor', {
 }).addTo(map);
 map.addLayer(layer);
 
-//showing location circle on map
+
+//show user location function
+var userLat, userLng;
+
 function onLocationFound(e) {
     var radius = e.accuracy / 2;
-//popup message for your location
-    L.marker(e.latlng).addTo(map)
+    
+    userLat = e.latlng.lat;
+    userLng = e.latlng.lng;
+
+    L.marker(e.latlng,  {icon: coffeeIcon2}).addTo(map)
         .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
+    
+    
 }
-//error message when location cannot be determined
+
 map.on('locationfound', onLocationFound);
 
-function onLocationError(e) {
-    alert(e.message);
+function routeTo(lat1, lng1)
+{
+    var lat2 = userLat, 
+        lng2 = userLng
+            
+    L.Routing.control({
+        waypoints : [
+            L.latLng(lat2, lng2),
+            L.latLng(lng1, lat1)
+        ]
+    }).addTo(map);
 }
 
-map.on('locationerror', onLocationError);

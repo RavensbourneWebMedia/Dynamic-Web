@@ -25,36 +25,48 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <h1>Hello</h1>
-        <p>Please enter your name in the space below.....</p>
-        <form id="name">
-            <input placeholder="Name"> 
-        </form>
-        <p>What can I help you with today?</p>
-        <form id="variables">
-            <input placeholder="Pick me!!" name="option1"> 
-                <p>or</p> 
-            <input placeholder="No, Pick me!!" name="option2">
-                <br>
-            <button type="submit">Go</button>
-        <form>
-        <p>Help me!</p>
 
-        <!-- <form>
-  Should I
-  <input name="option1" placeholder="do this" value="eat bananas">
-  or
-  <input name="option2" placeholder="do that" value="eat monkeys">
-  ?
-  <button type="submit">Help me decide</button>
-    </form> -->
+        <section id="instructionsPage">
+            <p>Don't think....<br>
+            Just select the first option you see!! <br>
 
-       <!--  <p>VIP Information <a href="https://docs.google.com/spreadsheets/d/1XAwqayvOEHWkg3RQNehksVoGUriqOUHI-Qjs_g9X2SM/pubhtml?gid=0&single=true">spreadsheet</a></p>
+            On your marks <br>
 
-        <p id= "loading"> Think fast! list coming soon </p>
-        <ul id="likes">
+            Get set....<br>
+            GO!!</p>
+        
+            <button>Go</button>
+            
+            <p>Skip</p>
+        </section>
 
-        </ul> -->
+        <section id="optionsPage">
+            <h1>Hello</h1>
+            <p>Please enter your name in the space below.....</p>
+            <!-- <form id="name">
+                <input placeholder="Name"> 
+            </form> -->
+            <p>What can I help you with today?</p>
+            <form>
+                <input placeholder="Pick me!!" name="option1"> 
+                    <p>or</p> 
+                <input placeholder="No, Pick me!!" name="option2">
+                    <br>
+                <button type="submit">Go</button>
+            </form>
+            <p>Help me!</p>
+        </section>
+
+        <section id="actionPage">
+            <button id="option1"></button>
+            or
+            <button id="option2"></button>
+        </section>
+
+        <section id="answer">
+            
+        </section>
+
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/plugins.js"></script>

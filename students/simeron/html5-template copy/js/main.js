@@ -1,24 +1,166 @@
 //this is a test please work, not to be mistaken with the stuff above!!
-
-console.log("cool, it's working");
-
-
+console.log("cool, main.js s working");
 
 //$ is a shortcut for jQuery
 
-//let's write a function that triggers when you click on the submit button
-$("form").on("submit", doSomething)
-
-function doSomething()
+$('#instructionsPage button').on('click', function()
 {
-  console.log("form submitted!");
+	$('#instructionsPage').hide()
+  	$('#optionsPage').show()
+})
+
+// let's define the categories
+var categories = 
+{
+	foods: [], // empty array
+	cars: [],
+	superheros: [],
+	colours: [],
+	places: [],
+	userOptions: []	
+}
+
+var questions = 
+[
+	'foods',
+	'cars',
+	'userOptions'
+]
+
+var questionsCount = 0
+
+var userChoice = ''
+
+// let's write a function that triggers when you click on the submit button
+$("#optionsPage form").on("submit", onOptionsFormSubmit)
+
+function onOptionsFormSubmit(event)
+{
+	event.preventDefault()
+
+  	console.log("form submitted!");
+
+  	//1.capture the user inputs
+  	var option1 = $("input[name=option1]").val()
+  	console.log("option1 seems to be " + option1);
+  	categories.userOptions.push(option1)
   
-  //1.capture the user inputs
-  var option1 = $("input[name=option1]").val()
-  console.log("option1 seems to be " + option1);
-  
-  var option2 = $("input[name=option2]").val()
-  console.log("option2 seems to be " + option2);
+  	var option2 = $("input[name=option2]").val()
+  	console.log("option2 seems to be " + option2);
+  	categories.userOptions.push(option2)
+
+  	// hide options page
+  	// show action page
+  	$('#optionsPage').hide()
+  	$('#actionPage').show()
+
+  	questionsCount = 0 // reset the count, so that it starts from the first question
+  	askQuestion()
+}
+
+function askQuestion()
+{
+  	displayRandomOptions(questionsCount)
+  	questionsCount += 1;
+}
+
+// function that grabs two random options from an array 
+// from http://stackoverflow.com/questions/19269545/how-to-get-n-no-elements-randomly-from-an-array
+function getRandomSelectionFromArray(whichArray, howMany) {
+    var result = new Array(howMany),
+        len = whichArray.length,
+        taken = new Array(len);
+    if (howMany > len)
+        throw new RangeError("getRandomSelectionFromArray: more elements taken than available");
+    while (howMany--) {
+        var x = Math.floor(Math.random() * len);
+        result[howMany] = whichArray[x in taken ? taken[x] : x];
+        taken[x] = --len;
+    }
+    return result;
+}
+
+// and displays them for a couple of seconds
+function displayRandomOptions(index)
+{
+	// which category?
+	var categoryArray = categories[questions[index]]
+
+	var randomOptions = getRandomSelectionFromArray(categoryArray,2)
+
+	$('#option1').html(randomOptions[0]) // the first option
+	$('#option2').html(randomOptions[1]) // the second option
+}
+
+$('#option1').on('click', onOptionClick)
+$('#option2').on('click', onOptionClick)
+
+function onOptionClick(event)
+{
+	console.log(event.currentTarget.innerHTML) 
+	userChoice = event.currentTarget.innerHTML
+	// store the user's answer
+	// use a variable
+
+	// are there still questions to ask?
+	// or did we run out of questions
+	if (questionsCount >= questions.length)
+	{
+		// we're at the end of the quiz
+		// display user's choice
+		displayUserChoice() 
+	}	
+	else
+	{
+		askQuestion()
+	}
+}
+
+function displayUserChoice()
+{
+	$("#answer").html("your answer is.." + userChoice)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  	
+
+
+
+
+
   
   //2.make a  (random) choice 
   //generate a random number
@@ -78,3 +220,5 @@ function onAjaxSuccess(data)
   // set the body background-image to be imageUrl
   $('body').css('background-image', 'url(' + imageUrl + ')')
 }
+
+*/

@@ -50,9 +50,28 @@ $.getJSON (spreadsheetURL, function(result){
     //get coffee shop loyalty
     var coffeeloyalty = coffee.gsx$loyalty.$t
     console.log(coffeeloyalty)
+    //get coffee shop link
+    var coffeelink = coffee.gsx$link.$t
+    console.log(coffeelink)
+    //get coffee shop address
+    var coffeeaddress = coffee.gsx$addressline.$t
+    console.log(coffeeaddress)
+    //get coffee shop postcode
+    var coffeepostcode = coffee.gsx$postcode.$t
+    console.log(coffeepostcode)
+    //get coffee shop opening
+    var coffeeopeningtime = coffee.gsx$openingtime.$t
+    console.log(coffeeopeningtime)
+    //get coffee shop phone
+    var coffeephone = coffee.gsx$phone.$t
+    console.log(coffeephone)
+    //get coffee shop wifi
+    var coffeewifi = coffee.gsx$wifi.$t
+    console.log(coffeewifi)
     //add a marker to map
     var marker = L.marker([coffeelongitude, coffeelatitude], {icon: coffeeIcon}).addTo(map);
-    marker.bindPopup(coffeeshop + "<br>" + "Rating: " + coffeerating  + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'><br>Get directions</a>");
+        // Pop up info goes here
+    marker.bindPopup("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>" + "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='../img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='../img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='../img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='../img/compass.png'>  " + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'>Get Directions</a>");
     
     //log test
     console.log(coffeeshop + " is rated " + coffeerating)

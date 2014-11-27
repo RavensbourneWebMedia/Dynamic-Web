@@ -16,3 +16,33 @@ body {
 html, body, #mainmap {
     height: 100%;
 }
+
+.phone {
+    width: 10px;
+}
+
+.clock {
+    width: 10px;
+}
+
+.wifi {
+    width: 10px;
+}
+
+.compass {
+    width: 10px;
+}
+
+.logobg {
+    color: #f9c588;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.logolg {
+    height: 50%;
+    text-align: center;
+    z-index: 10;
+    float: left;
+}

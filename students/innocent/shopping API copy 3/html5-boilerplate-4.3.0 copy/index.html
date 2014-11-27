@@ -23,59 +23,74 @@
 
         <!-- Add your site or application content here -->
         
-        <h><b>BARGAIN APP</b></h>
+       <img src="BargainApplogo2.jpg" height="42" width="125">
+        
+        <img src="BargainApplogo.jpg" height="42" width="42">
+        
         
         <p>This is <a href="https://docs.google.com/spreadsheets/d/1UpRlR6gSbhk91jwsqzub9ECPg-sNVpqtZJk29OaWzPs/pubhtml?gid=0&single=true"> spreadsheets link</a></p>
         
         <form>
         
         <p>Select Product</p> 
-         <select id="type">
+         <select id="prod">
   <option value="Laptop">Laptops</option>
   <option value="Tv">Tvs</option>
-</select>
+  </select>
         
        
  
-              Screen Size <select>
-  <option value="screen size">13inch</option>
- <option value="screen size">15inch</option>
- <option value="screen size">17inch</option>
-</select>
-
+              <p>Screen Size</p>
+             <select id="scr">
+  <option value="13inch">13inch</option>
+ <option value="15inch">15inch</option>
+ <option value="17inch">17inch</option>
+ <option value="28inch">28inch</option>
+ <option value="32inch">32inch</option>
+                 
+ </select>
+ 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         
         
   
-             Memory <select>
-  <option value="memory">4GB</option>
- <option value="memory">6GB</option>
- <option value="memory">8GB</option>
-</select>
+             <p>Memory</p> 
+            <select id="mem">
+  <option value="4GB">4GB</option>
+ <option value="6GB">6GB</option>
+ <option value="8GB">8GB</option>
+ </select>
       
         
         
           
-             Processor <select>
-  <option value="processor">icore3</option>
- <option value="processor">icore5</option>
- <option value="processor">icore7</option>
-</select>
+             <p>Processor</p> 
+            <select id="proc">
+  <option value="icore3">icore3</option>
+ <option value="icore5">icore5</option>
+ <option value="icore7">icore7</option>
+ </select>
         
         
         
      
-           Enter Price <input type="text">
-         
+           <p>Enter Price</p> 
+         <input type="text" placeholder="Enter price" id="text">
             
+        <button type="text">Search</button>
             
-        
-        <button type="submit">Search</button>
             
             </form>
-              
-<script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         
-    </body>
-</html>
+           <p id="loading">Loading....please be patient</p>
+        <ul id="bargain">
+        </ul>
+              
+         <script src="js/vendor/jquery-1.10.2.min.js"></script>
+         <script src="js/plugins.js"></script>
+         <script src="js/main.js"></script>
+
+        
+     </body>
+ </html>

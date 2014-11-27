@@ -2,6 +2,7 @@ console.log('main.js up and running')
 
 // let's create a few variables
 var products = [] // an array (list), empty for now
+var currentFilters = {}
 
 //https://docs.google.com/spreadsheets/d/1UpRlR6gSbhk91jwsqzub9ECPg-sNVpqtZJk29OaWzPs/pubhtml?gid=0&single=true
 //the spreadsheet URL
@@ -54,7 +55,7 @@ $('form').on('submit', function(e)
     console.log(scr)
     var mem = $('#mem').val() // grab the value for the type criterium
     console.log(mem)
-    var proc = $('#proc').val() // grab the value for the type criterium
+    var proc = $('#processor').val() // grab the value for the type criterium
     console.log(proc)
     var text = $('#text').val() // grab the value for the type criterium
     console.log(text)
@@ -85,7 +86,82 @@ $('form').on('submit', function(e)
 // this displays product data in the UL
 function displayProduct(productDataObject)
 {
-    var sentence = productDataObject.type + productDataObject.screen + productDataObject.memory + productDataObject.processor + " is available at" + productDataObject.retailer + " for " + productDataObject.price
+    var sentence = productDataObject.type + ' ' + productDataObject.screen + productDataObject.memory + productDataObject.processor + " is available at" + productDataObject.retailer + " for " + productDataObject.price
     var li = "<li>" + sentence + "</li>"
     $("ul#bargain").append(li)
+}
+
+// this empties the UL
+function clearList()
+{
+   $("ul#bargain").empty()
+}
+
+// listens for a change in the #processor dropdown
+// finds the selected option
+// then it triggers a filter operation
+$('#processor').on('change', function(event)
+{
+    // console.log(event)
+    var selectedOption = $('#processor').find(":selected").text()
+    console.log(selectedOption)
+
+    // update the currentFilters object
+    currentFilters.processor = selectedOption
+    console.log(currentFilters)
+
+    // trigger the filter operation
+    filterProducts()
+})
+
+// this filters products
+function filterProducts()
+{
+    // create a new list of filtered products
+    var filteredProducts = []
+
+    // loop through all products
+    $.each(products, function(index, product)
+    {
+        // at the beginning we assume that a product is matching all filters
+        // so we set productIsMatching to true
+        // then we loop through all filters
+        // if the product doesn't match any filter
+        // we set productIsMatching to false
+        var productIsMatching = true
+
+        // loop through the currentFilters object
+        $.each(currentFilters, function(filterName, filterValue)
+        {
+            // console.log(filterName + ' is ' + filterValue)
+            // see what the specific value for this product is
+            var productValue = product[filterName]
+
+            console.log('we want ' + filterName + ' to be ' + filterValue + ', and ' + product.id + ' is ' + productValue)
+
+            if (productValue != filterValue) // != means is different
+            {
+                productIsMatching = false
+            }
+        })
+
+        // if after passing the product through all the filters
+        // productIsMatching is still true
+        // then we add it to the filteredProducts array
+        if (productIsMatching == true)
+        {
+            filteredProducts.push(product)
+        } 
+    })
+    
+    // display the filtered products
+    console.log(filteredProducts)
+
+    // clear the UL
+    clearList()
+    // loop through filteredProducts and display each
+    $.each(filteredProducts, function(index, product)
+    {
+        displayProduct(product)
+    })
 }

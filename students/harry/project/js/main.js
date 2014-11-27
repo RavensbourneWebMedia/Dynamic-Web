@@ -76,18 +76,20 @@ $.getJSON (spreadsheetURL, function(result){
     //log test
     console.log(coffeeshop + " is rated " + coffeerating)
     })  
-        $( ".logolg"  ).fadeOut( "slow" );
-    $( ".cover"  ).fadeOut( "slow" ); 
 })
 
 // Set leaflet map view to current location and zoom level
 var layer = new L.StamenTileLayer("watercolor");
 var map = L.map('mainmap').locate({setView: true, maxZoom: 15});
+    // Splash screen fade out
+    $( ".logolg"  ).delay(" 2000 ") .fadeOut( "slow" );
+    $( ".cover"  ).delay(" 2000 ")  .fadeOut( "slow" ); 
 //initiate map
 L.tileLayer('watercolor', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18
-}).addTo(map);
+})
+.addTo(map);
 map.addLayer(layer);
 
 

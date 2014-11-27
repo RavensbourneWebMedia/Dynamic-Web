@@ -89,23 +89,20 @@ $("#start").click(function(){
 function checkAnswer(whichPage, whichFilter)
 {
 	// see which options are checked
-	var checkedInputs = $('#time input:checked')
-	var filtersToCheck = []
-	// loop through checked inputs to populate filtersToCheck
-	checkedInputs.each(function(index, input)
-	{
-		// console.log(input.value)
-		filtersToCheck.push(input.value)
-	})
-	console.log(filtersToCheck)
+	var selectedButton = $(whichPage + ' button.selected')
+	filtersToCheck[whichFilter] = selectedButton.val()	 
+}
 
-	if (filtersToCheck.length == 0) // if there are no filtersToCheck
-	{
-		filteredActivities = allActivities // all activities are eligible
-	}	
-	else
 
-		// loop through the activities to populate the filteredActivities array
+// display the results
+function displayResults()
+{
+
+}
+
+function filterActivities()
+{
+	// loop through the activities to populate the filteredActivities array
 		$.each(allActivities, function(index, activity)
 		{
 			// console.log(activity)
@@ -115,13 +112,13 @@ function checkAnswer(whichPage, whichFilter)
 
 			// loop through the filtersToCheck
 			// to see if the activity matches all of them
-			$.each(filtersToCheck, function(index, filter)
+			$.each(filtersToCheck, function(filterName, filterValue)
 			{
 				// console.log(filter)
-				var time = time[filter] // yes or no
-				console.log('Can you ' + activity.name + ' for ' + filter + '? ' + timeContains)
+				var activityFilterValue = activity[filterName][filterValue] // yes or no
+				console.log('Can you ' + activity.name + ' for ' + filterValue + '? ' + activityFilterValue)
 
-				if (timeContains == 'yes') 
+				if (activityFilterValue == 'no') 
 				{
 					// we filter it out
 					matchesAllFilters = false
@@ -145,17 +142,6 @@ function checkAnswer(whichPage, whichFilter)
 		console.log(filteredActivities)
 
 		// do we still have activities, ie is filteredActivities empty?
-
-
-
-	}	 
-
-
-
-// display the results
-function displayResults()
-{
-
 }
 
 // jQuery to hide page 2 and show page 3

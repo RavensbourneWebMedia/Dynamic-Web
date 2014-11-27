@@ -14,6 +14,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/chocolate.css">
+        
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -22,28 +24,148 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div id="firstpage">
         <h1>Chocolate Decider</h1> 
-        <p>Answer a set of questions, so we can give you an ideal chocolate to eat </p>
+        <img src="http://i.gyazo.com/daab0466805a039e34f215aa0a44448e.png" alt="logo" style="width:150px;height:150px">
+        <p> Answer a set of questions, so we can give you an ideal chocolate to eat </p>
+        <button id= "go" type="button">GO</button> 
 
-        <p>This is the <a href="https://docs.google.com/spreadsheets/d/1TBRpVkTzhPRTlPZr_JexswiX5vp6YBu2dVUikPyEo78/pubhtml?gid=0&single=true">spreadsheet </a></p>
+        <p hidden>This is the <a href="https://docs.google.com/spreadsheets/d/1TBRpVkTzhPRTlPZr_JexswiX5vp6YBu2dVUikPyEo78/pubhtml?gid=0&single=true">spreadsheet </a></p>
 
-        <p id="loading"> Be patient mate, we're loading chocolates!</p> 
+        <p id="loading"> Be patient mate, we're loading chocolates!</p>
+
+        </div> 
+
+        <div style="display:none;" id="secondpage">
+        <h2>Chocolate Decider</h2> 
+        <img src="http://i.gyazo.com/daab0466805a039e34f215aa0a44448e.png" alt="logo" style="width:150px;height:150px">
+        <p> What are you alergic to?</p>
+        <form>
+        <input type="checkbox" name="choice1" value="nuts">Nuts
+       <br>
+        <input type="checkbox" name="choice2" value="dairy">Dairy
+        <br>
+        <input type="checkbox" name="choice3" value="gluten">Gluten
+        <br>
+        <input type="checkbox" name="choice4" value="raisins">Raisins
+        <br>
+        <input type="checkbox" name="choice5" value="nothing">Nothing
+        </form>
+
+
+        <button id= "next" type="button">Next</button> 
+
+        </div> 
+
+        <div style="display:none;" id="thirdpage">
+        <h2>Chocolate Decider</h2> 
+        <img src="http://i.gyazo.com/daab0466805a039e34f215aa0a44448e.png" alt="logo" style="width:150px;height:150px">
+        <p> Whats your mood at the moment? </p>
+        <form>
+        <input type="checkbox" name="choice6" value="darkmood">Dark Mood
+       <br>
+        <input type="checkbox" name="choice7" value="happy">Happy
+        <br>
+        <input type="checkbox" name="choice8" value="weird">Weird
+        <br>
+        <input type="checkbox" name="choice9" value="confussed">Confussed
+        <br>
+        <input type="checkbox" name="choice10" value="upset">Upset
+
+        </form>
+        <button id= "next2" type="button">Next</button> 
+
+       
+
+       
+
+        </div> 
+
+        <div style="display:none;" id="fourthpage">
+        <h2>Chocolate Decider</h2> 
+        <img src="http://i.gyazo.com/daab0466805a039e34f215aa0a44448e.png" alt="logo" style="width:150px;height:150px">
+        <p> You should eat..... </p>
+        
+       
+        <button id= "startagain" type="startagain">Start Again</button> 
+
+       
+
+       
+
+       <!-- </div> 
+
+        <div id="fifthpage">
+
+
+        </div> -->
+
 
         <ul id="likes">
 
 
 
-        </ul>
+        </ul>  
 
 
-
-
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+
+
+
+      <!--  <head>
+<title>hello</title>
+<style type="text/css">
+div {
+position: absolute;
+left: 0px;
+top: 400px;
+background-color: #f1f1f1;
+width: 400px;
+padding: 10px;
+color: red;
+border: #0000cc 0px dashed;
+display: none;
+}
+</style>
+
+<script language="JavaScript">
+function setVisibility(id, visibility) {
+document.getElementById(id).style.display = visibility;
+}
+</script>
+
+</head>
+<body >
+
+<input type=button name=type value='GO' onclick="setVisibility('sub3', 'inline');";>
+<input type=button name=type value='START AGAIN' onclick="setVisibility('sub3', 'none');";> 
+
+<div id="sub3">Allergic to anything? 
+<li><button type="button">Nuts</button>
+<li><button type="button">Dairy</button>
+<li><button type="button">Gluten</button>
+<li><button type="button">Raisins</button>
+
+
+
+</div>
+
+
+-->
+
+
+
+
+
+
+
         
     </body>
+
+
 </html>

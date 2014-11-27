@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -14,7 +15,11 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/liam.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,13 +27,128 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <h1>Time Killer App</hl>
+    
+        <br>
 
-        <p>Here's the database of results for my app...</p>  
+        <div id="firstpage">
 
-        <p>This is <a href="https://docs.google.com/spreadsheets/d/1zqqN_IZtpfGRRq9bQpi_SZVUp4MCjHy9VX4ttRCPMqQ/pubhtml">the spreadsheet</a></p>
+            <img id="logo" src="http://s21.postimg.org/771cbodev/App_store_icon_no_background.png" style="width:300px;height:300px">    
+            
 
-        <p id="loading">Be patient while the database loads!</p>
+            <h1>Got some time to kill?</h1>
+
+            <p> Simply answer a couple of questions and we'll suggest a way to kill that time of yours.</p>
+
+            <br>
+            <br>
+            <br>
+        
+
+            <button id="start" type="button">START</button> 
+
+        </div> 
+
+        <div style="display:none;" id="secondpage"> 
+            
+            <img id="logo" src="http://s28.postimg.org/awlv0oitp/top_icon_1.png" style="width:285px;height:60px">    
+            <h1>How much time do you want to Kill?</h1>
+            <p>Select an option below in order to click next</p>
+            
+            <br>
+            <br>
+            <br>
+
+            <button value="lessthan5minutes" class="beforeClick" id="lessthan5minutes" type="button">Less than 5 minutes</button> &nbsp; <button value="lessthan15minutes" class="beforeClick" id="lessthan15minutes" type="button">Less than 15 minutes</button> &nbsp;
+            <button value="lessthan30minutes" class="beforeClick" id="lessthan30minutes" type="button">Less than 30 minutes</button> &nbsp; <button  value="morethan30minutes"class="beforeClick" id="morethan30minutes" type="button">More than 30 minutes</button>  
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button style="display:none;" id="buttontwo" type="button">NEXT</button>  
+
+        
+        </div>    
+
+        <div style="display:none;" id="thirdpage"> 
+           
+            <img id="logo" src="http://s30.postimg.org/rnvm43lnl/top_icon_2.png" style="width:285px;height:60px">    
+            <h1>How do you feel?</h1>
+            <p>Select an option below in order to click next</p>
+            
+            <br>
+            <br>
+            <br>
+
+            <button value="ifeellazy" class="beforeClick" id="ifeellazy" type="button">I feel Lazy</button> &nbsp; <button value="ifeelactive" class="beforeClick" id="ifeelactive" type="button">I feel Active</button> &nbsp;
+            <button value="ijustfeelbored" class="beforeClick" id="ijustfeelbored" type="button">I just feel Bored</button> &nbsp; <button value="idontknowhowifeel" class="beforeClick"id="idontknowhowifeel" type="button">I don't know how I feel</button>  
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button style="display:none;" id="buttonthree" type="button">NEXT</button>  
+
+        
+        </div>    
+
+
+        <div style="display:none;" id="fourthpage"> 
+           
+            <img id="logo" src="http://s17.postimg.org/4osni3w1r/top_icon_3.png" style="width:285px;height:60px">    
+            <h1>What's the weather like?</h1>
+            <p>Select an option below in order to click next</p>
+            
+            <br>
+            <br>
+            <br>
+
+            <button value="sunny" class="beforeClick" id="sunny" type="button">Sunny</button> &nbsp; <button value="mild" class="beforeClick" id="mild" type="button">Mild</button> &nbsp;
+            <button value="raining" class="beforeClick" id="raining" type="button">Raining</button> &nbsp; <button value="snowing" class="beforeClick" id="snowing" type="button">Snowing</button>  
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button style="display:none;" id="buttonfour" type="button">NEXT</button>  
+
+        
+        </div>    
+
+
+         <div style="display:none;" id="result"> 
+           
+              
+            <h1>This is how you should kill that time of yours!</h1>
+
+            <p>Insert Activity Here</p>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <button id="tryagain" type="button">Try Again</button> &nbsp; <button id="fromthestart" type="button">From The Start</button>
+            
+
+             
+
+        
+        </div>    
+
+        <p hidden>This is <a href="https://docs.google.com/spreadsheets/d/1zqqN_IZtpfGRRq9bQpi_SZVUp4MCjHy9VX4ttRCPMqQ/pubhtml">the spreadsheet</a></p>
+
         <ul id="likes">
         </ul>
 

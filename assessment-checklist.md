@@ -12,7 +12,7 @@ Your final mark will be based on:
 
 All your project files **must be pushed to GitHub**, in the *branch* called with your name, inside your *folder*
 
-(eg: branch: `matteo`, folder: `students/matteo`)
+(for example, branch: `matteo`, folder: `students/matteo`)
 
 ![Readme ME](http://i.imgur.com/edNKhBT.png)
 
@@ -25,7 +25,7 @@ In your folder, include a **README.md** file that introduces your app and explai
 
 **MD** stands for `MarkDown` and it's just a text file that GitHub converts to HTML. 
 
-You're reading a MD file right now, and there are plenty of MD files in this repository, [here](https://github.com/matteomenapace/rave-WEB14203/tree/master/notes).
+You're reading a MD file right now, and there are plenty of MD files in the GitHub repository for this project, for instance [here](https://github.com/matteomenapace/rave-WEB14203/tree/master/notes).
 
 Here is an [easy guide (3 minutes)](https://guides.github.com/features/mastering-markdown/) on writing MarkDown.
 
@@ -57,7 +57,7 @@ Topics from each week:
 * [What have I learned?](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-8.md#assignment-for-next-week)
 
 
-You can blog be either on [4F](http://www.fourthfloor.me/) or [Medium](https://medium.com). Tumblr is also ok.
+You can blog either on [4F](http://www.fourthfloor.me/) or [Medium](https://medium.com). Tumblr is also ok.
 
 
 

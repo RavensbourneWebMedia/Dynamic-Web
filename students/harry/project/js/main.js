@@ -10,8 +10,9 @@ spreadsheetURL += "public/values?alt=json" //JSON stuff
 console.log(spreadsheetURL)
 
 //define coffee shop waypoint icon
+
 var coffeeIcon = L.icon({
-    iconUrl: '../js/img/marker.png',
+    iconUrl: 'js/img/marker.png',
 
     iconSize:     [30, 60], // size of the icon
     iconAnchor:   [18, 50], // point of the icon which will correspond to marker's location
@@ -20,7 +21,7 @@ var coffeeIcon = L.icon({
 
 //define your location waypoint icon
 var coffeeIcon2 = L.icon({
-    iconUrl: '../js/img/marker2.png',
+    iconUrl: 'js/img/marker2.png',
 
     iconSize:     [45, 90], // size of the icon
     iconAnchor:   [22, 86], // point of the icon which will correspond to marker's location
@@ -71,7 +72,7 @@ $.getJSON (spreadsheetURL, function(result){
     //add a marker to map
     var marker = L.marker([coffeelongitude, coffeelatitude], {icon: coffeeIcon}).addTo(map);
         // Pop up info goes here
-    marker.bindPopup("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>" + "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='../img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='../img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='../img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='../img/compass.png'>  " + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'>Get Directions</a>");
+    marker.bindPopup("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>" + "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='img/compass.png'>  " + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'>Get Directions</a>");
     
     //log test
     console.log(coffeeshop + " is rated " + coffeerating)
@@ -82,8 +83,8 @@ $.getJSON (spreadsheetURL, function(result){
 var layer = new L.StamenTileLayer("watercolor");
 var map = L.map('mainmap').locate({setView: true, maxZoom: 15});
     // Splash screen fade out
-    $( ".logolg"  ).delay(" 2000 ") .fadeOut( "slow" );
-    $( ".cover"  ).delay(" 2000 ")  .fadeOut( "slow" ); 
+    $( ".logolg"  ).delay(" 3000 ") .fadeOut( "slow" );
+    $( ".cover"  ).delay(" 3000 ")  .fadeOut( "slow" ); 
 //initiate map
 L.tileLayer('watercolor', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -112,6 +113,7 @@ function onLocationFound(e) {
 
 map.on('locationfound', onLocationFound);
 
+//routing to selected location
 function routeTo(lat1, lng1)
 {
     var lat2 = userLat, 
@@ -122,6 +124,19 @@ function routeTo(lat1, lng1)
             L.latLng(lat2, lng2),
             L.latLng(lng1, lat1)
         ]
-    }).addTo(map);
+    })
+    .addTo(map);
 }
+
+//toggle overlay on menu button press
+function turnOverlayOn() {
+    $('.overlay') .css ("display", "block");
+}
+
+function turnOverlayOff() {
+    $('.overlay') .css ("display", "none");
+}
+
+//removing itinerary
+
 

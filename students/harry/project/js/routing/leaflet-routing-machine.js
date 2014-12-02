@@ -70,7 +70,7 @@
 			}
 
 			L.DomUtil.addClass(this._container, 'leaflet-routing-geocoder-result-open');
-			this._isOpen = true;
+			this._isOpen = false;
 		},
 
 		_setResults: function(results) {
@@ -132,7 +132,7 @@
 			}
 
 			if (e.keyCode === 13) {
-				this._complete(this._resultFn, true);
+				this._complete(this._resultFn, false);
 				return;
 			}
 
@@ -307,7 +307,7 @@
 			}
 
 			return this.options.serviceUrl + '?' +
-				'instructions=true&' +
+				'instructions=false&' +
 				locs.join('&') +
 				(this._hints.checksum !== undefined ? '&checksum=' + this._hints.checksum : '');
 		},
@@ -453,7 +453,7 @@
 				{color: 'white', opacity: 0.8, weight: 4},
 				{color: 'red', opacity: 1, weight: 2}
 			],
-			addWaypoints: true
+			addWaypoints: false
 		},
 
 		initialize: function(route, options) {
@@ -583,7 +583,7 @@
 			minimizedClassName: '',
 			itineraryClassName: '',
 			roundingSensitivity: 1,
-			show: true
+			show: false,
 		},
 
 		initialize: function(options) {
@@ -872,8 +872,8 @@
 				{color: 'white', opacity: 0.8, weight: 4},
 				{color: 'red', opacity: 1, weight: 2, dashArray: '7,12'}
 			],
-			draggableWaypoints: true,
-			addWaypoints: true,
+			draggableWaypoints: false,
+			addWaypoints: false,
 			maxGeocoderTolerance: 200,
 			autocompleteOptions: {},
 			geocodersClassName: '',
@@ -1132,7 +1132,7 @@
 
 		_createMarker: function(icon, i) {
 			var options = {
-				draggable: true
+				draggable: false
 			};
 			if (icon) {
 				options.icon = icon;
@@ -1164,7 +1164,7 @@
 				this.fire('waypointdragend', this._createWaypointEvent(i, e));
 				this._waypoints[i].latLng = e.target.getLatLng();
 				this._waypoints[i].name = '';
-				this._updateWaypointName(i, this._geocoderElems[i], true);
+				this._updateWaypointName(i, this._geocoderElems[i], false);
 				this._fireChanged();
 			}, this);
 		},
@@ -1223,7 +1223,7 @@
 
 	L.Routing.Control = L.Routing.Itinerary.extend({
 		options: {
-			fitSelectedRoutes: true
+			fitSelectedRoutes: false
 		},
 
 		initialize: function(options) {

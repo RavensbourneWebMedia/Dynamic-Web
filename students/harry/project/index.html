@@ -11,10 +11,25 @@
         <link rel="stylesheet" href="/js/routing/leaflet-routing-machine.css" />
     </head>
     <body>
+    <a onclick="turnOverlayOff()">
+    <div class="overlay">
+    </div>
+    </a>
     <div class="cover">
     </div>
     <div class="logobg">
-    <img class="logolg" src="../img/logolg.png">
+    <img class="logolg" src="img/logolg.png">
+    </div>
+    <div class="menubar">
+        <a href="javascript:void(0)" onclick="turnOverlayOn()">
+        <img class="menu" src="img/list.png">
+        </a>
+        <a href="javascript:void(0)" onclick="turnOverlayOn()">
+        <img class="menu" src="img/profile.png">
+        </a>
+        <a href="javascript:void(0)" onclick="turnOverlayOn()">
+        <img class="menu" src="img/settings.png">
+        </a>
     </div>
     <div id="mainmap">
         

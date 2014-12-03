@@ -45,6 +45,16 @@ $.getJSON(spreadsheetURL, function(result)
 			// console.log(colour)
 			if (colour != "") categories.colours.push(colour)	
 
+			var places = row.gsx$places.$t
+			// console.log(places)
+			if (places != "") categories.places.push(places)	
+
+			var animals  = row.gsx$animals.$t
+			// console.log(places)
+			if (animals != "") categories.animals.push(animals)	
+	
+	
+
 		// TODO places		
 	})
 

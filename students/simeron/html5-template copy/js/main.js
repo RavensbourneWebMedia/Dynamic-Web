@@ -6,7 +6,7 @@ console.log("cool, main.js s working");
 $('#instructionsPage button').on('click', function()
 {
 	$('#instructionsPage').hide()
-  	$('#optionsPage').show()
+  $('#optionsPage').show()
 })
 
 // let's define the categories
@@ -17,18 +17,25 @@ var categories =
 	superheros: [],
 	colours: [],
 	places: [],
-	userOptions: []	
+	userOptions: [],
+  animals: [],
+
 }
 
 var questions = 
 [
 	'foods',
 	'cars',
-	'userOptions'
+	'userOptions',
+  'colours',
+  'superheros',
+  'animals',
+  'places',
 ]
 
 var questionsCount = 0
-
+var option1 = ''
+var option2 = ''
 var userChoice = ''
 
 // let's write a function that triggers when you click on the submit button
@@ -41,11 +48,11 @@ function onOptionsFormSubmit(event)
   	console.log("form submitted!");
 
   	//1.capture the user inputs
-  	var option1 = $("input[name=option1]").val()
+  	option1 = $("input[name=option1]").val()
   	console.log("option1 seems to be " + option1);
   	categories.userOptions.push(option1)
   
-  	var option2 = $("input[name=option2]").val()
+  	option2 = $("input[name=option2]").val()
   	console.log("option2 seems to be " + option2);
   	categories.userOptions.push(option2)
 
@@ -85,11 +92,13 @@ function displayRandomOptions(index)
 {
 	// which category?
 	var categoryArray = categories[questions[index]]
-
+  console.log(categoryArray)
 	var randomOptions = getRandomSelectionFromArray(categoryArray,2)
 
 	$('#option1').html(randomOptions[0]) // the first option
 	$('#option2').html(randomOptions[1]) // the second option
+
+  //setTimeout(function(){ alert("Hello"); }, 3000);
 }
 
 $('#option1').on('click', onOptionClick)
@@ -97,8 +106,13 @@ $('#option2').on('click', onOptionClick)
 
 function onOptionClick(event)
 {
-	console.log(event.currentTarget.innerHTML) 
-	userChoice = event.currentTarget.innerHTML
+	console.log(event.currentTarget.innerHTML)
+  var clicked = event.currentTarget.innerHTML
+  if (clicked == option1 || clicked == option2) // "||" means or and the "==" means comparing two values and checking if they are the same. 
+  {
+    userChoice = clicked
+  }
+	
 	// store the user's answer
 	// use a variable
 
@@ -107,6 +121,12 @@ function onOptionClick(event)
 	if (questionsCount >= questions.length)
 	{
 		// we're at the end of the quiz
+
+    // hide the action section
+    // show the answer section
+    $('#actionPage').hide()
+    $('#answerPage').show()
+
 		// display user's choice
 		displayUserChoice() 
 	}	

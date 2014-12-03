@@ -34,7 +34,7 @@ $.getJSON(spreadsheetURL, function(result)
 				dairy: row.gsx$dairy.$t,
 				nuts: row.gsx$nuts.$t,
 				gluten: row.gsx$gluten.$t,
-				raisin: row.gsx$gluten.$t,
+				raisin: row.gsx$raisin.$t,
 				
 				// TODO add all other allergies
 			},
@@ -120,23 +120,148 @@ function filterProducts()
 
 
 
+
 	}	 
 }
 
 // function to rank products by mood
 function rankProducts()
 {
-	// loop through the filteredProducts
+	// capture the selected moods from checkboxes
+	var checkedInputs = $('#moods input:checked')
+	
+	var moodsToCheck = []
+	// loop through checked inputs to populate moodsToCheck
+	checkedInputs.each(function(index, input)
+	{
+		// console.log(input.value)
+		moodsToCheck.push(input.value)
+	})
+	console.log(moodsToCheck)
+
+	//go through the filtered products and add up the score for each product
+	$.each(filteredProducts, function(index, currentProduct)
+	{
+		console.log(currentProduct)
+		currentProduct.score=0 // reset the score to 0
+
+		// loop through the selected moods to build up the product's score
+		$.each(moodsToCheck,function(index, currentMood)
+		{
+			// currentProduct.moods.confused eg	
+			var scoreToAdd = currentProduct.moods[currentMood]	
+			currentProduct.score = currentProduct.score + scoreToAdd
+		})
+           console.log(currentProduct.score)
+	})
+
+
+	//sort the products from highest to lowest
+	filteredProducts.sort(function(productA, productB){return productB.score - productA.score});  
+
+	console.log(filteredProducts)
 
 	displayResults()
 }
 
+// var moods = productContains[Math.floor(Math.random()*productContains.length)];
+
+// productContains = ['chocolate'] 
 // display the results
 function displayResults()
 {
+	// do we have any products to show?
+	// ie: is the length of filteredProducts bigger than 0?
+	if(filteredProducts.length > 0)
+	{
+		// if yes, then tell people the name of the first product in the array
+		var firstProductName = filteredProducts[0].name
+		$("#message").html("You should eat " + firstProductName  + "!")
+	}
+	else
+	{
+		$("#message").html("There are no chocolates left in the datebase :(")
+		// if not...
+	}	
 
+  	$("#message").fadeIn()
 }
-   
+ // else 
+ // {
+ // 	display:#error
+ // }
+
+
+
+
+//  var array = [...];
+// var newHTML = [];
+// for (var i = 0; i < array.length; i++) {
+//     newHTML.push('<span>' + array[i] + '</span>');
+// }
+// $(".element").html(newHTML.join(""));
+
+
+
+
+// var object = [];
+// var newHTML = [];
+// for (var i = 0; i < array.length; i++) {
+//     newHTML.push('<span>' + array[i] + '</span>');
+// }
+// $(".element").html(newHTML.join(""));
+
+
+// var points = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// points.sort(function(a, b){return b-a});  
+// console.log(points)  // Sort the numbers in the array in descending order
+// The first item in the array (points[0]) is now the highest value
+
+
+
+
+
+// $("#message").html("You should eat" + filteredProducts  + "!")
+//   jQuery("#message").fadeIn()
+
+// var array = [];
+// var fourthpage = [];
+// for (var i = 0; i < array.length; i++) {
+//     fourthpage.push('filteredProducts' + array[i] + '</span>');
+// }
+// $(".element").html(fourthpage.join(""));
+
+
+
+
+
+// var points = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// points.sort(function(a, b){return b-a}); 
+
+// var checkedInputs = $('#moods input:checked')
+// 	var filtersToCheck = []
+
+// 	console.log(filtersToCheck)
+
+// 	console.log(filteredProducts)
+	
+
+  // Sort the numbers in the array in descending orderconsole.log(filteredProducts)
+  
+// The first item in the array (points[0]) is now the highest value
+
+// //function filterProducts()
+// {
+// 	// see which options are checked
+// 	var checkedInputs = $('#moods input:checked')
+// 	var _array = [1,3,2];
+//     Math.max.apply(Math,_array); 10,
+//     Math.min.apply(Math,_array); 0,
+// 	// loop through checked inputs to populate filtersToCheck
+// 	checkedInputs.each(function(index, input)
+// 	{
+
+//    }
 // navigation   
 	$("#go").click(function(){
 	  $("#firstpage").hide();
@@ -157,6 +282,7 @@ function displayResults()
 	});
 
 	$("#startagain").click(function(){
-	  $("#fourthpage").hide();
-	  $("#firstpage").show();
+		location.reload();
+	  // $("#fourthpage").hide();
+	  // $("#firstpage").show();
 	});

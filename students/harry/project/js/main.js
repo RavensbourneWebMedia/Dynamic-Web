@@ -27,7 +27,7 @@ var coffeeIcon2 = L.icon({
     iconAnchor:   [22, 86], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -85] // point from which the popup should open relative to the iconAnchor
 });
-
+var shoplist = [];
 //Use JQuery to get a certain file from URL
 //Once we have that file, do something
 $.getJSON (spreadsheetURL, function(result){
@@ -75,7 +75,8 @@ $.getJSON (spreadsheetURL, function(result){
     marker.bindPopup("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>" + "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='img/compass.png'>  " + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'>Get Directions</a>");
     
     //log test
-    console.log(coffeeshop + " is rated " + coffeerating)
+    console.log(coffeeshop + " wifi? - " + coffeerating)
+    shoplist.push(coffeeshop);
     })  
 })
 
@@ -134,6 +135,7 @@ function turnOverlayOff() {
     $('.overlay') .css ("display", "none");
     $('.settings') .css ("display", "none");
     $('.profile') .css ("display", "none");
+    $('.overlayblank') .css ("display", "none");
 }
 
 //toggle settings menu button press
@@ -148,6 +150,12 @@ function turnProfileOverlayOn() {
     $('.profile') .css ("display", "block");
 }
 
-//removing itinerary
+//toggle list menu button press
+function turnOverlayBlankOn() {
+    $('.overlayblank') .css ("display", "block");
+}
 
-
+//pass info to the list view
+console.log(shoplist)
+shoplist.toString();
+$('.list').html("<br>List View<br>" + shoplist + "</b>");

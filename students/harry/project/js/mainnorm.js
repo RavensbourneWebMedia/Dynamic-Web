@@ -132,6 +132,7 @@ function turnOverlayOff() {
     $('.overlay') .css ("display", "none");
     $('.settings') .css ("display", "none");
     $('.profile') .css ("display", "none");
+    $('.overlayblank') .css ("display", "none");
 }
 
 //toggle settings menu button press
@@ -144,6 +145,10 @@ function turnSettingsOverlayOn() {
 function turnProfileOverlayOn() {
     $('.overlay') .css ("display", "block");
     $('.profile') .css ("display", "block");
+}
+
+function turnOverlayBlankOn() {
+    $('.overlayblank') .css ("display", "block");
 }
 
 //removing itinerary

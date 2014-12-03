@@ -174,3 +174,7 @@ html, body, #mainmap {
     margin-right: auto;
 }
 
+.leaflet-routing-alt, .leaflet-routing-container {
+    display:none;
+}
+

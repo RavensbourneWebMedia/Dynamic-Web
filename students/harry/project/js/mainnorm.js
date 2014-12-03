@@ -86,12 +86,10 @@ var map = L.map('mainmap').locate({setView: true, maxZoom: 15});
     $( ".logolg"  ).delay(" 3000 ") .fadeOut( "slow" );
     $( ".cover"  ).delay(" 3000 ")  .fadeOut( "slow" ); 
 //initiate map
-L.tileLayer('watercolor', {
+L.tileLayer('http://{s}.tiles.mapbox.com/v3/harryfo.kd15khn0/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18
-})
-.addTo(map);
-map.addLayer(layer);
+}).addTo(map);
 
 
 //show user location function
@@ -151,3 +149,4 @@ function turnProfileOverlayOn() {
 //removing itinerary
 
 
+//normal map

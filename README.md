@@ -3,7 +3,7 @@
 My blog posts
 [link](http://www.fourthfloor.me/blogs/isekajja/category/web14203/)
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b1.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b1.png)
 
 
 
@@ -27,29 +27,29 @@ Now that thats over and done with, lets move on to the technical side of things.
 
 The user selects the product of choice (see image below)
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b2.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b2.png)
 
 Depending on what product has been chosen, a product spec screen will appear (see below)
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b3.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b3.png)
 
 
 After the user has selected the specs of choice, they press the search button and the App will list the products available at the specified price and also display the retailers in the search results. (see below)
 
- ![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b4.png =400x290)
+ ![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/11/b4.png)
 
 
 #####Development of the Prototype
 
 I used HTML to come up with a basic interface (see below)
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/ScreenShot-2014-12-04-at1.33.50AM.png =400x290)
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-1.34.36-AM.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/ScreenShot-2014-12-04-at1.33.50AM.png)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-1.34.36-AM.png)
 
 
 I then used JQuery to get a JSON file from a URL which happened to be a Google Spreadsheet.
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-2.02.46-AM.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-2.02.46-AM.png)
 
 I then set up an array which is a list of all the products in the spreadsheet. An array is used to store multiple values in a single variable. In this case the single variable being “products”.
 
@@ -68,11 +68,11 @@ The filters work in a sequence by screening the “product type”,”screen siz
 If the values that have been filtered are different, then the matched products will equal to false and will be discarded from the HTML.
 
 The image below demonstrates the filters in action.
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-12.04.24-PM.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-12.04.24-PM.png)
 
 Finally, I tried to set alerts for the text box that would let the user know if their preferred product is available at their preferred price. Unfortunately, I wasn’t able to get the text box to filter through the “product type”, “screen size”, “memory” and “processor” so I made up an if statement that triggers an alert when the user clicks search but the text box is empty, an alert that lets the user know if their preferred price is not available, and an alert that lets you know what retailer to get your product from. The image below demonstrates this.
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-12.17.31-PM.png =400x290)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-12.17.31-PM.png)
  
 
 

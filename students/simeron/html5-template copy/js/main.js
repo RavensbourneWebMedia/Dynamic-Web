@@ -14,7 +14,7 @@ var categories =
 {
 	foods: [], // empty array
 	cars: [],
-	superheros: [],
+	superheroes: [],
 	colours: [],
 	places: [],
 	userOptions: [],
@@ -28,7 +28,7 @@ var questions =
 	'cars',
 	'userOptions',
   'colours',
-  'superheros',
+  'superheroes',
   'animals',
   'places',
 ]
@@ -98,7 +98,7 @@ function displayRandomOptions(index)
 	$('#option1').html(randomOptions[0]) // the first option
 	$('#option2').html(randomOptions[1]) // the second option
 
-  //setTimeout(function(){ alert("Hello"); }, 3000);
+  setTimeout(function(){ alert("Hello"); }, 3000);
 }
 
 $('#option1').on('click', onOptionClick)
@@ -112,6 +112,9 @@ function onOptionClick(event)
   {
     userChoice = clicked
   }
+
+  // change background colour
+  changeBackgroundColour()
 	
 	// store the user's answer
 	// use a variable
@@ -135,6 +138,17 @@ function onOptionClick(event)
 		askQuestion()
 	}
 }
+
+function changeBackgroundColour()
+{
+  // generate 3 random numbers between 0 and 255 for the RGB values
+  var red = Math.random() *255
+  var green = Math.random() *255
+  var blue = Math.random() *255
+  // rgba(123, 213, 0, 0.4)
+  $("body").css('background-color','rgba(' + red + ', ' + green + ', ' + blue + ', 0,3)')
+}
+console.log(changeBackgroundColour)
 
 function displayUserChoice()
 {

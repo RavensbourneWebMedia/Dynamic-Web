@@ -37,9 +37,9 @@ $.getJSON(spreadsheetURL, function(result)
 
 		// and so on	
 
-			var superhero = row.gsx$superheros.$t
+			var superheroes = row.gsx$superheroes.$t
 			// console.log(superhero)
-			if (superhero != "") categories.superheros.push(superhero)	
+			if (superheroes != "") categories.superheroes.push(superheroes)	
 
 			var colour = row.gsx$colours.$t
 			// console.log(colour)

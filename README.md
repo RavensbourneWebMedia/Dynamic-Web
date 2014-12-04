@@ -22,5 +22,13 @@ Your position is represented bhy the coffee cup icon, this icon has a blue circl
 * Opening times sourced from a 3rd party website (usually google maps or foursquare) are then displayed.
 * The phone number is also displayed, when pressed from a mobile device or certain computers this will place a call using the default calling app of the device.
 * Whether the coffee shop has Wifi is also displayed, this is also 3rd party sourced.
-* Get directions is the last option, when this link is pressed a route to the coffee shop you've chosen from your location is displayed. this is marked with a red line which shows you a reccomended route by road. You can also view these directions as a list using the get view directions list whioch appears when you are in directions mode.
+* Get directions is the last option, when this link is pressed a route to the coffee shop you've chosen from your location is displayed. this is marked with a red line which shows you a reccomended route by road. You can also view these directions as a list using the get view directions list which appears when you are in directions mode.
+![main7](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss3.png)
+![main8](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss4.png)
+![main9](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss5.png)
+###Zooming
+Native zooming of the device you are using is supported so pinch to zoom on most mobile devices will allow you to control your view. If you would prefer to use a menu control in the top left with a + and - sign that allow you to adjust your zoome level.
+###Menu
+The menu in the top right gives the user various options, as mention previously there is a settings menu represented by the cog, this gives the user the normal map view setting and also some helpful tips on using the app below this option, you can close this window either by clicking the grey X in the top right.
+The profile part of the menu represented by the man icon is where the loyalty card functionality will be added to application eventually in future iterations, currently it has a form to enter your name and email address to sumbit to joion the NAS emailing list, if you choose to submit your email you will be presented woith a thank you page and eventually you will loop back around to the map page. The last part of the menu represented by the 3 line tool allows you to view the coffee shops as a list instead of on a map, this page is full screen so can only be exited with the cross in the top right.
 

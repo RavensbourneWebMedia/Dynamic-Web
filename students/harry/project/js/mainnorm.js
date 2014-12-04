@@ -128,11 +128,13 @@ function routeTo(lat1, lng1)
         ]
     })
     .addTo(map);
-{
-    var listOfDirections = document.getElementsByClassName('.leaflet-routing-container');
+//{
+    
+    var listOfDirections = $('.leaflet-routing-alt').html;
     console.log (listOfDirections);
-    $('.dirlistcover') .html (listOfDirections);
-}
+    $('.directions').empty().append(listOfDirections);
+//    $('.dirlistcover') .html (listOfDirections);
+
 }
 //turn off overlay
 

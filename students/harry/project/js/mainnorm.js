@@ -72,7 +72,7 @@ $.getJSON (spreadsheetURL, function(result){
     //add a marker to map
     var marker = L.marker([coffeelongitude, coffeelatitude], {icon: coffeeIcon}).addTo(map);
         // Pop up info goes here
-    marker.bindPopup("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>" + "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='img/compass.png'>  " + "<a href='javascript:void(0)' onclick='routeTo("+ coffeelatitude + "," + coffeelongitude + ")'>Get Directions</a>");
+    marker.bindPopup("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>" + "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='img/compass.png'>  " + "<a href='javascript:void(0)' onclick='dirlistbut();routeTo("+ coffeelatitude + "," + coffeelongitude + ")'>Get Directions</a>");
     
     //log test
     console.log(coffeeshop + " is rated " + coffeerating)
@@ -147,11 +147,22 @@ function turnProfileOverlayOn() {
     $('.profile') .css ("display", "block");
 }
 
+//toggle list menu button press
 function turnOverlayBlankOn() {
     $('.overlayblank') .css ("display", "block");
 }
 
-//removing itinerary
+//turn directions menu on on directions request
+function dirlistbut() {
+    $('.menubar2') .fadeIn( "slow");
+}
 
+//turn directions list off
+function turnDirListOff() {
+    $('.dirlistcover') .fadeOut( "slow");    
+}
 
-//normal map
+// turn on directions list cover
+function dirListOn() {
+    $('.dirlistcover') .fadeIn( "slow");
+}

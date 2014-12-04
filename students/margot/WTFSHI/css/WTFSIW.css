@@ -16,15 +16,7 @@ body {
     margin-left: 3em;
     font-family: inherit;
 }
-#hide{
-  background-color: #C6DEFF;
-  float: right;
-  margin-right: 100px;
-  width:25%;
-  height: 50%;
-  font-size: 20px;
-  font-weight: bold;
-}
+
 
 #clock{
 	float: left;
@@ -58,17 +50,49 @@ body {
  	font-weight: bold;
  	text-align: center;
   }
+#yaymessage, #saveforlater, #backtomovie{
+  display:none;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  }
 
   #moviepage{
     display: none;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-#hide, #tv, #movie {
+#hide{
+  background-color: #C6DEFF;
+  float: right;
+  margin-right: 100px;
+  width:25%;
+  height: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#hide, #tv, #movie, {
   cursor: pointer;
+  text-align: center;
 
 }
+
+ #yay, #save, #nay, #naybutyay {
+  background-color: ;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+ }
 .movieOpening{
   text-align: center;
   font-size: 30px;
 
 }
+
+#message{
+  text-align: center;
+}
+

@@ -23,6 +23,7 @@ html {
     line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -139,7 +140,90 @@ button, input {
 }
 
 
+/*This is clickfast css stuff*/
 
+     #holder {
+    width:100%;
+}
+
+#holder > div {
+    clear:both;
+    padding:2%;
+    margin-bottom:20px;
+    border-bottom:1px solid #eee;
+    float:left;
+    width:96%;
+}
+
+label {
+    display:inline;
+}
+
+.regular-checkbox {
+    display:none;
+}
+
+.regular-checkbox + label {
+    background-color:#fafafa;
+    border:1px solid #cacece;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05),inset 0 -15px 10px -12px rgba(0,0,0,0.05);
+    padding:9px;
+    border-radius:3px;
+    display:inline-block;
+    position:relative;
+}
+
+.regular-checkbox + label:active,
+.regular-checkbox:checked + label:active {
+    box-shadow:0 1px 2px rgba(0,0,0,0.05),inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+    background-color:#e9ecee;
+    border:1px solid #adb8c0;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05),inset 0 -15px 10px -12px rgba(0,0,0,0.05),inset 15px 10px -12px rgba(255,255,255,0.1);
+    color:#99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+    content:'\2714';
+    font-size:14px;
+    position:absolute;
+    top:0;
+    left:3px;
+    color:#99a1a7;
+}
+
+.big-checkbox + label {
+    padding:40px;
+}
+
+.big-checkbox:checked + label:after {
+    font-size:28px;
+    left:6px;
+}
+
+.tag {
+    font-family:Arial,sans-serif;
+    width:200px;
+    position:relative;
+    top:5px;
+    font-weight:bold;
+    text-transform:uppercase;
+    display:block;
+    float:left;
+}
+
+.radio-1 {
+    width:193px;
+}
+
+.button-holder {
+    float:left;
+}
+
+
+/*end of clickfast css */
 
 
 

@@ -19,6 +19,10 @@ var categories =
 	places: [],
 	userOptions: [],
   animals: [],
+  films: [],
+  random: [],
+  drinks: [],
+
 
 }
 
@@ -26,11 +30,14 @@ var questions =
 [
 	'foods',
 	'cars',
-	'userOptions',
-  'colours',
   'superheroes',
+  'colours',
+  'userOptions',
   'animals',
   'places',
+  'films',
+  'random',
+  'drinks',
 ]
 
 var questionsCount = 0
@@ -109,7 +116,7 @@ function startTimeout()
   questionTimeout = setTimeout(function()
   { 
     // alert("Your too slow guess again"); 
-    $('#slow-alert').show()
+    $('#slow-alert').fadeIn()
   }, 5000)
 }
 

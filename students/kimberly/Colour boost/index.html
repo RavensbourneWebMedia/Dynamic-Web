@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/snake.css">
+        
 
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -84,8 +84,119 @@
             </form>
         </section>
 
-        <section id="snake">
-            
+        <section id="clickfast">
+            <center><h2>Hit-the-Dot</h2></center>
+            <center>Test your skill.  How many boxes can you check in 30 seconds?</center>
+            <form name="cpanel">
+            <center>
+            <table cellspacing=3>
+                <tr>
+                    <td><input type="button" name="startstop" value=" Start Game | Stop Game " onClick="play()"></td>
+                    <td><pre>    </pre></td>
+                    <td align=right>Time:</td>
+                    <td><input type="text" name="timeleft" size="4" onFocus="this.blur()"></td>
+                </tr>
+                <tr>
+                     <td><input type="text" name="state" size="20" value="Push Start to Play" onFocus="this.blur()"></td>
+                     <td><pre>    </pre></td>
+                     <td align=right>Score:</td>
+                     <td><input type="text" name="score" size="4" onFocus="this.blur()"></td>
+                </tr>
+            </table>
+            </center>
+            </form>
+            <form name="dmz">
+            <center>
+            <table cellspacing=3>
+                <tr>
+                    <td colspan=10><hr size=1></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(0)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(1)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(2)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(3)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(4)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(5)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(6)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(7)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(8)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(9)"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(10)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(11)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(12)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(13)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(14)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(15)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(16)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(17)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(18)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(19)"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(20)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(21)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(22)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(23)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(24)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(25)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(26)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(27)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(28)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(29)"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(30)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(31)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(32)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(33)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(34)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(35)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(36)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(37)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(38)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(39)"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(40)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(41)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(42)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(43)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(44)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(45)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(46)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(47)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(48)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(49)"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(50)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(51)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(52)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(53)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(54)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(55)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(56)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(57)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(58)"></td>
+                    <td align="center" valign="center"><input type="radio" onClick="hithead(59)"></td>
+                </tr>
+                <tr><td colspan=10><hr size=1></td>
+                </tr></table></center></form>
+ 
+                <center><table cellspacing=3><tr><td><code>
+                <p><strong>Instructions:</strong>
+                <ol><li>Click on the radio buttons as<BR>
+                they are selected randomly by the computer.<BR>
+                <li>1 point per hit, minus 1 point per miss.<BR>
+                </ol></td></tr></table></center>
+                 
+                <p><center>
+                <font face="arial, helvetica" size="-2">Free JavaScripts provided<br>
+                by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+                </center><p>
         </section>
         
 
@@ -100,8 +211,9 @@
         <script src="js/jquery.donetyping.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/snake.js"></script>
         <script src="js/centering.js"></script>
+        <script src="js/clickfast.js"></script>
+
 
         </font>
         </div>

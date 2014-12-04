@@ -58,16 +58,9 @@ function onTimeSubmit(event)
 	event.preventDefault()
 
 	// show the next page
-	jQuery("#snake").show();
+	jQuery("#clickfast").show();
 	// hide this page
 	jQuery("#time").hide();
-
-	var mySnakeBoard = new SNAKE.Board( {
-                                        boardContainer: "snake",
-                                        fullScreen: false,
-                                        width: 580,
-                                        height:400
-                                    });
 }
 
 

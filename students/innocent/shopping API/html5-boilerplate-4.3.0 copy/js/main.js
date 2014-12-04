@@ -49,8 +49,8 @@ $('form').on('submit', function(e)
 {
     e.preventDefault() // prevent page refresh
  
-    var prod = $('#prod').val() // grab the value for the type criterium
-    console.log(prod)
+    var type = $('#type').val() // grab the value for the type criterium
+    console.log(type)
     var scr = $('#scr').val() // grab the value for the type criterium
     console.log(scr)
     var mem = $('#mem').val() // grab the value for the type criterium
@@ -86,7 +86,7 @@ $('form').on('submit', function(e)
 // this displays product data in the UL
 function displayProduct(productDataObject)
 {
-    var sentence = productDataObject.type + ' ' + productDataObject.screen + productDataObject.memory + productDataObject.processor + " is available at" + productDataObject.retailer + " for " + productDataObject.price
+    var sentence = productDataObject.type + ' ' + productDataObject.screen + ' ' + productDataObject.memory + ' ' + productDataObject.processor + " is available at " + productDataObject.retailer + " for " + productDataObject.price
     var li = "<li>" + sentence + "</li>"
     $("ul#bargain").append(li)
 }
@@ -108,6 +108,48 @@ $('#processor').on('change', function(event)
 
     // update the currentFilters object
     currentFilters.processor = selectedOption
+    console.log(currentFilters)
+
+    // trigger the filter operation
+    filterProducts()
+})
+
+$('#mem').on('change', function(event)
+{
+    // console.log(event)
+    var selectedOption = $('#mem').find(":selected").text()
+    console.log(selectedOption)
+
+    // update the currentFilters object
+    currentFilters.memory = selectedOption
+    console.log(currentFilters)
+
+    // trigger the filter operation
+    filterProducts()
+})
+
+$('#type').on('change', function(event)
+{
+    // console.log(event)
+    var selectedOption = $('#type').find(":selected").text()
+    console.log(selectedOption)
+
+    // update the currentFilters object
+    currentFilters.type = selectedOption
+    console.log(currentFilters)
+
+    // trigger the filter operation
+    filterProducts()
+})
+
+$('#scr').on('change', function(event)
+{
+    // console.log(event)
+    var selectedOption = $('#scr').find(":selected").text()
+    console.log(selectedOption)
+
+    // update the currentFilters object
+    currentFilters.screen = selectedOption
     console.log(currentFilters)
 
     // trigger the filter operation

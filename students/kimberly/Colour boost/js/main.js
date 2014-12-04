@@ -27,7 +27,48 @@ function onPaletteSuccess(data)
 	$('body').css('background-image', 'url(' + paletteURL + ')')
 }
 
+$('#home form').on('submit', onHomeSubmit)
+function onHomeSubmit(event)
+{
+	event.preventDefault()
 
+	// show the next page
+	jQuery("#needto").show();
+	// hide this page
+	jQuery("#home").hide();
+
+}
+
+//repeat with the other page
+	
+$('#needto form').on('submit', onNeedtoSubmit)
+function onNeedtoSubmit(event)
+{
+	event.preventDefault()
+
+	// show the next page
+	jQuery("#time").show();
+	// hide this page
+	jQuery("#needto").hide();
+}
+
+$('#time form').on('submit', onTimeSubmit)
+function onTimeSubmit(event)
+{
+	event.preventDefault()
+
+	// show the next page
+	jQuery("#snake").show();
+	// hide this page
+	jQuery("#time").hide();
+
+	var mySnakeBoard = new SNAKE.Board( {
+                                        boardContainer: "snake",
+                                        fullScreen: false,
+                                        width: 580,
+                                        height:400
+                                    });
+}
 
 
 

@@ -1,3 +1,13 @@
 body {
 	background-size: cover;
 }
+
+#needto
+{
+	display: none;
+}
+
+#time
+{
+	display: none;
+}

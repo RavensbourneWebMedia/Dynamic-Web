@@ -119,16 +119,17 @@ button, input {
 #wrap {
     float: left;
     position: relative;
-    left: 50%;
+    left: 42%;
+    text-align: left;
 }
 
-#time {
+/*#time {
     float: left;
     position: relative;
     left: -50%;
     text-align: left;
 }
-
+*/
 #content {
     max-width: 1000px;
     margin: auto;

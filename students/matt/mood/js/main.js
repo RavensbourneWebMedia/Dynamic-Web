@@ -17,6 +17,11 @@ quoteURL += "public/values?alt=json" // we want JSON!
 
 console.log(quoteURL)
 
+
+
+
+
+
 // let's define the weather types
 var ThunderstormData = []
 var DrizzleData = []
@@ -47,7 +52,6 @@ var feelingsQuotes = {} // empty object
 	feelingsQuotes[mood] 
 
 */
-
 
 
 
@@ -185,12 +189,20 @@ function tryMoodPrediction()
 
 	// display the mood
 	// check for examples on CodePen
-	$("#message").html("You should be " + mood + " today")
-  jQuery("#message").fadeIn() 
+	$("#scanMessage") .fadeOut("slow");
+	$("#configuring") .fadeIn("slow");
+	$("#message").delay ("3000") .fadeIn("slow") .html("You should be " + mood + " today")
+	$("#configuring").delay ("1500") .fadeOut("slow");
+	//var decidedMood = mood;
+
+	if (mood = 'Happy') {
+		$("#HappyQuote").html("listen to the wisdom" + HappyQuote)
+	}
+
 }
 
 // let's define the mood quotes
-var HappyQuote = []
+var HappyQuote = ["'Happiness is when what you think, what you say, and what you do are in harmony.' - Mahatma Gandhi"]
 var ExcitedQuote = []
 var ThankfulQuote = []
 var LovingQuote = []

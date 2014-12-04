@@ -1,3 +1,42 @@
+/* CSS Matt is actually using*/
+#message {
+    display:none;
+    text-align:center;
+    color:white;
+}
+
+#configuring {
+    display:none;
+    text-align:center;
+    color:white;
+}
+
+h1 {
+    text-align:center;
+    color:white;
+}
+
+#scanMessage {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:white;
+
+}
+
+html {
+    
+    background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 36%, rgba(3,76,153,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(36%, rgba(73,155,234,1)), color-stop(100%, rgba(3,76,153,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 36%, rgba(3,76,153,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 36%, rgba(3,76,153,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 36%, rgba(3,76,153,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 36%, rgba(3,76,153,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#034c99', GradientType=1 );
+}
+
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -38,6 +77,7 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule

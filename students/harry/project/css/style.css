@@ -194,6 +194,14 @@ html, body, #mainmap {
     font-family: helvetica;
 }
 
+.directions {
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 310px !important;
+}
+
 /* Hiding stuff */
 
 .leaflet-routing-alt, 

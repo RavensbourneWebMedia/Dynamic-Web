@@ -179,3 +179,17 @@ function dirListOn() {
     $('.dirlistcover') .fadeIn( "slow");
 }
 
+var listOfDirections 
+// turn on directions list cover
+function dirListOn() {
+    $('.dirlistcover') .fadeIn( "slow");
+    
+    var leafletDirections = $('.leaflet-routing-alt').html()
+    
+    if (leafletDirections != undefined) listOfDirections = leafletDirections;
+    console.log (listOfDirections);
+    $('.directions').empty().append(listOfDirections);  
+    
+    $('.leaflet-routing-container').remove()
+    
+}

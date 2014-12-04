@@ -110,3 +110,15 @@ body {
   color: #3366FF;
 }
 
+.share-buttons{
+  list-style: none;
+
+}
+
+.share-buttons li{
+  display: inline;
+}
+
+.share-buttons:hover { 
+    background-color: white;
+}

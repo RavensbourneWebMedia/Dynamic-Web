@@ -24,6 +24,8 @@ Time Killer works on the basis of you providing answers to 3 questions: How much
 
 [http://thenuschool.com/how-much/#/start](http://thenuschool.com/how-much/#/start)
 
+My main inspiration was nuSchool's application as I really liked how it asked you a number of questions and then gave you an answer. I also liked the design because it looks clean and modern, something that I was aiming for with my app.
+
 ![](http://i.gyazo.com/24c1ab4131f8f89286356ad1050c81aa.png)
 
 

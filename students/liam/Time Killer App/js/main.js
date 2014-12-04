@@ -119,7 +119,9 @@ function displayNextResult()
 	else
 	{
 		$("#message").html("No more activities, please start again for more results")
-	}	
+		$("#tryagain").hide();
+		$("fromthstart").css()
+}	
 
 	displayActivitiesCounter += 1 // increment the counter by one
 }

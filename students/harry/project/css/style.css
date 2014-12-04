@@ -130,6 +130,7 @@ html, body, #mainmap {
     margin-left: 15%;
     display: none;
     box-shadow: 10px 10px 5px #888888;
+    padding: 20px;
     top: 10%;
     z-index: 12;
     width: 70%;
@@ -172,6 +173,7 @@ html, body, #mainmap {
 }
 
 .list {
+    overflow: scroll;
     font-family: helvetica;
     position: relative;
     width: 70%;

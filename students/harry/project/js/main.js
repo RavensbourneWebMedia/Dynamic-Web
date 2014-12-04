@@ -76,7 +76,11 @@ $.getJSON (spreadsheetURL, function(result){
     
     //log test
     console.log(coffeeshop + " wifi? - " + coffeerating)
-    shoplist.push(coffeeshop);
+    //creating shop list view array
+    shoplist.push("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>"+ "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='img/compass.png'>  " + "<a href='javascript:void(0)' onclick='turnOverlayOff();dirlistbut();routeTo("+ coffeelatitude + "," + coffeelongitude + ");'>Get Directions</a><br><br>" );
+    console.log(shoplist);
+    //pushing shoplist array to list div
+    $('.list') .html (shoplist);
     })  
 })
 
@@ -135,7 +139,7 @@ function turnOverlayOff() {
     $('.overlay') .css ("display", "none");
     $('.settings') .css ("display", "none");
     $('.profile') .css ("display", "none");
-    $('.overlayblank') .css ("display", "none");
+    $('.overlayblank')  .fadeOut( "slow" );
 }
 
 //toggle settings menu button press
@@ -152,7 +156,7 @@ function turnProfileOverlayOn() {
 
 //toggle list menu button press
 function turnOverlayBlankOn() {
-    $('.overlayblank') .css ("display", "block");
+    $('.overlayblank')  .fadeIn( "slow" );
 }
 
 //turn directions menu on on directions request

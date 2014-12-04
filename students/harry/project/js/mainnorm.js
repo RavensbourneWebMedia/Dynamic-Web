@@ -132,7 +132,7 @@ function turnOverlayOff() {
     $('.overlay') .css ("display", "none");
     $('.settings') .css ("display", "none");
     $('.profile') .css ("display", "none");
-    $('.overlayblank') .css ("display", "none");
+    $('.overlayblank')  .fadeOut( "slow" );
 }
 
 //toggle settings menu button press
@@ -149,7 +149,7 @@ function turnProfileOverlayOn() {
 
 //toggle list menu button press
 function turnOverlayBlankOn() {
-    $('.overlayblank') .css ("display", "block");
+    $('.overlayblank')  .fadeIn( "slow" );
 }
 
 //turn directions menu on on directions request

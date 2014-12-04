@@ -31,10 +31,11 @@ $("#backtomovie").click(function(){
   $("#moviepage").show("slow");
 });
 
+//new releases dvd
 $.ajax(
 {
   dataType: 'jsonp',
-  url:"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=z9g8xee26dpu2j8vkfekc93q&country=uk&callback=onRTBoxOfficeSuccess"
+  url:"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/new_releases.json?apikey=z9g8xee26dpu2j8vkfekc93q&country=uk&callback=onRTBoxOfficeSuccess"
 })
 
 function onRTBoxOfficeSuccess(data) 
@@ -47,6 +48,37 @@ function onRTBoxOfficeSuccess(data)
  
 }
 
+//similar movie function
+$.ajax(
+{
+  dataType: 'jsonp',
+  url:"http://api.rottentomatoes.com/api/public/v1.0/movies/" + randomMovie.id +"/similar.json?apikey=z9g8xee26dpu2j8vkfekc93q&callback=NayButYay"
+})
+
+function NayButYay(data)
+{
+  console.log(data)
+  var relatedMovie = data.movies[Math.floor(Math.random()*data.movies.length)]
+
+  console.log("related movie is" + relatedMovie);
+  //$("#message2").html()
+}
 
 
+//top rental dvds
+$.ajax(
+{
+  dataType: 'jsonp',
+  url: "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=z9g8xee26dpu2j8vkfekc93q&callback=onRTdvdSuccess"
+})
+
+function onRTdvdSuccess(data) 
+{
+  console.log(data)
+  var randomMovie2 = data.movies[Math.floor(Math.random()*data.movies.length)]
+
+  console.log(randomMovie2);
+  $("#bloup").html();
+ 
+}
 

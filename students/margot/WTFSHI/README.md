@@ -1,61 +1,37 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+#<center>WTF Should I Watch
+![Poster](http://media.tumblr.com/28410a746bdf452b024f4eec4babe697/tumblr_inline_nexebiTOT21rpusr3.jpg)
+<br>
+###<center>The App for lazy movie nights  
+<br>
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+* The idea for *WTF Should I Watch* came from the very annoying situations I frequently find myself in: wanting to watch something, but not knowing what.
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
+ * *WTF Should I Watch* is the new-found amazing **solution** to this almighty hellish **problem**. 
 
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+ * **No more** <s>endless scrolling</s> through an alphabeticelly-ordered list of movie titles in <s>vain hope</s> of finding ***the one*** - one who will stay by your side and make your evening an *unforgettable memory* you will look back upon, a single nostalgic tear slowly rolling on your cheek, and make your children wonder silently about your mysterious *yet* oddly cool past.
 
+ * Get a first movie offer, and let yourself *go with the flow* to find **the** movie made for ***you*** tonight!
 
-## Quick start
+* Using the [RottenTomatoes](http://www.rottentomatoes.com/) API, *WTF Should I Watch* has **thousands of movies** in stores for you tonight, and a unique way to present them to you. Get a random proposition and refine the offers to your liking, of simply choose to be surprise and watch something random!
+		
+  * Save the movies you watched to your personnal database, mark those you want to find again later, and rate the movie you just watched!
+  * TV Shows coming soon!
+  * ![time for something?](http://media.tumblr.com/6d4aa2a0ab29f03ae19dcf4082810513/tumblr_inline_nexf69gPRo1rpusr3.jpg)
 
-Choose one of the following options:
+<br><br><br><br><br>
+ Inspirations: <br>
+   - [What the hell should I watch on Netflix (very restrictive. Mine is way better)](http://whatthehellshouldiwatchonnetflix.com/)<br>
+   - [WTF Should I Do With My Life](http://wtfshouldidowithmylife.com/)<br>
+   - [WTF Should I Buy From Amazon (one of the most amazing website of this century)](http://wtfshouldibuyfromamazon.com/)
+   
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the tagged
-   release you'd like to use.
-
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* IE-specific classes for easier cross-browser control.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  IE6/7.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+<br><br><br>
+Find the blogging about this [here (first few blogs)](http://www.fourthfloor.me/blogs/mmercier/category/web14203/)
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 
 
-## Documentation
-
-Take a look at the [documentation table of contents](doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation you
-want to write about your project.
+>Made by [Margot MC](https://github.com/Myrtilletamere), fanfic writer, occasional programmer and general potato at *adulting*
 
 
-## Contributing
-
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
+  

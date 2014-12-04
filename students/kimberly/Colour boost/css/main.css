@@ -101,12 +101,26 @@ textarea {
 
 h2 {
   text-align: center;
+  -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: white;
+}
+
+body {
+    background-repeat: repeat;
+    }
+
+.textclickfast {
+
+    -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: white;
 }
 
 @font-face {
     font-family: raleway;
     src: local(raleway-extralight.ttf);
 }
+
+
 
 form {
     text-align: center;
@@ -120,8 +134,9 @@ button, input {
 #wrap {
     float: left;
     position: relative;
-    left: 42%;
+    left: 30%;
     text-align: left;
+
 }
 
 /*#time {
@@ -138,6 +153,7 @@ button, input {
     right: 1%;
     position: absolute;
 }
+
 
 
 /*This is clickfast css stuff*/

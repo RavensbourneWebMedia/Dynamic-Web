@@ -1,11 +1,11 @@
-//http://www.colourlovers.com/api/palettes/random
+//http://www.colourlovers.com/api/patterns/random
 console.log('main.js ready!')
 
 $("input").donetyping(function()
 {
-	var url = 'http://www.colourlovers.com/api/palettes?format=json'
-	url += '&keywords=' + $('input').val()
-	url += '&jsonCallback=onPaletteSuccess'
+	var url = 'http://www.colourlovers.com/api/patterns/random?format=json'
+	url += '&hueOption=' + $('input').val()
+	url += '&jsonCallback=onPatternsSuccess'
 
 	console.log('donetyping ' + url)
 
@@ -15,16 +15,27 @@ $("input").donetyping(function()
     })
 });
 
-function onPaletteSuccess(data) 
+function onPatternsSuccess(data) 
 {
-	console.log("onPaletteSuccess")
+	console.log("onPatternSuccess")
 	console.log(data)
 
-	var paletteURL = data[0].imageUrl
+	var patternURL = data[0].imageUrl
 
-	console.log(paletteURL)
+	console.log(patternURL)
 
-	$('body').css('background-image', 'url(' + paletteURL + ')')
+	$('body').css('background-image', 'url(' + patternURL + ')')
+
+}
+
+function repeatHor()
+{
+document.body.style.backgroundRepeat="repeat-x";
+}
+
+function repeatVer()
+{
+document.body.style.backgroundRepeat="repeat-y";
 }
 
 $('#home form').on('submit', onHomeSubmit)
@@ -63,14 +74,57 @@ function onTimeSubmit(event)
 	jQuery("#time").hide();
 }
 
-var colourOptions = document.getElementsByName("effect");
+
+
+//let's build the spreadsheet URL
+var spreadsheetsURL = "https://spreadsheets.google.com/feeds/list/" 
+spreadsheetsURL += "1DBU_j1HOFPQZhLSfrjllg5YyjTWEtGbFLq0FDBwMLN0" //Our public key
+spreadsheetsURL += "/1/" //sheet number
+spreadsheetsURL += "public/values?alt=json" //We want JSON
+
+console.log (spreadsheetsURL)
+
+//use jQuery to get a JSON file from a certain URL
+//once we get that file, do something
+
+$.getJSON(spreadsheetsURL, function(result)
+{
+	console.log('loaded spreadsheet')
+	console.log(result)
+
+	var select = $('select')
+
+	var spreadsheetRows = result.feed.entry 
+	$.each(spreadsheetRows, function (index, row)
+	{
+		// console.log(row)
+		var need = row.gsx$need.$t   //grab the student's name
+		var hex = row.gsx$hex.$t   //grab the student's animal
+		console.log('need: ' + need + ' ' + hex)
+
+		// <option name="effect" value="purple">Uplift my mood</option>
+		var option = '<option name="effect" value="' + hex +'">' + need + '</option>'
+
+		select.append(option)
+		// var sentence = name + " would like to have a pet " + animal
+		// var li = "<li>" + sentence + "</li>"
+		// $("ul#likes").append (li)
+	})
+
+	// $("#loading").fadeOut()
+
+})
+
+
+/*var colourOptions = document.getElementsByName("effect");
 
 for (var i = 0; i < colourOptions.length; i++)
 {
 	colourOptions[i].addEventListener("change", setEffect); // this doesn't seem to get triggered
-}  
+} */ 
 
 $('select').on('change', setEffect) // let's see if the select triggers a change event
+$('#needto form').on('submit', setEffect) // the event should be triggerred also when we just press "Next"
 
 function setEffect(event)
 {

@@ -47,7 +47,7 @@
                 
                 <SELECT>
 
-                    <OPTION name="effect" value="purple">Uplift my mood</OPTION>
+                    <!-- <OPTION name="effect" value="purple">Uplift my mood</OPTION>
                     <OPTION name="effect" value="blue">Serenity</OPTION>
                     <OPTION name="effect" value="green">Creativity</OPTION>
                     <OPTION name="effect" value="pink">Stimulate energy</OPTION>
@@ -63,7 +63,7 @@
                     <OPTION name="effect" value="red">Assertiveness</OPTION>
                     <OPTION name="effect" value="yellow">Memory aiding</OPTION>
                     <OPTION name="effect" value="green">Harmony</OPTION>
-                    <OPTION name="effect" value="pink">Affection</OPTION>
+                    <OPTION name="effect" value="pink">Affection</OPTION> -->
 
                 </SELECT>
 
@@ -79,10 +79,10 @@
                 
                 <div id="wrap">
                     <!-- <div id="time"> -->
-                        <INPUT TYPE="Radio" Value="time">  0-5 minutes <br>
-                        <INPUT TYPE="Radio" Value="time">  5-10 minutes<br>
-                        <INPUT TYPE="Radio" Value="time">  10-20 minutes<br>
-                        <INPUT TYPE="Radio" Value="time">  No restrain
+                        <INPUT TYPE="Radio" Value="time"><b> 0-5 minutes</b><br>
+                        <INPUT TYPE="Radio" Value="time"><b>  5-10 minutes</b><br>
+                        <INPUT TYPE="Radio" Value="time"><b>  10-20 minutes</b><br>
+                        <INPUT TYPE="Radio" Value="time"><b>  No restrain</b>
                     <!-- </div> -->
                 </div><br><br><br><br><br>
 
@@ -93,20 +93,20 @@
 
         <section id="clickfast">
             <center><h2>Click Fast</h2></center>
-            <center>Test your skill.  How many boxes can you click in 30 seconds?</center>
+            <center><div class="textclickfast"><b>Test your skills. How many highlighted boxes can you click in 30 seconds?</b></div></center>
             <form name="cpanel">
             <center>
             <table cellspacing=3>
                 <tr>
                     <td><input type="button" name="startstop" value=" Start Game | Stop Game " onClick="play()"></td>
                     <td><pre>    </pre></td>
-                    <td align=right>Time:</td>
+                    <td align=right><div class="textclickfast"><b>Time:</b></div></td>
                     <td><input type="text" name="timeleft" size="4" onFocus="this.blur()"></td>
                 </tr>
                 <tr>
                      <td><input type="text" name="state" size="20" value="Push Start to Play" onFocus="this.blur()"></td>
                      <td><pre>    </pre></td>
-                     <td align=right>Score:</td>
+                     <td align=right><div class="textclickfast"><b>Score:</b></div></td>
                      <td><input type="text" name="score" size="4" onFocus="this.blur()"></td>
                 </tr>
             </table>

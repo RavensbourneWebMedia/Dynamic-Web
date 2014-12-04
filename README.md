@@ -31,4 +31,19 @@ Native zooming of the device you are using is supported so pinch to zoom on most
 ###Menu
 The menu in the top right gives the user various options, as mention previously there is a settings menu represented by the cog, this gives the user the normal map view setting and also some helpful tips on using the app below this option, you can close this window either by clicking the grey X in the top right.
 The profile part of the menu represented by the man icon is where the loyalty card functionality will be added to application eventually in future iterations, currently it has a form to enter your name and email address to sumbit to joion the NAS emailing list, if you choose to submit your email you will be presented woith a thank you page and eventually you will loop back around to the map page. The last part of the menu represented by the 3 line tool allows you to view the coffee shops as a list instead of on a map, this page is full screen so can only be exited with the cross in the top right.
+![main10](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss6.png)
+![main11](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss7.png)
+![main12](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss8.png)
+
+###Links
+To view the development blog: [here](https://medium.com/@harryfo/app-development-progress-2d807f7cca5)
+
+Concepts Blog: [here](https://medium.com/@harryfo/not-another-starucks-first-concepts-29992a12dbcb)
+
+Brainswarming [here](http://www.fourthfloor.me/blogs/hfoster/2014/10/22/week-3/)
+
+This or That App development blog: [here](http://www.fourthfloor.me/blogs/hfoster/2014/10/22/week-1/)
+
+Drawing the Web: [here](http://www.fourthfloor.me/blogs/hfoster/2014/10/16/drawing-of-the-web/)
+
 

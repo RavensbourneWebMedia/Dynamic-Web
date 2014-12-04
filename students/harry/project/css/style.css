@@ -200,6 +200,7 @@ html, body, #mainmap {
 
 .dirlistcover {
     background-color: #f9c588;
+    overflow: scroll;
     display: none;
     z-index: 11;
     position: fixed;

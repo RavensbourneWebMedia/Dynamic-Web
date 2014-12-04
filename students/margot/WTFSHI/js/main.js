@@ -117,29 +117,32 @@ $.ajax(
   url: "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=z9g8xee26dpu2j8vkfekc93q&callback=onRTdvdSuccess"
 })
 
+var refreshedMoviesArray = [] // an empty array
+var refreshedMovie
+
 function onRTdvdSuccess(data) 
 {
   console.log(data)
 
   refreshedMoviesArray = data.movies
 
-  // var refreshedMovie = data.movies[Math.floor(Math.random()*data.movies.length)]
+  refreshedMovie = data.movies[Math.floor(Math.random()*data.movies.length)]
 
-  // console.log(refreshedMovie);
+  console.log("refreshed movie is " + refreshedMovie.title);
 
   // refreshedMoviesArray.push(refreshedMovie) // adds a new movie to the array
  
 }
 
-var refreshedMoviesArray = [] // an empty array
+
+function refresh(data){
+
+  refreshedMovie = data.movies[Math.floor(Math.random()*data.movies.length)]
 
 
-/*var refreshedMovie
+  console.log("trial" + refreshedMovie);
 
-//store every refreshed movie in a variable
+}
 
-var refreshedMovie'i'=refreshedMovie(i-1) + 1
 
-// if (randomMovie2 = randomMovie) then rerun the refresh function until randomMovie'i' different than any other we already had
-//match then with message'i' to output the movie on the movie page
-*/
+

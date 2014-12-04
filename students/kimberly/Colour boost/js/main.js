@@ -63,6 +63,31 @@ function onTimeSubmit(event)
 	jQuery("#time").hide();
 }
 
+var colourOptions = document.getElementsByName("effect");
+
+for (var i = 0; i < colourOptions.length; i++)
+{
+	colourOptions[i].addEventListener("change", setEffect); // this doesn't seem to get triggered
+}  
+
+$('select').on('change', setEffect) // let's see if the select triggers a change event
+
+function setEffect(event)
+{
+	console.log('setEffect', event)
+
+	var colourValue = $('select').find(":selected").val() // found http://stackoverflow.com/questions/10659097/jquery-get-selected-option-from-dropdown
+	// jquery find the select element, then find the selected option, then give us the value for it!
+
+	$('.regular-checkbox + label').css('background-color', colourValue);
+	// something like $("p").css("background-color","yellow"), found on http://www.w3schools.com/jquery/jquery_css.asp
+
+	// document.getElementsByClassName("regular-checkbox big-checkbox").style.backgroundColor = event.target.value;
+	//$(".regular-checkbox.big-checkbox") // select all the elements that have class regular-checkbox and big-checkbox
+}
+  
+  
+
 
 
 

@@ -7,7 +7,7 @@
 gamelength=30;
 timerID=null
 var playing=false;
-var numholes=6*10;
+var numholes=4*5;
 var currentpos=-1;
 function clrholes() {
 for(var k=0;k<document.dmz.elements.length;k++)

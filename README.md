@@ -14,3 +14,13 @@ When opening the app you will be presented with a loading screen which displauys
 NAS uses a custom map tile design to give us a really cool feel, this isn't necessaily the clearest way to view the map so if you would like to switch to a more traditional style map you can choose the settings menu on the top right (cog icon) and turn on normal mapping.
 ![main5](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss1.png)
 ![main6](https://raw.githubusercontent.com/matteomenapace/rave-WEB14203/harry/students/harry/ss2.png)
+###Markers
+Your position is represented bhy the coffee cup icon, this icon has a blue circle below it, this circle's radius shows the level of accuracy to which your location is being displayed, for an exact measure of this in meters just click on this icon. The coffee bean icon shows the location of coffee shops on the map, these should always be accurate as they are defined by longitude and latitude. When you click on these coffee bean icons you are given information about these coffee shops:
+
+* The name of the coffee shop links to their website if one is available
+* The first line of address and the postcode are then displayed below this
+* Opening times sourced from a 3rd party website (usually google maps or foursquare) are then displayed.
+* The phone number is also displayed, when pressed from a mobile device or certain computers this will place a call using the default calling app of the device.
+* Whether the coffee shop has Wifi is also displayed, this is also 3rd party sourced.
+* Get directions is the last option, when this link is pressed a route to the coffee shop you've chosen from your location is displayed. this is marked with a red line which shows you a reccomended route by road. You can also view these directions as a list using the get view directions list whioch appears when you are in directions mode.
+

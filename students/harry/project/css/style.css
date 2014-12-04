@@ -33,6 +33,11 @@ html, body, #mainmap {
     width: 10px;
 }
 
+.listview {
+    width: 20px;
+    vertical-align:middle;
+}
+
 .logobg {
     width: 250px;
     margin-left: auto;
@@ -116,7 +121,7 @@ html, body, #mainmap {
 
 .overlayblank {
     overflow: scroll;
-    background-color: #ffffff;
+    background-color: #f9c588;
     display: none;
     z-index: 11;
     position: fixed;
@@ -181,10 +186,20 @@ html, body, #mainmap {
     margin-top: 8%;
     text-align: center;
     margin-left: 15%;
+    color: #FFFFFF;
+    background-color: #f9c588;
+    line-height: 25px;
 }
 
+.list a:link, 
+.list a:visited, 
+.list a:hover { 
+ color: #FFFFFF; 
+ text-decoration: none; 
+} 
+
 .dirlistcover {
-    background-color: #ffffff;
+    background-color: #f9c588;
     display: none;
     z-index: 11;
     position: fixed;
@@ -199,6 +214,9 @@ html, body, #mainmap {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: helvetica;
+    color: #FFFFFF;
+    background-color: #f9c588;
     width: 310px !important;
 }
 

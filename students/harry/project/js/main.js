@@ -78,7 +78,6 @@ $.getJSON (spreadsheetURL, function(result){
     console.log(coffeeshop + " wifi? - " + coffeerating)
     //creating shop list view array
     shoplist.push("<a href='http://www." + coffeelink + "'><b>" + coffeeshop + "</a></b>"+ "<br>" + coffeeaddress + "<br>" + coffeepostcode + "<br><br>" + "<img class='clock' src='img/clock.png'>  " +  coffeeopeningtime + "<br> <img class='phone' src='img/phone.png'>  " + "<a href='tel:" + coffeephone + "'>" + coffeephone + "</a>" + "<br> <img class='wifi' src='img/wifi.png'>  " + "Wifi: " + coffeewifi + "<br><img class='compass' src='img/compass.png'>  " + "<a href='javascript:void(0)' onclick='turnOverlayOff();dirlistbut();routeTo("+ coffeelatitude + "," + coffeelongitude + ");'>Get Directions</a><br><br>" );
-    console.log(shoplist);
     //pushing shoplist array to list div
     $('.list') .html (shoplist);
     })  

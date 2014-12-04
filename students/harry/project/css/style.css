@@ -115,6 +115,7 @@ html, body, #mainmap {
 }
 
 .overlayblank {
+    overflow: scroll;
     background-color: #ffffff;
     display: none;
     z-index: 11;
@@ -175,12 +176,11 @@ html, body, #mainmap {
 .list {
     overflow: scroll;
     font-family: helvetica;
-    position: relative;
+    float:left;
     width: 70%;
-    top: 50px;
+    margin-top: 80px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
 }
 
 .dirlistcover {

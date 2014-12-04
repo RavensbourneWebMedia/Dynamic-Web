@@ -27,7 +27,7 @@ var coffeeIcon2 = L.icon({
     iconAnchor:   [22, 86], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -85] // point from which the popup should open relative to the iconAnchor
 });
-
+var shoplist = [];
 //Use JQuery to get a certain file from URL
 //Once we have that file, do something
 $.getJSON (spreadsheetURL, function(result){

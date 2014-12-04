@@ -1,7 +1,8 @@
 body 
 {
 	background-size: cover;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
+  transition: background-color 5s;
 }
 
 
@@ -44,10 +45,10 @@ section {
 	display: none;	
 }
 
-/*#answer
+#slow-alert
 {
-	display: none;
-}*/
+  display: none;
+}
 
 h1
 {

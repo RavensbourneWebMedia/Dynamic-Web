@@ -69,6 +69,8 @@ function askQuestion()
 {
   	displayRandomOptions(questionsCount)
   	questionsCount += 1;
+
+    startTimeout();
 }
 
 // function that grabs two random options from an array 
@@ -98,7 +100,25 @@ function displayRandomOptions(index)
 	$('#option1').html(randomOptions[0]) // the first option
 	$('#option2').html(randomOptions[1]) // the second option
 
-  setTimeout(function(){ alert("Hello"); }, 3000);
+}
+
+var questionTimeout
+
+function startTimeout()
+{
+  questionTimeout = setTimeout(function()
+  { 
+    // alert("Your too slow guess again"); 
+    $('#slow-alert').show()
+  }, 5000)
+}
+
+function stopTimeout()
+{
+
+    clearTimeout(questionTimeout);
+    $("#slow-alert").hide()
+  // use your google powers to fill this in
 }
 
 $('#option1').on('click', onOptionClick)
@@ -115,6 +135,9 @@ function onOptionClick(event)
 
   // change background colour
   changeBackgroundColour()
+
+  // stop the timeout
+  stopTimeout()
 	
 	// store the user's answer
 	// use a variable
@@ -142,13 +165,18 @@ function onOptionClick(event)
 function changeBackgroundColour()
 {
   // generate 3 random numbers between 0 and 255 for the RGB values
-  var red = Math.random() *255
-  var green = Math.random() *255
-  var blue = Math.random() *255
+  var red = Math.round( Math.random() * 255 )
+  var green = Math.round( Math.random() *255 )
+  var blue = Math.round( Math.random() *255 )
+
+  var rgba = 'rgba(' + red + ', ' + green + ', ' + blue + ', 0.3)'
+
+  console.log('changeBackgroundColour',red,green,blue, rgba)
+
   // rgba(123, 213, 0, 0.4)
-  $("body").css('background-color','rgba(' + red + ', ' + green + ', ' + blue + ', 0,3)')
+  $("body").css('background-color', rgba)
 }
-console.log(changeBackgroundColour)
+
 
 function displayUserChoice()
 {

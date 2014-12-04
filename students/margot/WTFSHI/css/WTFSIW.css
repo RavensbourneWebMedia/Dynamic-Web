@@ -57,7 +57,7 @@ body {
   text-align: center;
   }
 
-  #moviepage{
+  #moviepage, #otherChoices, #message3{
     display: none;
     width: 600px;
     margin-left: auto;

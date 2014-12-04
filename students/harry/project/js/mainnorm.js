@@ -128,8 +128,12 @@ function routeTo(lat1, lng1)
         ]
     })
     .addTo(map);
+{
+    var listOfDirections = document.getElementsByClassName('.leaflet-routing-container');
+    console.log (listOfDirections);
+    $('.dirlistcover') .html (listOfDirections);
 }
-
+}
 //turn off overlay
 
 function turnOverlayOff() {

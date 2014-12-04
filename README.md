@@ -1,4 +1,3 @@
-Dynamic Web at Ravensbourne
-=============
+Kimberly Readme coming soon
 
 

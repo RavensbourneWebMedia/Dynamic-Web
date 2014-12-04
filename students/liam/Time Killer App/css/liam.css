@@ -89,7 +89,7 @@ body {
   color: #FFFFFF;
   font-weight: 700;
   font-size: 24px;
-  width: 200px;
+  width: 300px;
   height: 60px;
 }
 
@@ -98,4 +98,15 @@ body {
   color: #3366FF;
 } */
 
+#message
+{
+  display: none;
+  font-size: 50px;
+}
+
+#style
+{
+  background: #FFFFFF;
+  color: #3366FF;
+}
 

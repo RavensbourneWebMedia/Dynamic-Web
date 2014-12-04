@@ -93,11 +93,70 @@ function checkAnswer(whichPage, whichFilter)
 	filtersToCheck[whichFilter] = selectedButton.val()	 
 }
 
+// wouldnt work!
+// var activity = filteredActivities[Math.floor(Math.random()*filteredActivities.length)];
 
 // display the results
 function displayResults()
 {
+	// var randomValue = filteredActivities[Math.floor(Math.random() * filteredActivities.length)];	
+	// $("#message").html("You should " + randomValue)
+    
+    shuffle(filteredActivities);
 
+	showActivity(0)
+}
+
+var displayActivitiesCounter = 1
+function displayNextResult()
+{
+	// showActivity(1)
+	
+	if (displayActivitiesCounter < filteredActivities.length)
+	{
+		showActivity(displayActivitiesCounter)	
+	}
+	else
+	{
+		$("#message").html("No more activities, please start again for more results")
+	}	
+
+	displayActivitiesCounter += 1 // increment the counter by one
+}
+
+function showActivity(activityNumber)
+{
+	console.log('showActivity ' + activityNumber)
+
+	var activityName = filteredActivities[activityNumber].name
+	$("#message").html("You should " + activityName)
+ 	jQuery("#message").fadeIn()
+}
+
+
+
+
+
+
+
+// http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
 
 function filterActivities()
@@ -105,7 +164,7 @@ function filterActivities()
 	// loop through the activities to populate the filteredActivities array
 		$.each(allActivities, function(index, activity)
 		{
-			// console.log(activity)
+			console.log(activity)
 
 			// flag, we assume it's true until proven false
 			var matchesAllFilters = true
@@ -144,6 +203,8 @@ function filterActivities()
 		// do we still have activities, ie is filteredActivities empty?
 }
 
+
+ 
 // jQuery to hide page 2 and show page 3
 $("#buttontwo").click(function(){
   $("#secondpage").hide();
@@ -163,16 +224,24 @@ $("#buttonfour").click(function(){
   $("#fourthpage").hide();
   $("#result").show();
   checkAnswer('#fourthpage', 'weather')
-  filterActivities();
+  filterActivities()
+  displayResults()
 });
 
 // jQuery to hide result page and show page 2
 $("#fromthestart").click(function(){
   $("#result").hide();
-  $("#secondpage").show();
+  //$("#secondpage").show();
+  //console.clear();
+  location.reload();
 });
 
-//jQuery to show buttonthree on click of input button
+// jQuery to hide first result and show second result
+$("#tryagain").click(function(){
+  displayNextResult()
+});
+
+// jQuery to show buttonthree on click of input button
 $("#lessthan5minutes").click(function(){
  $("#buttontwo").show();
 });
@@ -186,7 +255,7 @@ $("#morethan30minutes").click(function(){
  $("#buttontwo").show();
 });
 
-//jQuery to show buttonthree on click of input button
+// jQuery to show buttonthree on click of input button
 $("#ijustfeelbored").click(function(){
  $("#buttonthree").show();
 });
@@ -200,7 +269,7 @@ $("#ifeelactive").click(function(){
  $("#buttonthree").show();
 });
 
-//jQuery to show buttonfour on click of input button
+// jQuery to show buttonfour on click of input button
 $("#raining").click(function(){
  $("#buttonfour").show();
 });
@@ -214,8 +283,8 @@ $("#snowing").click(function(){
  $("#buttonfour").show();
 });
 
-//jQuery to highlight button on click
-//http://stackoverflow.com/questions/14032125/html-button-on-click-property-changed
+// jQuery to highlight button on click
+// http://stackoverflow.com/questions/14032125/html-button-on-click-property-changed
 $(document).ready(function(){
    $('.beforeClick').click(function(){
        $('.beforeClick').css('background-color',"#3366FF");

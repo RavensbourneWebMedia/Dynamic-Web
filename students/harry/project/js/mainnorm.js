@@ -128,13 +128,6 @@ function routeTo(lat1, lng1)
         ]
     })
     .addTo(map);
-//{
-    
-    var listOfDirections = $('.leaflet-routing-alt').html;
-    console.log (listOfDirections);
-    $('.directions').empty().append(listOfDirections);
-//    $('.dirlistcover') .html (listOfDirections);
-
 }
 //turn off overlay
 
@@ -172,7 +165,17 @@ function turnDirListOff() {
     $('.dirlistcover') .fadeOut( "slow");    
 }
 
+var listOfDirections 
 // turn on directions list cover
 function dirListOn() {
     $('.dirlistcover') .fadeIn( "slow");
+    
+    var leafletDirections = $('.leaflet-routing-alt').html()
+    
+    if (leafletDirections != undefined) listOfDirections = leafletDirections;
+    console.log (listOfDirections);
+    $('.directions').empty().append(listOfDirections);  
+    
+    $('.leaflet-routing-container').remove()
+    
 }

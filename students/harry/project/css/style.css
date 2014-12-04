@@ -194,10 +194,12 @@ html, body, #mainmap {
     font-family: helvetica;
 }
 
-/* Hiding Itinerary */
+/* Hiding stuff */
 
-.leaflet-routing-alt, .leaflet-routing-container {
-    display: none;
-    z-index: 15;
+.leaflet-routing-alt, 
+.leaflet-routing-container, 
+.leaflet-marker-draggable
+{
+    display: none !important;
+    z-index: -15;
 }
-

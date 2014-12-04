@@ -68,11 +68,11 @@ The filters work in a sequence by screening the “product type”,”screen siz
 If the values that have been filtered are different, then the matched products will equal to false and will be discarded from the HTML.
 
 The image below demonstrates the filters in action.
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-2.45.33-PM.png)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-3.56.08-PM.png)
 
 Finally, I tried to set alerts for the text box that would let the user know if their preferred product is available at their preferred price. Unfortunately, I wasn’t able to get the text box to filter through the “product type”, “screen size”, “memory” and “processor” so I made up an if statement that triggers an alert when the user clicks search but the text box is empty, an alert that lets the user know if their preferred price is not available, and an alert that lets you know what retailer to get your product from. The image below demonstrates this.
 
-![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-2.45.53-PM.png)
+![image](http://www.fourthfloor.me/blogs/isekajja/files/2014/12/Screen-Shot-2014-12-04-at-3.58.40-PM.png)
  
 
 

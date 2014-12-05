@@ -132,6 +132,8 @@ $.getJSON(spreadsheetURL, function(result)
 	tryMoodPrediction()
 })
 
+var decidedMood
+
 function tryMoodPrediction()
 {
 	// checks for spreadsheet loaded
@@ -193,24 +195,58 @@ function tryMoodPrediction()
 	$("#configuring") .fadeIn("slow");
 	$("#message").delay ("3000") .fadeIn("slow") .html("You should be " + mood + " today")
 	$("#configuring").delay ("1500") .fadeOut("slow");
-	//var decidedMood = mood;
+	
+	decidedMood = mood;
 
-	if (mood = 'Happy') {
-		$("#HappyQuote").html("listen to the wisdom" + HappyQuote)
+	console.log(mood);
+
+	// var mood 
+
+	var quote = quotes[mood]
+	if (!quote) quote = 'It is okay to cry' // if the line above doesn't return anything
+
+	$("#quote").delay("4000").fadeIn("slow").html(quote)
+
+
+	/*if (decidedMood = 'Happy') { 
+		$("#HappyQuote").show("slow");
 	}
+	else if (decidedMood = 'Excited') {
+		$("#ExcitedQuote").delay ("3000") .fadeIn("slow").html(ExcitedQuote)
+	}
+	else if (decidedMood = 'Melancholy') {
+			$("#MelancholyQuote").show("slow");
+				}
+	else if (decidedMood= 'Depressed') {
+		$("#DepressedQuote").delay ("3000") .fadeIn("slow").html(DepressedQuote)
+	}*/
 
 }
 
 // let's define the mood quotes
-var HappyQuote = ["'Happiness is when what you think, what you say, and what you do are in harmony.' - Mahatma Gandhi"]
+var quotes = 
+{
+	'Happy' : "'Happiness is when what you think, what you say, and what you do are in harmony.' - Mahatma Gandhi",
+	'Excited' : " 'When I'm inspired, I get excited because I can't wait to see what I'll come up with next.' - Dolly Parton",
+	'Thankful' : " 'If the only prayer you ever say in your entire life is thank you, it will be enough.' - Meister Eckhart",
+	'Loving' : " 'Love is when the other person's happiness is more important than your own.' - H. Jackson Brown, Jr",
+	'Upset' : " 'Only way you can get upset is when you expect something.' - Bernie Mac",
+	'Hateful' : " 'Everything is funny as long as it is happening to somebody else.' - Will Rogers",
+	'Melancholy' : " 'I can barely conceive of a type of beauty in which there is no Melancholy.' - Charles Baudelaire",
+	'Depressed' : " 'The word 'happiness' would lose its meaning if it were not balanced by sadness.' - Carl Jung",
+}
+
+/*var HappyQuote = ["'Happiness is when what you think, what you say, and what you do are in harmony.' - Mahatma Gandhi"]
+var MelancholyQuote = [" 'I can barely conceive of a type of beauty in which there is no Melancholy.' - Charles Baudelaire"]
+
 var ExcitedQuote = []
 var ThankfulQuote = []
 var LovingQuote = []
 var UpsetQuote = []
 var HatefulQuote = []
-var MelancholyQuote = []
-var DepressedQuote = []
-
+var MelancholyQuote = [" 'I can barely conceive of a type of beauty in which there is no Melancholy.' - Charles Baudelaire"]
+var DepressedQuote = [" 'The word 'happiness' would lose its meaning if it were not balanced by sadness.' - Carl Jung"]
+*/
 
 
 		

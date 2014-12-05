@@ -11,6 +11,10 @@
     color:white;
 }
 
+#quote{
+    display:none;
+}
+
 h1 {
     text-align:center;
     color:white;
@@ -24,9 +28,17 @@ h1 {
     color:white;
 
 }
+#HappyQuote, #MelancholyQuote {
+    display: none;
+}
+
+#quote {
+    color:white;
+    text-align:center;
+}
 
 html {
-    
+    font-family: 'Varela', sans-serif;
     background: rgba(73,155,234,1);
 background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 36%, rgba(3,76,153,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(36%, rgba(73,155,234,1)), color-stop(100%, rgba(3,76,153,1)));

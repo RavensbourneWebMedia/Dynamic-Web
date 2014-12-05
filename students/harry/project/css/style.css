@@ -131,19 +131,19 @@ html, body, #mainmap {
 
 .settings {
     font-family: helvetica;
-    position: fixed;
     text-align: center;
+    position: fixed;
     margin-left: 15%;
     display: none;
     box-shadow: 10px 10px 5px #888888;
-    padding: 20px;
     top: 10%;
     z-index: 12;
-    width: 70%;
+    width: 65%;
     height: 70%;
     background-color: #FFFFFF;
     border-radius: 25px;
     overflow: scroll;
+    padding: 15px;
 }
 
 .on {

@@ -10,16 +10,23 @@ Colour psychology is said to be the relation we have with a colour, with what we
 
 For example Eastern and Asian cultures might argue that red brings happiness, luck, and long life while other cultures might argue the opposite.
 
-research/inpiration: [here](http://psicologicamenteblog.tumblr.com/post/92477346938/source-understanding-the-phenomenon-of)
+research/inpiration: [here](http://psicologicamenteblog.tumblr.com/post/92477346938/source-understanding-the-phenomenon-of), [here](http://www.webdesignerdepot.com/2012/06/color-and-cultural-design-considerations/)
 
 ## Blogposts
 
-I have done all my blogposts on fourthfloor.me here are the links to all of them: [Here](http://www.fourthfloor.me/blogs/ksalazar/category/web14203/)
+I have done all my blogposts on fourthfloor.me here is the link to view them all by category: [Here](http://www.fourthfloor.me/blogs/ksalazar/category/web14203/)
+
+1. Building the Help me decide app with HTML, JS and a bit of CSS: [here](http://www.fourthfloor.me/blogs/ksalazar/2014/10/21/week-1-dynamic-web/)
+2. Draw the Web: [here](http://www.fourthfloor.me/blogs/ksalazar/2014/10/16/drawing-the-web/)
+3. Brainswarming ideas, and how my app idea is evolving: [here](http://www.fourthfloor.me/blogs/ksalazar/2014/10/21/week-2-dynamic-web/)
+4. MozFest: [here](http://www.fourthfloor.me/blogs/ksalazar/2014/11/12/mozilla-festival/)
+5. Developing my app: [here](http://www.fourthfloor.me/blogs/ksalazar/2014/11/26/app-ideas/) & [here](http://www.fourthfloor.me/blogs/ksalazar/2014/12/05/app-progress/)
+6. What have I learned? [here](http://www.fourthfloor.me/blogs/ksalazar/2014/12/05/what-have-i-learnt/)
 
 ## Screenshots
-
+The background patterns changes randomly based on the user's input on favourite colour. I'm using ColorLOVERS API to do this.
 ![resize icon](http://www.fourthfloor.me/blogs/ksalazar/files/2014/12/Screen-Shot-2014-12-04-at-21.00.58.png)
-![resize icon](http://www.fourthfloor.me/blogs/ksalazar/files/2014/12/Screen-Shot-2014-12-04-at-21.05.12.png)
+![resize icon](http://www.fourthfloor.me/blogs/ksalazar/files/2014/12/Screen-Shot-2014-12-05-at-02.43.58.png)
 
 
 

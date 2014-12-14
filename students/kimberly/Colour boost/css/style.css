@@ -1,0 +1,23 @@
+body {
+	background-size: cover;
+}
+
+#needto
+{
+	display: none;
+}
+
+#time
+{
+	display: none;
+}
+
+#clickfast
+{
+	display: none;
+}
+
+select
+{
+	/* some css here*/
+}

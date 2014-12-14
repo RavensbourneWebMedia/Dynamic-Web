@@ -1,4 +1,4 @@
-# Dynamic Web at Ravensbourne
+# Dynamic Web
 
 
 ## Week 1

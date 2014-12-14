@@ -1,4 +1,4 @@
-# Dynamic Web at Ravensbourne
+# Dynamic Web
 
 
 ## Week 1
@@ -39,5 +39,14 @@
 
 * APIs again!
 * [Using a Google Spreadsheet as your database](https://github.com/matteomenapace/rave-WEB14203/tree/master/spreadsheet-api-tutorial) 
+
+## Week 7
+
+* Tutorials
+
+## Week 8
+
+* More tutorials
+
 
 

@@ -52,6 +52,23 @@ $.getJSON(spreadsheetURL, function(result)
 			var animals  = row.gsx$animals.$t
 			// console.log(places)
 			if (animals != "") categories.animals.push(animals)	
+
+			var films  = row.gsx$films.$t
+			// console.log(places)
+			if (films != "") categories.films.push(films)	
+
+			var drinks  = row.gsx$drinks.$t
+			// console.log(places)
+			if (drinks != "") categories.drinks.push(drinks)
+
+			var random  = row.gsx$random.$t
+			// console.log(places)
+			if (random != "") categories.random.push(random)	
+	
+
+
+
+
 	
 	
 

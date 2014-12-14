@@ -1,7 +1,8 @@
 body 
 {
 	background-size: cover;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
+  transition: background-color 5s;
 }
 
 
@@ -22,7 +23,8 @@ body
 	  	transform-style: preserve-3d;
 	}
 
-	section {
+	section 
+  {
 		position: relative;
 	  	top: 50%;
 	  	transform: translateY(-50%);
@@ -44,10 +46,10 @@ section {
 	display: none;	
 }
 
-/*#answer
+#slow-alert
 {
-	display: none;
-}*/
+  display: none;
+}
 
 h1
 {
@@ -62,7 +64,7 @@ p{
 
 button {
 	/*position: absolute;*/
-	background: #3498db;
+	/*background: #3498db;*/
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
   background-image: -ms-linear-gradient(top, #3498db, #2980b9);
@@ -76,18 +78,33 @@ button {
   font-size: 20px;
   padding: 9px 20px 10px 20px;		/*padding: 9px 20px 10px 20px;*/
   text-decoration: none;
+
+  position: relative;
+  border: none;
+  /*border-bottom: 3px solid grey;*/
+
+  /*transition: background-image .4s;*/
 }
 
 button:hover {
 	/*position: absolute;*/
-  background: #3cb0fd;
+  /*background: #3cb0fd;*/
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+
+  
+  /*border-bottom: 1px solid grey;*/
+  /*margin-top: 2px;*/
 }
+
+button:focus
+{
+  top: 1px;
+  outline: none;
 }
 
 /*buttons below came from 'http://css3buttongenerator.com/'*/
@@ -123,4 +140,27 @@ button:hover {
   text-decoration: none;
 }
 
+#slow-alert
+{
+  position: relative;
+  /*float:right;*/
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: ‘Courier New’, Courier, monospace;
+}
 
+#optionsPage button
+{
+  margin-top: 5px;
+}
+
+#answer 
+{
+  font-family: ‘Courier New’, Courier, monospace;
+}
+
+#actionPage
+{
+  font-family: ‘Courier New’, Courier, monospace;
+}

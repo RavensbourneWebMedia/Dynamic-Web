@@ -3,9 +3,7 @@
 Your final mark will be based on:
 
 * [70% project](https://github.com/matteomenapace/rave-WEB14203/blob/master/assessment-criteria.md#project)
-* [20% blog](https://github.com/matteomenapace/rave-WEB14203/blob/master/assessment-criteria.md#blog)
-* [10% attendance](https://github.com/matteomenapace/rave-WEB14203/blob/master/assessment-criteria.md#attendance)
-
+* [30% blog](https://github.com/matteomenapace/rave-WEB14203/blob/master/assessment-criteria.md#blog)
 
 
 # Project
@@ -58,12 +56,6 @@ Topics from each week:
 
 
 You can blog either on [4F](http://www.fourthfloor.me/) or [Medium](https://medium.com). Tumblr is also ok.
-
-
-
-# Attendance
-
-1.1% of your grade for each session attended (9 in total).
 
 
 

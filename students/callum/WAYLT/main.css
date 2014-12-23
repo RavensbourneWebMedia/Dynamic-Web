@@ -3,8 +3,7 @@ body {
   color: grey 
   }
 
-#message$("#message").html("You should listen to " + listen)
- jQuery("#message").fadeIn();
+#message
 {
   display:none;
 }

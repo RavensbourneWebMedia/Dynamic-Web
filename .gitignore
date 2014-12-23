@@ -3,3 +3,5 @@ decks/plugin/notes/.sass-cache
 notes/*.html
 
 .DS_Store
+presentations/.sass-cache
+presentations/plugin/notes/.sass-cache

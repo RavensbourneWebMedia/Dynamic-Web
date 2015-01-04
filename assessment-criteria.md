@@ -1,7 +1,7 @@
 Your final mark will be based on:
 
-* [75% project](https://github.com/matteomenapace/rave-WEB14203/blob/master/assessment-criteria.md#project)
-* [25% blog](https://github.com/matteomenapace/rave-WEB14203/blob/master/assessment-criteria.md#blog)
+* [75% project](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/assessment-criteria.md#project)
+* [25% blog](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/assessment-criteria.md#blog)
 
 
 
@@ -57,12 +57,12 @@ The blog should have at least 6 posts.
 Topics from each week:
 
 1. Building the *Help me decide* app with HTML, JS and a bit of CSS
-* [*Draw the Web*](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-2.md#homework)
-* [Brainswarming ideas, and how my app idea is evolving.](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-3.md#homework)
-* [MozFest](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-4.md#assignment-for-next-week)
-* [App key screens and description](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-5.md#assignment-for-nextish-week)
-* [App breakdown](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-6.md#app-logic-breakdown)
-* [Developing my app](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-7.md#assignment-for-next-week)
-* [What have I learned?](https://github.com/matteomenapace/rave-WEB14203/blob/master/notes/week-8.md#assignment-for-next-week)
+* [*Draw the Web*](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-2.md#homework)
+* [Brainswarming ideas, and how my app idea is evolving.](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-3.md#homework)
+* [MozFest](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-4.md#assignment-for-next-week)
+* [App key screens and description](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-5.md#assignment-for-nextish-week)
+* [App breakdown](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-6.md#app-logic-breakdown)
+* [Developing my app](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-7.md#assignment-for-next-week)
+* [What have I learned?](https://github.com/RavensbourneWebMedia/WEB14203/blob/master/sessions/week-8.md#assignment-for-next-week)
 
 Refer to the general **[Web Media blog assessment criteria](https://github.com/RavensbourneWebMedia/Blogging/blob/master/assessment-criteria.md)** for a detailed grading breakdown.

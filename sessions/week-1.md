@@ -113,7 +113,7 @@ Code is about **communication**. If I want to talk to my **grandma**, I need to 
 
 It's **instructions** to a computer: extremely powerful, fundamentally thick.
 
-![](https://raw.githubusercontent.com/baddeo/creative-coding/master/RESTaurant/terminal.png) 
+![](https://raw.githubusercontent.com/baddeo/creative-coding/master/images/terminal.png) 
 
 Imagine a computer is your most pedantic **friend**: 
 
@@ -194,7 +194,7 @@ TBL → **hypertext + Internet = WWW**, he specified a set of **rules** (HTTP) f
 
 ## How does it WWWork?
 
-![](https://raw.githubusercontent.com/baddeo/creative-coding/master/RESTaurant/http.png)
+![](https://raw.githubusercontent.com/baddeo/creative-coding/master/images/http.png)
 
 The **browser** takes an HTTP request from you and sends it to the Internet, to find a resource/page/site that responds to your request.
 

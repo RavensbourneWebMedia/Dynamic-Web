@@ -121,7 +121,7 @@ Looking at [your first blog post](http://www.fourthfloor.me/blogs/staak/2014/10/
 
 It's not a *hub of gits*. 
 
-**What is it then?** It's a **distributed version control system**. it allows teams to work on the same documents (often code) at the same time, and without stepping on each other's toes. 
+**What is it then?** It's a **distributed version control system**. It allows teams to work on the same documents (often code) at the same time, and without stepping on each other's toes. 
 
 **Why do we need it?** Because when you think it's time to back up your files, it's too late.
 
@@ -129,7 +129,7 @@ Can we not use DropBox instead? Yes, however Git is more powerful. It allows you
 
 [Learn more about it here](https://try.github.io/)
 
-Using [Terminal](http://en.wikipedia.org/wiki/Terminal_(OS_X)) (or any other command-line tool) is very cool, in a Matrix-like way. However it's easier to have a visual interface sometimes. Most of the times. For that, you can use [SourceTree](http://www.sourcetreeapp.com/)
+Using Terminal (or any other command-line tool) is empowering, in a Matrix-like way. However it's easier to have a visual interface sometimes. Most of the times. For that, you can use [SourceTree](http://www.sourcetreeapp.com/)
 
 1. Download [SourceTree](http://www.sourcetreeapp.com/), it's free!
 * Sign up (or log in) to [GitHub](https://github.com/) 

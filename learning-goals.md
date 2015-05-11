@@ -4,7 +4,7 @@ Upon completion of this unit you will (hopefully) be able to:
 
 * Create **proof-of-concept functional prototypes** for Web applications, which manipulate data from online database(s) and/or API(s).
 
-* Critically analyze the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
+* Critically analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
 
 * Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*.
 

@@ -27,7 +27,7 @@ You can use **data** from the Web to help people make a decision.
 
 #### F
 
-[M.I.A.](http://en.wikipedia.org/wiki/Missing_in_action) The student failed to deliver the assignment. 
+[M.I.A.](http://en.wikipedia.org/wiki/Missing_in_action) We saw you around but you failed to show evidence of your work. 
 
 #### E
 

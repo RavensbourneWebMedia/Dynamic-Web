@@ -9,6 +9,7 @@ function OscillatorInstrument (audioContext)
   this.msBetweenFrequencyChanges = 200 // how many milliseconds between changes in frequency
   this.minFrequency = 200
   this.maxFrequency = 500
+  this.frequency = 300
 
   // functions
 
@@ -16,6 +17,7 @@ function OscillatorInstrument (audioContext)
   {
     this.oscillator = this.context.createOscillator()
     this.oscillator.connect(this.context.destination)
+    this.changeFrequency(this.frequency)
     this.oscillator.start(0)
 
     // change the frequency of our wave (pitch) every X milliseconds
@@ -27,7 +29,7 @@ function OscillatorInstrument (audioContext)
   this.stop = function()
   {
     this.oscillator.stop(0)
-    this.interval = clearInterval()
+    clearInterval(this.interval)
   }
 
   this.changeFrequency = function(val)
@@ -35,9 +37,10 @@ function OscillatorInstrument (audioContext)
     // no need to change frequency if we're trying to set it to the same value
     if (val == this.oscillator.frequency.value) return
 
-    var newFrequency = val ? val : this.getRandomInteger(this.minFrequency, this.maxFrequency)
+    // we use this.frequency so that we can sniff its value and display it
+    this.frequency = val ? val : this.getRandomInteger(this.minFrequency, this.maxFrequency)
 
-    this.oscillator.frequency.value = newFrequency
+    this.oscillator.frequency.value = this.frequency
   }
 
   this.changeDetune = function(val)

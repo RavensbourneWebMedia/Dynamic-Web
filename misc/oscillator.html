@@ -1,0 +1,18 @@
+<html>
+  <head>
+      <title>oscillations</title>
+      <script type='text/javascript' src='OscillatorInstrument.js'></script>
+      <script type='text/javascript' id='lt_ws' src='http://localhost:51407/socket.io/lighttable/ws.js'></script>
+  </head>
+  <body>
+      <button onclick="o.play()">Play</button>
+      <button onclick="o.stop()">Stop</button>
+      <script>
+        // Fix for browser prefixing
+        window.AudioContext = window.AudioContext || window.webkitAudioContext
+
+        var a = new AudioContext()
+        var o = new OscillatorInstrument(a)
+      </script>
+  </body>
+</html>

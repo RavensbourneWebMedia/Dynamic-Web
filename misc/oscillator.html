@@ -10,14 +10,15 @@
 			window.AudioContext = window.AudioContext || window.webkitAudioContext
 
 			var a = new AudioContext()
-			var o = new OscillatorInstrument(a)
+			var i = new OscillatorInstrument(a)
 
 			var gui = new dat.GUI()
-			gui.add(o, 'play')
-			gui.add(o, 'stop')
-			gui.add(o, 'minFrequency', 0, 1000)
-			gui.add(o, 'maxFrequency', 0, 1000)	
-			gui.add(o, 'frequency').listen()
+			gui.add(i, 'play')
+			gui.add(i, 'stop')
+			gui.add(i, 'minFrequency', 0, 1000)
+			gui.add(i, 'maxFrequency', 0, 1000)	
+			gui.add(i, 'frequency').listen()
+			gui.add(i, 'type', ['sine', 'square', 'sawtooth', 'triangle']).onChange(function(newValue) { i.changeType(newValue) })
 
 		</script>
 	</body>

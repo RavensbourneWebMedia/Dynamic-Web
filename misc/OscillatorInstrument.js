@@ -3,13 +3,14 @@ function OscillatorInstrument (audioContext)
   // construction argument(s)
 
   this.context = audioContext
-
+  
   // config variables
 
   this.msBetweenFrequencyChanges = 200 // how many milliseconds between changes in frequency
-  this.minFrequency = 200
-  this.maxFrequency = 500
-  this.frequency = 300
+  this.minFrequency = 200 // hertz (oscillations per second)
+  this.maxFrequency = 500 // hertz (oscillations per second)
+  this.frequency = 300 // hertz (oscillations per second)
+  this.type = 'sine' // type of wave the oscillator will produce
 
   // functions
 
@@ -18,6 +19,7 @@ function OscillatorInstrument (audioContext)
     this.oscillator = this.context.createOscillator()
     this.oscillator.connect(this.context.destination)
     this.changeFrequency(this.frequency)
+    this.changeType(this.type)
     this.oscillator.start(0)
 
     // change the frequency of our wave (pitch) every X milliseconds
@@ -50,7 +52,8 @@ function OscillatorInstrument (audioContext)
 
   this.changeType = function(type)
   {
-    this.oscillator.type = type
+    this.type == type ? type : this.type
+    this.oscillator.type = this.type
   }
 
   this.getRandomInteger = function(min, max)

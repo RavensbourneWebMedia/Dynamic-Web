@@ -12,3 +12,10 @@ Brief is to find an open dataset (eg: from the [Government](http://data.gov.uk/d
 ### Instagram wall
 
 A mini-project to use the Instagram API. See [AIMEEMJ.COM](http://aimeemj.com/)
+
+
+
+# Check out
+
+* [DavidTodd](http://socialdigital.dundee.ac.uk/~dtodd/blog/), Digital Interaction Design student at Dundee
+* [Creative applications](http://www.creativeapplications.net/)

@@ -1,0 +1,58 @@
+<html>
+	<head>
+			<title>Space oscillators</title>
+			<script src='MonotoneInstrument.js'></script>
+	</head>
+	<body>
+		<script>
+			// Fix for browser prefixing
+			window.AudioContext = window.AudioContext || window.webkitAudioContext
+			var a = new AudioContext()
+
+			var minFrequency = 100
+			var maxFrequency = 600
+
+			var body = document.querySelector( 'body' )
+			body.onmousedown = function( event )
+			{
+				// log mouse coordinates
+				// console.log( event.x, event.y )
+
+				// we want to know WHERE (in RELATION to the page) did we click?
+				// so that instead of pixel coordinates 
+				// we express the mouse x&y position 
+				// as numbers between 0 and 1
+				var x = event.x / window.innerWidth
+				var y = event.y / window.innerHeight
+				console.log( x, y )
+				
+				spawnInstrument( x, y )
+			}
+
+			var instruments = [] // to keep track of all instruments
+			function spawnInstrument ( x, y )
+			{
+				var instrument = new MonotoneInstrument( a )
+				instruments.push( instrument )
+				instrument.play( ratioToFrequency( x ) )
+			}
+
+			// transform x (a number between 0 and 1)
+			// to a frequency (a number between minFrequency and maxFrequency )	
+			function ratioToFrequency( ratio )
+			{
+				return ( maxFrequency - minFrequency ) * ratio
+			}
+
+			// make them all stop!
+			function silence()
+			{
+				instruments.forEach( function( instrument )
+				{
+					instrument.stop()
+				} )
+			}
+	
+		</script>
+	</body>
+</html>

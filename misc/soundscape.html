@@ -2,6 +2,42 @@
 	<head>
 			<title>Space oscillators</title>
 			<script src='MonotoneInstrument.js'></script>
+			<style>
+				body
+				{
+					margin: 0;
+				}
+
+				.button
+				{
+					position: absolute;
+					/* 
+						trick to "centre" an element:
+							give it a certain height and width
+								use negative margin to shift it 
+									half its width to the left
+									half its height to the top
+					*/
+					height: 10px;
+					margin-top: -5px;
+					width: 10px;
+					margin-left: -5px;
+					
+					border-radius: 100%;
+					
+					background-color: rgba(0,0,0,0.5);
+				}
+
+				.draggable
+				{
+
+				}
+
+				.draggable:hover
+				{
+					cursor: move;
+				}
+			</style>
 	</head>
 	<body>
 		<script>
@@ -26,15 +62,17 @@
 				var y = event.y / window.innerHeight
 				console.log( x, y )
 				
-				spawnInstrument( x, y )
+				// createInstrument( ratioToFrequency( x ) )
+				createButton( x*100, y*100 )
 			}
 
-			var instruments = [] // to keep track of all instruments
-			function spawnInstrument ( x, y )
+			var instruments = [] // empty array to store all instruments
+			function createInstrument ( frequency )
 			{
 				var instrument = new MonotoneInstrument( a )
 				instruments.push( instrument )
-				instrument.play( ratioToFrequency( x ) )
+				instrument.play( frequency )
+				return instrument
 			}
 
 			// transform x (a number between 0 and 1)
@@ -42,6 +80,20 @@
 			function ratioToFrequency( ratio )
 			{
 				return ( maxFrequency - minFrequency ) * ratio
+			}
+
+			var buttons = [] // empty array to store all buttons
+			function createButton ( horizontalPercentage, verticalPercentage )
+			{
+				var button = document.createElement( 'div' )
+				button.draggable = true
+				button.className = 'draggable button'
+				button.style.top = verticalPercentage + '%'
+				button.style.left = horizontalPercentage + '%'
+
+				body.appendChild( button )
+
+				buttons.push( button )
 			}
 
 			// make them all stop!

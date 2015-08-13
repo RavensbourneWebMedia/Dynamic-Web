@@ -53,18 +53,20 @@
 
 			// AUDIO
 
-				var minFrequency = 100
-				var maxFrequency = 600
+				var minFrequency = 150, // in hertz
+						maxFrequency = 600, // in hertz
+						maxVolume = 1 // in ??
 
 				window.AudioContext = window.AudioContext || window.webkitAudioContext
 				var a = new AudioContext()
 
 				var instruments = [] // empty array to store all instruments
-				function createInstrument( frequency )
+				function createInstrument( frequency, volume )
 				{
 					var instrument = new MonotoneInstrument( a )
 					instruments.push( instrument )
 					instrument.play( frequency )
+					instrument.setVolume( volume )
 					return instrument
 				}
 
@@ -93,7 +95,7 @@
 					var y = event.y / window.innerHeight
 					// console.log( x, y )
 					
-					var instrument = createInstrument( ratioToFrequency( x ) )
+					var instrument = createInstrument( ratioToFrequency( x ), ratioToVolume ( y ) )
 					var button = createButton( x*100, y*100 )
 					button.instrument = instrument
 				}
@@ -144,8 +146,13 @@
 					var button = event.target
 					if ( button.instrument )
 					{
-						var ratio = button.draggie.position.x / window.innerWidth
-						button.instrument.play( ratioToFrequency( ratio ) )
+						// map the frequency to the horizontal position
+						var ratioX = button.draggie.position.x / window.innerWidth
+						button.instrument.play( ratioToFrequency( ratioX ) )
+
+						// map the volume to the vertical position
+						var ratioY = button.draggie.position.y / window.innerHeight
+						button.instrument.setVolume( ratioToVolume ( ratioY ) )
 					}	
 				}
 
@@ -165,19 +172,31 @@
 
 				var gui = new dat.GUI()
 				gui.add(this, 'silence')
-				gui.add(this, 'minFrequency', 100, 1000)
-				gui.add(this, 'maxFrequency', 100, 1000)
+				gui.add(this, 'minFrequency', 100, 2000)
+				gui.add(this, 'maxFrequency', 100, 2000)
+				gui.add(this, 'maxVolume', 		0, 2)
 
 				// prevent new buttons from being created when we click on DAT
 				gui.domElement.onmousedown = function ( event ) { event.stopPropagation() }
 
+				// TODO when changing min and max frequencies, adjust all instruments
+
 			// UTILS
 
-				// transform x (a number between 0 and 1)
+				// transform ratio (a number between 0 and 1)
 				// to a frequency (a number between minFrequency and maxFrequency )	
 				function ratioToFrequency( ratio )
 				{
 					return ( maxFrequency - minFrequency ) * ratio
+				}
+
+				// transform ratio (a number between 0 and 1)
+				// to a valume (a number between 0 and maxVolume )	
+				function ratioToVolume( ratio )
+				{
+					return maxVolume * ( 1 - ratio )
+					// 1 - ratio, because we're familiar with 0 being at the bottom 
+					// whilst y coordinates have 0 at the top
 				}
 
 				function pxToPercentage( px, widthOrHeight)

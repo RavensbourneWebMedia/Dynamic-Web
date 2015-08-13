@@ -3,6 +3,7 @@
 			<title>Space oscillators</title>
 			<script src='MonotoneInstrument.js'></script>
 			<script src='draggabilly.js'></script>
+			<script src='dat.gui.js'></script>
 			<style>
 				body
 				{
@@ -159,6 +160,16 @@
 					button.style.left = button.position.x + '%' // position it horizontally
 					button.style.top = button.position.y + '%' // position it vertically
 				}
+
+			// DAT
+
+				var gui = new dat.GUI()
+				gui.add(this, 'silence')
+				gui.add(this, 'minFrequency', 100, 1000)
+				gui.add(this, 'maxFrequency', 100, 1000)
+
+				// prevent new buttons from being created when we click on DAT
+				gui.domElement.onmousedown = function ( event ) { event.stopPropagation() }
 
 			// UTILS
 

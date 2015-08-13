@@ -50,208 +50,130 @@
 		<div id="coords"></div>
 		<script>
 
-			window.AudioContext = window.AudioContext || window.webkitAudioContext
-			var a = new AudioContext()
+			// AUDIO
 
-			var minFrequency = 100
-			var maxFrequency = 600
+				var minFrequency = 100
+				var maxFrequency = 600
 
-			var body = document.querySelector( 'body' )
-			body.onmousedown = function( event )
-			{
-				// log mouse coordinates
-				// console.log( event.x, event.y )
+				window.AudioContext = window.AudioContext || window.webkitAudioContext
+				var a = new AudioContext()
 
-				// we want to know WHERE (in RELATION to the page) did we click?
-				// so that instead of pixel coordinates 
-				// we express the mouse x&y position 
-				// as numbers between 0 and 1
-				var x = event.x / window.innerWidth
-				var y = event.y / window.innerHeight
-				// console.log( x, y )
-				
-				var instrument = createInstrument( ratioToFrequency( x ) )
-				var button = createButton( x*100, y*100 )
-				button.instrument = instrument
-			}
-
-			// transform x (a number between 0 and 1)
-			// to a frequency (a number between minFrequency and maxFrequency )	
-			function ratioToFrequency( ratio )
-			{
-				return ( maxFrequency - minFrequency ) * ratio
-			}
-
-			var instruments = [] // empty array to store all instruments
-			function createInstrument( frequency )
-			{
-				var instrument = new MonotoneInstrument( a )
-				instruments.push( instrument )
-				instrument.play( frequency )
-				return instrument
-			}
-
-			// make them all stop!
-			function silence()
-			{
-				instruments.forEach( function( instrument )
+				var instruments = [] // empty array to store all instruments
+				function createInstrument( frequency )
 				{
-					instrument.stop()
-				} )
-			}
-
-			var buttons = [] // empty array to store all buttons
-			function createButton( horizontalPercentage, verticalPercentage )
-			{
-				var button = document.createElement( 'div' ) // make a div
-				button.className = 'draggable button' // give it some classes
-				setButtonPosition( button, horizontalPercentage, verticalPercentage )
-				body.appendChild( button ) // add it to the document's body
-				buttons.push( button ) // add it to the list of buttons
-
-				// let's trigger some functions when certain 'events' happen
-				// eg, when the button is clicked (onmousedown)
-				button.onmousedown = onButtonMouseDown // trigger the function onButtonMouseDown
-
-				// Draggabilly! See http://draggabilly.desandro.com
-				button.draggie = new Draggabilly( button )
-				button.draggie.on( 'dragEnd', onButtonDragEnd )
-				button.draggie.on( 'dragMove', onButtonDragMove )
-
-				return button
-			}
-
-			function onButtonMouseDown( event )
-			{
-				// when we click on a button
-				// we don't want to create a new button
-				// that is, we don't want to trigger the body.onmousedown function
-				// we can use event.stopPropagation() to prevent the button to let the body know it's been clicked
-				// see https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
-				event.stopPropagation() 
-			}
-
-			function onButtonDragEnd( event, pointer )
-			{
-				var button = event.target
-
-				// Draggabilly sets the button's position (CSS top and left) to px
-				// let's switch it back to percentages
-				// so that it'll survive resizing the browser's window
-				setButtonPosition( button, pxToPercentage( button.draggie.position.x, 'width' ), pxToPercentage( button.draggie.position.y, 'height' ) )
-			}
-
-			function onButtonDragMove( event, pointer, moveVector ) 
-			{
-				var button = event.target
-				if ( button.instrument )
-				{
-					var ratio = button.draggie.position.x / window.innerWidth
-					button.instrument.play( ratioToFrequency( ratio ) )
-				}	
-			}
-
-			function setButtonPosition( button, horizontalPercentage, verticalPercentage )
-			{
-				button.position = 
-				{
-					x: horizontalPercentage,
-					y: verticalPercentage
+					var instrument = new MonotoneInstrument( a )
+					instruments.push( instrument )
+					instrument.play( frequency )
+					return instrument
 				}
 
-				button.style.left = button.position.x + '%' // position it horizontally
-				button.style.top = button.position.y + '%' // position it vertically
-			}
-
-			function pxToPercentage( px, widthOrHeight)
-			{
-				var pxTotal = ( widthOrHeight == 'width' ) ? window.innerWidth : window.innerHeight
-				return ( px / pxTotal ) * 100
-			}
-
-			
-
-		/*
-			body.onmousemove = function( event )
-			{
-				var coords = document.getElementById( 'coords' )
-				// console.log( event.x + ', ' + event.y )
-				coords.innerHTML = event.x + ', ' + event.y
-			}
-
-			function onButtonDragStart( event )
-			{
-				var button = event.target
-				button.className = 'button draggable dragging' // add the class 'dragging'
-
-				button.dragStart = 
+				// make them all stop!
+				function silence()
 				{
-					// x: pxToPercentage( event.x, 'width' ),
-					// y: pxToPercentage( event.y, 'height' )
-					x: event.x,
-					y: event.y
-				}	
-				console.log('onButtonDragStart ', button.dragStart)
-			}
-
-			function onButtonDrag( event )
-			{
-				var button = event.target
-				button.style.top = event.y 
-				button.style.left = event.x
-			}
-
-			function setButtonPosition( button, x, y )
-			{
-				button.position = 
-				{
-					x: x,
-					y: y
+					instruments.forEach( function( instrument )
+					{
+						instrument.stop()
+					} )
 				}
 
-				button.innerHTML = x + ', ' + y
+			// BUTTONS
 
-				button.style.left = button.position.x + 'px' // position it horizontally
-				button.style.top = button.position.y + 'px' // position it vertically
-			}
-
-			function onButtonDragEnd( event )
-			{
-				var button = event.target
-				button.className = 'button draggable' // remove the class 'dragging'
-				// console.log( event.x, event.y )
-
-				// button.dragEndDistance = getDistanceBetweenMouseAndButtonCentre( event )
-
-				button.dragEnd = 
+				var body = document.querySelector( 'body' )
+				body.onmousedown = function( event )
 				{
-					// x: pxToPercentage( event.x, 'width' ),
-					// y: pxToPercentage( event.y, 'height' )
-					x: event.x,
-					y: event.y
-				}	
+					// log mouse coordinates
+					// console.log( event.x, event.y )
 
-				// how much has the button been effectively dragged?
-				// calculate the difference between dragStart and dragEnd (distance)
-				// then add the distance to the current posion
-
-				var dragDistance = 
-				{
-					x: button.dragEnd.x - button.dragStart.x,
-					y: button.dragEnd.y - button.dragStart.y 
+					// we want to know WHERE (in RELATION to the page) did we click?
+					// so that instead of pixel coordinates 
+					// we express the mouse x&y position 
+					// as numbers between 0 and 1
+					var x = event.x / window.innerWidth
+					var y = event.y / window.innerHeight
+					// console.log( x, y )
+					
+					var instrument = createInstrument( ratioToFrequency( x ) )
+					var button = createButton( x*100, y*100 )
+					button.instrument = instrument
 				}
 
-				console.log('onButtonDragEnd ', button.dragStart, button.dragEnd, dragDistance)
+				var buttons = [] // empty array to store all buttons
+				function createButton( horizontalPercentage, verticalPercentage )
+				{
+					var button = document.createElement( 'div' ) // make a div
+					button.className = 'draggable button' // give it some classes
+					setButtonPosition( button, horizontalPercentage, verticalPercentage )
+					body.appendChild( button ) // add it to the document's body
+					buttons.push( button ) // add it to the list of buttons
 
-				var x = button.position.x + dragDistance.x,
-						y = button.position.y + dragDistance.y
+					// let's trigger some functions when certain 'events' happen
+					// eg, when the button is clicked (onmousedown)
+					button.onmousedown = onButtonMouseDown // trigger the function onButtonMouseDown
 
-				setButtonPosition ( button, x, y)
-			}
+					// Draggabilly! See http://draggabilly.desandro.com
+					button.draggie = new Draggabilly( button )
+					button.draggie.on( 'dragEnd', onButtonDragEnd )
+					button.draggie.on( 'dragMove', onButtonDragMove )
 
-		*/
+					return button
+				}
 
-			
+				function onButtonMouseDown( event )
+				{
+					// when we click on a button
+					// we don't want to create a new button
+					// that is, we don't want to trigger the body.onmousedown function
+					// we can use event.stopPropagation() to prevent the button to let the body know it's been clicked
+					// see https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
+					event.stopPropagation() 
+				}
+
+				function onButtonDragEnd( event, pointer )
+				{
+					var button = event.target
+
+					// Draggabilly sets the button's position (CSS top and left) to px
+					// let's switch it back to percentages
+					// so that it'll survive resizing the browser's window
+					setButtonPosition( button, pxToPercentage( button.draggie.position.x, 'width' ), pxToPercentage( button.draggie.position.y, 'height' ) )
+				}
+
+				function onButtonDragMove( event, pointer, moveVector ) 
+				{
+					var button = event.target
+					if ( button.instrument )
+					{
+						var ratio = button.draggie.position.x / window.innerWidth
+						button.instrument.play( ratioToFrequency( ratio ) )
+					}	
+				}
+
+				function setButtonPosition( button, horizontalPercentage, verticalPercentage )
+				{
+					button.position = 
+					{
+						x: horizontalPercentage,
+						y: verticalPercentage
+					}
+
+					button.style.left = button.position.x + '%' // position it horizontally
+					button.style.top = button.position.y + '%' // position it vertically
+				}
+
+			// UTILS
+
+				// transform x (a number between 0 and 1)
+				// to a frequency (a number between minFrequency and maxFrequency )	
+				function ratioToFrequency( ratio )
+				{
+					return ( maxFrequency - minFrequency ) * ratio
+				}
+
+				function pxToPercentage( px, widthOrHeight)
+				{
+					var pxTotal = ( widthOrHeight == 'width' ) ? window.innerWidth : window.innerHeight
+					return ( px / pxTotal ) * 100
+				}
 	
 		</script>
 	</body>

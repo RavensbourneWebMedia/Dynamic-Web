@@ -1,3 +1,21 @@
+During this project you will learn how to mash up Web technologies to make tools (aka *apps*) that everyone can use. 
+
+In particular, you will
+
+* get familiar with the principles of functional and object-oriented programming, putting these into practice with JavaScript
+* develop your computational thinking skills with weekly coding challenges
+* research and use code libraries (such as jQuery) and integrate them in your project
+* analyse the mechanics of applications, breaking down their behaviours into data, functions and logic  
+* experiment with Web APIs (both data APIs and interaction APIs)
+* create proof-of-concept functional prototypes for Web applications, which manipulate data from online database(s) and/or API(s)
+* work in teams, learning from your peers and teaching them what you learned
+* document your work regularly and reflect on your creative process
+* communicate your ideas both technically and in an engaging way
+* back up your project files using the Git version-control system (through GitHub)
+
+
+
+
 <!-- # Brief(s)
 
 Make an app that helps people **make a decision**.-->

@@ -1,4 +1,4 @@
-# The future
+# The future (2014)
 
 Let's get serious and build something *beyond yourselfie*.
 
@@ -17,5 +17,6 @@ A mini-project to use the Instagram API. See [AIMEEMJ.COM](http://aimeemj.com/)
 
 # Check out
 
-* [DavidTodd](http://socialdigital.dundee.ac.uk/~dtodd/blog/), Digital Interaction Design student at Dundee
-* [Creative applications](http://www.creativeapplications.net/)
+* [ ] [DavidTodd](http://socialdigital.dundee.ac.uk/~dtodd/blog/), Digital Interaction Design student at Dundee
+* [ ] [Creative applications](http://www.creativeapplications.net/)
+* [ ] [Computhinking course from big G](https://computationalthinkingcourse.withgoogle.com/preview)

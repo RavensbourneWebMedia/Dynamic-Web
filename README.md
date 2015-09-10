@@ -13,6 +13,24 @@ In particular, you will
 * communicate your ideas both technically and in an engaging way
 * back up your project files using the Git version-control system (through GitHub)
 
+
+
+# Plan
+
+When | In class | Homework | Blog 
+---- | -------- | -------- | ----
+Thursday<br>01.10| Welcome <br>APIs <br>Workshop: RTFM <br>Group project: Filter bubbles | Choose a topic to research and teach next week 6 teams (~3 people each) <br>Work on Filter bubbles | Filter bubbles
+Thursday<br>08.10| Peer learning <br>Tutorials on Filter bubbles | Codewars Kata <br>Work on Filter bubbles | Filter bubbles
+Thursday<br>15.10| Workshop: the Web Audio API <br>Project: Making noise |  Peer learning research <br>Work on Making noise | Making noise
+Thursday<br>22.10| Peer learning <br>Tutorials on Making noise | Codewars Kata <br> Prepare formative (tweak your work) | Making noise
+Thursday<br>29.10| Formative presentations | Codewars Kata  | Reflection blog
+Week 6<br>Mozfest|
+Thursday<br>12.11| Workshop: using a spreadsheet as your database <br>Group project: Time table | Peer learning research <br>Work on Time table | Time table
+Thursday<br>19.11| Peer learning <br>Tutorials on Time table | Codewars Kata <br>Work on Time table | Time table
+Thursday<br>26.11| Tutorials on Time table <br> Summative prep | Prepare summative (tweak your work) | Time table
+Thursday<br>03.12| Summative presentations (with guest TBA)
+
+
 # Learning goals
 
 * Create **proof-of-concept functional prototypes** for Web applications, which manipulate data from online database(s) and/or API(s).
@@ -37,28 +55,11 @@ In particular, you will
 
 
 
+
+
 <!-- # Brief(s)
 
 Make an app that helps people **make a decision**.-->
-
-
-# Plan
-
-See [provisional plan](misc/2015.md).
-
-
-<!--Session	| Date	| In class		| Assignment
--------	| -----	| ---------	| -----------
-[1](sessions/week-1.md)		| Thu Oct 2	| The Web and its **languages**: HTML + CSS + JS. <br>[Start making an **app**](http://codepen.io/baddeo/pen/KnxEF)  | 
-[2](sessions/week-2.md)		| Thu Oct 9 	| **Brain-swarming** app ideas.<br>Principles of **programming**. <br>[Rock-paper-scissors with **Javascript**](http://codepen.io/baddeo/debug/hcwCv)  | 
-[3](sessions/week-3.md)		| Thu Oct 16 	| Making your app **talk** to the Web: introducing **APIs**. <br>Mash up a couple of APIs with [IFTTT](https://ifttt.com/). <br>Use [YQL](https://developer.yahoo.com/yql) to read data from Flickr and [make our *Help me decide app* display the chosen option as a picture](http://codepen.io/baddeo/pen/cbxft) | 
-[4](sessions/week-4.md)		| Thu Oct 23 	| **Pair-feedback on [app ideas](http://bit.ly/web14203-app-ideas)** (to be continued on the blog) <br>[MozBug](mzl.la/mozbug) and the real-time database behind it ([Firebase](http://firebase.com)) | 
-[5](sessions/week-5.md)		| Thu Oct 30	| Blog and ideas review <br>Individual tutorials <br>Workshop: gits and [git hubs](https://github.com/)  | 
-[6](sessions/week-6.md)		| Thu Nov 13 	| APIs again! <br>[Using a Google Spreadsheet as your database](spreadsheet-api-tutorial) 	 | 
-[7](sessions/week-7.md)		| Thu Nov 20 	| Tutorials  | 
-[8](sessions/week-8.md)		| Thu Nov 27 	| Tutorials  | Prepping presentation
-[9](sessions/week-9.md)		| **Thu Dec 4** 	| Summative Assessment  | -->
-
 
 
 ### License

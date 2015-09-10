@@ -1,4 +1,4 @@
-During this project you will learn how to mash up Web technologies to make tools (aka *apps*) that everyone can use. 
+During this course you will learn how to mash up Web technologies to make tools (aka *apps*) that everyone can use. 
 
 In particular, you will
 
@@ -14,8 +14,9 @@ In particular, you will
 * back up your project files using the Git version-control system (through GitHub)
 
 
-
 # Plan
+
+[Subscribe to the calendar](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)!
 
 When | In class | Homework | Blog 
 ---- | -------- | -------- | ----
@@ -29,6 +30,7 @@ Thursday<br>12.11| Workshop: using a spreadsheet as your database <br>Team proje
 Thursday<br>19.11| Peer learning <br>Tutorials on Time table | Codewars Kata <br>Work on Time table | Time table
 Thursday<br>26.11| Tutorials on Time table <br> Summative prep | Prepare summative (tweak your work) | Time table
 Thursday<br>03.12| Summative presentations (with guest TBA)
+ 
 
 # Projects
 

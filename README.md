@@ -21,11 +21,11 @@ When | In class | Homework | Blog
 ---- | -------- | -------- | ----
 Thursday<br>01.10| Welcome <br>APIs <br>Workshop: RTFM <br>Team project: [Filter bubbles](#filter-bubbles) | Choose a topic to research and teach next week 6 teams (~3 people each) <br>Work on Filter bubbles | Filter bubbles
 Thursday<br>08.10| Peer learning <br>Tutorials on Filter bubbles | Codewars Kata <br>Work on Filter bubbles | Filter bubbles
-Thursday<br>15.10| Workshop: the Web Audio API <br>Project: Making noise |  Peer learning research <br>Work on Making noise | Making noise
+Thursday<br>15.10| Workshop: the Web Audio API <br>Project: [Making noise](#making-noise) |  Peer learning research <br>Work on Making noise | Making noise
 Thursday<br>22.10| Peer learning <br>Tutorials on Making noise | Codewars Kata <br> Prepare formative (tweak your work) | Making noise
 Thursday<br>29.10| Formative presentations | Codewars Kata  | Reflection blog
 Week 6<br>Mozfest|
-Thursday<br>12.11| Workshop: using a spreadsheet as your database <br>Team project: Time table | Peer learning research <br>Work on Time table | Time table
+Thursday<br>12.11| Workshop: using a spreadsheet as your database <br>Team project: [Time table](#time-table) | Peer learning research <br>Work on Time table | Time table
 Thursday<br>19.11| Peer learning <br>Tutorials on Time table | Codewars Kata <br>Work on Time table | Time table
 Thursday<br>26.11| Tutorials on Time table <br> Summative prep | Prepare summative (tweak your work) | Time table
 Thursday<br>03.12| Summative presentations (with guest TBA)
@@ -36,7 +36,15 @@ Thursday<br>03.12| Summative presentations (with guest TBA)
 
 This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
 
-All the project material [here](projects/filter-bubbls).
+All the project material [here](projects/filter-bubbles).
+
+### Making noise
+
+This project is about functional and object-oriented programming, creating your own API and having fun with code-generated sound.
+
+### Time table
+
+This **team project** is about designing interfaces and coding apps that use data to provide people with *just enough information*. 
 
 
 # Learning goals

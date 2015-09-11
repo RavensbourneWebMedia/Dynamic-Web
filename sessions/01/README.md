@@ -18,21 +18,41 @@ Things to talk about (not ordered atm):
 <!-- can we ask marketing to give us Rave notebooks, or buy some for students? -->
 
 * shared calendar
-* deadlines..
-* attendance + 2% tardiness tax
 * blogging regularly, why it is important
 * GitHub as a collaboration, documentation and backup tool, blogging on GitHub wikis  
 * peer learning
 * reading lists and perusing the library (we'll also share some PDFs)
-* if you can't present during assessment you'll make YouTube videos
 
 ### What you can learn in this unit
 
 - [ ] See learning goals
 
+### Rules of the road
+
+* deadlines..
+* attendance + 2% tardiness tax
+* late submissions
+* if you can't present during assessment you'll make YouTube videos
+
 # APIs
 
-So what's an API then? [Disambiguation](https://en.wikipedia.org/wiki/API_(disambiguation))
+### Protocols
+
+- [ ] Talk about **protocols** (ties in with rules of the road above, btw)?
+	* social protocols
+	* technical protocols (HTTP, TCP/IP, DNS)
+	* centralised vs decentralised, power and control
+	* APIs as protocols..
+
+[![](assets/protocol-galloway.png)](https://mitpress.mit.edu/books/protocol)
+
+<!-- https://github.com/lmccart/itp-critical-apis/blob/master/discussion/08%20Galloway%20Protocol-OCR.pdf -->
+
+
+
+### So what's an API then? 
+
+[Disambiguation](https://en.wikipedia.org/wiki/API_(disambiguation)) from Wikipedia.
 
 **A**pplication **P**rogramming **I**nterface.
 

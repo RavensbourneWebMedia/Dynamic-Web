@@ -208,7 +208,20 @@ Pull data from Instagram for 2 opposites and build an interesting  and expressiv
 # Homework
 
 ### Peer-learning research
-1. Choose a topic to research and teach next week 6 teams (~3 people each)
+
+Choose a topic to research and teach next week 6 teams (~3 people each)
+
+
+
+In your planning / presentation you might include:
+
+* Summary of main ideas
+* Links, images, or video of projects / products / things referenced in your research
+* Other relevant things you've read, heard, or seen
+* Personal experiences
+
+Each team should also prepare 1-2 questions for the class. After hearing the presentations, we will have a short group discussion around these questions.
+
 
 ### Project 
 

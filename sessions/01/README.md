@@ -11,6 +11,25 @@
 
 # Welcome
 
+Things to talk about (not ordered atm):
+
+* keeping a **notebook** (paper or digital) to record your ideas, don't let them fade away. Extremely important! 
+
+<!-- can we ask marketing to give us Rave notebooks, or buy some for students? -->
+
+* shared calendar
+* deadlines..
+* attendance + 2% tardiness tax
+* blogging regularly, why it is important
+* GitHub as a collaboration, documentation and backup tool, blogging on GitHub wikis  
+* peer learning
+* reading lists and perusing the library (we'll also share some PDFs)
+* if you can't present during assessment you'll make YouTube videos
+
+### What you can learn in this unit
+
+- [ ] See learning goals
+
 # APIs
 
 So what's an API then? [Disambiguation](https://en.wikipedia.org/wiki/API_(disambiguation))

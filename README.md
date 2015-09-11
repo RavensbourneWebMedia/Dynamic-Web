@@ -30,7 +30,6 @@ Thursday<br>12.11| Workshop: using a spreadsheet as your database <br>Team proje
 Thursday<br>19.11| Peer learning <br>Tutorials on Time table | Codewars Kata <br>Work on Time table | Time table
 Thursday<br>26.11| Tutorials on Time table <br> Summative prep | Prepare summative (tweak your work) | Time table
 Thursday<br>03.12| Summative presentations (with guest TBA)
- 
 
 # Projects
 
@@ -69,6 +68,12 @@ This **team project** is about designing interfaces and coding apps that use dat
 
 * Use the Git version-control system (through GitHub) to **collaborate** with your team and **back-up** your project files.
 
+# Rules of the road
+
+* deadlines
+* attendance (2% tardiness tax)
+* late submission
+* participation
 
 ### License
 

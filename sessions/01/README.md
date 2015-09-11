@@ -29,10 +29,12 @@ Things to talk about (not ordered atm):
 
 ### Rules of the road
 
-* deadlines..
-* attendance + 2% tardiness tax
-* late submissions
-* if you can't present during assessment you'll make YouTube videos
+* **Be present**: *2% tax* for unexcused tardiness and absence
+* **Be responsible** for what happens in class whether you're here or not. Organise with your classmates to get class information and material that you may have missed.
+* **Participate**: you are encouraged and expected to engage actively in discussion, reflection and activities.
+* **Present** (formative and summative): if you can't present during assessment you'll make YouTube videos
+* Deadlines and late submissions
+
 
 # APIs
 

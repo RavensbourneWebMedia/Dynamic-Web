@@ -140,15 +140,66 @@ From [Eloquent JavaScript: functional programming](http://eloquentjavascript.net
 
 # Workshop
 
+### Let's talk about `#hashtags`
+
+- [ ] graph of the search volume for `hashtag` from Google trends
+- [ ] images of hashtag abuse
+- [ ] hashtag key from Kickstarter
+
+* Do you use hashtags? If yes, which? If not, why?
+* What's a hashtag?
+* What happens when you use a hashtag in a picture / tweet etc? 
+* Let's remind ourselves, as we became so accustomed to hashtags that we almost take it for granted.. but we don't use hashtags when we talk to each other, or when we text our friends.. so why do we use them so extensively on social media?
+* What's hashtag abuse? And *hashspamming*?
+* Why do social media services encourage us to use hashtags?
+* How can we harness hashtags in our our own makes, to communicate something interesting?
+
+### `#contrast`
+
+Let's use the Instagram API to build a visualisation of **opposites**:
+
+* healthy - unhealthy
+* public - private
+* what's the contrary of...
+
+Pull data from Instagram for 2 opposites and build an interesting  and expressive display
+
+- [ ] Examples / inspirations
+
+1. Build an HTML skeleton (refresh)
+* Get familiar with the IG API
+* Request data via JS, see what we get in return (console, inspecting objects)
+* Traversing data (loops) 
+* Build a simple grid of pictures
+* Play with size, position, transparency
+
 # Team project
 
+### Filter bubbles 
 
+* Watching the Eli Pariser TED talk video together
+* Discussion
+
+* Form teams
+* Draw the edges of your filter bubbles
+
+* Research hashtags: record the trail
+* Brainstorm ideas for visualisations
 
 # Homework
 
-1. Choose a topic to research and teach next week 6 teams (~3 people each) 
-* Work on Filter bubbles 
+### Peer-learning research
+1. Choose a topic to research and teach next week 6 teams (~3 people each)
+
+### Project 
+
+Work on Filter bubbles with your team
+
+* GitHub repo
+* research on repo wiki
+* discuss and sketch ideas
+* experiment with code (more than one idea, next week we'll review them and pick one to finalise)
 
 ### Blog 
 
-Filter bubbles
+- [ ] Filter bubbles **notebook**: reflection on the concept and documentation of thought process. You can post pictures of scribbled notes, or jot down notes digitally. It doesn't need to be fleshed out and well written. The main goal here is to record your flow of ideas, not to make it beautiful / readable.

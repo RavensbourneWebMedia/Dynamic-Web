@@ -1,0 +1,132 @@
+* { box-sizing: border-box; }
+
+html, body
+{
+	height: 100%;
+	/*position: relative;*/
+}
+
+body 
+{
+	/*background: rgb(253,198,146);*/
+	color: #00003c;
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+/* INSTAFEED */
+
+	#instafeed
+	{
+		border: none; 
+		width: 100%; 
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	#instafeed a
+	{
+
+	}
+
+	#instafeed a img
+	{
+		/*max-width: 320px;*/
+		vertical-align: text-bottom;
+	}
+
+	@media (max-width: 3200px)
+	{
+		#instafeed a img
+		{
+			/* 12 columns */
+			width: 10%;
+		}
+	}
+
+	@media (max-width: 2880px)
+	{
+		#instafeed a img
+		{
+			/* 9 columns */
+			width: 11.111111111%;
+		}
+	}
+
+	@media (max-width: 2560px)
+	{
+		#instafeed a img
+		{
+			/* 8 columns */
+			width: 12.5%;
+		}
+	}
+
+	@media (max-width: 2240px)
+	{
+		#instafeed a img
+		{
+			/* 7 columns */
+			width: 14.285714286%;
+		}
+	}
+
+	@media (max-width: 1920px)
+	{
+		#instafeed a img
+		{
+			/* 6 columns */
+			width: 20%;
+		}
+	}
+
+	@media (max-width: 1600px)
+	{
+		#instafeed a img
+		{
+			/* 5 columns */
+			width: 20%;
+		}
+	}
+
+	@media (max-width: 1280px)
+	{
+		#instafeed a img
+		{
+			/* 4 columns */
+			width: 25%;
+
+			max-width: 320px;
+		}
+	}
+
+	@media (max-width: 960px)
+	{
+		#instafeed a img
+		{
+			/* 3 columns */
+			width: 33.333333%;
+		}
+	}
+
+	@media (max-width: 640px)
+	{
+		#instafeed a img
+		{
+			/* 2 columns */
+			width: 50%; 
+		}	
+	}
+
+	@media (max-width: 320px)
+	{
+		#instafeed a img
+		{
+			/* 1 column */
+			width: 100%; 
+		}	
+	}

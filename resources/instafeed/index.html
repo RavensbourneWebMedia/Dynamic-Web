@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+
+	<head>
+
+		<title>InstaFeed demo</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+
+		<link href="css/animate.css" rel="stylesheet" type='text/css'>
+		<link href="css/style.css" rel="stylesheet" type='text/css'>
+
+		<script type="text/javascript" src="js/instafeed.min.js"></script>
+		
+	</head>
+
+	<body>
+
+		<div id="instafeed"></div>
+
+		<script type="text/javascript">
+			var feed = new Instafeed(
+			{
+				get: 'tagged',
+				tagName: 'YOUR_TAG_HERE',
+				resolution: 'standard_resolution',
+				clientId: 'YOUR_INSTAGRAM_API_KEY_HERE',
+				template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
+				limit: 60,
+				after: function() 
+				{
+					if (this.hasNext()) 
+					{
+						feed.next()
+						// loadButton.setAttribute('disabled', 'disabled');
+					}
+				},
+				// sortBy: 'most-recent'
+				sortBy: 'random'
+			})
+			feed.run()
+		</script>
+	</body>
+
+</html>	

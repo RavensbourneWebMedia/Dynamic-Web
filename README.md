@@ -1,49 +1,49 @@
-During this course you will learn how to mash up Web technologies to make tools (aka *apps*) that everyone can use. 
+### During this course you will learn how to mash up Web technologies to make tools (aka *apps*) that everyone can use. 
 
-In particular, you will
+In particular, you will:
 
-* get familiar with the principles of functional and object-oriented programming, putting these into practice with JavaScript
-* develop your computational thinking skills with weekly coding challenges
-* research and use code libraries (such as jQuery) and integrate them in your project
-* analyse the mechanics of applications, breaking down their behaviours into data, functions and logic  
-* play critically with Web APIs (both data APIs and interaction APIs)
-* create proof-of-concept functional prototypes for Web applications, which manipulate data from online database(s) and/or API(s)
-* work in teams, learning from your peers and teaching them what you learned
-* document your work regularly and reflect on your creative process
-* communicate your ideas both technically and in an engaging way
-* back up your project files using the Git version-control system (through GitHub)
+* Get familiar with the principles of functional and object-oriented programming, putting these into practice with **JavaScript**
+* Develop your **computational thinking** skills with weekly coding challenges
+* Research and use code libraries (such as **jQuery**) and integrate them in your project
+* Analyse the mechanics of applications, breaking down their behaviours into *data*, *functions* and *logic*  
+* Play critically with **Web APIs** (both data APIs and interaction APIs)
+* Create proof-of-concept functional **prototypes** for Web applications, which manipulate data from online database(s) and/or API(s)
+* Work in **teams**, learning from your peers and teaching them what you learned
+* **Document** your work regularly and reflect on your creative process
+* **Communicate** your ideas both technically and in an engaging way
+* Back up your project files using the Git version-control system (through **GitHub**)
 
 
 # Plan
 
-[Subscribe to the calendar](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)!
+### [Subscribe to the calendar!](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)
 
 When | In class | Homework | Blog 
 ---- | -------- | -------- | ----
-[Thursday<br>01.10](sessions/01)| Welcome <br>APIs <br>Workshop: RTFM <br>Team project: [Filter bubbles](#filter-bubbles) | Choose a topic to research and teach next week 6 teams (~3 people each) <br>Work on Filter bubbles | Filter bubbles
-Thursday<br>08.10| Peer learning <br>Tutorials on Filter bubbles | Codewars Kata <br>Work on Filter bubbles | Filter bubbles
-Thursday<br>15.10| Workshop: the Web Audio API <br>Project: [Making noise](#making-noise) |  Peer learning research <br>Work on Making noise | Making noise
-Thursday<br>22.10| Peer learning <br>Tutorials on Making noise | Codewars Kata <br> Prepare formative (tweak your work) | Making noise
-Thursday<br>29.10| Formative presentations | Codewars Kata  | Reflection blog
+[Thursday<br>01.10](sessions/01)| <ul><li>Welcome <li>APIs <li>Workshop: RTFM <li>Team project: [**Filter Bubbles**](#filter-bubbles) | <ul><li>Peer-learning research: choose a topic to research and teach next week (teams of ~3) <li>Work on *Filter Bubbles* | *Filter Bubbles*
+Thursday<br>08.10| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars Kata <li>Work on *Filter Bubbles* | *Filter Bubbles*
+Thursday<br>15.10| <ul><li>Workshop: the Web Audio API <li>Project: [**Making Noise**](#making-noise) | <ul><li>Peer learning research <li>Work on *Making Noise* | *Making Noise*
+Thursday<br>22.10| <ul><li>Peer learning <li>Tutorials on *Making Noise* | <ul><li>Codewars Kata <li>Prepare formative (tweak your work) | *Making Noise*
+Thursday<br>29.10| **Formative presentations** | Codewars Kata  | Reflection blog
 Week 6<br>Mozfest|
-Thursday<br>12.11| Workshop: using a spreadsheet as your database <br>Team project: [Time table](#time-table) | Peer learning research <br>Work on Time table | Time table
-Thursday<br>19.11| Peer learning <br>Tutorials on Time table | Codewars Kata <br>Work on Time table | Time table
-Thursday<br>26.11| Tutorials on Time table <br> Summative prep | Prepare summative (tweak your work) | Time table
-Thursday<br>03.12| Summative presentations (with guest TBA)
+Thursday<br>12.11| <ul><li>Workshop: using a spreadsheet as your database <li>Team project: [**Time Table**](#time-table) | <ul><li>Peer learning research <li>Work on *Time Table* | *Time Table*
+Thursday<br>19.11| <ul><li>Peer learning <li>Tutorials on *Time Table* | <ul><li>Codewars Kata <li>Work on *Time Table* | *Time Table*
+Thursday<br>26.11| <ul><li>Tutorials on *Time Table* <li> Summative prep | Prepare summative (tweak your work) | *Time Table*
+Thursday<br>03.12| **Summative presentations** (with guest TBA)
 
 # Projects
 
-### Filter bubbles
+### Filter Bubbles
 
 This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
 
 All the project material [here](projects/filter-bubbles).
 
-### Making noise
+### Making Noise
 
 This project is about functional and object-oriented programming, creating your own API and having fun with code-generated sound.
 
-### Time table
+### Time Table
 
 This **team project** is about designing interfaces and coding apps that use data to provide people with *just enough information*. 
 
@@ -70,10 +70,11 @@ This **team project** is about designing interfaces and coding apps that use dat
 
 # Rules of the road
 
-* deadlines
-* attendance (2% tardiness tax)
-* late submission
-* participation
+* **Be present**. If you happen to be late or absent, make sure you email me about it before a session starts. We'll deduct 2% from your grade for each uncommunicated tardiness or absence (aka the *2% Tardiness Tax*).
+* **Participate** in class debates and workshops. We'll make sure that your ideas have space to be heard and that nobody makes you feel uncomfortable about sharing them.
+* **Present** your work during formative and summative assessments. If you can't make it those days then you'll record your presentation and upload it to YouTube (or similar).
+* **Be responsible** for what happens in class. Organise with your peers to get class information and material that you may have missed.
+* **Meet the deadlines**. If you submit your work after a deadline, your grade will be capped at D- (bare pass).
 
 ### License
 

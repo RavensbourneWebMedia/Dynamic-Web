@@ -20,7 +20,7 @@ In particular, you will:
 
 When | In class | Homework | Blog 
 ---- | -------- | -------- | ----
-[Thursday<br>01.10](sessions/01)| <ul><li>Welcome <li>APIs <li>Workshop: RTFM <li>Team project: [**Filter Bubbles**](#filter-bubbles) | <ul><li>Peer-learning research: choose a topic to research and teach next week (teams of ~3) <li>Work on *Filter Bubbles* | *Filter Bubbles*
+[Thursday<br>01.10](sessions/01)| <ul><li>Welcome <li>APIs <li>Workshop: *Hash Tags* <li>Team project: [**Filter Bubbles**](#filter-bubbles) | <ul><li>Peer-learning research: choose a topic to research and teach next week (teams of ~3) <li>Work on *Filter Bubbles* | *Filter Bubbles*
 Thursday<br>08.10| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars Kata <li>Work on *Filter Bubbles* | *Filter Bubbles*
 Thursday<br>15.10| <ul><li>Workshop: the Web Audio API <li>Project: [**Making Noise**](#making-noise) | <ul><li>Peer learning research <li>Work on *Making Noise* | *Making Noise*
 Thursday<br>22.10| <ul><li>Peer learning <li>Tutorials on *Making Noise* | <ul><li>Codewars Kata <li>Prepare formative (tweak your work) | *Making Noise*

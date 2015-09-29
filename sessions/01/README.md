@@ -4,10 +4,11 @@
 
 1. [Welcome](#welcome) :)
 * [APIs](#apis) 
-* Workshop: [RTFM](#workshop) 
+* Workshop: [Hash Tags](#workshop) 
 * Team project: [Filter Bubbles](#team-project)
 
 ### Your [homework](#homework) and [blog](#blog)!
+
 
 # Welcome
 
@@ -17,9 +18,6 @@
 * Keeping a **journal** to record your creative process is *extremely* important. Don't let your ideas and thoughts fade away! Think of your project blog as your **digital sketchbook**. More on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging).
 * Reading lists and perusing the library (we'll also share some PDFs).
 * **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this course you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
-
-
-
 
 
 # APIs
@@ -165,33 +163,51 @@ From [Eloquent JavaScript: functional programming](http://eloquentjavascript.net
 
 <!-- ...software talking to other software (http://blog.garrytan.com/the-api-ization-of-everything)-->
 
+
 # Workshop
 
-### Let's talk about `#hashtags`
+### What's a hashtag? 
 
-- [ ] graph of the search volume for `hashtag` from Google trends
-- [ ] images of hashtag abuse
-- [ ] hashtag key from Kickstarter
+Imagine you have to explain it to someone or something that has never seen one before (an alien, your grandma..)
+
+[![](assets/hashtag-search.png)](https://www.google.co.uk/trends/explore#q=hashtag&cmpt=q&tz=Etc%2FGMT-1)
+
+This graph from Google Trends illustrates the (search) popularity of the word `hashtag` over time.
+
+### What's a hashtag *for*?
+
+Let's remind ourselves. 
+
+We became so accustomed to hashtags that we almost take them for granted. Yet we don't use hashtags when we talk to each other, or when we text our friends, so **why** do we use them so extensively on social media?
 
 * Do you use hashtags? If yes, which? If not, why?
-* What's a hashtag?
 * What happens when you use a hashtag in a picture / tweet etc? 
-* Let's remind ourselves, as we became so accustomed to hashtags that we almost take it for granted.. but we don't use hashtags when we talk to each other, or when we text our friends.. so why do we use them so extensively on social media?
-* What's hashtag abuse? And *hashspamming*?
 * Why do social media services encourage us to use hashtags?
-* How can we harness hashtags in our our own makes, to communicate something interesting?
 
-### `#contrast`
+[![](assets/hash-key.jpg)](https://www.kickstarter.com/projects/1000610379/hashkey-a-dedicated-1-key-keyboard-for-the-hashtag)
+ 
+### What's hashtag abuse, aka *hashspamming*?
+
+![](assets/hashtag-spam.png)
+
+
+### How can we harness hashtags in our our own projects, to communicate something interesting?
 
 Let's use the Instagram API to build a visualisation of **opposites**:
 
 * healthy - unhealthy
 * public - private
+* light -dark
+* silence - noise
+* comedy - tragedy
+* consciousness - unconsciousness
+* upper class - lower class
+* North - South
 * what's the contrary of...
 
-Pull data from Instagram for 2 opposites and build an interesting  and expressive display
-
-- [ ] Examples / inspirations
+<!--- [ ] Examples / inspirations-->
+ 
+### Pull data from Instagram for 2 opposites and build an interesting  and expressive display
 
 1. Build an HTML skeleton (refresh)
 * Get familiar with the IG API
@@ -199,6 +215,8 @@ Pull data from Instagram for 2 opposites and build an interesting  and expressiv
 * Traversing data (loops) 
 * Build a simple grid of pictures
 * Play with size, position, transparency
+
+See [InstaFeed](../../resources/instafeed) demo.
 
 # Team project
 

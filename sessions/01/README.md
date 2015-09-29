@@ -217,14 +217,15 @@ Today:
 
 Between today and next week:
 
-1. Research communities and *hashtags*.
-* Brainstorm ideas for visualisations. 
-* Start experimenting wit code.
+1. Research communities and *hashtags*, document it on your GitHub repo wiki.
+* Discuss and sketch ideas for visualisations. 
+* Start experimenting with code, more than one idea. 
 * Record your creative process in your blogs.
 
 Next week:
 
-1. Review your work in class.
+1. Review your ideas and experiments in class.
+* Pick one idea to finalise.
 * Continue coding.
 
 Between next week and the formative:
@@ -247,29 +248,36 @@ Formative presentation (29.10):
 
 ### Peer-learning research
 
-Choose a topic to research and teach next week 6 teams (~3 people each)
+6 **teams** of ~3 people each. You may want to stick to the same *Filter Bubbles* team.
 
+Choose a topic to research and teach next week (one per team). Some of them are theory-oriented and some are more practical:
 
+1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api)
+* The [Critical Engineering Manifesto](http://criticalengineering.org/) (you can replace `engineer` with `coder` if you feel like making this more relatable)
+* [Below the API](http://www.forbes.com/sites/anthonykosner/2015/02/04/google-cabs-and-uber-bots-will-challenge-jobs-below-the-api/)
+* Computational thinking
+* Functions and functional programming (make examples in JavaScript)
+* `for` loops (make examples in JavaScript)
 
-In your planning / presentation you might include:
+Your presentation should be **~20 minutes** and you may include:
 
 * Summary of main ideas
-* Links, images, or video of projects / products / things referenced in your research
-* Other relevant things you've read, heard, or seen
+* Links, images, or videos of projects / products / things referenced in your research
+* Other relevant things you've read, heard or seen
+* Examples and demonstrations
 * Personal experiences
 
-Each team should also prepare 1-2 questions for the class. After hearing the presentations, we will have a short group discussion around these questions.
+Each team should also prepare **1-2 questions for the class**. After hearing the presentations, we will have a short group discussion around these questions.
 
 
 ### Project 
 
-Work on Filter bubbles with your team
+Work on *Filter Bubbles* **with your team**:
 
-* GitHub repo
-* research on repo wiki
-* discuss and sketch ideas
-* experiment with code (more than one idea, next week we'll review them and pick one to finalise)
+* Research on your GitHub repo wiki
+* Discuss and sketch ideas
+* Experiment with code, more than one idea. Next week we'll review them and pick one to finalise.
 
 ### Blog 
 
-- [ ] Filter bubbles **notebook**: reflection on the concept and documentation of thought process. You can post pictures of scribbled notes, or jot down notes digitally. It doesn't need to be fleshed out and well written. The main goal here is to record your flow of ideas, not to make it beautiful / readable.
+**Individually**, write about *Filter Bubbles*. Reflect on the concept and document **your** thought process. You can post pictures of scribbled notes, or jot down notes digitally. It doesn't need to be fleshed out and well written. The main goal here is to record your flow of ideas, not to make it beautiful!

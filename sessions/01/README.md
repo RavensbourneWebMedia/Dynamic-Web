@@ -2,7 +2,7 @@
 
 ### Today, Thursday 1st October 2015
 
-1. [Welcome](#welcome) 
+1. [Welcome](#welcome) :)
 * [APIs](#apis) 
 * Workshop: [RTFM](#workshop) 
 * Team project: [Filter bubbles](#team-project)
@@ -11,29 +11,15 @@
 
 # Welcome
 
-Things to talk about (not ordered atm):
+1. [What is this course about?](../../README.md)
+* [What's the plan?](../../README.md#plan) Make sure you subscribe to the [calendar feed](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)! 
+* [What can you learn?](../../README.md#learning-goals)
+* Keeping a **journal** to record your creative process is *extremely* important. Don't let your ideas and thoughts fade away! Think of your project blog as your **digital sketchbook**. More on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging).
+* Reading lists and perusing the library (we'll also share some PDFs).
+* **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this course you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
 
-* keeping a **notebook** (paper or digital) to record your ideas, don't let them fade away. Extremely important! 
 
-<!-- can we ask marketing to give us Rave notebooks, or buy some for students? -->
 
-* shared calendar
-* blogging regularly, why it is important
-* GitHub as a collaboration, documentation and backup tool, blogging on GitHub wikis  
-* peer learning
-* reading lists and perusing the library (we'll also share some PDFs)
-
-### What you can learn in this unit
-
-- [ ] See learning goals
-
-### Rules of the road
-
-* **Be present**: *2% tax* for unexcused tardiness and absence
-* **Be responsible** for what happens in class whether you're here or not. Organise with your classmates to get class information and material that you may have missed.
-* **Participate**: you are encouraged and expected to engage actively in discussion, reflection and activities.
-* **Present** (formative and summative): if you can't present during assessment you'll make YouTube videos
-* Deadlines and late submissions
 
 
 # APIs

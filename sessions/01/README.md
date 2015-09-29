@@ -5,7 +5,7 @@
 1. [Welcome](#welcome) :)
 * [APIs](#apis) 
 * Workshop: [RTFM](#workshop) 
-* Team project: [Filter bubbles](#team-project)
+* Team project: [Filter Bubbles](#team-project)
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -202,16 +202,46 @@ Pull data from Instagram for 2 opposites and build an interesting  and expressiv
 
 # Team project
 
-### Filter bubbles 
+### Filter Bubbles 
 
-* Watching the Eli Pariser TED talk video together
-* Discussion
+This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
 
-* Form teams
-* Draw the edges of your filter bubbles
+All the project material is [here](../../projects/filter-bubbles).
 
-* Research hashtags: record the trail
-* Brainstorm ideas for visualisations
+Today:
+
+1. Watch and discuss the [Eli Pariser TED talk video](http://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en#t-53082).
+* Form teams.
+* Draw the *edges* of your filter bubbles.
+* Set up a GitHub repository for your team project.
+
+Between today and next week:
+
+1. Research communities and *hashtags*.
+* Brainstorm ideas for visualisations. 
+* Start experimenting wit code.
+* Record your creative process in your blogs.
+
+Next week:
+
+1. Review your work in class.
+* Continue coding.
+
+Between next week and the formative:
+
+1. Refine your work.
+* Document your process (research, design and code).
+
+Formative presentation (29.10):
+
+1. Present your work as a team, both process and results.
+* Reflect on what you learned from it.
+
+
+
+
+
+
 
 # Homework
 

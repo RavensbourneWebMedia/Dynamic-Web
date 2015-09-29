@@ -37,7 +37,7 @@ Thursday<br>03.12| **Summative presentations** (with guest TBA)
 
 This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
 
-All the project material [here](projects/filter-bubbles).
+All the project material is [here](projects/filter-bubbles).
 
 ### Making Noise
 

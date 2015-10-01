@@ -19,26 +19,41 @@
 		<div id="instafeed"></div>
 
 		<script type="text/javascript">
+			
+			// see http://instafeedjs.com
 			var feed = new Instafeed(
 			{
 				get: 'tagged',
-				tagName: 'YOUR_TAG_HERE',
+				tagName: 'HASHTAG_HERE',
 				resolution: 'standard_resolution',
-				clientId: 'YOUR_INSTAGRAM_API_KEY_HERE',
+				clientId: 'YOUR_CLIENT_ID',
 				template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
 				limit: 60,
+				
+				// sortBy: 'most-recent',
+				sortBy: 'random',
+				
+				// HEADS UP!
+				/* 
+					This "after" block can crash your browser if you use a popular tag!
+
+					It instructs the browser to check if there is more data to fetch ( this.hasNext() ) and load it ( feed.next() ) after the feed returns something.
+
+					As a result, requests for popular tags (where you may get thousands or millions of photos) can trigger an almost-infinite loop, which the browser can't cope with.
+				*/	 
 				after: function() 
 				{
 					if (this.hasNext()) 
 					{
 						feed.next()
-						// loadButton.setAttribute('disabled', 'disabled');
 					}
-				},
-				// sortBy: 'most-recent'
-				sortBy: 'random'
+				}
+
+
 			})
+
 			feed.run()
+
 		</script>
 	</body>
 

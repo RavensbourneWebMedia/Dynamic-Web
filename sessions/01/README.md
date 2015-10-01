@@ -200,7 +200,9 @@ We add `q=your+search+terms` to the URL and Google will return results for those
 
 	Sometimes referred to as `client id`, `consumer key`, `access token` and other fancy words
 
-	[https://api.instagram.com/v1/tags/search?**q=snowy**&**access_token=ACCESS-TOKEN**](https://instagram.com/developer/endpoints/tags/#get_tags_search)
+	[https://api.instagram.com/v1/tags/search?**q=snowy**&**client_id=YOUR_CLIENT_ID**](https://instagram.com/developer/endpoints/tags/#get_tags_search)
+	
+	**HEADS UP!** The last parameter in the URL above according to the official Instagram API manual is `access_token` but you can use your CLIENT ID instead and skip having to generate an access token every time! 
 
 
 <!--	https://instagram.com/developer/-->
@@ -253,6 +255,7 @@ Let's use the Instagram API to build a visualisation of **opposites**:
 1. Build an HTML skeleton with static data (images and text).
 * Get started with the [IG API](http://instagram.com/developer).
 * Build the **URL**.
+* Download and install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
 * Request data via JS, see what we get in return (console, inspecting objects).
 * Traversing data (loops). 
 * Build a simple grid of pictures.

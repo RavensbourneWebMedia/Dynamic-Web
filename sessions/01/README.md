@@ -250,12 +250,13 @@ Let's use the Instagram API to build a visualisation of **opposites**:
  
 ### Pull data from Instagram for 2 opposites and build an interesting  and expressive display
 
-1. Build an HTML skeleton (refresh)
-* Get familiar with the IG API
-* Request data via JS, see what we get in return (console, inspecting objects)
-* Traversing data (loops) 
-* Build a simple grid of pictures
-* Play with size, position, transparency
+1. Build an HTML skeleton with static data (images and text).
+* Get started with the [IG API](http://instagram.com/developer).
+* Build the **URL**.
+* Request data via JS, see what we get in return (console, inspecting objects).
+* Traversing data (loops). 
+* Build a simple grid of pictures.
+* Play with size, position, transparency.
 
 See [InstaFeed](../../resources/instafeed) demo.
 

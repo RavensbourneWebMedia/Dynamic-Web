@@ -1,6 +1,6 @@
 # Filter Bubbles
 
-### This **team project** is about using code creatively to curate content produced by others (aka *user-generated-content*). 
+### This **team project** is about using code creatively to curate content produced by others (aka <abbr title="user-generated content">UGC</abbr>). 
 
 Pushing yourself out of your online comfort zone (aka *filter bubble*) you will discover how different communities use social media to craft their online identities. 
 

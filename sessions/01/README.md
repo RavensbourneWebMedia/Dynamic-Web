@@ -16,19 +16,23 @@
 * [What's the plan?](../../README.md#plan) Make sure you subscribe to the [calendar feed](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)! 
 * [What can you learn?](../../README.md#learning-goals)
 * Keeping a **journal** to record your creative process is *extremely* important. Don't let your ideas and thoughts fade away! Think of your project blog as your **digital sketchbook**. More on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging).
-* Reading lists and perusing the library (we'll also share some PDFs).
 * **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this course you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
+* [Rules of the road](../../README.md#rules-of-the-road).
 
 
 # APIs
 
-### Protocols
+### What are **protocols**?
 
-- [ ] Talk about **protocols** (ties in with rules of the road above, btw)?
-	* social protocols
-	* technical protocols (HTTP, TCP/IP, DNS)
-	* centralised vs decentralised, power and control
-	* APIs as protocols..
+<!--- [ ] Talk about **protocols** (ties in with rules of the road above, btw)?-->
+
+* Rules
+* Conventions, system of
+* Proper / improper behaviour
+* Social protocols
+* Technical protocols (HTTP, TCP/IP, DNS)
+* Centralised vs decentralised: power and control
+* APIs as protocols..
 
 [![](assets/protocol-galloway.png)](https://mitpress.mit.edu/books/protocol)
 
@@ -36,21 +40,19 @@
 
 
 
-### So what's an API then? 
+### So what's an **API** then? 
 
 [Disambiguation](https://en.wikipedia.org/wiki/API_(disambiguation)) from Wikipedia.
 
 **A**pplication **P**rogramming **I**nterface.
 
-Something to do with programming applications.. an interface for programming applications?! 
+Something to do with programming applications... an interface for programming applications?! 
 
-### Interface?
+### What is an **interface**?
 
-What do we mean by *interface*? 
+Something that stands **between** you and your goals. 
 
-Something that stands between you and your goals. 
-
-We're mostly familiar with graphical user interfaces, such as the icons you click to launch an app, send an email or even start the washing machine.
+We're mostly familiar with *graphical user interfaces*, aka *GUI*, such as the icon buttons you click to launch an app, send an email or even start the washing machine.
 
 ![](http://group.2008.gorenje.cc/en/imagelib/magnified/press/2013/germany/livinkitchen/gorenje_plus_lk/g-hob-a-gas-heaters.jpg)
 
@@ -58,24 +60,51 @@ Gas cookers have interfaces too: you don't operate the flame directly. The inter
 
 ### An interface to program applications?
 
-> In computer programming, an application programming interface (API) is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, *inputs*, *outputs*, and underlying types. [...] A good API makes it easier to develop a program by providing all the building blocks. A programmer then puts the blocks together.
+> In computer programming, an application programming interface (API) is a set of routines, **protocols**, and tools for building software applications. An API expresses a software component in terms of its operations, *inputs*, *outputs*, and underlying types. [...] A good API makes it easier to develop a program by providing all the building blocks. A programmer then puts the blocks together.
 
 > From [Wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface)
 
 An API **exposes** parts of a systems and **determines** how we (programmers) can interact with them to accomplish our (programming) goals. 
 
-Not all parts of a system are exposed. Those which are exposed (programmable), have an API. 
+Not all parts of a system are exposed, ie *programmable*. 
+
+### The parts of a system which are *programmable* have an API. 
 
 An API tells us *which* parts of a system are exposed, and *how* we are allowed to tinker with them. 
 
-A programming language can be understood as an API, in the sense that it's the tool between us and programming a computer. 
+A **programming language** can be understood as an API, in the sense that it's the tool between us and programming a computer. 
 
-JavaScript is our API to a Web browser. If you want to display the square root of a number on a Web page, the browser can do the calculation for you, provided you ask nicely (ie, it allows you access to its computing functions, using the `Math` API, and more specifically the `Math.sqrt` function to do square roots operations). If you wanted to make the browser blow up your computer, there's no API for that. 
+### JavaScript is our API to a Web browser. 
 
+If you want to display the square root of a number on a Web page, the browser can do the calculation for you, provided you ask nicely (ie, it allows you access to its computing functions, using the `Math` API, and more specifically the `Math.sqrt` function to do square roots operations). If you wanted to make the browser blow up your computer, there's no API for that. 
+
+### Natural language APIs
+
+We can think of natural languages (English, Chinese, etc.) as APIs. 
+
+For example, if we need directions from the Tour Eiffel to the Louvre, we can use the *French people's API* to ask for that information. 
+
+Using its **dictionary**, we can get the building blocks of our request, which we piece together following the instructions of a decent grammar book. 
+
+> Excusez-moi, comment puis-je marcher d'ici au Louvre?
+
+The *French API* gives us several ways of expressing the same request (or **input**).
+
+However, it doesn't tell us much about the response (or **output**). In fact, it doesn't even guarantee that we're going to get a response at all.
+
+The French API is not as **predictable** as a Web browser's API.
+
+Experience tells us that we would likely get a satisfying response to our question above, however we won't get a friendly response if we were to ask a stranger for personal information, even though the *French API* has no explicit ban for that.
+
+> Excusez-moi, combien de fois avez-vous fait caca ce mois-ci?
 
 <!-- An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising the interface.
 
 an API specifies a set of functions or routines that accomplish a specific task or are allowed to interact with a specific software component.-->
+
+#### Dictionary
+#### Instruction manual
+#### Rule book
 
 
 ### An instruction manual?
@@ -86,7 +115,7 @@ an API specifies a set of functions or routines that accomplish a specific task 
 
 Well, the instruction manual is an important but not fundamental part of an API, just like the manual for an electric device can help you make the most of your new toy, but it's not *the thing*.
 
-A good API comes with a thorough *documentation* (the instructions manual, also known as `docs` or `reference`), which explains what you have to send the code (input) and what it will spit back out (output). 
+A good API comes with a thorough **documentation** (the instructions manual, also known as `docs` or `reference`), which explains what you have to send the code (input) and what it will spit back out (output). 
 
 Without it, an API is unusable.
 
@@ -94,23 +123,7 @@ Without it, an API is unusable.
 
 An API has both a *dictionary* and a *rule book*: which actions you're allowed (and not allowed) to perform and how, which information you're allowed to ask and how often..
 
-We can think of natural languages (English, Chinese, etc.) as APIs. 
 
-For example, if we need directions from the Tour Eiffel to the Louvre, we can use the *French people's API* to ask for that information. 
-
-Using its dictionary, we can get the building blocks of our request, which we piece together following the instructions of a decent grammar book. 
-
-> Excusez-moi, comment puis-je marcher d'ici au Louvre?
-
-The *French API* gives us several ways of expressing the same request (or **input**).
-
-However, it doesn't tell us much about the response (or **output**). In fact, it doesn't even guarantee that we're going to get a response at all.
-
-The French API is not as predictable as a Web browser's API.
-
-Experience tells us that we would likely get a satisfying response to our question above, however we won't get a friendly response if we were to ask a stranger for personal information, even though the *French API* has no explicit ban for that.
-
-> Excusez-moi, combien de fois avez-vous fait caca ce mois-ci?
 
 <!--A **dictionary** is part of a natural language's API. But a language is more than a dictionary of words.-->
 

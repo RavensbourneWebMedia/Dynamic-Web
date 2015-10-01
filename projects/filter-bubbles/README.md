@@ -1,6 +1,6 @@
 # Filter Bubbles
 
-### This **team project** is about using code creatively to curate content produced by others.
+### This **team project** is about using *code* creatively to *curate content* produced by others.
 
 <!-- (aka user-generated content) --> 
 

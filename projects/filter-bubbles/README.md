@@ -1,20 +1,23 @@
-# Filter bubbles
+# Filter Bubbles
 
-This **team project** is about using code creatively to curate content produced by others (aka *user-generated-content*). 
+### This **team project** is about using code creatively to curate content produced by others (aka *user-generated-content*). 
 
-Pushing yourself out of your online comfort zone (aka *filter bubble*) you will discover how different communities use social media to craft their online identities. You will then produce a creative response that expresses your point(s) of view on what you observed. Whilst doing all that, you will get familiar with JS libraries and APIs, and refresh your working knowledge of HTML and CSS.
+Pushing yourself out of your online comfort zone (aka *filter bubble*) you will discover how different communities use social media to craft their online identities. 
+
+You will then produce a creative response that expresses your point(s) of view on what you observed. Whilst doing all that, you will get familiar with **JavaScript** libraries and **APIs**, and refresh your working knowledge of HTML and CSS.
 
 [![](assets/junk-food-analogy.png)](http://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en#t-53082)
 
 The idea of [filter bubbles was proposed by Eli Pariser (watch this video)](http://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en#t-53082) to describe the effects of the "invisible algorithmic editing of the Web" by companies like Facebook and Google. As algorithms personalise content based on our preferences we are exposed only to what we *like*, and we don't get to see information that could challenge or broaden our worldview.
 
-1. Form teams of 2-3 people
-* Define the *edges* of your team's bubbles, then research the communities at the extremities of your bubbles on social media
-* Create a GitHub repository for your team project, push all your contributions there (documentation, research, inspirations, code)
-* Finalise your idea, narrow it, choose a direction / critical point
-* Create algorithms (one or more) that pull in data for your given hashtag from one or more API sources. 
-* Create algorithms (one or more) that manipulate and visualise your data to express your team views of the subculture(s). For example: create visualisations that reveal something unexpected, or that make us aware of some system or data you feel strongly about
-* Publish your project using GitHub pages 
+1. Form **teams of 2-3 people**.
+* Define the **edges** of your team's bubbles.
+* Research the **communities** at the extremities of your bubbles on social media.
+* Create a **GitHub repository** for your team project (you may want to create a GitHub *organisation* for your team first). You will push all your contributions there: documentation, research, inspirations, code.
+* Finalise your *idea*, narrow it, choose a direction / critical point.
+* Create *algorithms* (one or more) that **pull in data** from one or more API sources. 
+* Create *algorithms* (one or more) that **manipulate and visualise your data** to express your team views of the subculture(s). For example: create visualisations that reveal something unexpected, or that make us aware of some system or data you feel strongly about.
+* Publish your project using **GitHub pages**. 
 
 ### Food for thought
 
@@ -55,8 +58,9 @@ The idea of [filter bubbles was proposed by Eli Pariser (watch this video)](http
 
 * [Vega](http://vega.github.io/vega/) is a visualisation grammar, a declarative format for creating, saving, and sharing interactive visualisation designs.
 
-
-# TODO
+<!--
+# Matteo's TODO
 
 - [ ] Starting list of hashtags? `#fakecation #gunporn` etc
-- [ ] Open datasets: the [UK Government](http://data.gov.uk/data/search), [UniStats](https://unistats.direct.gov.uk/open-access-data/), others?
+- [ ] Open datasets: the [UK Government](http://data.gov.uk/data/search), [UniStats](https://unistats.direct.gov.uk/open-access-data/), others? 
+-->

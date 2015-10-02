@@ -3,3 +3,4 @@ notes/*.html
 .DS_Store
 presentations/.sass-cache
 presentations/plugin/notes/.sass-cache
+archive/2014/resources/presentations/.sass-cache

@@ -250,7 +250,7 @@ Let's use the Instagram API to build a visualisation of **opposites**:
 
 <!--- [ ] Examples / inspirations-->
  
-### Pull data from Instagram for 2 opposites and build an interesting  and expressive display
+#### Pull data from Instagram for **2 opposite hashtags** and build an expressive display
 
 1. Build an HTML skeleton with static data (images and text).
 * Get started with the [IG API](http://instagram.com/developer).
@@ -261,7 +261,9 @@ Let's use the Instagram API to build a visualisation of **opposites**:
 * Build a simple grid of pictures.
 * Play with size, position, transparency.
 
-See [InstaFeed](../../resources/instafeed) demo.
+All the code for this workshop is [here](../../resources/instagram).
+
+<!--See [InstaFeed](../../resources/instafeed) demo.-->
 
 # Team project
 

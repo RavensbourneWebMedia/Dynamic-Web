@@ -4,7 +4,7 @@
 
 1. [Peer learning](#peer-learning)
 * Tutorials on [*Filter Bubbles*](#team-project)
-* CodeWars
+* [CodeWars](#codewars)!
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -38,14 +38,55 @@ Each team should also prepare **1-2 questions for the class**. After your presen
 
 
 
+<!--# Team Project-->
 
+# Codewars
+
+> Improve your skills by training with others on real code challenges
+
+<!--
+
+http://thoughts.baddeo.com/codewars
+
+It gamifies the experience of learning to code in a rather addictive way: 
+
+* a playful environment when solving coding puzzles/challenges (it feels like a game, although it could do with a bit of sound says Aimee)
+* get points and level up as you progress
+* compare and discuss your solution with those of other members of the community: it’s fascinating to see how other people approach and solve the same challenge and an invaluable learning opportunity
+
+-->
+
+[![](assets/codewars.png)](http://www.codewars.com/r/DQC6uA)
+
+1. Before you can sign up you'll have to complete a couple of challenges.
+* Click the `JavaScript` button. 
+* First challenge
+	```js
+	function multiply(a, b){
+  		a * b
+	}
+	```
+* Second challenge
+	```js
+	function Person(name){
+	  this.name = name;
+	}
+	
+	Person.prototype.greet = function(otherName){
+	  return "Hi " + otherName + ", my name is " + name;
+	}
+	```
+* You can now sign up!	
+
+	* Link your GitHub account
+	* In the `Clan` field enter **RaveWebMedia**. This way we'll be part of the same team and we'll be able to challenge each other
 
 
 # Homework
 
-### CodeWars kata
+### CodeWars katas
 
-
+Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
 
 ### Peer learning
 

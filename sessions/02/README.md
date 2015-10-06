@@ -42,7 +42,7 @@ At the end of your mini-lectures we'll give each other **feedback**. *Honest* fe
 Beware of *freeloaders*.
 -->
 
-### Let the peer-learning begin
+### Let the peer learning begin
 
 #### 6 teams
 
@@ -98,7 +98,7 @@ Each team should also prepare **1-2 questions for the class**. After your presen
 * Did you keep within the time?   
 -->
 	
-#### What could be **improved**?
+#### What can be **improved**?
 
 <!--
 * Where are you publishing your research and presentation?  
@@ -174,8 +174,18 @@ Work on *Filter Bubbles* **with your team**:
 
 ### Blog 
 
+Pair up with another team and **give each other feedback** on your peer learning mini-lectures. 
+
+Use the questions above to give / get feedback on your [presentations' content](#presentation-content) and [delivery](#delivery).
+
+Then write down a *summary* of the feedback you received and a *list of action points* in response to the question: 
+
+> What can be **improved**?
+
+<!--
 **Individually**, write about *Filter Bubbles*. 
 
 Reflect on how the idea is evolving and document **your** thought process. 
 
 Also, write about your coding experiments.
+-->

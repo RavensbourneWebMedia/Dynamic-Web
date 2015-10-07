@@ -263,9 +263,6 @@ Let's use the Instagram API to build a visualisation of **opposites**:
 * Build the **URL**.
 * Download and install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
 * Request data via JS, see what we get in return (console, inspecting objects).
-* Traversing data (loops). 
-* Build a simple grid of pictures.
-* Play with size, position, transparency.
 
 All the code for this workshop is [here](../../resources/instagram).
 

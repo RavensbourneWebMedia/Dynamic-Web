@@ -3,7 +3,7 @@
 ### Today, Thursday 8th October 2015
 
 1. [Peer learning](#peer-learning)
-* Workshop: [Hash Tags]() (part 2)
+* Workshop: [Hash Tags](#workshop) (part 2)
 * Sign up to [CodeWars](#codewars)!
 * Tutorials on [*Filter Bubbles*](#team-project)
  
@@ -106,6 +106,29 @@ Each team should also prepare **1-2 questions for the class**. After your presen
 -->
 
 
+# Workshop
+
+### Hash Tags (part 2)
+
+All the code for this workshop is [here](../../resources/instagram).
+
+#### Pull data from Instagram for **2 opposite hashtags** and build an expressive display
+
+1. Part 1 is [here](../01#workshop).
+* Traversing data: **loops**. 
+	
+	[![](assets/while-loop.png) **WHILE** loop interactive demo](http://codepen.io/baddeo/full/NGjJjd/)
+	
+	[![](assets/for-loop.png) **FOR** loop interactive demo](http://codepen.io/baddeo/full/YyVdVN/)
+	
+	You may want to try this [Codecademy's JS loops tutorial](https://www.codecademy.com/courses/javascript-beginner-en-NhsaT/0/1)
+	
+* Build a simple grid of pictures. Remember CSS?
+* Play with *size*, *position*, *transparency*...
+
+If you want to try a shortcut, here's [Instafeed](http://instafeedjs.com/). 
+
+
 # Codewars
 
 > Improve your skills by training with others on real code challenges
@@ -165,6 +188,7 @@ All the project material is [here](../../projects/filter-bubbles).
 * Let's see your **ideas** (inspired by?) for visualisations and **code experiments**. 
 * What's your team **GitHub repository**? 
 	* You may want to [create an *organisation*](https://github.com/organizations/new) (a GitHub group) for that.. 
+
 
 # Homework
 

@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+
+h1 
+{
+	text-align: center;
+}
+
+#pictures-container 
+{
+	padding: 12px;
+}
+
+img 
+{
+	max-width: 100%;
+}

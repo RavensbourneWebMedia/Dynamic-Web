@@ -3,9 +3,10 @@
 ### Today, Thursday 8th October 2015
 
 1. [Peer learning](#peer-learning)
+* Workshop: [Hash Tags]() (part 2)
+* Sign up to [CodeWars](#codewars)!
 * Tutorials on [*Filter Bubbles*](#team-project)
-* [CodeWars](#codewars)!
-
+ 
 ### Your [homework](#homework) and [blog](#blog)!
 
 
@@ -105,10 +106,6 @@ Each team should also prepare **1-2 questions for the class**. After your presen
 -->
 
 
-
-
-<!--# Team Project-->
-
 # Codewars
 
 > Improve your skills by training with others on real code challenges
@@ -151,6 +148,24 @@ It gamifies the experience of learning to code in a rather addictive way:
 	* In the `Clan` field enter **RaveWebMedia**. This way we'll be part of the same team and we'll be able to challenge each other
 
 
+# Team project
+
+### Filter Bubbles tutorials
+
+This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
+
+All the project material is [here](../../projects/filter-bubbles).
+
+### 6 teams
+
+### 10 minutes per team
+
+1. What do you think about [Eli Pariser's TED talk](http://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en#t-53082)?
+* What *communities* and/or *hashtags* have you been **researching**?
+* Let's see your **ideas** (inspired by?) for visualisations and **code experiments**. 
+* What's your team **GitHub repository**? 
+	* You may want to [create an *organisation*](https://github.com/organizations/new) (a GitHub group) for that.. 
+
 # Homework
 
 ### Codewars katas
@@ -167,9 +182,8 @@ Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*)
 
 Work on *Filter Bubbles* **with your team**:
 
-* Refine your work.
 * Pick one idea to finalise.
-* Continue coding (push experiments to the team GitHub repo).
+* Continue coding: push your experiments to the team GitHub repo.
 * Document your research on your team GitHub repo wiki
 
 ### Blog 

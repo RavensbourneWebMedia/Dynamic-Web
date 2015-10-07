@@ -88,6 +88,9 @@ Using its **dictionary**, we can get the building blocks of our request, which w
 
 > Excusez-moi, comment puis-je marcher d'ici au Louvre?
 
+See the [(Google) translation](https://translate.google.com/#fr/en/Excusez-moi%2C%20comment%20puis-je%20marcher%20d'ici%20au%20Louvre%3F) for the sentence above.
+
+
 The *French API* gives us several ways of expressing the same request (or **input**).
 
 However, it doesn't tell us much about the response (or **output**). In fact, it doesn't even guarantee that we're going to get a response at all.
@@ -97,6 +100,9 @@ The French API is not as **predictable** as a Web browser's API.
 Experience tells us that we would likely get a satisfying response to our question above, however we won't get a friendly response if we were to ask a stranger for personal information, even though the *French API* has no explicit ban for that.
 
 > Excusez-moi, combien de fois avez-vous fait caca ce mois-ci?
+
+See the [(Google) translation](https://translate.google.com/#fr/en/Excusez-moi%2C%20combien%20de%20fois%20avez-vous%20fait%20caca%20ce%20mois-ci%3F) for the sentence above.
+
 
 <!-- An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising the interface.
 

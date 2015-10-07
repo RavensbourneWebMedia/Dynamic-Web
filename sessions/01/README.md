@@ -259,6 +259,7 @@ Let's use the Instagram API to build a visualisation of **opposites**:
 #### Pull data from Instagram for **2 opposite hashtags** and build an expressive display
 
 1. Build an HTML skeleton with static data (images and text).
+* Spin up a local web-server. Remember [Mamp](https://www.mamp.info/en/)? 
 * Get started with the [IG API](http://instagram.com/developer).
 * Build the **URL**.
 * Download and install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)

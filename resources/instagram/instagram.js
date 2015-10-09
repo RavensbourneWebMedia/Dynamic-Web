@@ -22,4 +22,31 @@ $.ajax(
 function handleData( json )
 {
 	console.log(json)
+
+	var pictures = json.data
+
+	// loop through the pictures
+	var total = pictures.length
+	var counter = 0
+	while (counter < total)
+	{
+		console.log(counter)
+
+		var picture = pictures[counter]
+
+		console.log(picture)
+
+		var imageURL = picture.images.standard_resolution.url
+
+		console.log(imageURL)
+
+		var img = '<img src="' + imageURL + '">'
+
+		$('body').append(img)
+		
+		// increment counter by 1
+		// counter = counter + 1
+		// counter += 1
+		counter ++
+	}
 }

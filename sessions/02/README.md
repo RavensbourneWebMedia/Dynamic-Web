@@ -26,7 +26,7 @@ By teaching to your peers, you reinforce your own learning. [It works](http://vi
 
 Also, you get to practice and build confidence in your **communication skills**.
 
-At the end of your mini-lectures we'll give each other **feedback**. *Honest* feedback can hurt but it's through that (and practice) that we improve.
+At the end of your mini-lessons we'll give each other **feedback**. *Honest* feedback can hurt but it's through that (and practice) that we improve.
 
 <!--
 **Intellectual scaffolding** should be provided by the teacher. Simply placing students in groups and telling them to *work together* is not going to automatically yield results. The teacher must consciously *orchestrate* the learning exercise and choose the *appropriate vehicle* for it. For instance:
@@ -51,10 +51,10 @@ Beware of *freeloaders*.
 
 #### 15 minutes per team
 
-* ~10 for mini-lecture 
+* ~10 for mini-lesson 
 * ~5 for questions and debate
 
-#### Mini-lectures topics
+#### Mini-lessons topics
 
 1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api)
 * The [Critical Engineering Manifesto](http://criticalengineering.org/)
@@ -63,35 +63,23 @@ Beware of *freeloaders*.
 * Functions and functional programming
 * `for` loops 
 
-<!--
-Your team **presentation** (bear in mind, *presentation* does not mean PowerPoint slides.. be creative) should be **~20 minutes** and you may include:
-
-* Summary of main ideas
-* Links, images or videos of projects / products / things referenced in your research
-* Other relevant things you've read, heard or seen
-* Examples and demonstrations
-* Personal experiences
-
-Each team should also prepare **1-2 questions for the class**. After your presentation, we will have a short group discussion around these questions.
--->
-
 ### Let's give each other *honest* **feedback**
 
-#### Presentation **content**   
+#### Mini-lesson **content**   
 	
-1. How did you **plan** your presentation?
+1. How did you **plan** your mini-lesson?
 * What were the **key points** you wanted to get across?
 * How did you decide to communicate them?
 * What **assumptions** have you made about what we already know?
-* How **interactive** was your presentation? How was the audience meant to *participate*? 
+* How **interactive** was your mini-lesson? How was the audience meant to *participate*? 
 * What **questions** have you planned to ask your audience? How *open* were those questions? What type of questions (*Right-there*, *Between-the-lines* or *Opinion-needed* questions)?
 	
 #### **Delivery**
 	
-1. What role did **visuals** (eg: slides) play in your presentation?
-* What role did each **team member** play in delivering the presentation? 
-* How did you **practice** your presentation?
-* How did your presentation start? How did you *hook* your audience?
+1. What role did **visuals** (eg: slides) play in your mini-lesson?
+* What role did each **team member** play in delivering the mini-lesson? 
+* How did you **practice** your mini-lesson?
+* How did your mini-lesson start? How did you *hook* your audience?
 * What was your **body language** like? Consider facial expressions, movements of the arms, eye contact with the audience, and posture.
 * What was your **voice** like? Consider speed of delivery, pausing, volume and pitch
 
@@ -102,7 +90,7 @@ Each team should also prepare **1-2 questions for the class**. After your presen
 #### What can be **improved**?
 
 <!--
-* Where are you publishing your research and presentation?  
+* Where are you publishing your research and mini-lesson?  
 -->
 
 
@@ -198,9 +186,9 @@ Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*)
 
 ### Peer learning
 
-1. **Publish** your presentation and any other relevant material. We recommend GitHub (we :green_heart: :octocat:) but you can publish elsewhere as long as it's accessible by anyone.
+1. **Publish** your mini-lesson and any other relevant material. We recommend GitHub (we :green_heart: :octocat:) but you can publish elsewhere as long as it's accessible by anyone.
 
-2. Add the link to your presentation (and any other relevant material) to the `Teams` Google document I emailed you.
+2. Add the link to your mini-lesson (and any other relevant material) to the `Teams` Google document I emailed you.
 
 ### Project 
 
@@ -212,9 +200,9 @@ Work on *Filter Bubbles* **with your team**:
 
 ### Blog 
 
-Pair up with another team and **give each other feedback** on your peer learning mini-lectures. 
+Pair up with another team and **give each other feedback** on your peer learning mini-lessons. 
 
-Use the questions above to give / get feedback on your [presentations' content](#presentation-content) and [delivery](#delivery).
+Use the questions above to give / get feedback on your [mini-lessons' content](#mini-lesson-content) and [delivery](#delivery).
 
 Then write down a *summary* of the feedback you received and a *list of action points* in response to the question: 
 

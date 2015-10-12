@@ -159,7 +159,7 @@ It gamifies the experience of learning to code in a rather addictive way:
 * You can now sign up!	
 
 	* Link your GitHub account
-	* In the `Clan` field enter **RaveWebMedia**. This way we'll be part of the same team and we'll be able to challenge each other
+	* In the `Clan` field enter **RaveWebMedia**. This way we'll be part of the same team and we'll be able to challenge each other.
 
 
 # Homework

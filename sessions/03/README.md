@@ -47,3 +47,25 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 * Have a go at [this *beta kata*](http://www.codewars.com/kata/561bbd27fbbfb0bdad0000f4) which I made..
 * [Start making your own kata](http://www.codewars.com/kata/new/) and share it with the `RaveWebMedia` clan! 
 
+
+# Homework
+
+### Peer learning
+
+
+
+### Project 
+
+Work on *Filter Bubbles* **with your team**:
+
+* Pick one idea to finalise.
+* Continue coding: push your experiments to the team GitHub repo.
+* Document your research on your team GitHub repo wiki
+
+### Blog 
+
+**Individually**, write about *Filter Bubbles*. 
+
+Reflect on how the idea is evolving and document **your** thought process. 
+
+Also, write about your coding experiments.

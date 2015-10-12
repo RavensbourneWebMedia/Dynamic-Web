@@ -5,7 +5,7 @@ console.log("instagram.js ready to roll")
 // see https://instagram.com/developer/endpoints/tags/#get_tags_media_recent
 var endpoint = 'https://api.instagram.com/v1/tags/'
 var hashtag = 'rich'
-var client_id = '0cf82e74bb504233b6357a77a3531ab8'
+var client_id = 'YOUR_CLIENT_ID_HERE'
 
 // let's build the URL from which data can be loaded
 var URL = endpoint + hashtag + '/media/recent?client_id=' + client_id

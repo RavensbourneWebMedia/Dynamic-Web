@@ -21,9 +21,9 @@ In particular, you will:
 When | In class | Homework | Blog 
 ---- | -------- | -------- | ----
 [Thursday<br>01.10](sessions/01)| <ul><li>Welcome <li>APIs <li>Workshop: *Hash Tags* <li>Team project: [**Filter Bubbles**](#filter-bubbles) | <ul><li>Peer learning research: choose a topic to research and teach next week (teams of ~3) <li>Work on *Filter Bubbles* | *Filter Bubbles*
-[Thursday<br>08.10](sessions/02)| <ul><li>Peer learning <li>Workshop: *Hash Tags* (part 2)<li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | Peer learning feedback
-Thursday<br>15.10| <ul><li>Workshop: the Web Audio API <li>Project: [**Making Noise**](#making-noise) | <ul><li>Peer learning research <li>Work on *Making Noise* | *Making Noise*
-Thursday<br>22.10| <ul><li>Peer learning <li>Tutorials on *Making Noise* | <ul><li>Codewars katas <li>Prepare formative (tweak your work) | Peer learning feedback
+[Thursday<br>08.10](sessions/02)| <ul><li>Peer learning <li>Workshop: *Hash Tags* (part 2) | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | Peer learning feedback
+Thursday<br>15.10| <ul><li>Tutorials on *Filter Bubbles* | <ul><li>Peer learning research <li>Work on *Filter Bubbles* | *Filter Bubbles*
+Thursday<br>22.10| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Prepare formative (tweak your work) | Peer learning feedback
 Thursday<br>29.10| **Formative presentations** | Codewars katas  | Reflection blog
 Week 6<br>Mozfest|
 Thursday<br>12.11| <ul><li>Workshop: using a spreadsheet as your database <li>Team project: [**Time Table**](#time-table) | <ul><li>Peer learning research <li>Work on *Time Table* | *Time Table*
@@ -39,9 +39,9 @@ This **team project** is about pushing yourself out of your online comfort zone 
 
 All the project material is [here](projects/filter-bubbles).
 
-### Making Noise
+<!--### Making Noise
 
-This project is about functional and object-oriented programming, creating your own API and having fun with code-generated sound.
+This project is about functional and object-oriented programming, creating your own API and having fun with code-generated sound.-->
 
 ### Time Table
 

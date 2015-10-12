@@ -5,7 +5,6 @@
 1. [Peer learning](#peer-learning)
 * Workshop: [Hash Tags](#workshop) (part 2)
 * Sign up to [CodeWars](#codewars)!
-* Tutorials on [*Filter Bubbles*](#team-project)
  
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -143,6 +142,8 @@ It gamifies the experience of learning to code in a rather addictive way:
   		a * b
 	}
 	```
+	
+	Hint: add a `return` somewhere..
 * Second challenge
 	```js
 	function Person(name){
@@ -153,29 +154,12 @@ It gamifies the experience of learning to code in a rather addictive way:
 	  return "Hi " + otherName + ", my name is " + name;
 	}
 	```
+	
+	Hint: add a `this.` somewhere..
 * You can now sign up!	
 
 	* Link your GitHub account
 	* In the `Clan` field enter **RaveWebMedia**. This way we'll be part of the same team and we'll be able to challenge each other
-
-
-# Team project
-
-### Filter Bubbles tutorials
-
-This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
-
-All the project material is [here](../../projects/filter-bubbles).
-
-### 6 teams
-
-### 10 minutes per team
-
-1. What do you think about [Eli Pariser's TED talk](http://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en#t-53082)?
-* What *communities* and/or *hashtags* have you been **researching**?
-* Let's see your **ideas** (inspired by?) for visualisations and **code experiments**. 
-* What's your team **GitHub repository**? 
-	* You may want to [create an *organisation*](https://github.com/organizations/new) (a GitHub group) for that.. 
 
 
 # Homework
@@ -188,7 +172,7 @@ Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*)
 
 1. **Publish** your mini-lesson and any other relevant material. We recommend GitHub (we :green_heart: :octocat:) but you can publish elsewhere as long as it's accessible by anyone.
 
-2. Add the link to your mini-lesson (and any other relevant material) to the `Teams` Google document I emailed you.
+2. Add the link to your mini-lesson (and any other relevant material) to the Google document I emailed you.
 
 ### Project 
 
@@ -207,11 +191,3 @@ Use the questions above to give / get feedback on your [mini-lessons' content](#
 Then write down a *summary* of the feedback you received and a *list of action points* in response to the question: 
 
 > What can be **improved**?
-
-<!--
-**Individually**, write about *Filter Bubbles*. 
-
-Reflect on how the idea is evolving and document **your** thought process. 
-
-Also, write about your coding experiments.
--->

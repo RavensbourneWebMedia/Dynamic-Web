@@ -328,7 +328,7 @@ Choose a topic to research and teach next week (one per team). Some of them are 
 * Functions and functional programming (make examples in JavaScript)
 * `for` loops (make examples in JavaScript)
 
-Your team **presentation** (bear in mind, *presentation* does not mean PowerPoint slides.. be creative) should be **~20 minutes** and you may include:
+Your team **mini-lesson** (bear in mind, *presentation* does not mean PowerPoint slides.. be creative) should be **~20 minutes** and you may include:
 
 * Summary of main ideas
 * Links, images or videos of projects / products / things referenced in your research
@@ -336,9 +336,9 @@ Your team **presentation** (bear in mind, *presentation* does not mean PowerPoin
 * Examples and demonstrations
 * Personal experiences
 
-Each team should also prepare **1-2 questions for the class**. After your presentation, we will have a short group discussion around these questions.
+Each team should also prepare **1-2 questions for the class**. After your mini-lesson, we will have a short group discussion around these questions.
 
-Make sure your presentation and any other relevant material is **published online** (for instance on GitHub.. but it could be elsewhere as long as it's accessible by anyone). You can publish *after* you've presented next week.
+Make sure your mini-lesson and any other relevant material is **published online** (for instance on GitHub.. but it could be elsewhere as long as it's accessible by anyone). You can publish *after* you've presented next week.
 
 ### Project 
 

@@ -52,6 +52,50 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 
 ### Peer learning
 
+On the Google document I emailed you (you can also find it on Slack), there's a new table with topics for you to learn and teach next week.
+
+We'll do this again in *teams*, but not the same people you worked with last week.
+
+Your team **mini-lesson** should be **+/- 15 minutes** and you may include:
+
+* **2-3 key ideas**
+* **Examples** and demonstrations
+* Personal **experiences**
+* Other relevant things you've read, heard or seen
+ 
+Prepare **2-3 open questions to ask the class**. After your mini-lesson, we will have a short group discussion around these questions.
+
+#### Topics
+
+1. **jQuery fundamentals**: selecting and manipulating HTML elements. 
+
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 303-304 and 309-316. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
+* **jQuery events**: triggering code on demand.
+
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 299 and 333-336. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
+* **AJAX**: sending and receiving data *asynchronously* (that is, while you do something else).
+
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c08/) + pages 377-379, 385, 396 and 415. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers. 
+* Using the **GeoLocation** API.
+	
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c09/) + pages 412-414 and 416-419. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers. 
+* **Mapping (mis)behaviours**: [CrimeTimeline](http://crimetimeline.io), [PrisonMap](http://prisonmap.com/about), [The Refugee Project](http://www.therefugeeproject.org), [Dronestagram](http://shorttermmemoryloss.com/portfolio/project/dronestagram/) and [Pathways](http://www.nationalgeographic.com/pathways). 
+ 	
+ 	You are welcome to research and present more projects that mash up different APIs and datasets in interesting ways. 
+* The **#selfie** phenomenon: [SelfieCity](http://selfiecity.net).
+
+	Here are blog posts about [designing SelfieCity](http://well-formed-data.net/archives/996/selfiecity) and [the Web-tech behind it](http://do.minik.us/blog/selfiecity).
+	
+	![](http://do.minik.us/content/01-blog/008-selfiecity/03.jpg)
+
 
 
 ### Project 

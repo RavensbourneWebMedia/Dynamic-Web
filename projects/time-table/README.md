@@ -17,3 +17,8 @@ We prefer `HTML`, unless by `HTML` they mean a page that embeds a `PDF` document
 * JS: [ical2json](https://www.npmjs.com/package/ical2json), a node package to convert ical to JSON
 * JS: [ical.js](https://github.com/mozilla-comm/ical.js) from Mozilla!
 * PHP: [CalFileParser](https://github.com/controlz/CalFileParser)
+
+### Kimono API
+
+Using [Kimono](https://www.kimonolabs.com), I built [this API](https://www.kimonolabs.com/apis/bqslfw3y) which crawls the [Timetable Finder](http://timetable.rave.ac.uk/finder2.html) every week and returns a [JSON file of all Rave's timetable links](https://www.kimonolabs.com/api/bqslfw3y?apikey=70cHLTBzb3rRk8hvkQQJsbb2zBx9EGHQ)
+

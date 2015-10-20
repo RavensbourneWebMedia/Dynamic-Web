@@ -77,6 +77,27 @@ Use **examples** and **stories** from your experience. They will make your point
 
 # Homework
 
+### Codewars katas
+
+Complete at least 2 challenges (aka *katas*) on the beginner levels (aka *8 kyu* or *7 kyu*).
+
+### Peer learning
+
+1. **Publish** your mini-lesson and any other relevant material. We recommend GitHub (we :green_heart: :octocat:) but you can publish elsewhere as long as it's accessible by anyone.
+
+2. Add the link to your mini-lesson (and any other relevant material) to the Google document you can find on Slack.
+
+### Project 
+
+Work on *Filter Bubbles* **with your team**:
+
+* Pick one idea to finalise (if you haven't already).
+* Continue coding: push your experiments to the team GitHub repo.
+* Document your research on your team GitHub repo wiki.
+* Prepare to present your **ideas**, **code experiments** and **creative process** to your colleagues and a special guest next week (29th of October, **formative presentations**).
+
+Just to clarify: the **final deadline** for this team project is the **3rd of December**, so you'll continue working on it throughout November. However, we will be starting another project after the formative, so the more you do before the formative, the better.
+
 ### Blog 
 
 **Individually**, reflect on your peer learning mini-lesson today, and blog about it.

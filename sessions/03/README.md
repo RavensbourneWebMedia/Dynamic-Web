@@ -5,15 +5,12 @@
 1. Tutorials on [*Filter Bubbles*](#team-project)
 * [CodeWars](#codewars)
 
-<!--
-* Workshop: [the Web Audio API](#workshop)
-* Project: [Making noise](#project)
---> 
-
 ### Your [homework](#homework) and [blog](#blog)!
 
 
 # Team project
+
+![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
 
 ### Filter Bubbles tutorials
 

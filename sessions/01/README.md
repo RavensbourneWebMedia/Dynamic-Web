@@ -271,6 +271,8 @@ All the code for this workshop is [here](../../resources/instagram).
 
 # Team project
 
+![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
+
 ### Filter Bubbles 
 
 This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.

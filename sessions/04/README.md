@@ -67,3 +67,39 @@ Use **examples** and **stories** from your experience. They will make your point
 * Using the **GeoLocation** API.
 * **Mapping (mis)behaviours**: [CrimeTimeline](http://crimetimeline.io), [PrisonMap](http://prisonmap.com/about), [The Refugee Project](http://www.therefugeeproject.org), [Dronestagram](http://shorttermmemoryloss.com/portfolio/project/dronestagram/) and [Pathways](http://www.nationalgeographic.com/pathways). 
 * The **#selfie** phenomenon: [SelfieCity](http://selfiecity.net).
+
+
+
+
+
+
+
+
+# Homework
+
+### Blog 
+
+**Individually**, reflect on your peer learning mini-lesson today, and blog about it.
+
+You can use the questions below as a guide for your blog post.
+
+#### Mini-lesson **content**   
+	
+1. How did you **plan** your mini-lesson?
+* What were the **key points** you wanted to get across?
+* How did you decide to communicate them?
+* What **assumptions** have you made about what we already know?
+* How **interactive** was your mini-lesson? How was the audience meant to *participate*? 
+* What **questions** have you planned to ask your audience? How *open* were those questions? What type of questions (*Right-there*, *Between-the-lines* or *Opinion-needed* questions)?
+	
+#### **Delivery**
+	
+1. What role did **visuals** (eg: slides) play in your mini-lesson?
+* What role did each **team member** play in delivering the mini-lesson? 
+* How did you **practice** your mini-lesson?
+* How did your mini-lesson start? How did you *hook* your audience?
+* What was your **body language** like? Consider facial expressions, movements of the arms, eye contact with the audience, and posture.
+* What was your **voice** like? Consider speed of delivery, pausing, volume and pitch.
+
+#### What can be **improved**?
+

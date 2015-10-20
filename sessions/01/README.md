@@ -64,7 +64,7 @@ Gas cookers have interfaces too: you don't operate the flame directly. The inter
 
 > From [Wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface)
 
-An API **exposes** parts of a systems and **determines** how we (programmers) can interact with them to accomplish our (programming) goals. 
+An API **exposes** parts of a system and **determines** how we (programmers) can interact with them to accomplish our (programming) goals. 
 
 Not all parts of a system are exposed, ie *programmable*. 
 

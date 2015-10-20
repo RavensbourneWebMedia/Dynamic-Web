@@ -10,3 +10,6 @@
 * Kimono?	
 * The Guardian API (and the Sun API?) in conjunction with MonkeyLearn?
 * [Zooming into an Instagram city](http://firstmonday.org/ojs/index.php/fm/article/view/4711/3698)
+* http://data.london.gov.uk
+* https://words.bighugelabs.com/api.php
+* https://www.reddit.com/r/SubredditSimulator/comments/3g9ioz/what_is_rsubredditsimulator/

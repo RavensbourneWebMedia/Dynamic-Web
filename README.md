@@ -23,7 +23,7 @@ When | In class | Homework | Blog
 [Thursday<br>01.10](sessions/01)| <ul><li>Welcome <li>APIs <li>Workshop: *Hash Tags* <li>Team project: [**Filter Bubbles**](#filter-bubbles) | <ul><li>Peer learning research: choose a topic to research and teach next week (teams of ~3) <li>Work on *Filter Bubbles* | *Filter Bubbles*
 [Thursday<br>08.10](sessions/02)| <ul><li>Peer learning <li>Workshop: *Hash Tags* (part 2) | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | Peer learning feedback
 [Thursday<br>15.10](sessions/03)| <ul><li>Tutorials on *Filter Bubbles*<li>Codewars katas | <ul><li>Peer learning research <li>Work on *Filter Bubbles* | *Filter Bubbles*
-Thursday<br>22.10| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Prepare formative (tweak your work) | Peer learning feedback
+[Thursday<br>22.10](sessions/04)| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Prepare formative (tweak your work) | Peer learning feedback
 Thursday<br>29.10| **Formative presentations** | Codewars katas  | Reflection blog
 Week 6<br>Mozfest|
 Thursday<br>12.11| <ul><li>Workshop: using a spreadsheet as your database <li>Team project: [**Time Table**](#time-table) | <ul><li>Peer learning research <li>Work on *Time Table* | *Time Table*

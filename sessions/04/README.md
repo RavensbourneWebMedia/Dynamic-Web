@@ -69,10 +69,25 @@ Use **examples** and **stories** from your experience. They will make your point
 * The **#selfie** phenomenon: [SelfieCity](http://selfiecity.net).
 
 
+# Team project
 
+![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
 
+### Filter Bubbles tutorials
 
+This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
 
+All the project material is [here](../../projects/filter-bubbles).
+
+### 6 teams
+
+### 20 minutes per team
+
+1. What **idea** have you decided to go for?
+* How do you envision it working, looking and feeling? Let's see your sketches / **wireframes**.
+* Let's review your **code experiments**. 
+* How are you going to present your ideas, creative process and code experiments next week (**formative presentations**)?
+* What's your team **GitHub repository**? You may want to [create an *organisation*](https://github.com/organizations/new) (a GitHub group) for that.. 
 
 
 # Homework

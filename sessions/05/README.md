@@ -37,6 +37,10 @@ All the project material is [here](../../projects/filter-bubbles).
 
 # Homework
 
+### Codewars katas
+
+Complete at least 2 challenges (aka *katas*) on the beginner levels (aka *8 kyu* or *7 kyu*).
+
 ### Blog 
 
 **Individually**, reflect on the feedback you received during the formative assessment, as well as your experience in this unit so far, and write about it.

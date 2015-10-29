@@ -137,5 +137,5 @@ You can use the questions below as a guide for your blog post.
 * What was your **body language** like? Consider facial expressions, movements of the arms, eye contact with the audience, and posture.
 * What was your **voice** like? Consider speed of delivery, pausing, volume and pitch.
 
-#### What can be **improved**?
+#### What can you **improve**?
 

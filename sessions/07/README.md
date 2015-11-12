@@ -31,6 +31,24 @@ PHP Ruby Python **Node.js**.. | JavaScript
 * **Dynamic content**: connect with a **database** to create pages on demand
 * **Security**: you don't want private data (eg passwords) accessibly via *View Page Source* but locked away securely
 
+### [NodeSchool](http://nodeschool.io/)
+
+[![](http://nodeschool.io/images/schoolhouse.svg)](http://nodeschool.io/)
+
+> Open source workshops that teach web software skills. Do them on your own or at a workshop nearby.
+
+The DIY part of NodeSchool is really cool, as you can do [interactive tutorials](http://nodeschool.io/#workshoppers).
+
+You will need: 
+
+1. [Node.js installed](https://nodejs.org/en/download/) on your computer to get started. 
+* Open **Terminal** (**CommandPrompt** on Windows), then use `npm` (it comes with Node) to install each tutorial with the *command* below it. 
+	
+	For example: `sudo npm install -g learnyounode` to install the basic Node.js interactive tutorial.
+*	Once installed, simply type the tutorial's name to launch.
+
+	For example: `learnyounode` to launch the basic Node.js interactive tutorial.
+
 ### Let's play
 
 Go to [tonicdev.com](https://tonicdev.com) and sign up!
@@ -38,7 +56,6 @@ Go to [tonicdev.com](https://tonicdev.com) and sign up!
 [![](assets/tonic.jpg)](https://tonicdev.com)
 
 Tonic is a free, online *playground* that helps you learn Node.js and visualise your data.
-
 
 # Team project
 

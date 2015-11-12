@@ -5,6 +5,14 @@ var Twitter = require('twitter'),
 		startWords = [],
 		wordStats = {}
 
+var parameters = 
+{
+	screen_name: 'baddeo',
+	exclude_replies: true,
+	include_rts: false,
+	count: 200 
+}
+
 function getUserStatuses(parameters)
 {
 	twitterBot.get('statuses/user_timeline', parameters, function(error, tweets, response)
@@ -45,32 +53,6 @@ function getUserStatuses(parameters)
 			console.log(sentence)
 		}
 	})
-}
-
-/*
-
-def grab_tweets(api, max_id=None):
-    source_tweets=[]
-    user_tweets = api.GetUserTimeline(screen_name=user, count=200, max_id=max_id, include_rts=True, trim_user=True, exclude_replies=True)
-    max_id = user_tweets[len(user_tweets)-1].id-1
-    for tweet in user_tweets:
-        tweet.text = filter_tweet(tweet)
-        if len(tweet.text) != 0:
-            source_tweets.append(tweet.text)
-    return source_tweets, max_id
-
-*/
-
-// var sentence = makeMarkovSentence(3 + Math.floor(3 * Math.random()))
-
-			// console.log(sentence)
-
-var parameters = 
-{
-	screen_name: 'baddeo',
-	exclude_replies: true,
-	include_rts: false,
-	count: 200 
 }
 
 getUserStatuses(parameters)

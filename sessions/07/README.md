@@ -10,7 +10,7 @@
 
 # Workshop
 
-![](https://nodejs.org/static/images/logos/nodejs-1024x768.png)
+[![](https://nodejs.org/static/images/logos/nodejs-1024x768.png)](https://nodejs.org)
 
 [Node.js](https://nodejs.org) is an open-source, cross-platform *runtime* environment for developing **server-side** applications.
 
@@ -31,6 +31,27 @@ PHP Ruby Python **Node.js**.. | JavaScript
 * **Dynamic content**: connect with a **database** to create pages on demand
 * **Security**: you don't want private data (eg passwords) accessibly via *View Page Source* but locked away securely
 
+<!--
+
+https://www.npmjs.com/package/botmaker
+https://www.npmjs.com/package/markov
+https://www.npmjs.com/package/twitter
+https://www.npmjs.com/package/foursquarevenues
+https://www.npmjs.com/package/instagram-node
+
+
+
+-->
+
+### Let's play
+
+Go to [tonicdev.com](https://tonicdev.com) and sign up!
+
+[![](assets/tonic.jpg)](https://tonicdev.com)
+
+Tonic is a free, online *playground* that helps you learn Node.js and visualise your data.
+
+
 ### [NodeSchool](http://nodeschool.io/)
 
 [![](http://nodeschool.io/images/schoolhouse.svg)](http://nodeschool.io/)
@@ -49,13 +70,7 @@ You will need:
 
 	For example: `learnyounode` to launch the basic Node.js interactive tutorial.
 
-### Let's play
 
-Go to [tonicdev.com](https://tonicdev.com) and sign up!
-
-[![](assets/tonic.jpg)](https://tonicdev.com)
-
-Tonic is a free, online *playground* that helps you learn Node.js and visualise your data.
 
 ### Where can I **host** my Node.js app?
 

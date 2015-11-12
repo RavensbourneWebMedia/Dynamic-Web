@@ -1,0 +1,12 @@
+{
+    "name": "TwitterBot",
+    "version": "0.1.1",
+    "description": "Just another Twitter bot",
+    "dependencies": 
+    {
+        "twitter": "1.2.5"
+    },
+    "devDependencies": {},
+    "author": "matteomenapace",
+    "license": "BSD"
+}

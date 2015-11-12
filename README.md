@@ -26,12 +26,12 @@ When | In class | Homework | Blog
 [Thursday<br>22.10](sessions/04)| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Prepare formative (tweak your work) | Peer learning feedback
 [Thursday<br>29.10](sessions/05)| **Formative presentations** | Codewars katas  | Reflection blog
 Week 6<br>Mozfest|
-Thursday<br>12.11| <ul><li>Workshop: using a spreadsheet as your database <li>Team project: [**Time Table**](#time-table) | <ul><li>Peer learning research <li>Work on *Time Table* | *Time Table*
-Thursday<br>19.11| <ul><li>Peer learning <li>Tutorials on *Time Table* | <ul><li>Codewars katas <li>Work on *Time Table* | Peer learning feedback
-Thursday<br>26.11| <ul><li>Tutorials on *Time Table* <li> Summative prep | Prepare summative (tweak your work) | *Time Table*
-Thursday<br>03.12| **Summative presentations** (with guest TBA)
+[Thursday<br>12.11](sessions/07)| <ul><li>using *Node.js* to conquer the World(ish)! <li>Tutorials on *Filter Bubbles* | <ul><li>Peer learning research <li>Work on *Filter Bubbles* | TBA
+Thursday<br>19.11| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | Peer learning feedback
+Thursday<br>26.11| <ul><li>Tutorials on *Filter Bubbles* <li> Summative prep | Prepare summative (tweak your work) | TBA
+Thursday<br>03.12| **Summative presentations** with [@riklomas](https://twitter.com/riklomas)!
 
-# Projects
+# Project
 
 ### Filter Bubbles
 
@@ -43,9 +43,9 @@ All the project material is [here](projects/filter-bubbles).
 
 This project is about functional and object-oriented programming, creating your own API and having fun with code-generated sound.-->
 
-### Time Table
+<!--### Time Table
 
-This **team project** is about designing interfaces and coding apps that use data to provide people with *just enough information*. 
+This **team project** is about designing interfaces and coding apps that use data to provide people with *just enough information*. -->
 
 
 # Learning goals

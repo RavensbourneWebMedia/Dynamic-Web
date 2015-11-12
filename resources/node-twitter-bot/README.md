@@ -1,7 +1,8 @@
 ### Get started
 
-1. Go to [apps.twitter.com](https://apps.twitter.com) and create a new app. 
-* Create a `config.js` file in this folder, copy paste the code below 
+1. Go to [apps.twitter.com](https://apps.twitter.com) and create a **new app**. 
+* Make a new file in this folder and call it `config.js`
+* In `config.js` copy-paste the code below 
 
 	```js
 	module.exports = 
@@ -15,5 +16,7 @@
 		}
 	}	
 	```
-* Navigate to this folder in Terminal and then run `npm install`
-* Test the bot by running `node bot.js`	
+* Change `YOUR_TWITTER_APP_CONSUMER_KEY` and the other bits in capitals to your Twitter app's values
+* Navigate to this folder in Terminal and then run `sudo npm install`
+* In `bot.js` change `parameters.screen_name` to another Twitter username, unless you want to *markov-chain* my tweets ([@baddeo](https://twitter.com/baddeo))
+* Test the bot by running `node bot.js` in Terminal	

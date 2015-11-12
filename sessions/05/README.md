@@ -13,7 +13,7 @@
 
 #### Today
 
-You will present both your team projects: [FilterBubbles](#filterbubbles). 
+You will present both your team projects: [Filter Bubbles](#filter-bubbles). 
 
 We will give you **verbal feedback** after each presentation.
 

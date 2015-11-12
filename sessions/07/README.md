@@ -1,4 +1,66 @@
+# Week 7
+
+### Today, Thursday 12th November 2015
+
+1. [Workshop](#workshop): using *Node.js* to conquer the World(ish)!
+* Tutorials on [*Filter Bubbles*](#team-project)
+
+### Your [homework](#homework)
+
+
+# Workshop
+
+![](https://nodejs.org/static/images/logos/nodejs-1024x768.png)
+
+[Node.js](https://nodejs.org) is an open-source, cross-platform *runtime* environment for developing **server-side** applications.
+
+### Erm, **what** is a server?
+
+Just a computer that is **always on**, **connected** to the Internet and ready to accept **HTTP requests** and serve documents (HTML, CSS, JS, JSON, images etc) in **response**.
+
+Back-end 								| 	Front-end
+---------------------------	| ---------
+Server-side 							| 	Client-side
+Server 									| 	Browser
+PHP Ruby Python **Node.js**.. | JavaScript
+
+### **Why** do we need a server again?
+
+1. **Storage**, ie *hosting* stuff: websites, apps, media files...
+* **Power**: a server computer can be a lot more powerful than the typical user computer, for example a mobile device
+* **Dynamic content**: connect with a **database** to create pages on demand
+* **Security**: you don't want private data (eg passwords) accessibly via *View Page Source* but locked away securely
+
+### Let's play
+
+Go to [tonicdev.com](https://tonicdev.com) and sign up!
+
+[![](assets/tonic.jpg)](https://tonicdev.com)
+
+Tonic is a free, online *playground* that helps you learn Node.js and visualise your data.
+
+
+# Team project
+
+![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
+
+### Filter Bubbles tutorials
+
+This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
+
+All the project material is [here](../../projects/filter-bubbles).
+
+### 6 teams
+
+### 20 minutes per team
+
+<!-- TODO -->
+
 # Homework
+
+### Codewars katas
+
+Complete at least 2 challenges (aka *katas*) on the beginner levels (aka *8 kyu* or *7 kyu*).
 
 ### Peer learning
 

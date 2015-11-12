@@ -57,6 +57,13 @@ Go to [tonicdev.com](https://tonicdev.com) and sign up!
 
 Tonic is a free, online *playground* that helps you learn Node.js and visualise your data.
 
+### Where can I **host** my Node.js app?
+
+> Possibly for free. *I still want to conquer the World but I'm skint atm..*
+
+* [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+* [OpenShift](https://blog.openshift.com/10-reasons-openshift-is-the-best-place-to-host-your-nodejs-app/)
+
 # Team project
 
 ![](../../projects/filter-bubbles/assets/junk-food-analogy.png)

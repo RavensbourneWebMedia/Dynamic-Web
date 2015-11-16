@@ -28,8 +28,9 @@ PHP Ruby Python **Node.js**.. | JavaScript
 
 1. **Storage**, ie *hosting* stuff: websites, apps, media files...
 * **Power**: a server computer can be a lot more powerful than the typical user computer, for example a mobile device
+* **Security**: you don't want private data (eg passwords) accessibly via *View Page Source* but locked away securely  
 * **Dynamic content**: connect with a **database** to create pages on demand
-* **Security**: you don't want private data (eg passwords) accessibly via *View Page Source* but locked away securely
+
 
 <!--
 
@@ -38,8 +39,6 @@ https://www.npmjs.com/package/markov
 https://www.npmjs.com/package/twitter
 https://www.npmjs.com/package/foursquarevenues
 https://www.npmjs.com/package/instagram-node
-
-
 
 -->
 
@@ -101,7 +100,7 @@ All the project material is [here](../../projects/filter-bubbles).
 
 Complete at least 2 challenges (aka *katas*) on the beginner levels (aka *8 kyu* or *7 kyu*).
 
-### Peer learning
+<!-- ### Peer learning
 
 1. MonoVacation and other interesting `#dataviz` projects..
 
@@ -114,3 +113,5 @@ Complete at least 2 challenges (aka *katas*) on the beginner levels (aka *8 kyu*
 * http://data.london.gov.uk
 * https://words.bighugelabs.com/api.php
 * https://www.reddit.com/r/SubredditSimulator/comments/3g9ioz/what_is_rsubredditsimulator/
+
+-->

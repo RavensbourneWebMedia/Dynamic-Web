@@ -31,7 +31,6 @@ PHP Ruby Python **Node.js**.. | JavaScript
 * **Security**: you don't want private data (eg passwords) accessibly via *View Page Source* but locked away securely  
 * **Dynamic content**: connect with a **database** to create pages on demand
 
-
 <!--
 
 https://www.npmjs.com/package/botmaker
@@ -50,7 +49,6 @@ Go to [tonicdev.com](https://tonicdev.com) and sign up!
 
 Tonic is a free, online *playground* that helps you learn Node.js and visualise your data.
 
-
 ### [NodeSchool](http://nodeschool.io/)
 
 [![](http://nodeschool.io/images/schoolhouse.svg)](http://nodeschool.io/)
@@ -68,8 +66,6 @@ You will need:
 *	Once installed, simply type the tutorial's name to launch.
 
 	For example: `learnyounode` to launch the basic Node.js interactive tutorial.
-
-
 
 ### Where can I **host** my Node.js app?
 

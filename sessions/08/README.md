@@ -30,7 +30,7 @@ A standard scenario:
 
 Parse is a *database-as-a-service* platform, owned by Facebook.
 
-Instead of building an maintaining your own server-side stack, you can use Parse.
+Instead of building and maintaining your own server-side stack, you can use Parse.
 
 > Focus on creating a beautiful end-user experience and let Parse take care of the rest.
 

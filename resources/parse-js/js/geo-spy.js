@@ -23,7 +23,7 @@ function gotPosition(position)
     {
       success: function(object)
       {
-        console.log(object)
+        console.log(dude.attributes) // .attributes contains all the data!
         console.log(dude.get('name') + ' is here', dude.get('position'))
       },
       error: function(object, error) 

@@ -14,6 +14,26 @@
 
 ### Why a database in the *cloud*?
 
+Writing **server-side** code can be hard. 
+
+Maintaining a server-side infrastructure can be even harder.
+
+A standard scenario:
+
+* You would create a MySQL database.
+* You may have a PHP class that is responsible for performing CRUD operations. Optionally, you could just have a bunch of PHP functions.
+* You may use JavaScript and Ajax on the client-side to call the respective PHP scripts and pass in query strings.
+* You would need to sanitise the input to protect against XSS attacks, as well as worry about database security in general.
+* If a collaborative app, you would need to track different users and manage their lists. More code, more tables, and more schemas.
+* You would need to make sure your database stays performant.
+
+Parse is a *database-as-a-service* platform, owned by Facebook.
+
+Instead of building an maintaining your own server-side stack, you can use Parse.
+
+> Focus on creating a beautiful end-user experience and let Parse take care of the rest.
+
+Parse is not the only cloud database service. [Firebase](https://www.firebase.com) (owned by Google) is another one. [Amazon Web Services](https://aws.amazon.com/) offer various db solutions. Learn more about cloud databases [here](https://en.wikipedia.org/wiki/Cloud_database).
 
 ### All together now
 
@@ -82,6 +102,8 @@ If your app is location-based, you should check out [GeoPoints](https://parse.co
 If you want to build a user-base, then [Users](https://parse.com/docs/js/guide#users) may be very useful to you.
 
 If you want to let your users upload files, then [Files](https://parse.com/docs/js/guide#files) are what you need.
+
+CONFUSED? Try [this Codecademy Parse tutorial](https://www.codecademy.com/en/tracks/parse)
 
 ### What could **you** build with Parse?
 

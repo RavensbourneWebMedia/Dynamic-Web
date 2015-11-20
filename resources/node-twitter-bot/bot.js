@@ -1,4 +1,5 @@
 var Twitter = require('twitter'),
+		MarkovChain = require('markovchain').
 		config = require('./config'),
 		twitterBot = new Twitter(config.keys),
 		terminals = {},
@@ -69,8 +70,8 @@ function makeMarkovSentence (minLength)
 	var sentence = [word]
 	while (wordStats.hasOwnProperty(word)) 
 	{
-		var next_words = wordStats[word]
-		word = getRandomElement(next_words)
+		var nextWords = wordStats[word]
+		word = getRandomElement(nextWords)
 		sentence.push(word)
 		if (sentence.length > minLength && terminals.hasOwnProperty(word)) break
 	}

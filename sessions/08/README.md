@@ -8,7 +8,7 @@
 
 <!--- [ ] Announcement: Rik in da house -->
 
-### Your [homework](#homework)
+### Your [homework](#homework) and [blog](#blog)
 
 
 # Workshop
@@ -128,7 +128,7 @@ Write down the **3-5 things, and no more** that are making you most anxious or u
 
 <!--  most important = usually most uncomfortable/most procrastinated upon -->
 
-###  The way you write down your task can dictate whether it will get done.
+###  The way you write your task can dictate whether it will get done
 
 Is this **concrete**? 
 
@@ -161,8 +161,49 @@ All the project material is [here](../../projects/filter-bubbles).
 ### 20 minutes per team
 
 
-
 # Homework
 
-- [ ] Work and blog on Filter bubbles
-- [ ] Show and tell for next week
+### Work on Filter Bubbles
+
+The **final deadline** is in two week's time and next week will be the last tutorial. 
+
+Between now and next week, your **team** should:
+
+* Download and use the [**Productivity Planner**](https://drive.google.com/open?id=0B0FP625GojKHRlJRZWQ4cjVvSFk).
+* Agree on a **shared list** of what's **to do** (see [tips above](#the-way-you-write-your-task-can-dictate-whether-it-will-get-done)).
+* Assign tasks to team members, so that you know **who does what and when**. Discuss how much time each task may take, how much time each of you have and who's going to be affected if a task is not completed in time.
+* **Work** on the agreed tasks <sup>OBVIOUSLY
+* **Track** the time you spend on each task. You could use the [Harvest app](https://www.getharvest.com) for that.
+
+### Stand-up
+
+Next week we'll start the day with a stand-up meeting, also known as **the huddle**.
+
+It shouldn't take more than 15 minutes.
+
+> The discomfort of standing for long periods is intended to keep the meetings short.
+
+Each team will answer **3 questions**:
+
+1. What did we accomplish **last week**?
+* What will we do **this week**?
+* What **obstacles** are impeding our progress?
+
+We won't discuss these obstacles in details. The idea is to **identify obstacles** (some may be shared by various teams), and tackle those later in follow-up meetings.
+
+Many companies (start-ups in particular) do daily stand-ups as a way to get an overview of what everyone is doing and plan the day ahead. 
+
+The better you become at summarising what you're working on and asking for help without faffing around with unnecessary details, the better suited you will be for your next job.
+
+### Blog 
+
+Write notes about the *challenges* you encountered in planning and executing your **team work**.
+
+Some questions that may guide your writing:
+
+* How is your team **organised**? Is there an appointed *leader*? Are there defined *roles*?
+* What **tools** are you using to collaborate? Any tips for making these tools work for your team?
+* How do you **decide** on ideas and solutions to pursue?
+* How do you go about solving **conflicts**? 
+
+Btw, these are all questions that you will be asked in future **job interviews**, so thinking about these aspect of your work and practicing answering those questions is rather important.

@@ -19,7 +19,7 @@ var _ = require('underscore'),
 
 var twitterParameters = 
 {
-	screen_name: 'baddeo',
+	screen_name: 'ravensbourneuk',
 	exclude_replies: true,
 	include_rts: false,
 	count: 200 
@@ -125,7 +125,7 @@ function makeSentences()
 	{
 		// var sentence = Sentencer.make("This is {{ an_adjective }} {{ noun }}")
 		// var sentence = chain.start(getRandomStarter).end().process()
-		var sentence = 'We ' + getRandomElement(verbs).toLowerCase() + ' ' + getRandomElement(adjectives).toLowerCase() + ' ' + getRandomElement(nouns) + '\n#' + getRandomElement(bank.hashtags) 
+		var sentence = 'We ' + getRandomElement(verbs).toLowerCase() + ' ' + getRandomElement(adjectives).toLowerCase() + ' ' + getRandomElement(nouns) + ' #' + getRandomElement(bank.hashtags) 
 		console.log('- ' + sentence)
 	}
 }

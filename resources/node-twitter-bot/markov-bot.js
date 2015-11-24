@@ -1,5 +1,4 @@
 var Twitter = require('twitter'),
-		MarkovChain = require('markovchain').
 		config = require('./config'),
 		twitterBot = new Twitter(config.keys),
 		terminals = {},
@@ -13,6 +12,11 @@ var parameters =
 	include_rts: false,
 	count: 200 
 }
+
+// RUN!
+getUserStatuses(parameters)
+
+// FUNCTIONS
 
 function getUserStatuses(parameters)
 {
@@ -35,19 +39,10 @@ function getUserStatuses(parameters)
 
 				for (var j = 0; j < words.length - 1; j++) 
 				{
-					if (wordStats.hasOwnProperty(words[j])) 
-					{
-						wordStats[words[j]].push(words[j+1])
-					} 
-					else 
-					{
-						wordStats[words[j]] = [words[j+1]]
-					}
+					if (wordStats.hasOwnProperty(words[j])) wordStats[words[j]].push(words[j+1])
+					else wordStats[words[j]] = [words[j+1]]
 				}
 			}
-
-			// var max_id = tweets[tweets.length-1].id
-			// callback(max_id)
 
  			var sentence = makeMarkovSentence(3 + Math.floor(3 * Math.random()))
 
@@ -55,8 +50,6 @@ function getUserStatuses(parameters)
 		}
 	})
 }
-
-getUserStatuses(parameters)
 
 function getRandomElement (array) 
 {

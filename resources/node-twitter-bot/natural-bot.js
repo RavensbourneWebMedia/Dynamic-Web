@@ -1,36 +1,64 @@
 var _ = require('underscore'),
 	Twitter = require('twitter'),
 	WordPOS = require('wordpos'),
-	Sentencer = require('sentencer'),
+	MarkovChain = require('markovchain'),
 	config = require('./config'),
 	twitterBot = new Twitter(config.keys),
 	wordpos = new WordPOS(),
+	chain = new MarkovChain(),
 	bank = {
 		nouns: [],
-  		verbs: [],
-  		adjectives: [],
-  		adverbs: [],
-  		rest: [],
-  		hashtags: [],
-     	user_mentions: [],
-     	media: [],
-     	urls: []
-  	}	
+		verbs: [],
+		adjectives: [],
+		adverbs: [],
+		rest: [],
+		hashtags: [],
+		user_mentions: [],
+		media: [],
+		urls: []
+	}	
+
+var users = 
+[
+	'ravewebmedia',
+	'baddeo',
+	'cyberwest',
+	// 'h_dif',
+	// 'jonnygwillim',
+	// 'tomsharmanweb'
+]
 
 var twitterParameters = 
 {
-	screen_name: 'ravensbourneuk',
 	exclude_replies: true,
 	include_rts: false,
 	count: 200 
 }
 
 // RUN!
-getUserStatuses(twitterParameters, handleTweets)
+var usersCount = 0
+getNextUserTweets()
 
 // FUNCTIONS
 
-function getUserStatuses(parameters, callback)
+function getNextUserTweets()
+{
+	if (usersCount < users.length)
+	{
+		var user = users[usersCount]
+		console.log('fetching ' + user)
+		twitterParameters.screen_name = user
+		getUserTweets(twitterParameters, gotTweets)
+		usersCount ++
+	}
+	else
+	{
+		console.log('done, make the sentence(s)')
+		makeSentences()
+	}	
+}
+
+function getUserTweets(parameters, callback)
 {
 	twitterBot.get('statuses/user_timeline', parameters, function(error, tweets, response)
 	{
@@ -43,28 +71,13 @@ function getUserStatuses(parameters, callback)
 	})
 }
 
-function handleTweets(tweets)
+function gotTweets(tweets)
 {
 	//console.log(tweets)
 	// console.log(tweets[0])
 	
 	tweets.forEach(function(tweet, index)
 	{
-		// TEXT
-		var text = _(removeUrls(tweet.text)).unescape() // a bit of sanitation
-		// console.log(text)	
-		wordpos.getPOS(text, function(results)
-		{
-			_(results).each(function(array, key)
-			{
-				// console.log(key, array)
-				bank[key] = _(bank[key].concat(array)).unique()
-			})
-
-			if (index == tweets.length -1) makeSentences()
-			// console.log(bank)
-		})
-
 		// ENTITIES
 		// console.log(tweet.entities)
 		if (tweet.entities.hashtags)
@@ -96,6 +109,24 @@ function handleTweets(tweets)
 			})	
 		}
 
+		// TEXT
+		// console.log(tweet.text)
+		var text = _(removeUrls(tweet.text)).unescape() // a bit of sanitation
+		
+		chain.parse(text)
+
+		wordpos.getPOS(text, function(results)
+		{
+			_(results).each(function(array, key)
+			{
+				// console.log(key, array)
+				bank[key] = _(bank[key].concat(array)).unique()
+			})
+
+			if (index == tweets.length -1) getNextUserTweets()
+		})
+
+		
 	})
 }	
 
@@ -112,20 +143,27 @@ function makeSentences()
 	var verbs = _(bank.verbs).difference(bank.adjectives, bank.nouns)
 
 	// console.log(bank)
-	console.log(nouns)
-	console.log(adjectives)
-
-	Sentencer.configure(
-	{
-		nounList: nouns,
-		adjectiveList: adjectives
-	})	
+	// console.log(nouns)
+	// console.log(adjectives)
 
 	for (var i = 0; i < 20; i++) 
 	{
-		// var sentence = Sentencer.make("This is {{ an_adjective }} {{ noun }}")
-		// var sentence = chain.start(getRandomStarter).end().process()
-		var sentence = 'We ' + getRandomElement(verbs).toLowerCase() + ' ' + getRandomElement(adjectives).toLowerCase() + ' ' + getRandomElement(nouns) + ' #' + getRandomElement(bank.hashtags) 
+		var sentence = 'We ' 
+		var dont = Math.round(Math.random()*2) == 0 // 1 in 3 should be "don't"
+		if (dont) sentence += "don't "
+
+		if (i % 2 == 0)
+		{
+			sentence += chain.start(getRandomElement(verbs).toLowerCase()).end().process() // + ' [Markov]'
+		}
+		else
+		{
+			sentence += getRandomElement(verbs).toLowerCase() + ' ' 
+					  + getRandomElement(adjectives).toLowerCase() + ' ' 
+					  + getRandomElement(nouns) 
+					  + ' #' + getRandomElement(bank.hashtags)
+		}
+		
 		console.log('- ' + sentence)
 	}
 }

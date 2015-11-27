@@ -2,8 +2,8 @@
 
 ### Today, Thursday 3rd December 2015
 
-1. Summative presentations
-* Final [hand-in](#hand-in-package) of project work, presentations and blog posts 
+1. **Summative presentations** with [Rik Lomas](https://twitter.com/riklomas)
+* Final [hand-in](#hand-in-package) of [project work](#filter-bubbles), [presentations](#presentations) and [blog posts](#blog-posts)
 
 
 # Checklist

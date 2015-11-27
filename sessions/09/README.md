@@ -5,6 +5,7 @@
 1. [Stand up](#stand-up)
 * Tutorials on [*Filter Bubbles*](#team-project)
 
+#### Your [homework](#homework) and [blog](#blog)
 
 # Stand up
 
@@ -42,3 +43,26 @@ Between now and next week, your **team** should:
 ### 6 teams
 
 ### 30 minutes per team
+
+
+# Homework
+
+### Work on Filter Bubbles
+
+The **final deadline** is next week (Thursday the 3rd of December, 23:59)!
+
+Check the :ballot_box_with_check: [**checklist**](../10/#checklist) :ballot_box_with_check: for everything you have to hand in!
+
+### Blog 
+
+Write about *Filter Bubbles* from your personal perspective.
+
+* What was your **contribution** to the concept?
+* What was your **role** in researching, planning and executing the concept?
+* What have you **learned** from this project?
+
+Remember, this is not about comparing *how much* work you and your team mates have done. Work is not something that can be measured in kilograms, or even time. 
+
+You may have put in more hours than some of your team mates, or you may have written more lines of code than them. Some contributions are more subtle and harder to demonstrate, yet very important in team work. For example, you may have kept the communication flow between your team mates, making sure everyone was on the same page. Or you may have ensured that your team mates are happy when you meet and work together, kept them fed with biscuits and good music..
+
+<!-- We can easily spot *freeloaders* in teams. -->

@@ -81,6 +81,37 @@
 
 			// BUTTONS
 
+				var vPressed = false,
+						fPressed = false
+
+				window.onkeydown = onKeyboardEvent
+				window.onkeyup = onKeyboardEvent
+
+				function onKeyboardEvent( event ) 
+				{
+					if (event.defaultPrevented) return 
+					// should do nothing if the key event was already consumed
+					// see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
+  
+					switch ( event.keyCode )
+					{
+						case 86:
+							vPressed = (event.type == 'keydown') ? true : false
+							fPressed = false
+						break
+						
+						case 70:
+							fPressed = (event.type == 'keydown') ? true : false
+							vPressed = false
+						break		
+					}
+
+					// consume the event for suppressing "double action"
+  				event.preventDefault()
+
+  				console.log('v ' + vPressed, 'f ' + fPressed)
+				}
+
 				var body = document.querySelector( 'body' )
 				body.onmousedown = function( event )
 				{
@@ -143,7 +174,12 @@
 
 				function onButtonDragMove( event, pointer, moveVector ) 
 				{
+					console.log(event)
+
 					var button = event.target
+
+					console.log(button.draggie.options)
+
 					if ( button.instrument )
 					{
 						// map the frequency to the horizontal position

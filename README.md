@@ -29,7 +29,7 @@ Week 6<br>Mozfest|
 [Thursday<br>12.11](sessions/07)| <ul><li>Using *Node.js* to conquer the World(ish)! <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | 
 [Thursday<br>19.11](sessions/08)| <ul><li>Using cloud databases <li>Tutorials on *Filter Bubbles* | Work on *Filter Bubbles* | Team work
 [Thursday<br>26.11](sessions/09)| <ul><li>Tutorials on *Filter Bubbles* <li> Summative prep | Prepare summative (tweak your work) | Your role in *Filter Bubbles* 
-Thursday<br>03.12| **Summative presentations** with [@riklomas](https://twitter.com/riklomas)!
+[Thursday<br>03.12](sessions/10)| **Summative presentations** with [@riklomas](https://twitter.com/riklomas)!
 
 # Project
 

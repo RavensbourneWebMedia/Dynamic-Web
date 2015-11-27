@@ -16,7 +16,8 @@ var _ = require('underscore'),
 		user_mentions: [],
 		media: [],
 		urls: []
-	}	
+	},
+	howManySentences = 3
 
 var users = 
 [
@@ -125,8 +126,6 @@ function gotTweets(tweets)
 
 			if (index == tweets.length -1) getNextUserTweets()
 		})
-
-		
 	})
 }	
 
@@ -146,7 +145,7 @@ function makeSentences()
 	// console.log(nouns)
 	// console.log(adjectives)
 
-	for (var i = 0; i < 20; i++) 
+	for (var i = 0; i < howManySentences; i++) 
 	{
 		var sentence = 'We ' 
 		var dont = Math.round(Math.random()*2) == 0 // 1 in 3 should be "don't"
@@ -159,13 +158,37 @@ function makeSentences()
 		else
 		{
 			sentence += getRandomElement(verbs).toLowerCase() + ' ' 
-					  + getRandomElement(adjectives).toLowerCase() + ' ' 
-					  + getRandomElement(nouns) 
-					  + ' #' + getRandomElement(bank.hashtags)
+						+ getRandomElement(adjectives).toLowerCase() + ' ' 
+						+ getRandomElement(nouns) 
+						+ ' #' + getRandomElement(bank.hashtags)
 		}
 		
-		console.log('- ' + sentence)
+		if (isTweetable(sentence))
+		{
+			console.log('- ' + sentence)
+			makeTweet(sentence)
+		}
 	}
+}
+
+function isTweetable(text)
+{
+	if (text.split(' ').length < 4) return false
+	if (text.length > 140) return false	
+	return true	
+}
+
+function makeTweet(text) 
+{
+	twitterBot.post('statuses/update', {status: text},  function(error, tweet, response)
+	{
+		if (error) console.error(error)
+		else
+		{
+			console.log('DONE! ' + tweet.text) 
+			// console.log(response)
+		}	
+	})
 }
 
 function getRandomElement (array) 

@@ -16,9 +16,10 @@ The idea of [filter bubbles was proposed by Eli Pariser (watch this video)](http
 * Define the **edges** of your team's bubbles.
 * Research the **communities** at the extremities of your bubbles on social media.
 * Create a **GitHub repository** for your team project (you may want to create a GitHub *organisation* for your team first). You will push all your contributions there: documentation, research, inspirations, code.
-* Finalise your *idea*, narrow it, choose a direction / critical point.
-* Create *algorithms* (one or more) that **pull in data** from one or more API sources. 
-* Create *algorithms* (one or more) that **manipulate and visualise your data** to express your team views of the subculture(s). For example: create visualisations that reveal something unexpected, or that make us aware of some system or data you feel strongly about.
+* Create *algorithms* that **pull in data** from one or more API sources. 
+* Create *algorithms* that **manipulate and visualise your data** to express your views of the communities you observed. For example: create visualisations that reveal something unexpected, or that make us aware of some system or data you feel strongly about.
+* Experiment with different **data-sets** and different ways of experiencing them.
+* Finalise your **concept**: choose a direction / critical point.
 * Publish your project using **GitHub pages**. 
 
 ### Food for thought

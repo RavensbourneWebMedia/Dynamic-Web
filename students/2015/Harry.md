@@ -1,5 +1,4 @@
-
-##WEB14203: The Dynamic Web
+## WEB14203 The Dynamic Web
 
 [Serendipitweet](https://github.com/Jonnygwi/Filter-Bubbles)
 
@@ -9,7 +8,7 @@ Course: BA (hons) Web Media, Level 2
 
 Unit Code: WEB14203
 
-###Blog Posts
+### Blog Posts
 
 1. Week 1: [Filter Bubbles concept](https://github.com/Jonnygwi/Filter-Bubbles/blob/master/Blogs/Harry/Filter%20Bubbles%20concept%20.md)
 2. Week 2: [Peer learning](https://github.com/Jonnygwi/Filter-Bubbles/blob/master/Peer%20Learning%20Feedback.md)

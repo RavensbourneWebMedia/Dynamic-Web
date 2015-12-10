@@ -93,7 +93,13 @@ Prepare **2-3 open questions to ask the class**. After your mini-lesson, we will
 	
 	![](http://do.minik.us/content/01-blog/008-selfiecity/03.jpg)
 
+<!-- 
 
+Future topics:
+
+* http://simpleweatherjs.com
+
+-->
 
 ### Project 
 

@@ -35,6 +35,9 @@ The idea of [filter bubbles was proposed by Eli Pariser (watch this video)](http
 * What is the most interesting data you can find? What is an unexpected way to experience it?
 
 * How can you make your point(s) of view emerge without distorting the source data?
+ 
+If you're interested in how filter bubbles impact our lives, and want to explore the related concept of *information obesity* I recommend this book: [The information diet](http://www.informationdiet.com) by Clay Johnson
+
 
 ### Inspirations
 

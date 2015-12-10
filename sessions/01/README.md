@@ -353,3 +353,5 @@ Work on *Filter Bubbles* **with your team**:
 ### Blog 
 
 **Individually**, write about *Filter Bubbles*. Reflect on the concept and document **your** thought process. You can post pictures of scribbled notes, or jot down notes digitally. It doesn't need to be fleshed out and well written. The main goal here is to record your flow of ideas, not to make it beautiful!
+
+<!-- Should ask for opinions on the idea of filter bubbles and examples of filter bubbles in action in their daily online consumption (and offline too?).  -->

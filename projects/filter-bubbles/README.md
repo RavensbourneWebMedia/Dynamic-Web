@@ -49,6 +49,7 @@ If you're interested in how filter bubbles impact our lives, and want to explore
 
 * [LoveMachine](http://p.xuv.be/tag/lovemachine) is a little app that clicks all the likes available in your timeline, automatically
 
+* [I know where your cat lives](http://iknowwhereyourcatlives.com) is a data experiment that visualises a sample of 1 million public pics of **cats** on a world **map**. This project explores two uses of the internet: the sociable and humorous appreciation of domesticated felines, and the status quo of personal data usage by startups and international megacorps who are riding the wave of decreased privacy for all.
 
 ### APIs, tutorials and tools
 
@@ -67,6 +68,7 @@ If you're interested in how filter bubbles impact our lives, and want to explore
 <!--
 # Matteo's TODO
 
+- [ ] Check out http://www.agendadigitale.eu/competenze-digitali/vedere-cio-che-vogliamo-vedere-le-conseguenze-della-filter-bubble_1711.htm
 - [ ] Starting list of hashtags? `#fakecation #gunporn` etc
 - [ ] Open datasets: the [UK Government](http://data.gov.uk/data/search), [UniStats](https://unistats.direct.gov.uk/open-access-data/), others? 
 -->

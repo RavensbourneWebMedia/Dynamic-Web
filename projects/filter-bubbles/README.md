@@ -51,6 +51,11 @@ If you're interested in how filter bubbles impact our lives, and want to explore
 
 * [I know where your cat lives](http://iknowwhereyourcatlives.com) is a data experiment that visualises a sample of 1 million public pics of **cats** on a world **map**. This project explores two uses of the internet: the sociable and humorous appreciation of domesticated felines, and the status quo of personal data usage by startups and international megacorps who are riding the wave of decreased privacy for all.
 
+* [What would I say](http://what-would-i-say.com/about.html) automatically generates Facebook posts that sound like you!
+
+<!--* http://drones.pitchinteractive.com/--> 
+
+
 ### APIs, tutorials and tools
 
 * [Instagram API how-to tutorial](https://github.com/robynitp/networkedmedia/wiki/Instagram-API-How-to)
@@ -64,6 +69,11 @@ If you're interested in how filter bubbles impact our lives, and want to explore
 * [RAW](http://raw.densitydesign.org) allows you to convert spreadsheet data into a [D3.js](http://d3js.org/)-based visualisation 
 
 * [Vega](http://vega.github.io/vega/) is a visualisation grammar, a declarative format for creating, saving, and sharing interactive visualisation designs.
+
+* [Rita](http://rednoise.org/rita/) provides tools for artists and writers working with natural language in programmable media. The library is designed to be simple while still enabling a range of powerful features, from grammar and Markov-based generation to text-mining, to feature-analysis (part-of-speech, phonemes, stresses, etc).
+
+* [Postman](https://www.getpostman.com/) helps you create and test your API requests, before you write any code.
+
 
 <!--
 # Matteo's TODO

@@ -319,12 +319,13 @@ Formative presentation (29.10):
 
 ### Peer-learning research
 
-6 **teams** of ~3 people each. You may want to stick to the same *Filter Bubbles* team.
+7 **teams** of ~3 people each. You may want to stick to the same *Filter Bubbles* team.
 
 Choose a topic to research and teach next week (one per team). Some of them are theory-oriented and some are more practical:
 
-1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api)
+1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api) (TODO pick a section of the article)
 * The [Critical Engineering Manifesto](http://criticalengineering.org/) (you can replace `engineer` with `coder` if you feel like making this more relatable)
+* The [Conditional Design Manifesto](https://conditionaldesign.org/manifesto)
 * [Below the API](http://www.forbes.com/sites/anthonykosner/2015/02/04/google-cabs-and-uber-bots-will-challenge-jobs-below-the-api/)
 * Computational thinking
 * Functions and functional programming (make examples in JavaScript)

@@ -324,6 +324,7 @@ Formative presentation (29.10):
 Choose a topic to research and teach next week (one per team). Some of them are theory-oriented and some are more practical:
 
 1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api) (TODO pick a section of the article)
+* [Data Doppelgängers and the Uncanny Valley of Personalization](http://www.theatlantic.com/technology/archive/2014/06/data-doppelgangers-and-the-uncanny-valley-of-personalization/372780/)? 
 * The [Critical Engineering Manifesto](http://criticalengineering.org/) (you can replace `engineer` with `coder` if you feel like making this more relatable)
 * The [Conditional Design Manifesto](https://conditionaldesign.org/manifesto)
 * [Below the API](http://www.forbes.com/sites/anthonykosner/2015/02/04/google-cabs-and-uber-bots-will-challenge-jobs-below-the-api/)

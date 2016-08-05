@@ -53,6 +53,9 @@ If you're interested in how filter bubbles impact our lives, and want to explore
 
 * [What would I say](http://what-would-i-say.com/about.html) automatically generates Facebook posts that sound like you!
 
+* [TinderIn](http://driesdepoorter.be/tinderin/) puts profile pictures from LinkedIn & Tinder of the same person, side by side.
+ 
+
 <!--* http://drones.pitchinteractive.com/--> 
 
 

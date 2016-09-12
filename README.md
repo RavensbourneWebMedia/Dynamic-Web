@@ -2,21 +2,19 @@
 
 In particular, you will:
 
-* Get familiar with the principles of functional and object-oriented programming, putting these into practice with **JavaScript**
+* Get familiar with the principles of programming, putting these into practice with **JavaScript**
 * Develop your **computational thinking** skills with weekly coding challenges
 * Research and use code libraries (such as **jQuery**) and integrate them in your project
 * Analyse the mechanics of applications, breaking down their behaviours into *data*, *functions* and *logic*  
-* Play critically with **Web APIs** (both data APIs and interaction APIs)
 * Create proof-of-concept functional **prototypes** for Web applications, which manipulate data from online database(s) and/or API(s)
 * Work in **teams**, learning from your peers and teaching them what you learned
 * **Document** your work regularly and reflect on your creative process
 * **Communicate** your ideas both technically and in an engaging way
 * Back up your project files using the Git version-control system (through **GitHub**)
 
+<!-- * Play critically with **Web APIs** (both data APIs and interaction APIs) -->
 
 # Plan
-
-### [Subscribe to the calendar!](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)
 
 When | In class | Homework | Blog 
 ---- | -------- | -------- | ----
@@ -57,10 +55,24 @@ By the end of this course, you will be able to:
 * Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*.
 * **Research** and use **interaction APIs** (aka code libraries like *jQuery*) and integrate them in your project.  
 * Understand how **data APIs** function (HTTP requests, API keys, URL parameters etc.) and hook up one or more APIs to your Web application.
+* Apply your understanding and **experiment** on your own: refine, test and *debug* your code.
+* Feel confident **searching** for solutions to design challenges and coding issues.
 * Look **critically** at APIs as **communication protocols** that are made and enforced by people: what does an API allow you to do, what does it not, who should be able to use it and why, are some of the questions you will seek to answer.
 * **Document** your design and development process, from the exploration of ideas to their practical implementation. Including *successes* and *failures*.
 * **Communicate** your ideas both technically and in an engaging way.
+
+<!--
 * Use the Git version-control system (through GitHub) to **collaborate** with your team and **back-up** your project files.
+* Identify **bugs** (unexpected behaviours in apps or code errors) using tools to *inspect* apps and come up with possible explanations.
+* Create **proof-of-concept prototypes** for Web apps, which manipulate data from online databases and/or **APIs**.
+* Discuss **app ideas** in terms of *interface*, *logic* and *data* with designers and developers.
+* **Visualise interaction flows** with analog (paper) and digital tools.
+* Break down **behaviour** (including human behaviour) into *algorithms*, that is step-by-step instructions that can be coded.  
+* Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*. 
+* Understand how **data APIs** work (HTTP requests, API keys, URL parameters) and hook up one (or more) APIs to your Web application.
+* Critically analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
+-->
+
 
 # Rules of the road
 

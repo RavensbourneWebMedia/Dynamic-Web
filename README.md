@@ -18,32 +18,24 @@ In particular, you will:
 
 When | In class | Homework | Blog 
 ---- | -------- | -------- | ----
-[Thursday<br>01.10](sessions/01)| <ul><li>Welcome <li>APIs <li>Workshop: *Hash Tags* <li>Team project: [**Filter Bubbles**](#filter-bubbles) | <ul><li>Peer learning research: choose a topic to research and teach next week (teams of ~3) <li>Work on *Filter Bubbles* | *Filter Bubbles*
-[Thursday<br>08.10](sessions/02)| <ul><li>Peer learning <li>Workshop: *Hash Tags* (part 2) | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | Peer learning feedback
-[Thursday<br>15.10](sessions/03)| <ul><li>Tutorials on *Filter Bubbles*<li>Codewars katas | <ul><li>Peer learning research <li>Work on *Filter Bubbles* | *Filter Bubbles*
-[Thursday<br>22.10](sessions/04)| <ul><li>Peer learning <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Prepare formative (tweak your work) | Peer learning feedback
-[Thursday<br>29.10](sessions/05)| **Formative presentations** | Codewars katas  | Reflection blog
-Week 6<br>Mozfest|
-[Thursday<br>12.11](sessions/07)| <ul><li>Using *Node.js* to conquer the World(ish)! <li>Tutorials on *Filter Bubbles* | <ul><li>Codewars katas <li>Work on *Filter Bubbles* | 
-[Thursday<br>19.11](sessions/08)| <ul><li>Using cloud databases <li>Tutorials on *Filter Bubbles* | Work on *Filter Bubbles* | Team work
-[Thursday<br>26.11](sessions/09)| <ul><li>Tutorials on *Filter Bubbles* <li> Summative prep | Prepare summative (tweak your work) | Your role in *Filter Bubbles* 
-[Thursday<br>03.12](sessions/10)| **Summative presentations** with [@riklomas](https://twitter.com/riklomas)!
+[Friday<br>07.10](sessions/01)| <ul><li>Welcome <li>What are apps? Key concepts: interface, data and logic <li>Workshop: HTML + CSS + JS <li>Project: [**Filtr Findr**](#filtr-findr) | Peer learning research: choose a topic to research and teach next week (teams of ~3) | Analyse your favourite apps
+[Friday<br>14.10](sessions/02)| <ul><li>Peer learning <li>Workshop: data and APIs | Codewars kata | *Filtr Findr* brain*storming*
+[Friday<br>21.10](sessions/03)| <ul><li>Brain*swarming* <li>Workshop: design your own database <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Prepare formative | TBA
+Week 4<br>Mozfest |
+[Friday<br>04.11](sessions/05)| **Formative presentations** | <ul><li>Peer learning research <li>Work on *Filtr Findr* | Reflection blog 
+[Friday<br>11.11](sessions/06)| <ul><li>Peer learning <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | TBA
+[Friday<br>18.11](sessions/07)| <ul><li>Workshop: plotting data on a map <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | TBA
+[Friday<br>25.11](sessions/08)| Tutorials on *Filtr Findr* | Prepare summative (tweak your work) | TBA
+[Friday<br>02.12](sessions/09)| **Summative presentations** 
+
 
 # Project
 
-### Filter Bubbles
+### Filtr Findr
 
-This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
+This **individual project** is about using code and data to create a helpful experience for a community of people.
 
-All the project material is [here](projects/filter-bubbles).
-
-<!--### Making Noise
-
-This project is about functional and object-oriented programming, creating your own API and having fun with code-generated sound.-->
-
-<!--### Time Table
-
-This **team project** is about designing interfaces and coding apps that use data to provide people with *just enough information*. -->
+All the project material is [here](projects/filtr-findr).
 
 
 # Learning goals

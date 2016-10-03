@@ -2,10 +2,10 @@
 
 ### Today, Friday 7th October 2016
 
-1. [Welcome](#welcome) :)
+1. [Welcome back](#welcome) :)
 * What are [apps](#what-is-an-app)? Key concepts: interface, data and logic 
-* [Workshop](#workshop): HTML + CSS + JS
-* Team project: [Filtr Findr](#team-project)
+* Project: [Filtr Findr](#your-brief)
+* [Workshop](#workshop): HTML + CSS + JS recap, while building the `app template`
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -16,8 +16,8 @@
 * [What's the plan?](../../README.md#plan) 
 * [What can you learn?](../../README.md#learning-goals)
 * [Rules of the road](../../README.md#rules-of-the-road)
-* Keeping a **journal** to record your creative process is *extremely* important. Don't let your ideas and thoughts fade away! Think of your project blog as your **digital sketchbook**. More on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging).
-* **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this course you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
+* Keeping a **journal** to record your creative process is extremely important. Don't let your ideas and thoughts fade away! Think of your blog as your *digital sketchbook* (more on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging)). We ask you to blog regularly and we'll check that you do it every week.
+* **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this unit you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
 
 
 # What is an app?
@@ -86,7 +86,7 @@ Many `if {this} then {that}` blocks can build quite complex behaviours.
 
 ### Make an **app** that helps **people** sort through **data** to **find** who/what they are looking for.
 
-**The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch.. 
+**The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch...
 
 No matter which data the app uses, its **logic** will be the same:
 
@@ -94,6 +94,8 @@ No matter which data the app uses, its **logic** will be the same:
 * Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
 * **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
 * Present a human-readable **output** 
+
+All the project material is [here](../../projects/filtr-findr). 
 
 ### Interface
 
@@ -107,7 +109,7 @@ This is what we're focusing on today.
 
 Next week we'll learn how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
 
-We'll also show you that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* that you can use in your own project. No need to reinvent the wheel!
+We'll also learn that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* (such as jQuery) that you can use in your own project. No need to reinvent the wheel!
 
 ### Data
 
@@ -115,7 +117,9 @@ We'll learn how to create structured data, aka a **database**.
 
 No scary formula or data crunching though! 
 
-Over the next weeks you will change the data to make your app serve your own purposes.
+### Your own app
+
+In class we will demo how to build an example app, which we call the `app template`. This will happen during the first three weeks. You will then use the `app template` to build *your own* app, based on your own idea, and iterate that through the rest of the unit. 
 
 
 # Workshop
@@ -224,7 +228,7 @@ Formative presentation (29.10):
 
 ### Peer-learning research
 
-7 **teams** of ~3 people each. You may want to stick to the same *Filter Bubbles* team.
+7 **teams** of ~3 people each. 
 
 Choose a topic to research and teach next week (one per team). Some of them are theory-oriented and some are more practical:
 
@@ -251,14 +255,12 @@ Make sure your mini-lesson and any other relevant material is **published online
 
 ### Project 
 
-Work on *Filter Bubbles* **with your team**:
+Work on *Filtr Findr*:
 
-* Research on your GitHub repo wiki
-* Discuss and sketch ideas
-* Experiment with code, more than one idea. Next week we'll review them and pick one to finalise.
+ - [ ] Create a GitHub repository for your project
+ - anything else?
+
 
 ### Blog 
 
-**Individually**, write about *Filter Bubbles*. Reflect on the concept and document **your** thought process. You can post pictures of scribbled notes, or jot down notes digitally. It doesn't need to be fleshed out and well written. The main goal here is to record your flow of ideas, not to make it beautiful!
-
-<!-- Should ask for opinions on the idea of filter bubbles and examples of filter bubbles in action in their daily online consumption (and offline too?).  -->
+- [ ] Analyse your favourite app in terms of interface, data and logic

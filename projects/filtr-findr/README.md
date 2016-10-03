@@ -9,13 +9,12 @@ No matter which data the app uses, its (initial) **logic** will be:
 * **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
 * Present a human-readable **output** 
 
-<!-- The code for the app *template* (the example app we demo in class) is [here]() -->
 
 # Roadmap
 
 In class we will demo how to build an example app, which we call the `app template`. This will happen during the first three weeks. You will then use the `app template` to build *your own* app, based on your own idea, and iterate that through the rest of the unit. 
 
-<!-- You can find all the source code for the `app template` [here]() -->
+> You can find all the source code for the `app template` [here](app-template).
 
 * 7th of October, project start
 	* [ ] Workshop: HTML + CSS (aka the *interface*) for the `app template`
@@ -39,4 +38,23 @@ In class we will demo how to build an example app, which we call the `app templa
 	* [ ] Publish your app using GitHub pages
 	* [ ] Submit your hand-in package for this unit on Moodle <sup>Moodle link and hand-in guidelines to be announce in due course 
 
+<!--
+
+### Inspiration
+
+* ProductHunt
+* Mobile NONONO (what was it called?)
+* Panda feeds
+
+### Tools
+
+* PitchCard
+* Firebase
+* GitHub Pages
+* jQuery
+
+
+ * Leaflet or Google Maps API? 
+ 
+-->
 

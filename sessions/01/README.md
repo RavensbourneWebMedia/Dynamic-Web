@@ -1,11 +1,11 @@
 # Week 1
 
-### Today, Thursday 1st October 2015
+### Today, Friday 7th October 2016
 
 1. [Welcome](#welcome) :)
-* [APIs](#apis) 
-* Workshop: [Hash Tags](#workshop) 
-* Team project: [Filter Bubbles](#team-project)
+* What are [apps](#apps)? Key concepts: interface, data and logic 
+* [Workshop](#workshop): HTML + CSS + JS
+* Team project: [Filtr Findr](#team-project)
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -13,11 +13,11 @@
 # Welcome
 
 1. [What is this course about?](../../README.md)
-* [What's the plan?](../../README.md#plan) Make sure you subscribe to the [calendar feed](https://www.google.com/calendar/ical/rave.ac.uk_obrkgb9c76vv9dj1soaehmav74%40group.calendar.google.com/public/basic.ics)! 
+* [What's the plan?](../../README.md#plan) 
 * [What can you learn?](../../README.md#learning-goals)
+* [Rules of the road](../../README.md#rules-of-the-road)
 * Keeping a **journal** to record your creative process is *extremely* important. Don't let your ideas and thoughts fade away! Think of your project blog as your **digital sketchbook**. More on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging).
 * **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this course you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
-* [Rules of the road](../../README.md#rules-of-the-road).
 
 
 # APIs

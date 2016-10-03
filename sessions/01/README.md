@@ -124,99 +124,721 @@ In class we will demo how to build an example app, which we call the `app templa
 
 # Workshop
 
-### What's a hashtag? 
+We're going to refresh our brains and hands on how to:
 
-Imagine you have to explain it to someone or something that has never seen one before (an alien, your grandma..)
+* Write HTML to **structure** your app interface 
+	* Create several types of **text** (paragraphs, headings)
+	* Create **inputs** (dropdowns, buttons, text boxes)
+	* Create **links** to other Web pages
+	* Add **images**
+	 
+* Write CSS to **style** your app interface
+	* Design your app **typography**
+	* Set your app **colours**
+	* **Search** for code online and integrate what you find in your project (that's what coders do most of the time!)
 
-[![](assets/hashtag-search.png)](https://www.google.co.uk/trends/explore#q=hashtag&cmpt=q&tz=Etc%2FGMT-1)
+### Let's code
 
-This graph from Google Trends illustrates the (search) popularity of the word `hashtag` over time.
+But let's not *reinvent the wheel*. We could start from scratch, creating a new `index.html` file and laying out the bare bones of an HTML document (remember `<html>`, `<head>` and `<body>`?) but we assume that you know all that already. Instead, we'll use a **boilerplate**.
 
-### What's a hashtag *for*?
+> Go to [html5boilerplate.com](https://html5boilerplate.com/) and download the latest version. Then open it in your favourite code editor.
 
-Let's remind ourselves. 
+### Content first, style later!
 
-We became so accustomed to hashtags that we almost take them for granted. Yet we don't use hashtags when we talk to each other, or when we text our friends, so **why** do we use them so extensively on social media?
+It's good practice to build the **HTML** first, and then make it _stylish_ with CSS.
 
-* Do you use hashtags? If yes, which? If not, why?
-* What happens when you use a hashtag in a picture / tweet etc? 
-* Why do social media services encourage us to use hashtags?
+> Open `index.html`.
 
-[![](assets/hash-key.jpg)](https://www.kickstarter.com/projects/1000610379/hashkey-a-dedicated-1-key-keyboard-for-the-hashtag)
+As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged. We won't get into details for now, but concentrate on crafting the skeleton of our `app template`.
+
+> Inside the `body`, remove the `<paragraph>` and put in two `<section>` elements
+
+> ```html
+<body>
+	...
+	<!-- Add your site or application content here -->
+	<section></section>
+	<section></section>
+	...
+</body>
+```
+
+#### Fancy logo
+
+It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogogenerator.com) for quick and easy hipster logos :)
+
+> Take a couple of minutes to quickly make your own fancy logo.
+
+> To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
+
+> ```html
+<section>
+	<img src=" ">
+</section>
+```
+
+Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. 
+
+> ```html
+<section>
+	<img src="img/hipsterlogo.jpg">
+</section>
+```
+
+If you're taking an image from the web you need to use the link to the image alone. 
+
+> Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "` 
+
+> ```html
+<section>
+	<img src="http://placekitten.com/200/300">
+</section>
+```
+
+Don't worry just now if it's too big, we'll resize it later on.
+
+#### Headings
+
+> Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
+
+> ```html
+<section>
+	...
+	<h1>Your app name</h2>
+	<h2>What it does</h2>
+</section>
+```
+
+#### Paragraphs
+
+> Write a paragraph to explain how your app works, and what you want people to do first.  
+
+> ```html
+<section>
+	...
+	<p>Swap skills and time with people in your community!</p>
+  	<p>Just choose an activity to get started.</p>
+</section>
+```
+
+#### Dropdown
+
+This is the first interactive element of your app.
+
+It's a set of `options` that people can choose from.
+
+> Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
+
+> ```html
+<section>
+	...
+	<select>
+		<option>Keep my pet</option>
+		<option>Bake a cake</option>
+		<option>Move my piano</option>
+	</select>
+	...
+</section>
+```
+
+#### Button
+
+> Next you'll need a `Find` or `Search` button. 
+
+> ```html
+<section>
+	...
+	<button>Find</button>
+	...
+</section>
+```
+
+#### Hyperlinks
+
+You can add **hyperlinks** to our content using the `a` element.
+	
+```html
+<a href="http://example.com"> the clickable text </a>
+```
+
+Did you know `a` is for *anchor*? :anchor:
+
+> Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
+
+> ```html
+	...
+	<p>Made with love by <a href="http://example.com"> Your Name</a></p>
+</body>	
+```
+
+### Styling
+
+Now the stylish part: **CSS**!
+
+There's a `link` in the `head` of your app which points to a CSS file called **main.css**. This is where you add your own styles.
+
+```html
+<link rel="stylesheet" href="css/main.css">
+```
+
+You can have more than just one CSS file, and it's good practice to work on several small files rather than one long document you may get lost into.
+
+#### CSS basics
+
+You use CSS to style HTML.
+
+CSS looks and works differently than HTML. 
+
+```css
+selector
+{
+	property: value;
+	property: value;
+}
+```
+
+The part before the curly brackets `{` and `}` is the **selector**. This ***selects* the element** from your HTML document.
+
+In CSS you can select multiple HTML elements in one go.
+
+For example, to select all paragraphs you can write
+
+```css
+p
+{
+	/* your styles for paragraph here */
+}
+```
+
+CSS **properties** define how HTML elements are displayed.
+
+The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
+
+For example ...
+
+```css
+p
+{
+	color: green;
+}
+```
+
+... will turn *every* paragraph in your HTML green.
+
+#### Play around a bit
+
+> Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
+
+> * change the `color` of your `h1` or `h2` elements
+> * align some elements to the `center` (*google* how to do it)
+> * hide some elements
+> * change the `background-color` of the whole page 
+
+> What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
+
+#### Search for solutions! 
+
+Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately. 
+
+**All the answers can be found on the Web! As coders, we must get used to searching online for solutions.**
+
+#### Inspect websites you like
+
+Do you remember how to see the code behind every site on the Web? You can use the **Web Inspector** to do this. It's like x-ray specs for websites.
+
+> Go to a website (any website) and right-click anywhere on that page, then select `Inspect` (or `Inspect Element` in some browsers).
+
+On the **left panel** of the `Elements` tab you can see all the HTML code for the page you're inspecting. By clicking on an HTML element you'll reveal all the CSS applied to it, on the **right panel**.
+
+You can also play with this code and change the way your favourite websites look (but don't worry, your changes won't affect how other people are experiencing that site). :scream:
+
+> Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
+
+#### Fonts
+
+Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout. 
+
+> You can grab a free **font** from [Google Fonts](https://fonts.google.com): 
+
+> 1. Pick a typeface you like
+> * Click on the red `+` button
+> * Follow the instructions in the dark popup at the bottom of the page (where it says `1 Family Selected`)
+> * Copy the `link` code for it and paste it in your app `head` in Thimble. 
+
+>	Where? Before `main.css`
+
+>	```html
+	<head>
+		...
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>	
+	```
+> * In `style.css`, define the font for the `body` element (all other elements will inherit it). 
+
+>	```css
+body
+{
+	font-family: 'Lato', sans-serif;
+}
+```
+
+We're using the font *Lato* as an example, but you can pick **whichever font** you like and change your CSS code accordingly. There are 700+ fonts available on Google Fonts!
+	
+Then you can set **more specific rules** for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
+	
+* `font-family` 
+* `font-size`
+* `font-weight`
+* `font-style`
+* `line-height`
+* `letter-spacing`
+* `word-spacing`
+* `text-align`
+* `text-decoration`
+* `text-transform`
+* `text-indent`	
+
+> `font-family`, `font-size` and `color` are a great place to start!
+	
+#### Background images
+
+You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
+
+> In your `main.css` create a new `background-image` rule for `html`
+
+> ```css
+html
+{
+	background-image: url(  );
+}
+```
+
+You can use your own image files (put them inside the `img` folder) or use images from the Web (provided they're licensed for re-use).
+
+For now, we'll use [unsplash.com](https://unsplash.com), where you can find beautiful, high-res pictures that are free to use for *whatever* purpose you want. Amazing! Read their [licence](https://unsplash.com/license) if you don't believe me :)
+
+> 1. Find an image you like on [unsplash.com](https://unsplash.com)
+> * Click on the `↓` (Download) button on the bottom-right corner of the picture. This will open a new browser tab showing your chosen picture only.
+> * **Copy** the address (URL) of that image. It starts with `https://images.unsplash.com` and it's quite long.
+> * **Paste** it in your `main.css` inside the `body` `background-image` rule like so
+
+> ```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+}
+```
+
+By default background-images *tile*, but we want them to take up the whole available screen space, without losing their aspect ratio (no squashing). 
+
+We can achieve that with `background-size`. This property can take various values: pixel sizes, percentages, and then a couple of interesting keywords. 
+
+* `contain` will scale the image so as to be as large as possible providing that it is **contained** within the background positioning area. 
+* `cover` instead, will scale the image, this time to be as large as possible so that the background positioning area is completely **covered** by the background image.
+
+> Add `background-size: cover;` to the `html` rule.
+
+> ```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+ 	background-size: cover;
+}
+```	
+
+Now the image *covers* the content of your app, ie the `body` but you have probably noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
+
+> ```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+ 	background-size: cover;
+ 	background-attachment: fixed;
+}
+```  
+
+#### Dropdown
+
+To style your dropdown, you first need to know how it's called in HTML: `select`
+
+> In `main.css` add a new CSS block
+
+> ```css
+select
+{
+	background-color: red; 
+}
+```
+
+This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour. 
+
+> ```css
+select
+{
+	background-color: red; 
+	color: white;
+}
+```
+
+Currently the dropdown looks too small and its text is not **comfortable to read**. How do you fix that?
+
+> ```css
+select
+{
+	...
+	font-size: 200%;
+}
+```
+
+> Adjust the `font-size` to suit your app content.
+
+#### Button
+
+> Add a new CSS block that targets the `button` 
+
+> ```css
+button
+{
+	border: none;
+	background-color: red; 
+	cursor: pointer;
+}
+```
+
+> Change the `color` to match your design. 
+
+It's good practice to style all *interactive* interface elements the same **colour and prominent**.
+
+Now you can apply some of the styles from the dropdown to the `button`. 
+
+> How do you make **rounded corners**? With `border-radius`.
+
+> ```css
+button
+{
+	...
+	border-radius: 10px;
+}
+```
+
+Nice. It looks a bit squished though. We can use `padding` to add some space between the button text and its border.
+
+> ```css
+button
+{
+	...
+  	padding: 10px;
+}
+```
+
+#### Button states
+
+As an interactive element, a `button` should respond to user interactions, through its look & feel. 
+
+For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
+
+> Add a new CSS block that targets the `hover` state of your `button` 
+
+> ```css
+button:hover
+{
+	color: black;
+}
+```
+
+Now when you roll over the button, its text will turn black.
+
+#### Smooth transitions
+
+Currently the text colour flashes from the normal state to the `hover` state.
+
+> You can make that transition smooth using the `transition` CSS property
+
+> ```css
+button
+{
+	transition: 0.6s;
+}
+```
+
+`s` stands for seconds.
+
+### Responsive design
+
+So far we've styled individual elements like `a`, `img`, `select` and `button`. It's time to look at the bigger picture. Our design has a couple of issues:
+
+1. Texts over the background image are not *legible*.
+* On large screens, your app looks *odd*. 
+
+To address these, we can add a semi-transparent background that will focus people's attention to where they should read and click.
+
+> Create a new CSS rule for `section` and give it a `background-color`.
+
+> ```css
+section 
+{
+	background: rgba(255,255,255,0.6);
+	padding: 20px;
+}
+```
+
+The CSS above will add a white semi-transparent background to the `section` and a `20px` padding around its content, making it all more *legible*.
+
+It still looks *odd* on large screens though.
+
+> ```css
+section 
+{
+	...
+	max-width: 500px;
+ 	margin: auto;
+}
+```
+
+`max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
+
+### Making a list
+
+So far your interface features **input** elements and some text. 
+
+What about the **output** elements? 
+
+<!-- In other words, how your interface would display a **list of results** from the database. -->
+
+It's common practice to **mock up** interfaces with *fake data*, and then hook them up with *real data*.
+
+So, we will mock up a **list** of results (people in our *community skill-swap* app example) using HTML and CSS. In the next weeks we'll learn how to populate that list with real data using JS.
+
+> In `index.html` create an **u**nordered **l**ist `ul` under the `button`
+
+> ```html
+<ul>
+</ul>
+```
+
+> Inside the `ul` create a **l**ist **i**tem `li`
+
+> ```html
+<ul>
+	<li></li>
+</ul>
+```
+
+Think about what you want your search results to display. For example we could have an image `img`, a heading `h2` and a short paragraph `p`.
+
+> Inside the `li` put some *placeholder* content. 
+
+>	```html
+<ul>
+	<li>
+		<img src="http://api.randomuser.me/portraits/women/27.jpg">
+		<h2>Jo</h2>
+		<p>I like coding and pizza</p>
+	</li>
+	<li>
+		<img src="http://api.randomuser.me/portraits/men/33.jpg">
+		<h2>Mo</h2>
+		<p>I like cats and plants</p>
+	</li>
+</ul>
+```
+
+A couple of list items will give us an idea of how your interface will display search results.
+
+We can now **style** these. 
+
+For example, how can we remove the *bullet points* from the list?
+
+> In `main.css` select the list `ul` and define its style. 
+
+> ```css
+ul
+{
+	list-style: none;
+}
+``` 
+
+In CSS you can select elements **nested** inside other elements like this
+
+>	```css
+li img
+{
+	width: 50px;
+}
+```
+	
+The rule above will select all images `img` inside list items `li`.
+
+Confused? Play [CSS Diner flukeout.github.io](http://flukeout.github.io), an online game that teaches you **CSS selectors**! 
+
+> Go ahead and style the list and its components. 
+	
+> Remember, if you don't know how to style something, Google may have the answers! 
+
+When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve. 
+
+For example `css how to round the corners of a button`.
+
+### Sections
+
+Our `app template` will have two sections:
+
+1. **Home** section with dropdown menu, `Find` button and search results
+* **Details** section for each item in the search results 
+
+#### The `#home` section
+
+Let's finish off the home section interface.
+
+You've already created two separate `section`s inside your HTML. One of those sections contains the `dropdown`, the find `button` and the results list with placeholder content inside.
+
+```html
+...
+<body>
+	<section>
+		<h1>I'd like someone to...<h1>
+		<select>
+		      <option>Bake a cake</option>
+		      <option>Move my furniture</option>
+		      <option>Keep my pet</option>
+		</select>
+		<!--etc etc...-->
+	</section>
+</body>
+```
+
+> Give the first `section` (which contains the `dropdown` menu) an `id="home"`
+
+>```html
+<section id="home">
+	...
+</section>
+``` 
+
+#### The `#details` section
+
+Underneath the `<section id="home"> ... </section>` you should already have an empty `<section></section>`.
+
+> Give this `section` an `id="details"` and make some space in between the opening and closing tag.
+
+>```html
+<section id="details">
+
+</section>
+``` 
+
+> Inside `<section id="details"> ... </section>` create a new `<div id="person"></div>`. This will be the *details* screen, where a selected person's profile will be displayed.
+
+In the `#home` section you created an unordered list `ul` with list items inside `li`. Within those you put an image `img`, a heading 2 `h2` and a paragraph `p`.
+
+We're going to use that `img`, `h2` and `p` in `#details`. 
+
+> Copy the `img`, `h2` and `p` from the `li` in `#home` and paste them inside `<div id="person"> </div>` like so
+
+> ```html
+<section id="details">
+	<div id="person">
+		<img src="https://avatars1.githubusercontent.com/u/116104">
+		<h2>
+			Matteo
+		</h2>
+		<p>
+			I like code and cake
+		</p>
+	</div>
+</section>
+```
+   
+Your users may want to move back and forth between `#home` and `#details`. For that you'll need a `Back` button!
  
-### What's hashtag abuse, aka *hashspamming*?
+> Add in `<a id="back">Back</a>` above `<div id="person">`
 
-![](assets/hashtag-spam.png)
+> ```html
+<section id="details">
+	<a id="back">Back</a>
+	<div id="person"> 
+ 	...
+``` 
+	
+Your users will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Matteo</a>`
+
+> Your `<section id="details"></section>` will look something like this:
+
+```html
+<section id="details">
+	<a id="back">Back</a>
+	<div id="person">
+		<img src="https://avatars3.githubusercontent.com/u/9767977">
+		<h2>
+			Aimee
+		</h2>
+		<p>
+			I like code and cake
+		</p>
+		<a class="contactButton">Contact Aimee</a>
+	</div>
+</section>
+```
 
 
-### How can we harness hashtags in our our own projects, to communicate something interesting?
 
-Let's use the Instagram API to build a visualisation of **opposites**:
 
-* healthy - unhealthy
-* public - private
-* light -dark
-* silence - noise
-* comedy - tragedy
-* consciousness - unconsciousness
-* upper class - lower class
-* North - South
-* what's the contrary of...
+<!--
+### Final touches
 
-<!--- [ ] Examples / inspirations-->
+* Media queries
+
+	```css
+	/* if the screen is larger than 600px..  */
+	@media (min-width: 600px) {
+	  body {
+	    max-width: 600px;
+	    margin: auto;
+	    font-size: 1em;
+	  }
+	}
+	```
+* Icons using [FontAwesome](https://fortawesome.github.io/Font-Awesome/)
+
+	```css
+	.dropdown
+	{
+	  position: relative;
+	}
+	.dropdown:after
+	{
+	  content: "\f063";
+	  font-family: FontAwesome;
+	  position: absolute;
+	  top: .75em;
+	  right: .75em;
+	  font-size: 2em;
+	  pointer-events: none;
+	}
+	```
+
+* Make the app look proper on a phone. Google `how to stop phone zooming out pages`
+
+* Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
+
+* Add the app to your phone's **home screen**
  
-#### Pull data from Instagram for **2 opposite hashtags** and build an expressive display
+	`<link rel="apple-touch-icon" href="blabla.png">`
+	
+* Transparency?	
+	
+* Take inspiration from these fancy demos by Codrops:
+	* [Custom select elements](http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/)
+	* [Minimal form interface](http://tympanus.net/codrops/2014/04/01/minimal-form-interface)
+	* [Natural language form](http://tympanus.net/codrops/2013/05/21/natural-language-form-with-custom-input-elements)
+-->
 
-1. Build an HTML skeleton with static data (images and text).
-* Spin up a local web-server. Remember [Mamp](https://www.mamp.info/en/)? 
-* Get started with the [IG API](http://instagram.com/developer).
-* Build the **URL**.
-* Download and install [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
-* Request data via JS, see what we get in return (console, inspecting objects).
 
-All the code for this workshop is [here](../../resources/instagram).
 
-<!--See [InstaFeed](../../resources/instafeed) demo.-->
+ 
 
-# Team project
 
-![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
-
-### Filter Bubbles 
-
-This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
-
-All the project material is [here](../../projects/filter-bubbles).
-
-Today:
-
-1. Watch and discuss the [Eli Pariser TED talk video](http://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles?language=en#t-53082).
-* Form teams.
-* Draw the *edges* of your filter bubbles.
-* Set up a GitHub repository for your team project.
-
-Between today and next week:
-
-1. Research communities and *hashtags*, document it on your GitHub repo wiki.
-* Discuss and sketch ideas for visualisations. 
-* Start experimenting with code, more than one idea. 
-* Record your creative process in your blogs.
-
-Next week:
-
-1. Review your ideas and experiments in class.
-* Pick one idea to finalise.
-* Continue coding.
-
-Between next week and the formative:
-
-1. Refine your work.
-* Document your process (research, design and code).
-
-Formative presentation (29.10):
-
-1. Present your work as a team, both process and results.
-* Reflect on what you learned from it.
 
 
 

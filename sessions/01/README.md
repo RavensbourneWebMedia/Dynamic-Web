@@ -3,7 +3,7 @@
 ### Today, Friday 7th October 2016
 
 1. [Welcome](#welcome) :)
-* What are [apps](#apps)? Key concepts: interface, data and logic 
+* What are [apps](#what-is-an-app)? Key concepts: interface, data and logic 
 * [Workshop](#workshop): HTML + CSS + JS
 * Team project: [Filtr Findr](#team-project)
 
@@ -20,6 +20,102 @@
 * **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this course you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
 
 
+# What is an app?
+
+Let's sketch a **working definition** of *app*.
+
+How do you explain what an app is to someone or something who's never seen/used one, like an *alien*?
+
+![](assets/et.png)
+
+<!--
+### Your turn
+
+Pretending one of us is an *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
+
+If people answer with jargon, like *software* or *download*, then we ask them to explain those too to our *alien*.
+-->
+
+* What does an app **look like**?  
+* How do you **interact** with an app? Do you speak to it, do you shake it etc?
+* What are apps **made out of**?
+* **Who uses** apps? Why?
+
+### What is an app, then?
+
+There is no clear-cut definition of *app*.
+
+For the sake of this course, we like to think of apps as small **digital tools** that are **connected** to the Web.
+
+To use an analogy, if a website is like a *book*, which you use to find and consume information, an app is closer to a *whisk*, which you use to make something with.
+
+![](assets/whisk.png)
+
+Apps generally have a specific function, or a small set of functions. They are not trying to do everything.
+
+![](assets/swiss-army-knife.png)
+
+This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
+
+Good apps do **one thing** and do it well.
+
+## Key concepts
+
+### Interface
+
+The parts of the app you directly interact with (touch, read, click, speak to etc.)
+
+A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work). 
+
+### Data
+
+The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
+
+Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location coordinates apps stream...
+
+### Logic
+
+The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and how it presents it to you (*output*).
+
+At its core, the logic building blocks of an app are statement that sound like `if {this} then {that}`, eg: `if you click on this button, the app will show you this section`.
+
+Many `if {this} then {that}` blocks can build quite complex behaviours.
+
+
+# Your brief
+
+### Make an **app** that helps **people** sort through **data** to **find** who/what they are looking for.
+
+**The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch.. 
+
+No matter which data the app uses, its **logic** will be the same:
+
+1. **Load data** from an online database 
+* Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
+* **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
+* Present a human-readable **output** 
+
+### Interface
+
+Here's an initial sketch of how the app may look and work.
+
+[![](assets/monochrome_moqup.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
+
+This is what we're focusing on today.
+
+### Logic
+
+Next week we'll learn how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
+
+We'll also show you that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* that you can use in your own project. No need to reinvent the wheel!
+
+### Data
+
+We'll learn how to create structured data, aka a **database**. 
+
+No scary formula or data crunching though! 
+
+Over the next weeks you will change the data to make your app serve your own purposes.
 
 
 # Workshop

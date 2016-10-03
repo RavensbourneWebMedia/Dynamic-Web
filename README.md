@@ -3,8 +3,8 @@
 In particular, you will:
 
 * Get familiar with the principles of programming, putting these into practice with **JavaScript**
-* Develop your **computational thinking** skills with weekly coding challenges
 * Research and use code libraries (such as **jQuery**) and integrate them in your project
+* Develop your **computational thinking** skills with weekly coding challenges
 * Analyse the mechanics of applications, breaking down their behaviours into *data*, *functions* and *logic*  
 * Create proof-of-concept functional **prototypes** for Web applications, which manipulate data from online database(s) and/or API(s)
 * Work in **teams**, learning from your peers and teaching them what you learned

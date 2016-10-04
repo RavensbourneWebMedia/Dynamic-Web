@@ -101,13 +101,13 @@ All the project material is [here](../../projects/filtr-findr).
 
 Here's an initial sketch of how the app may look and work.
 
-[![](assets/monochrome_moqup.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
+![](assets/monochrome_moqup.png)
 
 This is what we're focusing on today.
 
 ### Logic
 
-Next week we'll learn how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
+We'll learn how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
 
 We'll also learn that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* (such as jQuery) that you can use in your own project. No need to reinvent the wheel!
 
@@ -137,9 +137,13 @@ We're going to refresh our brains and hands on how to:
 	* Set your app **colours**
 	* **Search** for code online and integrate what you find in your project (that's what coders do most of the time!)
 
+* Write JavaScript (JS) to assign **behaviours** to your app interface
+	* Select interface elements
+	* Hide and show them, when certain other elements are clicked
+
 ## Let's code
 
-But let's not *reinvent the wheel*. We could start from scratch, creating a new `index.html` file and laying out the bare bones of an HTML document (remember `<html>`, `<head>` and `<body>`?) but we assume that you know all that already. Instead, we'll use a **boilerplate**.
+But let's not *reinvent the wheel*. We could start from scratch, creating a new `index.html` file and laying out the bare bones of an HTML document (remember `<html>`, `<head>` and `<body>`?). Instead, we assume that you know all that already, so we'll use a **boilerplate**.
 
 > Go to [html5boilerplate.com](https://html5boilerplate.com/) and download the latest version. Then open it in your favourite code editor.
 
@@ -149,7 +153,7 @@ It's good practice to build the **HTML** first, and then make it _stylish_ with 
 
 > Open `index.html`.
 
-As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged. We won't get into details for now, but concentrate on crafting the skeleton of our `app template`.
+As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged, which we won't get into for now. Let's concentrate on crafting the skeleton of our `app template`.
 
 > Inside the `body`, remove the `<paragraph>` and put in two `<section>` elements
 
@@ -350,7 +354,7 @@ Do you remember how to see the code behind every site on the Web? You can use th
 
 On the **left panel** of the `Elements` tab you can see all the HTML code for the page you're inspecting. By clicking on an HTML element you'll reveal all the CSS applied to it, on the **right panel**.
 
-You can also play with this code and change the way your favourite websites look (but don't worry, your changes won't affect how other people are experiencing that site). :scream:
+You can also play with this code and change the way your favourite websites look (don't worry, your changes won't affect how other people are experiencing that site). :scream:
 
 > Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
 
@@ -447,7 +451,7 @@ html
 }
 ```	
 
-Now the image *covers* the content of your app, ie the `body` but you have probably noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
+Now the image *covers* the content of your app, ie the `body` and you may have noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
 
 > ```css
 html
@@ -598,9 +602,11 @@ section
 
 `max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
 
+There's much more to responsive design than this, but these quick tweaks will do for now.
+
 ## Making a list
 
-So far your interface features **input** elements and some text. 
+At the moment your interface features **input** elements and some text. 
 
 What about the **output** elements? 
 
@@ -693,21 +699,6 @@ Let's finish off the home section interface.
 
 You've already created two separate `section`s inside your HTML. One of those sections contains the `dropdown`, the find `button` and the results list with placeholder content inside.
 
-```html
-...
-<body>
-	<section>
-		<h1>I'd like someone to...<h1>
-		<select>
-		      <option>Bake a cake</option>
-		      <option>Move my furniture</option>
-		      <option>Keep my pet</option>
-		</select>
-		<!--etc etc...-->
-	</section>
-</body>
-```
-
 > Give the first `section` (which contains the `dropdown` menu) an `id="home"`
 
 >```html
@@ -724,7 +715,6 @@ Underneath the `<section id="home"> ... </section>` you should already have an e
 
 >```html
 <section id="details">
-
 </section>
 ``` 
 
@@ -763,7 +753,7 @@ Your users may want to move back and forth between `#home` and `#details`. For t
 	
 Your users will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Matteo</a>`
 
-> Your `<section id="details"></section>` will look something like this:
+Your `<section id="details"></section>` will look something like this:
 
 ```html
 <section id="details">
@@ -821,7 +811,7 @@ Your users will also need a way to contact the person. Add in a contact button i
 
 ## Meet JavaScript
 
-So far we learned how to build interfaces using **HTML** + **CSS**.
+So far we learned (or rather recapped) how to build interfaces using **HTML** + **CSS**.
 
 Your app interface, despite being very stylish, doesn't do much (yet).
 
@@ -833,7 +823,7 @@ To set things in motion, to have a truly interactive experience, we need another
 
 ##### **JS** → behaviour and logic
 
-We'll have a proper dive into JS next week, but for today we'll ease into it using one of the most popular JavaScript tools: **jQuery**.   
+We'll have a proper dive into JS next week. For today we'll ease into it using one of the most popular JavaScript tools: **jQuery**.   
 
 ### Meet jQuery
 
@@ -941,7 +931,7 @@ button.click( function ()
 
 ### Hide the `#details` section by default
 
-When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result, but for now we want to **hide** that part of the HTML.
+When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result. For now, we just want to **hide** that part of the HTML.
 
 > In `main.js` write
 
@@ -979,7 +969,7 @@ $('button')click( function() {
 ``` 
 
 1. `$('button')` selects the `Find` button.
-2. `.click( function() { ... })` says **when** the user **clicks** the selected element, call this function. In our case, **when** the user **clicks** `Find`, perform this function.
+2. `.click( function() { ... })` says **when** the user **clicks** the selected element, *run* all the instructions inside this function.
 
 Now *inside* the function...
 
@@ -989,9 +979,9 @@ $('#details').show();
 ```
 
 1. `$('#home')`: ask jQuery (`$` is a shortcut for `jQuery`) to select the element with an id `home` with 
-* Run the jQuery `hide()` function on the selection
+* Apply the jQuery `hide()` function to the selection
 * `$('#details')`: select the element with an id `details` 
-* Run the `show()` function on the selection
+* Apply the `show()` function to the selection
 
 ### When someone clicks on the `Back` button, what happens?
 
@@ -1041,7 +1031,7 @@ Your team **mini-lesson** (bear in mind, *presentation* does not mean PowerPoint
 
 Each team should also prepare **1-2 questions for the class**. After your mini-lesson, we will have a short group discussion around these questions.
 
-Make sure your mini-lesson and any other relevant material is **published online** (for instance on GitHub.. but it could be elsewhere as long as it's accessible by anyone). You can publish *after* you've presented next week.
+Make sure your mini-lesson and any other relevant material is **published online** (for instance on GitHub.. it could be elsewhere as long as it's accessible by anyone). You can publish *after* you've presented next week.
 
 ### Project 
 

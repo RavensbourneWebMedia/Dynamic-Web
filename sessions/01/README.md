@@ -137,7 +137,7 @@ We're going to refresh our brains and hands on how to:
 	* Set your app **colours**
 	* **Search** for code online and integrate what you find in your project (that's what coders do most of the time!)
 
-### Let's code
+## Let's code
 
 But let's not *reinvent the wheel*. We could start from scratch, creating a new `index.html` file and laying out the bare bones of an HTML document (remember `<html>`, `<head>` and `<body>`?) but we assume that you know all that already. Instead, we'll use a **boilerplate**.
 
@@ -163,7 +163,7 @@ As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged
 </body>
 ```
 
-#### Fancy logo
+### Fancy logo
 
 It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogogenerator.com) for quick and easy hipster logos :)
 
@@ -197,7 +197,7 @@ If you're taking an image from the web you need to use the link to the image alo
 
 Don't worry just now if it's too big, we'll resize it later on.
 
-#### Headings
+### Headings
 
 > Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
 
@@ -209,7 +209,7 @@ Don't worry just now if it's too big, we'll resize it later on.
 </section>
 ```
 
-#### Paragraphs
+### Paragraphs
 
 > Write a paragraph to explain how your app works, and what you want people to do first.  
 
@@ -221,7 +221,7 @@ Don't worry just now if it's too big, we'll resize it later on.
 </section>
 ```
 
-#### Dropdown
+### Dropdown
 
 This is the first interactive element of your app.
 
@@ -241,7 +241,7 @@ It's a set of `options` that people can choose from.
 </section>
 ```
 
-#### Button
+### Button
 
 > Next you'll need a `Find` or `Search` button. 
 
@@ -253,7 +253,7 @@ It's a set of `options` that people can choose from.
 </section>
 ```
 
-#### Hyperlinks
+### Hyperlinks
 
 You can add **hyperlinks** to our content using the `a` element.
 	
@@ -271,7 +271,7 @@ Did you know `a` is for *anchor*? :anchor:
 </body>	
 ```
 
-### Styling
+## Styling
 
 Now the stylish part: **CSS**!
 
@@ -283,7 +283,7 @@ There's a `link` in the `head` of your app which points to a CSS file called **m
 
 You can have more than just one CSS file, and it's good practice to work on several small files rather than one long document you may get lost into.
 
-#### CSS basics
+### CSS basics
 
 You use CSS to style HTML.
 
@@ -325,7 +325,7 @@ p
 
 ... will turn *every* paragraph in your HTML green.
 
-#### Play around a bit
+### Play around a bit
 
 > Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
 
@@ -336,13 +336,13 @@ p
 
 > What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
 
-#### Search for solutions! 
+### Search for solutions! 
 
 Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately. 
 
 **All the answers can be found on the Web! As coders, we must get used to searching online for solutions.**
 
-#### Inspect websites you like
+### Inspect websites you like
 
 Do you remember how to see the code behind every site on the Web? You can use the **Web Inspector** to do this. It's like x-ray specs for websites.
 
@@ -354,7 +354,7 @@ You can also play with this code and change the way your favourite websites look
 
 > Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
 
-#### Fonts
+### Fonts
 
 Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout. 
 
@@ -401,7 +401,7 @@ Then you can set **more specific rules** for headings, paragraphs and bold eleme
 
 > `font-family`, `font-size` and `color` are a great place to start!
 	
-#### Background images
+### Background images
 
 You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
 
@@ -458,7 +458,7 @@ html
 }
 ```  
 
-#### Dropdown
+### Dropdown
 
 To style your dropdown, you first need to know how it's called in HTML: `select`
 
@@ -493,7 +493,7 @@ select
 
 > Adjust the `font-size` to suit your app content.
 
-#### Button
+### Button
 
 > Add a new CSS block that targets the `button` 
 
@@ -532,7 +532,7 @@ button
 }
 ```
 
-#### Button states
+### Button states
 
 As an interactive element, a `button` should respond to user interactions, through its look & feel. 
 
@@ -549,7 +549,7 @@ button:hover
 
 Now when you roll over the button, its text will turn black.
 
-#### Smooth transitions
+### Smooth transitions
 
 Currently the text colour flashes from the normal state to the `hover` state.
 
@@ -598,7 +598,7 @@ section
 
 `max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
 
-### Making a list
+## Making a list
 
 So far your interface features **input** elements and some text. 
 
@@ -770,21 +770,15 @@ Your users will also need a way to contact the person. Add in a contact button i
 	<a id="back">Back</a>
 	<div id="person">
 		<img src="https://avatars3.githubusercontent.com/u/9767977">
-		<h2>
-			Aimee
-		</h2>
-		<p>
-			I like code and cake
-		</p>
+		<h2>Aimee</h2>
+		<p>I like code and cake</p>
 		<a class="contactButton">Contact Aimee</a>
 	</div>
 </section>
 ```
 
-
-
-
 <!--
+
 ### Final touches
 
 * Media queries
@@ -822,21 +816,195 @@ Your users will also need a way to contact the person. Add in a contact button i
 
 * Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
 
-* Add the app to your phone's **home screen**
- 
-	`<link rel="apple-touch-icon" href="blabla.png">`
-	
-* Transparency?	
-	
-* Take inspiration from these fancy demos by Codrops:
-	* [Custom select elements](http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/)
-	* [Minimal form interface](http://tympanus.net/codrops/2014/04/01/minimal-form-interface)
-	* [Natural language form](http://tympanus.net/codrops/2013/05/21/natural-language-form-with-custom-input-elements)
 -->
 
 
+## Meet JavaScript
 
- 
+So far we learned how to build interfaces using **HTML** + **CSS**.
+
+Your app interface, despite being very stylish, doesn't do much (yet).
+
+To set things in motion, to have a truly interactive experience, we need another language: **JavaScript**.
+
+##### **HTML** → content and structure  
+
+##### **CSS** → style and design 
+
+##### **JS** → behaviour and logic
+
+We'll have a proper dive into JS next week, but for today we'll ease into it using one of the most popular JavaScript tools: **jQuery**.   
+
+### Meet jQuery
+
+![](assets/john-resig.jpg)
+
+<!-- John Resig, jQuery and the Open Source Process by Andreas Dantz on Flickr https://www.flickr.com/photos/szene/6227426946 -->
+
+The [first version of jQuery](http://ejohn.org/files/jquery-original.html) was written in 2006 by a guy called John Resig. He noticed how he was using the same JS functions over and over, across different projects. So he put together a JS toolkit, aka a *library*, and since it was working well for him, he decided to share it with the NYC Web dev community, and then with the rest of the WWW.
+
+> Code libraries are **collections of pre-written functions** which you use to avoid re-writing the same code over and over again.   
+
+Over the years, jQuery has been peer-reviewed and enhanced by thousands of developers. It is currently the [the most popular JavaScript library](http://trends.builtwith.com/javascript) on the Web, with ~78% of the top 1 million websites using it! 
+
+And it's FREE!
+
+[![](assets/jQuery.png)](https://jquery.com)
+
+#### What is jQuery for?
+
+jQuery makes it easy to **select** HTML elements and *manipulate* them, for example hiding, showing, moving around and changing the content of a bunch of HTML elements.
+
+<!-- You may hear high-brow geeks say that `jQuery is a DOM manipulation library`. -->
+
+#### How does jQuery work?
+
+jQuery uses CSS-like **selectors**.
+
+For example, if you want to select all `h1` elements in your HTML, you can do it like this
+
+```js
+jQuery('h1');
+// notice the lowercase j and capital Q in jQuery
+``` 
+
+...which is the equivalent of telling your browser to `select all h1 elements in the HTML`.
+
+You can then apply functions that **manipulate** those selected elements. 
+
+For example, if you want to hide all `h1` elements in your HTML, you can do it like this
+
+```js
+jQuery('h1').hide();
+``` 
+
+So to recap:
+
+1. Select
+* Manipulate 
+
+It's common practice to store a jQuery selection in a *variable*, and then use that variable throughout your code. That way you don't have to select the same HTML elements over and over again.
+
+```js
+var h1 = jQuery('h1');
+h1.hide();
+h1.fadeIn();
+```
+
+Variable names are up to you, so in the example above you could call it `var heading1 = ...`, or `var my_h1 = ...` or even `var whatever = ...` 
+
+#### Dollar$
+
+There's a saying that goes like this: 
+
+> A good programmer is a *lazy* programmer.
+
+In practical terms, it means that programmers really like their **shortcuts**. 
+
+There's a shortcut for jQuery too, and it's `$`
+
+`$('h1')` achieves the same as `jQuery('h1')` and it saves you 5 key strokes! :squirrel:
+
+#### Making stuff happen on demand
+
+Unlike HTML and CSS, JS is a *programming* language (more on that difference next week). 
+
+Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
+
+For example, you may want to `hide` an element when you `click` on a button. Using jQuery, you can do it like this
+
+```js
+// select the button element(s)
+var button = $('button');
+
+// select the h1 element(s)
+var h1 = $('h1');
+
+// when someone clicks the button, hide the h1
+button.click( function () 
+{
+	h1.hide();
+});
+```
+
+### Your turn
+
+> Open `index.html`. Notice that just before the **end** of the `body` there's a `script` that loads jQuery like this
+
+> ```html
+		...
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		...
+	</body>
+</html>	
+``` 
+
+### Hide the `#details` section by default
+
+When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result, but for now we want to **hide** that part of the HTML.
+
+> In `main.js` write
+
+> ```js
+$('#details').hide();
+```
+
+![](assets/jQuery-diagram.png)
+
+The line above does two things:
+
+1. `$('#details')`: **select** the element with `id="details"`
+* Perform the `hide()` function on that selection
+
+### When someone clicks on the `Find` button, what happens?
+
+A lot of stuff will happen. For today, we'll start by hiding the `#home` section and showing the `#details` section. 
+
+> ```javascript
+$('button').click( function() {
+  $('#home').hide();
+  $('#details').show();
+})
+```
+
+Let's break that code down.
+
+First the outer shell:
+
+```javascript
+$('button')click( function() {
+	...
+	...
+})
+``` 
+
+1. `$('button')` selects the `Find` button.
+2. `.click( function() { ... })` says **when** the user **clicks** the selected element, call this function. In our case, **when** the user **clicks** `Find`, perform this function.
+
+Now *inside* the function...
+
+```javascript
+$('#home').hide();
+$('#details').show();
+```
+
+1. `$('#home')`: ask jQuery (`$` is a shortcut for `jQuery`) to select the element with an id `home` with 
+* Run the jQuery `hide()` function on the selection
+* `$('#details')`: select the element with an id `details` 
+* Run the `show()` function on the selection
+
+### When someone clicks on the `Back` button, what happens?
+
+> See if you can integrate the code below in your `main.js`.
+
+> ```js
+$('#back').click( function(){   
+  $('#home').show();
+  $('#details').hide();
+});
+```
+
+
 
 
 

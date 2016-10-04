@@ -1012,7 +1012,7 @@ Tom<br>Darren | What are **variables** and how do you use them?
 Josh<br>Dean | What are **functions** and how do you use them?
 Ben<br>Rosie | What are `if` statements and how do you use them?
 Francisco<br>Ajay | What are `for` loops and how do you use them?
-Afsara<br>Malore | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some ideas
+Afsara<br>Malore | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
 Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?  
 
 Ideas and resources for *unplugged activities*:
@@ -1028,35 +1028,9 @@ Ideas and resources for *JS demos*:
 * [JS for Cats](http://jsforcats.com)
 * You're welcome to scour the Web and find some more inspiration :)
 
-
-<!--
-
-Make sure your mini-lesson and any other relevant material is **published online** (for instance on GitHub.. it could be elsewhere as long as it's accessible by anyone). You can publish *after* you've presented next week.
-
-1. **jQuery fundamentals**: selecting and manipulating HTML elements. 
-
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 303-304 and 309-316. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
-* **jQuery events**: triggering code on demand.
-
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 299 and 333-336. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
-* **AJAX**: sending and receiving data *asynchronously* (that is, while you do something else).
-
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c08/) + pages 377-379, 385, 396 and 415. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers. 
-* Using the **GeoLocation** API.
-	
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c09/) + pages 412-414 and 416-419. 
-
--->
-
 ### Project 
 
-Work on *Filtr Findr*:
+Work on [*Filtr Findr*](../../projects/filtr-findr):
 
  - [ ] Create a GitHub repository for your project
  - [ ] Start jotting down ideas for your own app: how could you turn the `app template` into something related to your own interests, or the needs of a specific group of people?

@@ -995,52 +995,77 @@ $('#back').click( function(){
 ```
 
 
-
-
-
-
-
-
-
-
-
 # Homework
 
 ### Peer-learning research
 
-7 **teams** of ~3 people each. 
+Next week we'll dive deeper into **JavaScript** and learn about the fundamental building blocks of **programming**.
 
-Choose a topic to research and teach next week (one per team). Some of them are theory-oriented and some are more practical:
+In small teams, you will research one programming concept or technique and prepare a **mini-lesson** (~15 minutes) to teach everyone else about it. 
 
-1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api) (TODO pick a section of the article)
-* [Data Doppelgängers and the Uncanny Valley of Personalization](http://www.theatlantic.com/technology/archive/2014/06/data-doppelgangers-and-the-uncanny-valley-of-personalization/372780/)? 
-* The [Critical Engineering Manifesto](http://criticalengineering.org/) (you can replace `engineer` with `coder` if you feel like making this more relatable)
-* The [Conditional Design Manifesto](https://conditionaldesign.org/manifesto)
-* [Below the API](http://www.forbes.com/sites/anthonykosner/2015/02/04/google-cabs-and-uber-bots-will-challenge-jobs-below-the-api/)
-* Computational thinking
-* Functions and functional programming (make examples in JavaScript)
-* `for` loops (make examples in JavaScript)
+Your mini-lesson will be **interactive**: no PowerPoint-style presentations, but instead **JavaScript demos** that everyone can follow on their computers and/or **unplugged activities**.
 
-Your team **mini-lesson** (bear in mind, *presentation* does not mean PowerPoint slides.. be creative) should be **~20 minutes** and you may include:
+Who | What
+--- | -----------
+Will<br>Akvile | What are **algorithms**?
+Tom<br>Darren | What are **variables** and how do you use them?
+Josh<br>Dean | What are **functions** and how do you use them?
+Ben<br>Rosie | What are `if` statements and how do you use them?
+Francisco<br>Ajay | What are `for` loops and how do you use them?
+Afsara<br>Malore | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some ideas
+Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?  
 
-* Summary of main ideas
-* Links, images or videos of projects / products / things referenced in your research
-* Other relevant things you've read, heard or seen
-* Examples and demonstrations
-* Personal experiences
+Ideas and resources for *unplugged activities*:
 
-Each team should also prepare **1-2 questions for the class**. After your mini-lesson, we will have a short group discussion around these questions.
+* [CS Unplugged](http://csunplugged.org/activities)
+* [CODE Fundamentals Unplugged](https://code.org/curriculum/unplugged)
+* [CAS London Programming Unplugged](https://teachinglondoncomputing.org/free-workshops/programming-unplugged-programming-without-computers) 
+
+Ideas and resources for *JS demos*:
+
+* [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com) (link to PDF download in Slack `#dynamic-web`)
+* [try.jquery.com](http://try.jquery.com)
+* [JS for Cats](http://jsforcats.com)
+* You're welcome to scour the Web and find some more inspiration :)
+
+
+<!--
 
 Make sure your mini-lesson and any other relevant material is **published online** (for instance on GitHub.. it could be elsewhere as long as it's accessible by anyone). You can publish *after* you've presented next week.
+
+1. **jQuery fundamentals**: selecting and manipulating HTML elements. 
+
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 303-304 and 309-316. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
+* **jQuery events**: triggering code on demand.
+
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 299 and 333-336. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
+* **AJAX**: sending and receiving data *asynchronously* (that is, while you do something else).
+
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c08/) + pages 377-379, 385, 396 and 415. 
+	
+	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers. 
+* Using the **GeoLocation** API.
+	
+	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c09/) + pages 412-414 and 416-419. 
+
+-->
 
 ### Project 
 
 Work on *Filtr Findr*:
 
  - [ ] Create a GitHub repository for your project
- - anything else?
-
+ - [ ] Start jotting down ideas for your own app: how could you turn the `app template` into something related to your own interests, or the needs of a specific group of people?
 
 ### Blog 
 
-- [ ] Analyse your favourite app in terms of interface, data and logic
+- [ ] Analyse your favourite app in terms of [interface](#interface), [data](#data) and [logic](#logic). Some questions to help your analysis:
+	
+	- What *input* does the app require from you?
+	- Where does the app's *data* come from? Who creates it?
+	- What does the app do with that data (ie what's the app *logic*)?
+	- What *output* does the app produce? 

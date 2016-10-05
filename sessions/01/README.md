@@ -1010,9 +1010,9 @@ Who | What
 Will<br>Akvile | What are **algorithms**?
 Tom<br>Darren | What are **variables** and how do you use them?
 Josh<br>Dean | What are **functions** and how do you use them?
-Ben<br>Rosie | What are `if` statements and how do you use them?
-Francisco<br>Ajay | What are `for` loops and how do you use them?
-Afsara<br>Malore | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
+Afsara<br>Malore | What are `if` statements (aka **conditionals**) and how do you use them?
+Francisco<br>Ajay | What are **loops** and how do you use them?
+Ben<br>Rosie | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
 Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?  
 
 Ideas and resources for *unplugged activities*:

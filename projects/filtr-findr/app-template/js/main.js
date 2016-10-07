@@ -1,21 +1,25 @@
-// use jQuery ($) to select all the interface elements we need
-// storing them in variables (var) so that we don't have to re-select them (better performance, cleaner code)
-var detailsSection = $('#details');
-var homeSection = $('#home');
-var findButton = $('button');
-var backButton = $('#back');
+// different ways to name variables.. which one do you prefer?
+// var homeGoButton
+// var homegobutton
+// var home_go_button
+// var goBtn
+// var g 
 
-// hide the details section by default
-detailsSection.hide();
+// use jQuery to select the HTML elements we're going to manipulate
+var homeGoButton = $('#home button')
+var homeSection = $('#home')
+var resultsSection = $('#results')
+var resultsBackButton = $('#results .back')
 
-// when someone clicks on the findButton in #home...
-findButton.click( function() {
-  homeSection.hide();
-  detailsSection.show();
+
+// tell the GO button to do something when we click it
+homeGoButton.click( function(){
+   homeSection.hide()
+   resultsSection.show()
 })
 
-// when someone clicks on the backButton in #details...
-backButton.click( function(){   
-  detailsSection.hide();
-  homeSection.show();
+// tell the Back button to do something when we click it
+resultsBackButton.click( function(){
+   resultsSection.hide()
+   homeSection.show()
 })

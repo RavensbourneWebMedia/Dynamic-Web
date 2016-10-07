@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -18,60 +19,58 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
+        
+        <!-- this is the home section-->
         <section id="home">
-            <img src="img/logo.png">
+            <img id="logo" src="img/hipsterlogo.png">
             <h1>I'd like someone to...</h1>
             <select>
-                <option value="likesPets">Keep my pet</option>
-                <option value="bakingSkills">Bake a cake</option>
-                <option value="diySkills">Move my furniture</option>
-                <option value="codingSkills">Make an app with me</option>
+                <option>Bake a cake</option>
+                <option>Move my piano</option>
+                <option>Walk my cat</option>
+                <option>Bake a pizza</option>
+                <option>Code an app</option>
             </select>
-            <button>Find</button>
-
-            <!-- search results list-->
-            <ul>
-                <!--
-                <li>
-                    <img src="https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/9/14/1347615989256/Bob-Greenberg-008.jpg">
-                    <h2>
-                      Bob
-                    </h2>
-                    <p>
-                      I like to bake tarts.
-                    </p>
-                </li>
-                <li>
-                  <img src="https://www.jisc.ac.uk/sites/default/files/styles/460px-wide/public/linda-naughton.jpg?itok=vv8pm6ck">
-                  <h2>
-                    Linda
-                  </h2>
-                  <p>
-                    I drive buses.
-                  </p>
-                </li>
-                -->
-            </ul>
-            <p>Swap skills and favours with people around you.</p>
-            <p>Just pick an option to get started!</p>
-            <p>Made in London by <a href="https://twitter.com/baddeo">Matteo</a>.</p>
+            <button>GO</button>
+            <p>Swap skills with people around you!</p>
+            <p>Pick an option to get started.</p>
         </section>
-        
+        <!-- this is the results section -->
+        <section id="results">
+            <a class="back button">Back</a>
+            <h1>I'd like someone to bake a cake</h1>
+            <p>2 people around you can bake a cake</p>
+            <ol>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/53.jpg">
+                    <h2>Susan</h2>
+                    <p>About Susan</p>
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/83.jpg">
+                    <h2>Name</h2>
+                    <p>About this person</p>
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/63.jpg">
+                    <h2>Name</h2>
+                    <p>About this person</p>
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg">
+                    <h2>Remy</h2>
+                    <p>About this person</p>
+                </li>
+            </ol>
+        </section>
+        <!-- this is the details section -->
         <section id="details">
-            <a id="back">Back</a>
-            <div id="person">
-                <img src="https://www.jisc.ac.uk/sites/default/files/styles/460px-wide/public/linda-naughton.jpg?itok=vv8pm6ck">
-                <h2>Linda</h2>
-                <p>I drive buses.</p>
-                <a class="contactButton">Message Linda</a>
-            </div>
+            <a class="back button">Back</a>
+            <img src="https://randomuser.me/api/portraits/women/53.jpg">
+            <h2>Susan</h2>
+            <p>About Susan</p>
+            <a class="contact button">Contact Susan</a>
         </section>
-
-
-
-        
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

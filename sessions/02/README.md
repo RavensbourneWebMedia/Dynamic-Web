@@ -132,25 +132,17 @@ It gamifies the experience of learning to code in a rather addictive way:
 
 ### Codewars katas
 
-Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
-
-### Peer learning
-
-1. **Publish** your mini-lesson and any other relevant material. We recommend GitHub (we :green_heart: :octocat:) but you can publish elsewhere as long as it's accessible by anyone.
-
-2. Add the link to your mini-lesson (and any other relevant material) to the Google document I emailed you.
+- [ ] Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
 
 ### Project 
 
-Work on *Filter Bubbles* **with your team**:
+Work on [Filtr Findr](../../projects/filtr-findr):
 
-* Pick one idea to finalise.
-* Continue coding: push your experiments to the team GitHub repo.
-* Document your research on your team GitHub repo wiki
+- [ ] Brainstorm ideas for *your own app*, and upload your sketches / notes to your GitHub repository
 
 ### Blog 
 
-Pair up with another team and **give each other feedback** on your peer learning mini-lessons. 
+Pair up with another person (not your team mate) and **give each other feedback** on your peer learning mini-lessons. 
 
 Use the questions above to give / get feedback on your [mini-lessons' content](#mini-lesson-content) and [delivery](#delivery).
 

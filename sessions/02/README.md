@@ -85,10 +85,10 @@ HTML and JS are siblings or colleagues (they are part of the same app) so they s
 
 Let's play out the app behaviour. 
 
-1. **Load data** and store it in the app *memory*
-* Capture **user input**
-* **Filter and sort data** according to user choices
-* **Output** filtered+sorted data
+1. [**Load data** and store it in the app *memory*](#1-load-data-and-store-it-in-the-app-memory)
+* [Capture **user input**](#2-capture-user-input)
+* [**Filter and sort data** according to user choices](#3-filter-and-sort-data)
+* [**Output** filtered+sorted data](#4-output-data)
 
 ### But hang on... where is our *actual* database?
 
@@ -193,58 +193,52 @@ var database = firebase.database();
 
 We don't need to load the entire database in our app, but only data about *people*. We can think of *people* as a **list** of `person` objects.
 
+> Store a reference to the people section of our `database`
+
+> ```js
+var peopleDatabase = database.ref('people');
+```
+
 > Create a `peopleList` *variable* and set it as an empty list `[]`. 
 
 > ```js
-var peopleList = []; // an empty list, for now 
+var peopleList = [];
 ```
 
-The next step will be to load data from `database` and store a bunch of `person` objects in `peopleList`.
+The next step will be to load data from `peopleDatabase` and store a bunch of `person` objects in `peopleList`.
 
-`database` is a Firebase *thing*, we haven't made so we don't know how to use it. What to do? **Read the manual!**
+`peopleDatabase` is a Firebase *thing*, we haven't made it so we don't know how to use it. What to do? **Read the manual!**
 
-The Firebase manuals (aka the *docs*) are online at [firebase.google.com/docs](https://firebase.google.com/docs). We're looking for the `Web` manual, and a good place to start is the `Get Started Guide` ([firebase.google.com/docs/web/setup](https://firebase.google.com/docs/web/setup)). 
+The Firebase manual (aka the *docs*) are online at [firebase.google.com/docs](https://firebase.google.com/docs). We're looking for the `Web` manual, and a good place to start is the `Get Started Guide` ([firebase.google.com/docs/web/setup](https://firebase.google.com/docs/web/setup)). 
 
-We're going to learn how use the `Realtime Database`. In particular, since we're working with a *list* of people, we will dig into the `
-Work with Lists of Data` chapter ([firebase.google.com/docs/database/web/lists-of-data](https://firebase.google.com/docs/database/web/lists-of-data))
+We're going to learn how use the `Realtime Database`. In particular, since we're working with a *list* of people, we will dig into the `Work with Lists of Data` chapter ([firebase.google.com/docs/database/web/lists-of-data](https://firebase.google.com/docs/database/web/lists-of-data))
 
-
-
-
-
-[![](assets/firebase-child-added.png)](https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types)
-
-So, it looks like the function we're looking for is 
+The functionality we're looking for looks like this 
 
 ```js
 on('child_added', doSomething);`
 ```
 
-which is typically used to retrieve a *list* of items (in our case, a list of `person` objects).
+...which is typically used to retrieve a *list* of items (in our case, a list of `person` objects).
 
 Let's try it out.
 
-> Call `on('child_added'` function from `database` to load a list of items and store each one in `peopleList`:
+> Call `on('child_added', ...)` function from `peopleDatabase` to load a list of items and store each one in `peopleList`:
 
 > ```js
-database.on('child_added', function( firebaseObject ) 
+peopleDatabase.on('child_added', function( firebaseObject ) 
 {
 	var person = firebaseObject.val(); 
   	peopleList.push(person);
+  	// "push" is JavaScript's lingo for "add to a list"
 })
 ```
 
-<!--
-// load data, see the Firebase manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
-
-// "push" is JavaScript's lingo for "add to a list"
--->
-
 The JS code above, in plain English:
 
-* Hey database!
+* Hey `peopleDatabase`!
 
-* For each *child* of `database`, do the following steps:
+* For each *child* of `peopleDatabase`, do the following steps:
 
 	* Create a variable `person` 
 	
@@ -252,37 +246,172 @@ The JS code above, in plain English:
 	  
 	* Add `person` to `peopleList` (`push` is JavaScript's lingo for *add to a list*)
 	
-	* Repeat until you've looped through all the *children*
+	* Repeat until you've **looped** through all the *children*
 
 * Thanks!
  
 At this point, we can use the Console to check if `peopleList` has been loaded with data.
 
+If this *looping thing* confuses you, check out this JS slow-motion demonstration!
 
+[![](assets/for-loop.png) **FOR** loop interactive demo](http://codepen.io/baddeo/full/YyVdVN/)
 
+### 2. Capture user input
 
+When someone clicks on the `GO` button, what should happen?
 
+> In `js/main.js`:
 
+> ```js
+// use jQuery to select the HTML elements we're going to manipulate
+var homeGoButton = $('#home button');
+var homeDropdown = $('#home select');
+// tell the GO button to do something when we click it
+homeGoButton.click( function() 
+{
+  // get user input
+  var selectedOption = homeDropdown.val(); 
+  // using jQuery val(), see http://api.jquery.com/val
+  console.log('You picked ' + selectedOption);
+})
+```
 
-### Hash Tags (part 2)
+Let's break that code down.
 
-All the code for this workshop is [here](../../resources/instagram).
+First the outer shell:
 
-#### Pull data from Instagram for **2 opposite hashtags** and build an expressive display
+```javascript
+homeGoButton.click( function() {
+	...
+	...
+})
+``` 
 
-1. Part 1 is [here](../01#workshop).
-* Traversing data: **loops**. 
-	
-	[![](assets/while-loop.png) **WHILE** loop interactive demo](http://codepen.io/baddeo/full/NGjJjd/)
-	
-	[![](assets/for-loop.png) **FOR** loop interactive demo](http://codepen.io/baddeo/full/YyVdVN/)
-	
-	You may want to try this [Codecademy's JS loops tutorial](https://www.codecademy.com/courses/javascript-beginner-en-NhsaT/0/1)
-	
-* Build a simple grid of pictures. Remember CSS?
-* Play with *size*, *position*, *transparency*...
+1. `homeGoButton` is a reference to the `GO` button
+2. `.click( function() { ... })` says **when** the user **clicks** the selected element, *run* all the instructions inside this function.
 
-If you want to try a shortcut, here's [Instafeed](http://instafeedjs.com/). 
+Now *inside* the function...
+
+What option did the user pick?
+
+```javascript
+// get user input
+var selectedOption = homeDropdown.val(); 
+```
+
+1. Create a `var` named `selectedOption`
+* Get the currently selected value (for example the `likesPets`) by running the jQuery function `.val()` on `homeDropdown`
+* Save that value in `selectedOption`
+
+#### One more thing: **values**!
+
+How does **JS** know which data to ask from the **database**, after a **user** has picked an option from the dropdown?
+
+To let JS know which data to look for, we can add a little bit of information to each `option` in our HTML dropdown.
+
+> In `index.html` find your `select` dropdown in the `#home` section. In each opening `option` tag add in `value=" "`
+
+> ```html
+<select>
+     <option value=" ">Bake a cake</option>
+     <option value=" ">Move my furniture</option>
+     <option value=" ">Keep my pet</option>
+</select>
+```
+
+The `value` attribute will contain the property which relates to the selected option - with the **same exact spelling** we use in our database. 
+
+For example, if the user selects `Bake a cake`, the property which matches that is `bakingSkills`.
+
+> Open our Firebase database at [dynamic-web-template-e91d4.firebaseio.com](https://dynamic-web-template-e91d4.firebaseio.com/) and take a look at the data you've stored in there. 
+
+> Copy property names from the database and paste them in the relevant `value` slot in your HTML. Make sure to double-check for the exact property names, otherwise your JS code will not work!
+
+> ```html
+<select>
+     <option value="bakingSkills">Bake a cake</option>
+     <option value="bodyStrength">Move my furniture</option>
+     <option value="likesPets">Keep my pet</option>
+</select>
+```
+
+### 3. Filter and sort data
+
+> Create a new file in your `js` folder, call it `filter.js` (or whatever you like) and then in `index.html` use a `script` to load `filter.js` just before the one which loads `main.js`.
+
+> ```html
+	...
+	<script src="filter.js"></script>
+	<script src="main.js"></script> 
+	...
+</body>
+```
+
+> In `filter.js` paste the whole JS code from [github.com/RavensbourneWebMedia/Dynamic-Web/blob/2016/projects/filtr-findr/app-template/js/filter.js](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2016/projects/filtr-findr/app-template/js/filter.js)
+
+> In `main.js` inside the `homeGoButton.click( function() { ... })` add these new lines 
+
+> ```js
+homeGoButton.click( function() 
+{
+	...
+	// filter+sort people by user selection
+  	var resultsList = filterAndSortList(peopleList, selectedOption);
+  	console.log(resultsList);
+})
+```  
+
+1. Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user's selection (`selectedOption`)
+* Store the filtered people in `resultsList`
+* Use the `console` to log what's in `resultsList` 
+
+### 4. Output data
+
+At this point we should have a list of people (`resultsList`) whose skills match the chosen option (`selectedOption`).
+
+For example if you chose `Bake a cake`, then `resultsList` you will contain people whose `bakingSkills` are 4+.
+ 
+Let's display these people!
+
+> Create a new file in your `js` folder, call it `show.js` (or whatever you like) and then in `index.html` use a `script` to load `show.js` just before the one which loads `app.js`.
+
+> ```html
+	...
+	<script src="filter.js"></script>
+	<script src="show.js"></script>
+	<script src="app.js"></script> 
+	...
+</body>
+```
+
+> In `show.js` paste the whole JS code from [github.com/RavensbourneWebMedia/Dynamic-Web/blob/2016/projects/filtr-findr/app-template/js/show.js](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2016/projects/filtr-findr/app-template/js/show.js)
+
+> In `main.js` inside the `homeGoButton.click( function() { ... })` add these new lines 
+
+> ```js
+homeGoButton.click( function() 
+{
+	...
+	// show the results in the #results section
+  	showList(resultsList, resultsOL);
+})
+``` 
+
+In the line above we are using the function `showList` to spit out `resultsList` in the `ol` inside the `#results` section.
+
+Test your code in the browser! You'll get an error in the Console saying 
+
+```
+Uncaught ReferenceError: resultsOL is not defined
+```
+
+This means we need to define a variable `resultsOL`, which selects the `ol` inside the `#results` section.
+
+```js
+var resultsOL = $('#results ol');
+```
+
+Test again!
 
 
 # Codewars

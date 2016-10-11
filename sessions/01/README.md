@@ -962,7 +962,7 @@ Let's break that code down.
 First the outer shell:
 
 ```javascript
-$('button')click( function() {
+$('button').click( function() {
 	...
 	...
 })

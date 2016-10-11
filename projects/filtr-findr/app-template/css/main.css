@@ -1,7 +1,10 @@
 html {
     font-family: 'Work Sans', sans-serif;
+    background: rgb(0, 253, 183);
+/*
     background-image: url("../img/unsplash.jpeg");
     background-size: cover;
+*/
 }
 
 /* hide the results and details by default */

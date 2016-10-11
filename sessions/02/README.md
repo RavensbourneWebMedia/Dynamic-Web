@@ -61,9 +61,9 @@ Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?
 
 # Workshop
 
-[Last week](../01) we recapped how to use **HTML and CSS** to build the interface for the `app template`. We also took a look at JavaScript (aka **JS**) and jQuery, and started making the interface interactive. 
+[Last week](../01#workshop) we recapped how to use **HTML and CSS** to build the interface for the `app template`. We also introduced **JavaScript** and **jQuery**, and used them to make the interface interactive. 
 
-After learning from your peers about the building blocks of programming (*variables*, *functions* etc.) we'll start putting them into practice by connecting your app to an online **database**.
+After learning from your peers about the building blocks of programming (*variables*, *functions* etc.) we'll start putting these into practice by connecting the `app template` to an online **database**.
 
 Back to the brief...
 

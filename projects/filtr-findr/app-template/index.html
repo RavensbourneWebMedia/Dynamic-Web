@@ -22,14 +22,14 @@
         
         <!-- this is the home section-->
         <section id="home">
-            <img id="logo" src="img/hipsterlogo.png">
+            <img id="logo" src="img/logo.png">
             <h1>I'd like someone to...</h1>
             <select>
-                <option>Bake a cake</option>
-                <option>Move my piano</option>
-                <option>Walk my cat</option>
-                <option>Bake a pizza</option>
-                <option>Code an app</option>
+                <option value="bakingSkills">Bake a cake</option>
+                <option value="diySkills">Move my piano</option>
+                <option value="likesPets">Walk my cat</option>
+                <option value="bakingSkills">Bake a pizza</option>
+                <option value="codingSkills">Code an app</option>
             </select>
             <button>GO</button>
             <p>Swap skills with people around you!</p>
@@ -76,8 +76,11 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <!-- load the Firebase library -->
         <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
         <script src="js/firebase.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/show.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

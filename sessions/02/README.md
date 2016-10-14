@@ -341,8 +341,8 @@ For example, if the user selects `Bake a cake`, the property which matches that 
 
 > ```html
 	...
-	<script src="filter.js"></script>
-	<script src="main.js"></script> 
+	<script src="js/filter.js"></script>
+	<script src="js/main.js"></script> 
 	...
 </body>
 ```
@@ -377,9 +377,9 @@ Let's display these people!
 
 > ```html
 	...
-	<script src="filter.js"></script>
-	<script src="show.js"></script>
-	<script src="app.js"></script> 
+	<script src="js/filter.js"></script>
+	<script src="js/show.js"></script>
+	<script src="js/app.js"></script> 
 	...
 </body>
 ```

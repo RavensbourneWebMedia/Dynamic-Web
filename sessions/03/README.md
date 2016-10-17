@@ -3,8 +3,11 @@
 ### Today, Friday 21st October 2016
 
 1. [JS quiz!](#quiz-time)  
-* Tutorials on [*Filter Bubbles*](#team-project)
+* [Workshop](#workshop): `app template` finishing touches
+* [Brainswarming!](#brainswarming)
+* [Design your own database](#design-your-own-database)
 * [CodeWars](#codewars)
+* Tutorials on [*Filtr Findr*](#tutorials)
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -106,20 +109,154 @@
 	
 	<!--Both are fine, however end of body is recommended, because your JS may need the body (with all its content) to be loaded first, and then it can execute properly-->	
 
- 
-<!--
-Inspirations  for the JS quiz
-https://www.khanacademy.org/computing/computer-programming/html-css-js/html-css-js-intro/e/quiz--javascript-recap 
-http://tonyfreed.com/blog/top_javascript_interview_question_2015
--->
+
+# Workshop
+
+[Last week](../02#workshop) we used the Firebase API to connect the `app template` interface to the database. We also *programmed the behaviour* of the app, so that it can filter and sort data to present only relevant results to its users.
+
+Let's finish the `app template`.
+
+## What happens when someone clicks on a result?
+
+Users should be able to click through and see details about the person (or *thing*) they clicked on.
+
+> In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line 
+
+> ```js
+showList(resultsList, resultsOL)
+```
+
+> After that line, add a *click listener* to all the `li` elements inside `#results`
+
+> ```js
+$('#results li').click( function() {
+	// grab the id from the clicked item
+    var resultId = $(this).attr('id')
+    // use the id to get the right data
+    var resultData = resultsList[resultId]
+    console.log(resultData)
+	// call the function showDetails()
+    showDetails(resultData, detailsInfo)
+    // show the details!
+    resultsSection.hide()
+   	detailsSection.show()
+})
+```
+
+### First bug
+
+> Test your code. 
+
+You should get an error:
+
+```js
+Uncaught ReferenceError: showDetails is not defined
+```
+
+What does that mean? 
+
+We haven't defined the `showDetails` function. 
+
+> Let's teach the browser how to `showDetails`
+
+> ```js
+function showDetails (data, interfaceElement) 
+{
+  var detailsHTML = makeDetailsHTML(data)
+  interfaceElement.html(detailsHTML)
+}
+``` 
+
+### Second bug
+
+> Test your code. 
+
+You should get a new error:
+
+```js
+Uncaught ReferenceError: detailsInfo is not defined
+```
+
+What does that mean? 
+
+We haven't defined the `detailsInfo` variable. We want `detailsInfo` to be a jQuery selection of the part of the `#details` where we can show the info about the chosen person. Should that be the whole `#details` section? Well, no... because the `Back` button is not part of the specific info about a person. We need to separate the interface elements that won't change (aka *static*), like the `Back` button, from the interface elements that will change (aka *dynamic*) like the `img`, the `h2` etc. We can do that by wrapping all the *dynamic* elements in a `div` and give that div an id.
+
+> In `index.html` find the `#details` section, then wrap `img`, `h2`, `p` and `a` in a `div#info`
+
+> ```html
+<section id="details">
+	<a class="back button">Back</a>
+    <div id="info">
+    	<img src="https://randomuser.me/api/portraits/women/53.jpg">
+        <h2>Susan</h2>
+        <p>About Susan</p>
+        <a class="contact button">Contact Susan</a>
+	</div>
+</section>
+```
+
+> Then in `main.js` create a new variable
+
+> ```js
+var detailsInfo = $('#details #info')
+```   
+
+### Third bug
+
+> Test your code. 
+
+You should get a new error:
+
+```js
+Uncaught ReferenceError: detailsSection is not defined
+```
+
+What does that mean? 
+
+We haven't defined the `detailsSection` variable. 
+
+> ```js
+var detailsSection = $('#details')
+```
+
+> Test your code. :tada:
+
+## What happens when someone clicks on the `Back` button?
+
+This is a challenge for you to work out!
+
+Tip: there's a very similar bit of code at the end of `main.js`... see if you can replicate the functionality for the other back button :)
 
 
 
 
 
-# Team project
 
-![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
+
+
+
+# Codewars
+
+### Are you part of the clan?
+
+If you haven't signed up on [Codewars](http://www.codewars.com/r/DQC6uA) yet, check out [last week's notes](../02/#codewars) and get started!
+
+Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same team and we'll be able to challenge each other.
+
+### Today
+
+*Before* and *after* your tutorial:
+
+1. Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
+* Have a go at [this *beta kata*](http://www.codewars.com/kata/561bbd27fbbfb0bdad0000f4) which I made..
+* [Start making your own kata](http://www.codewars.com/kata/new/) and share it with the `RaveWebMedia` clan!
+
+
+
+
+
+# Tutorials
+
 
 ### Filter Bubbles tutorials
 
@@ -137,86 +274,17 @@ All the project material is [here](../../projects/filter-bubbles).
 * What's your team **GitHub repository**? You may want to [create an *organisation*](https://github.com/organizations/new) (a GitHub group) for that.. 
 
 
-# Codewars
-
-### Are you part of the clan?
-
-If you haven't signed up on [Codewars](http://www.codewars.com/r/DQC6uA) yet, check out [last week's notes](../02/#codewars) and get started!
-
-Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same team and we'll be able to challenge each other.
-
-### Today
-
-*Before* and *after* your tutorial:
-
-1. Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
-* Have a go at [this *beta kata*](http://www.codewars.com/kata/561bbd27fbbfb0bdad0000f4) which I made..
-* [Start making your own kata](http://www.codewars.com/kata/new/) and share it with the `RaveWebMedia` clan! 
+ 
 
 
 # Homework
 
-### Peer learning
-
-On the Google document I emailed you (you can also find it on Slack), there's a new table with topics for you to learn and teach next week.
-
-We'll do this again in *teams*, but not the same people you worked with last week.
-
-Your team **mini-lesson** should be **+/- 15 minutes** and you may include:
-
-* **2-3 key ideas**
-* **Examples** and demonstrations
-* Personal **experiences**
-* Other relevant things you've read, heard or seen
- 
-Prepare **2-3 open questions to ask the class**. After your mini-lesson, we will have a short group discussion around these questions.
-
-#### Topics
-
-1. **jQuery fundamentals**: selecting and manipulating HTML elements. 
-
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 303-304 and 309-316. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
-* **jQuery events**: triggering code on demand.
-
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c07/) + pages 299 and 333-336. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers.
-* **AJAX**: sending and receiving data *asynchronously* (that is, while you do something else).
-
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c08/) + pages 377-379, 385, 396 and 415. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers. 
-* Using the **GeoLocation** API.
-	
-	Check out the code examples from [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com/code/c09/) + pages 412-414 and 416-419. 
-	
-	In your mini-lesson, don't simply *talk about* concepts or techniques. Make live demos that everyone can follow and reproduce on their computers. 
-* **Mapping (mis)behaviours**: [CrimeTimeline](http://crimetimeline.io), [PrisonMap](http://prisonmap.com/about), [The Refugee Project](http://www.therefugeeproject.org), [Dronestagram](http://shorttermmemoryloss.com/portfolio/project/dronestagram/) and [Pathways](http://www.nationalgeographic.com/pathways). 
- 	
- 	You are welcome to research and present more projects that mash up different APIs and datasets in interesting ways. 
-* The **#selfie** phenomenon: [SelfieCity](http://selfiecity.net).
-
-	Here are blog posts about [designing SelfieCity](http://well-formed-data.net/archives/996/selfiecity) and [the Web-tech behind it](http://do.minik.us/blog/selfiecity).
-	
-	![](http://do.minik.us/content/01-blog/008-selfiecity/03.jpg)
-
-<!-- 
-
-Future topics:
-
-* http://simpleweatherjs.com
-
--->
 
 ### Project 
 
-Work on *Filter Bubbles* **with your team**:
+- Tweak the CSS
+- Publish to GitHub `gh-pages`
 
-* Pick one idea to finalise.
-* Continue coding: push your experiments to the team GitHub repo.
-* Document your research on your team GitHub repo wiki
 
 ### Blog 
 

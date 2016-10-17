@@ -13,8 +13,8 @@
 
 ## Week 2
 
-* Peer-learning: most groups opted for the safe powerpoint-style presentation, only one team proposed an unplugged activity. Maybe force them to use unplugged.
-* 4-people unplugged seems to engage people and it's a digestible demonstration of the app mechanics.
+* Peer-learning: most groups opted for the safe powerpoint-style presentation, only one team proposed an unplugged activity. Maybe force them to use unplugged. And/or I should have modelled an unplugged activity (like the robot-game) in class before! 
+* USER+HTML+JS+DB unplugged seems to engage people and it's a digestible demonstration of the app mechanics.
 * Workshop was a bit too long (10-15 minutes) and people seemed to be overwhelmed by the end of the session (probably also for the lack of fresh air in the room.
 
 ### Peer-learning

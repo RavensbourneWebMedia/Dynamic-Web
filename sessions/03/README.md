@@ -249,6 +249,199 @@ In *brainstorming* you **talk** (and interrupt), whilst in *brainswarming* you *
 You get 2 mins to write down your ideas, then pass it on to someone else, until your idea sheet returns to you after it's made a full round.
 
 
+# Build your own database
+
+Good apps need good data.
+
+This doesn't mean a lot of data, but rather **well structured** data.
+
+A good database doesn't look like a *bucket* full of unstructured data. Instead, a good database is organised so that it's easy (and quick) to search through heaps of objects and pick just the ones you want.
+
+Let's look at three general principles of database design, and then you'll apply those to your own database.
+
+
+## Key database design principles
+
+### 1. Break your data into *logical pieces*
+
+<!--Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first normal form).--> 
+    
+#### Bad example
+     
+| Person | 
+| ------ |
+| Danny Base 21 |
+
+#### Better example
+
+| Name | Surname | Age | 
+| ---- | ------- | --- |
+| Danny | Base | 21 |
+
+This way you can take specific bits of data and spit them out wherever and however you want in your app.
+
+Also, you could do things like `calculate the average age of our people`.
+
+<!--### 2. Break it into multiple *dimensions*
+
+Using arrays.
+
+#### Bad example
+
+| Recipe name | Ingredients | Method |
+| ----------- | ----------- | ------ |
+| Banana bread | 1 banana <br>1 cup of flour <br>pinch of salt | 1. Mix dry ingredients <br>2. Mash the banana <br>3. Mix it all together <br>4. Bake it for 30 minutes | 
+| Avocado on toast | 1 avocado <br>2 slices of bread <br>squeeze of lemon | 1. Toast bread <br>2. Scoop out avocado <br>3. Spread avocado on toast <br>4. Squeeze lemon on top | 
+
+#### Better example
+
+<table>
+    <tr>
+        <th>Recipe name</th>
+        <th>Ingredients</th>
+        <th>Method</th>
+    </tr>
+    <tr>
+        <td>Banana bread</td>
+        <td>
+            <table>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>banana</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>cup</td>
+                    <td>flour</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>pinch</td>
+                    <td>salt</td>
+                </tr>
+            </table>    
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mix dry ingredients</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mash the banana</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mix it all together</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bake it for 30 minutes</td>
+                </tr>
+            </table>    
+        </td>
+    </tr>
+</table>-->
+
+### 2. Use numbers for *ranking*
+
+Computers are extremely good at maths. For a computer,  computing numbers is a piece of cake. Yet computing natural languages (such as English) is something that even the most sophisticated machines still struggle with (think of Siri, for example).
+
+What's the trick then, if you want your app to be able to tell you `who are the best bakers in my area` for example? You **rank** people according to their baking skills.
+
+#### Bad example
+     
+| Name | Surname | Baking skills | 
+| ---- | ------- | ------------- |
+| Danny | Base | Excellent |
+| Jordan | Scripts | Amazing |
+
+#### Better example
+
+| Name | Surname | Baking skills (0-5) | 
+| ---- | ------- | ------------- |
+| Danny | Base | 4 |
+| Jordan | Scripts | 3 |
+
+If you want to rank data objects by **relevance** to a certain concept / keyword, use numbers.
+
+| Name | Surname | Comedy | Sci-fi | Western
+| ---- | ------- | ------ | ------ | -------
+| Quentin | Tarantino | 2 | 0 | 3
+| Martin | Scorsese | 3 | 0 | 1
+| Stanley | Kubrick | 0 | 3 | 0
+| Sofia | Coppola | 3 | 0 | 0
+
+### 3. Use true or false
+
+For **yes or no** answers. This is useful for filtering out results.
+
+| Name | Surname | filmMaker| likesPets 
+| ---- | ------- | ------ | ------
+| Quentin | Tarantino | true | false 
+| Martin | Scorsese | true | true
+| Boris | Johnson | false | false
+
+For instance, it would be easy to filter only the film-makers using this data structure.
+
+## Your turn!
+
+Starting from you app idea, consider:
+
+* What is the **data unit**? 
+	
+	For example, in our demo app the *data unit* is a person and in the database we're storing people's profiles. 
+	 
+* What pieces of data will your *data unit* feature? 
+
+	For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets`, `bakingSkills` etc. 
+	
+* Which data pieces will be used to **rank, filter & sort**? 
+	
+	For example `likesPets` helps us filter data for the *I'd like someone to keep my pet* option, `bakingSkills` helps us filter data for the *I'd like someone to bake a cake* option, etc.
+
+> **Make a list** of all the data pieces for your data unit on paper.
+
+### Create a new Firebase
+
+> Go to Firebase, log in and *create a new app* (which really means create a *new database*).
+
+### Push data to your new Firebase
+
+> Go to [bit.ly/firebase-pusher](http://bit.ly/firebase-pusher) and click `Remix`.
+
+This is a Thimble project which uses an HTML `form` to *push* data to Firebase. In order to make it work with *your new* Firebase database, you need to make a couple of changes:
+
+> In `app.js` change the `apiKey` and `databaseURL` to your own Firebase values. You can find these by clicking on the `Add Firebase to your web app` button in Firebase.
+
+> ![](assets/firebase-config.png)
+
+> ```js
+var config = 
+{
+  apiKey: "YOUR_OWN_KEY",
+  databaseURL: "YOUR_OWN_DATABASE_URL"
+};
+```
+
+> In `index.html` change the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
+
+> ```html
+<input name="CHANGE_THIS" ...>
+```
+
+> Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
 
 
 # Codewars

@@ -228,9 +228,25 @@ This is a challenge for you to work out!
 Tip: there's a very similar bit of code at the end of `main.js`... see if you can replicate the functionality for the other back button :)
 
 
+# Brainswarming!
 
+You are probably familiar with *brainstorming*, but have you hear of [**brainswarming**](http://blogs.hbr.org/2014/03/why-you-should-stop-brainstorming/) before?
 
+<!-- BSt: coming up with lots of ideas whilst withholding judgement, typically in a group session -->
 
+> No study has proven that brainstorming works well, even though it has been the go-to method for **idea generation** since 1953.
+
+In *brainstorming* you **talk** (and interrupt), whilst in *brainswarming* you **write**.
+
+[![](assets/brainswarming.png)](http://blogs.hbr.org/2014/03/why-you-should-stop-brainstorming)
+
+### Your turn
+
+1. Grab sharpies and post-its.
+* Think about what your app's **goal** could be, then write it down.
+* Jot down also some **resources** that could help you achieve that goal.
+
+You get 2 mins to write down your ideas, then pass it on to someone else, until your idea sheet returns to you after it's made a full round.
 
 
 

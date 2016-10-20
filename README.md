@@ -20,7 +20,7 @@ When | In class | Homework | Blog
 ---- | -------- | -------- | ----
 [Friday<br>07.10](sessions/01)| <ul><li>Welcome <li>What are apps? Key concepts: interface, data and logic <li>Workshop: HTML + CSS + JS <li>Project: [**Filtr Findr**](#filtr-findr) | Peer learning research: choose a topic to research and teach next week (teams of ~3) | Analyse your favourite apps
 [Friday<br>14.10](sessions/02)| <ul><li>Peer learning <li>Workshop: data and APIs | Codewars kata | *Filtr Findr* brain*storming*
-Friday<br>21.10| <ul><li>Brain*swarming* <li>Workshop: design your own database <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Prepare formative | TBA
+[Friday<br>21.10](sessions/03)| <ul><li>Brain*swarming* <li>Workshop: design your own database <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Prepare formative | TBA
 Week 4<br>Mozfest |
 Friday<br>04.11| **Formative presentations** | <ul><li>Peer learning research <li>Work on *Filtr Findr* | Reflection blog 
 Friday<br>11.11| <ul><li>Peer learning <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | TBA

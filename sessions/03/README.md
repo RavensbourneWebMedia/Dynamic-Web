@@ -469,7 +469,6 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 *Before* and *after* your tutorial:
 
 1. Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
-* Have a go at [this *beta kata*](http://www.codewars.com/kata/561bbd27fbbfb0bdad0000f4) which I made..
 * [Start making your own kata](http://www.codewars.com/kata/new/) and share it with the `RaveWebMedia` clan!
 
 
@@ -480,18 +479,33 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 - Why is it needed?
 
 
- 
-
-
 # Homework
 
 ### Project 
 
-- [ ] Tweak the CSS
-- [ ] Publish to GitHub `gh-pages`
-- [ ] Prepare formative
-
+- [ ] Tweak the CSS of your app
+- [ ] Start adapting your app JS to your own database
+- [ ] Publish it to GitHub `gh-pages`
+- [ ] Prepare the **formative** presentation. On the 4th of November (2 weeks from today) you'll hand in on Moodle:
+	- your formative presentation
+	- link to your app on `gh-pages`
+	- links to all the blog posts so far
 
 ### Blog 
 
-- [ ] ?
+- [ ] Watch [The best interface is no interface](http://www.theverge.com/2013/3/10/4086392/samsung-golden-krishna-the-best-interface-is-no-interface)
+	
+	[![](assets/nointerface.png)](http://www.theverge.com/2013/3/10/4086392/samsung-golden-krishna-the-best-interface-is-no-interface)
+	
+	Reflect on how you can apply the 3 principles form this talk to your project:
+	
+	1. Embrace natural processes
+	* Leverage computers instead of catering to them
+	* Create a system that adapts to individuals
+	
+	You can also borrow the book `The best interface is no interface` from Ravensbourne's library. It's a thought-provoking book, full of visuals and inspiring case studies, that can help your creative process in this unit and beyond (especially in the UX unit after Xmas).
+	
+	
+	
+	
+	

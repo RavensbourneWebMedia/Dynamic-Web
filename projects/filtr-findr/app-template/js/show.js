@@ -46,23 +46,15 @@ function makeDetailsHTML (data)
 function showList (dataList, interfaceList) 
 {
     // update the ul content with the result of makeListHTML(list)
-    // html is a jQuery function
+    // .html() is a jQuery function
     interfaceList.html( makeListHTML(dataList) ); 
 }
 
-/*function showDetails (data) 
+function showDetails (data, interfaceElement) 
 {
-  var $info = $('.info'); // tell jQuery to select the <div class="info"></div>
-
-  if ($info.length == 0) console.error('You are missing a <div class="info"></div> in your index.html, inside <section id="details"> ... </section>');
-
-  var detailsHTML = makeDetailsHTML(data);
-
-  $info.html(detailsHTML);
-  
-  $('#home').hide();
-  $('#details').show();
-}*/
+  var detailsHTML = makeDetailsHTML(data)
+  interfaceElement.html(detailsHTML)
+}
 
 function makeListHTML (list) 
 {

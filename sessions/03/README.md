@@ -83,6 +83,18 @@
 	```
 	
 	<!--It will return "yes"-->
+
+* What will this JS code produce?
+
+	```js
+	var people = ['Ada', 'Grace', 'Tim']; 
+	for (var i=0; i<people.length; i++)
+	{
+		console.log(people[i])
+	}
+	```
+	
+	<!--3 messages in the browser's JS Console with the three names on a new line each -->
 * Where is better to put JavaScript `<script src="example.js"></script>` in your HTML?
 
 	- [ ] inside the `head`
@@ -459,9 +471,6 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 1. Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
 * Have a go at [this *beta kata*](http://www.codewars.com/kata/561bbd27fbbfb0bdad0000f4) which I made..
 * [Start making your own kata](http://www.codewars.com/kata/new/) and share it with the `RaveWebMedia` clan!
-
-
-
 
 
 # Tutorials

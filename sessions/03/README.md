@@ -7,7 +7,8 @@
 * [Brainswarming!](#brainswarming)
 * [Design your own database](#design-your-own-database)
 * [CodeWars](#codewars)
-* Tutorials on [*Filtr Findr*](#tutorials)
+
+<!-- * Tutorials on [*Filtr Findr*](#tutorials) -->
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -69,21 +70,17 @@
 * What will this JS code produce?
 
 	```js
-	function areYouAnAdult ( age ) {
+	function areYouAnAdult ( age ) 
+	{
   		var answer;
-    	if (age < 18) {
-     		answer = "no";
-    	} else {
-     		answer = "yes";
-    	} 
+    	if (age < 18) answer = "no";
+    	else answer = "yes";
     	return answer;
 	}
-	
 	areYouAnAdult( 18 );
 	```
 	
 	<!--It will return "yes"-->
-
 * What will this JS code produce?
 
 	```js
@@ -466,18 +463,16 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 
 ### Today
 
-*Before* and *after* your tutorial:
-
 1. Complete at least 2 challenges (aka *katas*) on the beginner level (aka *8 kyu*).
 * [Start making your own kata](http://www.codewars.com/kata/new/) and share it with the `RaveWebMedia` clan!
 
-
+<!--
 # Tutorials
 
 - What's your idea?
 - Who is it for?
 - Why is it needed?
-
+-->
 
 # Homework
 
@@ -497,13 +492,13 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 	
 	[![](assets/nointerface.png)](http://www.theverge.com/2013/3/10/4086392/samsung-golden-krishna-the-best-interface-is-no-interface)
 	
-	Reflect on how you can apply the 3 principles form this talk to your project:
+- [ ] Write your reflections on how you can apply the 3 principles form this talk to your project:
 	
-	1. Embrace natural processes
-	* Leverage computers instead of catering to them
-	* Create a system that adapts to individuals
+1. Embrace natural processes
+* Leverage computers instead of catering to them
+* Create a system that adapts to individuals
 	
-	You can also borrow the book `The best interface is no interface` from Ravensbourne's library. It's a thought-provoking book, full of visuals and inspiring case studies, that can help your creative process in this unit and beyond (especially in the UX unit after Xmas).
+You can also borrow the book `The best interface is no interface` from Ravensbourne's library. It's a thought-provoking book, full of visuals and inspiring case studies, that can help your creative process in this unit and beyond (especially in the UX unit after Xmas).
 	
 	
 	

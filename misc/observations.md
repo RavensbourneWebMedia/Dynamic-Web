@@ -76,6 +76,48 @@ Good:
 * > in 7 steps :)
 * Demo: shared template + finished code 
 
+## Week 3
+
+### Notice a pattern?
+
+Noticed several people had
+
+```js
+var resultsList = filterAndSortList(peopleList, chosenOption) 
+var chosenOption = homeDropdown.val()
+```
+
+I must have explained it in a twisted way.
+
+Maybe I should put number in the comment lines, eg:
+
+```js
+// 1. capture the user chosen option
+```
+
+### Group interface variables?
+
+```js
+var interface = 
+{
+	home:
+	{
+		section: $('#home')
+		// etc.
+	}
+}
+```
+
+### Brainswarming
+
+Try it on the wall? Easier to photograph...
+
+
+
+
+
+
+
 
 
 

@@ -444,6 +444,14 @@ var config =
 };
 ```
 
+> In `app.js` find this line...
+
+> ```js
+var databaseList = database.ref( 'people' );
+```
+
+> ... and change `people` to whatever your *data unit* is. For example, if you were building a database of music, you could us `albums`; if you built a restaurants app it could be `venues` etc.
+
 > In `index.html` change the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
 
 > ```html
@@ -492,7 +500,7 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 	
 	[![](assets/nointerface.png)](http://www.theverge.com/2013/3/10/4086392/samsung-golden-krishna-the-best-interface-is-no-interface)
 	
-- [ ] Write your reflections on how you can apply the 3 principles form this talk to your project:
+- [ ] Write your reflections on how you can apply the 3 principles from this talk to your project:
 	
 1. Embrace natural processes
 * Leverage computers instead of catering to them

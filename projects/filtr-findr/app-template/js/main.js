@@ -18,19 +18,20 @@ var detailsInfo = $('#details #info')
 
 
 // tell the GO button to do something when we click it
-homeGoButton.click( function(){   
-    // capture the user chosen option
+homeGoButton.click( function()
+{   
+    // 1. capture the user chosen option
     var chosenOption = homeDropdown.val()
     console.log("You picked " + chosenOption)
 
-    // filter+sort people by user selection
+    // 2. filter+sort people by user selection
     var resultsList = filterAndSortList(peopleList, chosenOption)
     console.log(resultsList)
 
-    // show the results in the #results section
+    // 3. show the results in the #results section
     showList(resultsList, resultsOL)
 
-    // what happens when someone clicks on a result?
+    // 4. what happens when someone clicks on a result?
     $('#results li').click( function() {
         // grab the id from the clicked item
         var resultId = $(this).attr('id')
@@ -46,7 +47,7 @@ homeGoButton.click( function(){
         detailsSection.show()
     })
 
-    // show the results!
+    // 5. show the results!
     homeSection.hide()
     resultsSection.show()
 })

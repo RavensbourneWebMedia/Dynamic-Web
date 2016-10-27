@@ -239,7 +239,7 @@ Tip: there's a very similar bit of code at the end of `main.js`... see if you ca
 
 # Brainswarming!
 
-You are probably familiar with *brainstorming*, but have you hear of [**brainswarming**](http://blogs.hbr.org/2014/03/why-you-should-stop-brainstorming/) before?
+You are probably familiar with *brainstorming*, but have you heard of [**brainswarming**](http://blogs.hbr.org/2014/03/why-you-should-stop-brainstorming/) before?
 
 <!-- BSt: coming up with lots of ideas whilst withholding judgement, typically in a group session -->
 

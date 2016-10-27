@@ -95,6 +95,12 @@ Maybe I should put number in the comment lines, eg:
 // 1. capture the user chosen option
 ```
 
+### What happens when someone clicks on a result?
+
+Many people didn't understand the `$('#results li').click` code had to be nested inside the function reacting to `homeGoButton.click`. [See Dean for instance](https://github.com/deanlc/apptemplate/commit/31d0e576d40f62dfcfeb9f32ed9d26463b3e1690#diff-77ab163850ef0fa98d6a9ee9fb6bbcafR51), who wasn't in class and used the gh tutorial to build his app.
+
+Maybe put the whole, finished function on the gh tutorial? 
+
 ### Group interface variables?
 
 ```js
@@ -107,6 +113,10 @@ var interface =
 	}
 }
 ```
+
+### Refactoring
+
+Functions like `showList` and `showDetails` are not really showing, but rather using a template to inject data in the DOM. Should be renamed... 
 
 ### Brainswarming
 

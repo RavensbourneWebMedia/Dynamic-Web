@@ -9,18 +9,22 @@
 
 # Formative assessment
 
-<!--- [ ] Why do we do this?-->
-
 ### Today
 
-You will present your project: 
+You will **present your project**: 
 
-* [ ]
-* [ ] 
+* [ ] What's your idea?
+* [ ] Who is it for?
+* [ ] How do you envision it working, looking and feeling? 
+* [ ] Let's see your sketches / prototypes.
+* [ ] Let's review your code experiments.
+* [ ] What's your project GitHub repository? 
+
+> The points above are the bare minimum of what your presentation should include. You're very welcome to present them in a different order and include any other aspects which you consider relevant.
 
 We will give you **verbal feedback** after each presentation.
 
-You will upload your [hand-in package](#hand-in-package) on Moodle.
+You will **upload your [hand-in package](#hand-in-package) on Moodle**.
 
 ##### Hand-in package
 

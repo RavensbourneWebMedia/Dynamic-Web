@@ -42,6 +42,8 @@ In that MarkDown document, include the following:
 	
 - [ ] Link to your **app** on `gh-pages` :octocat:
 
+- [ ] Link to your Thimble **Firebase pusher**
+
 - [ ] Links to your **blog posts** so far (weeks 1 to 3, [today's post](#blog) is optional)
 
 - [ ] Any other links that you consider relevant

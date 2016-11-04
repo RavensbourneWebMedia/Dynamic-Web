@@ -26,7 +26,7 @@ We will give you **verbal feedback** after each presentation.
 
 You will **upload your [hand-in package](#hand-in-package) on Moodle**.
 
-##### Hand-in package
+#### Hand-in package
 
 Create a `WEB14203-Name-Surname.md` MarkDown document (where `Name` is your own name and `Surname` is your own surname, like `WEB14203-Matteo-Menapace.md`).
 
@@ -50,13 +50,13 @@ In that MarkDown document, include the following:
 
 #### Moodle link
 
-> Make sure all the folders, pages, documents & presentations you linked in your `WEB14203-Name-Surname.md` are publicly accessible (not just private to you). I don't want to be asking *permissions to view this file* while you're off :)
+> Make sure all the folders, pages, documents & presentations you linked in your `WEB14203-Name-Surname.md` are publicly accessible (not just private to you)!
 
 **Upload and submit** your `WEB14203-Name-Surname.md` through Moodle here [moodle.rave.ac.uk/mod/assign/view.php?id=93782](https://moodle.rave.ac.uk/mod/assign/view.php?id=93782)
 
 #### Deadline
 
-**Deadline** is Friday 4th of November 2016 at **23:59**! Alright Cinderella? :high_heel:
+Friday 4th of November 2016 (aka *today)* at **23:59**! Alright Cinderella? :high_heel:
 
 ## After today
 

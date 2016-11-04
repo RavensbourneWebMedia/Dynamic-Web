@@ -11,6 +11,7 @@
 * People got really excited when they got the `Back` button to switch between sections. Seems like a digestible way to introduce programming (brackets are still quite confusing though)
 * Had fun with camel cases and variable names, eg: `var £ = jQuery`
 
+
 ## Week 2
 
 * Peer-learning: most groups opted for the safe powerpoint-style presentation, only one team proposed an unplugged activity. Maybe force them to use unplugged. And/or I should have modelled an unplugged activity (like the robot-game) in class before! 
@@ -76,6 +77,7 @@ Good:
 * > in 7 steps :)
 * Demo: shared template + finished code 
 
+
 ## Week 3
 
 ### Notice a pattern?
@@ -121,6 +123,72 @@ Functions like `showList` and `showDetails` are not really showing, but rather u
 ### Brainswarming
 
 Try it on the wall? Easier to photograph...
+
+
+## Week 4
+
+### Squashing bugs
+
+Next workshop could be about the debugging process:
+
+1. Start with the Console <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>
+* See if there are errors
+* Examine the line(s) of code where the error originates
+* Copy-paste the error on Google
+* Raise an issue on GitHub
+* Ask a question on StackOverflow
+* Test solutions
+* Share the working solution on Slack
+
+**Common bugs**:
+
+* `xyz is not defined`
+* Permissions error
+* anything else?
+
+### Scraping data with Kimono
+
+Could be a useful workshop, maybe for week 6 or 7.
+
+Sources: Discogs, TagVenue, ResidentAdvisor...
+
+### Advise for app ideas 
+
+#### What's the angle?
+
+Let's not make yet another serious app. Make a **parody** app instead.
+
+You won't be able to compete with TripAdvisor, so why not present their data in a witty / unusual way?
+
+#### Make a niche app
+
+Don't make an app for everyone, make it *niche*.
+
+#### Random generator
+
+`A dance music finder for babies` to kickstart the ideation process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

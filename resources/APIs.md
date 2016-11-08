@@ -68,7 +68,6 @@ Using its **dictionary**, we can get the building blocks of our request, which w
 
 See the [(Google) translation](https://translate.google.com/#fr/en/Excusez-moi%2C%20comment%20puis-je%20marcher%20d'ici%20au%20Louvre%3F) for the sentence above.
 
-
 The *French API* gives us several ways of expressing the same request (or **input**).
 
 However, it doesn't tell us much about the response (or **output**). In fact, it doesn't even guarantee that we're going to get a response at all.

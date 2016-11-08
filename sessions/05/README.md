@@ -1,61 +1,70 @@
 # Week 5
 
-### Today, Thursday 29th October 2015
+### Today, Friday 11th November 2016
 
-[Formative assessment](#formative-assessment):
+1. Workshop: plotting data on a map 
+* Tutorials on *Filtr Findr* 
 
 ### Your [homework](#homework) and [blog](#blog)
 
 
-# Formative assessment
+# Workshop
 
-<!--- [ ] Why do we do this?-->
+https://github.com/firebase/geofire-js
 
-#### Today
 
-You will present both your team projects: [Filter Bubbles](#filter-bubbles). 
+# Tutorials
 
-We will give you **verbal feedback** after each presentation.
+Here's the [feedback document](https://docs.google.com/document/d/1EhDq-ly8zI0UmBy83ZzOyYXjSjiu77nBVCTj6yBtZaE/edit#heading=h.2ruq2spchq1t).
 
-#### After today
-
-We will type up the feedback and share it with you (via Google docs / Slack).
-
-You will get feedback both on your team projects and your individual work.
-
-You will reflect on this feedback (*self-assessment*) and write your thoughts in a blog post. See [more details below]().
-
-### Filter Bubbles
-
-* 6 teams
-* **20 minutes** / team
-
-This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
-
-All the project material is [here](../../projects/filter-bubbles).
+- [ ] Where's your app at: *persevere*, *[pivot](https://youtu.be/dC_IG-EZQUY?t=29s)* or *panic*?
+- [ ] Technical problems you want to discuss
+- [ ] Review your blogs
 
 
 # Homework
 
-### Codewars katas
+### Peer-learning research
 
-Complete at least 2 challenges (aka *katas*) on the beginner levels (aka *8 kyu* or *7 kyu*).
+Next week we'll dive into *data* and *APIs*.
+
+In small teams, you will research and prepare a **mini-lesson** (~15 minutes) to teach everyone else. 
+
+Your mini-lesson will be **interactive**: no PowerPoint-style presentations. Instead, use print-outs and plan small exercises or and/or **unplugged activities** for your peers to learn the topic you researched.
+
+> ... or should we do peer learning on the PoP? (same as week 2 but with compulsory unplugged activities)
+
+<!--
+
+1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api)
+* The [Critical Engineering Manifesto](http://criticalengineering.org/)
+* [Below the API](http://www.forbes.com/sites/anthonykosner/2015/02/04/google-cabs-and-uber-bots-will-challenge-jobs-below-the-api/)
+* Computational thinking
+* **Mapping (mis)behaviours**: [CrimeTimeline](http://crimetimeline.io), [PrisonMap](http://prisonmap.com/about), [The Refugee Project](http://www.therefugeeproject.org), [Dronestagram](http://shorttermmemoryloss.com/portfolio/project/dronestagram/) and [Pathways](http://www.nationalgeographic.com/pathways). You are welcome to research and present more projects that mash up different APIs and datasets in interesting ways. 
+
+-->
+
+Who | What
+--- | -----------
+Will<br>Akvile | 
+Tom<br>Darren | 
+Josh<br>Dean | 
+Afsara<br>Malore | 
+Francisco<br>Ajay | 
+Ben<br>Rosie | 
+Joe<br>Rajeev | 
+
+### Project
+
+Work on [*Filtr Findr*](../../projects/filtr-findr):
+
+ - [ ] 
+
 
 ### Blog 
 
-**Individually**, reflect on the feedback you received during the formative assessment, as well as your experience in this unit so far, and write about it.
+*WTF is an API?*
 
-Your post should address these questions (in no particular order):
+- [ ]Read [The universe is programmable](http://www.wired.com/2014/04/the-universe-is-programmable/) and blog about it: what do you think about the points the author is making?
 
-* **ME**:
-	* How and what did I learn?
-	* What worked and what didn't?
-	* Did I reach my goals, why or why not?  
-	* How did I feel during the process?  
-
-* My **TEAM**:
-	* How did the team perform?
-	* What worked and what didn't?
-	* What can we do better next time?
-	* Did the team reach the goal?
-	* Was there conflict, how do we fix it?
+- [ ] Check out [An API for everything](https://www.producthunt.com/e/an-api-for-everything) and pick at least **three APIs** which you could integrate in your app. Describe how these APIs would impact on the app experience (you won't have to actually use those APIs so feel free to go crazy with ideas...)

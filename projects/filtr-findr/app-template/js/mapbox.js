@@ -1,4 +1,6 @@
-// initialise mapbox
+console.log('mapbox.js ready to roll!')
+
+// this is our "library card" to use Mapbox
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGVvbWVuYXBhY2UiLCJhIjoiY2l2Y2lncmJ5MDAzbjJ6bDV4ZWZ1ZWkzcSJ9.ihgOtHA6TAph5UZQyESYfA'
 
 var map = new mapboxgl.Map(
@@ -13,10 +15,18 @@ var map = new mapboxgl.Map(
   zoom: 10
 })
 
-// empty list to store the markers
+// empty list to store all the markers
 var markers = [] 
 
-// plot data on the map
+function wipeMarkers()
+{
+  for (var i = 0; i < markers.length; i++) 
+  {
+    var marker = markers[i]
+    marker.remove()
+  }
+}
+
 function addMarkers(dataList) 
 {
   // first wipe previous markers
@@ -41,14 +51,6 @@ function addMarkers(dataList)
   }
 }
 
-function wipeMarkers()
-{
-  for (var i = 0; i < markers.length; i++) 
-  {
-    var marker = markers[i]
-    marker.remove()
-  }
-}
 
-
+// TODO challenge: geolocate yourself and centre the map at your position
 

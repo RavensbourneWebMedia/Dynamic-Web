@@ -19,7 +19,7 @@ Create a style: https://www.mapbox.com/studio/styles
 In `index.html` add the Mapbox CSS (in the `head`) and JS (at the end of the `body`):
 
 ```html
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' /> 
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet'> 
 ```
 
 ```html
@@ -32,7 +32,7 @@ Next, *markup* the page to create a map container inside the `#results` section:
 <section id="results">
 	...
     </ol>
-    <div id='map'></div>
+    <div id="map"></div>
 </section>
 ```
 
@@ -50,7 +50,9 @@ In `main.css`:
 
 Now that you have the structure of the page, initialize the map with Mapbox JS.
 
-First, add your access token using `mapboxgl.accessToken`.
+Create a new JS file `mapbox.js` and link it in your `index.html`.
+
+In `mapbox.js` add your access token using `mapboxgl.accessToken`.
 You can find your access token at [mapbox.com/studio/account/tokens](https://www.mapbox.com/studio/account/tokens/)
 
 ```js
@@ -105,6 +107,7 @@ resultsToggleButton.click( function()
     {
         resultsOL.hide()
         resultsMap.show() 
+        map.resize() // see https://www.mapbox.com/mapbox-gl-js/api/#Map#resize
         resultsToggleButton.html('List')
     }
 })
@@ -256,6 +259,6 @@ Work on [*Filtr Findr*](../../projects/filtr-findr) as planned in [your tutorial
 
 *WTF is an API?*
 
-- [ ]Read [The universe is programmable](http://www.wired.com/2014/04/the-universe-is-programmable/) and blog about it: what do you think about the points the author is making?
+- [ ] Read [The universe is programmable](http://www.wired.com/2014/04/the-universe-is-programmable/) and blog about it: what do you think about the points the author is making?
 
 - [ ] Check out [An API for everything](https://www.producthunt.com/e/an-api-for-everything) and pick at least **three APIs** which you could integrate in your app. Describe how these APIs would impact on the app experience (you won't have to actually use those APIs so feel free to go crazy with ideas...)

@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,700" rel="stylesheet">
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet'>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet'> 
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -65,7 +65,7 @@
                     <p>About this person</p>
                 </li>
             </ol>
-            <div id='map'></div>
+            <div id="map"></div>
         </section>
         <!-- this is the details section -->
         <section id="details">
@@ -79,17 +79,26 @@
         </section>
         
         <!-- load all the JS at the end-->
+        
+        <!-- Load jQuery-->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <!-- load Mapbox JS -->
+        
+        <!-- Load the Mapbox JS -->
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
         <script src="js/mapbox.js"></script>
-        <!-- load the Firebase library -->
+        
+        <!-- Load the Firebase library -->
         <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
         <script src="js/firebase.js"></script>
+        
+        <!-- our own helper scripts -->
         <script src="js/filter.js"></script>
         <script src="js/show.js"></script>
+        
+        <!-- MAIN.JS is the script that binds them all -->
+        <!-- it needs to be loaded after all the others -->
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

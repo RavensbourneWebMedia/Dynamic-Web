@@ -1,10 +1,9 @@
 html {
     font-family: 'Work Sans', sans-serif;
     background: rgb(0, 253, 183);
-/*
     background-image: url("../img/unsplash.jpeg");
     background-size: cover;
-*/
+    background-attachment: fixed;
 }
 
 /* hide the results and details by default */
@@ -85,14 +84,10 @@ button {
     padding-bottom: calc(8rem - 1.5rem - 10px);
 }
 
-#results .toggle
-{
-    float: right;
-}
-
 #map {
+    background: yellow;
     width: 100%;
-    height: 30rem;
+    height: 30rem; /* experiment with different heights */
     display: none;
 }
 
@@ -106,6 +101,15 @@ button {
   transform: translate(10px, 20px, 0);
 }
 
+.marker.free
+{
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.marker.paid
+{
+    background-color: rgba(255, 0, 0, 0.6);
+}
 
 
 

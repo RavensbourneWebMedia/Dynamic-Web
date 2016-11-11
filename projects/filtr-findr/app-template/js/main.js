@@ -6,12 +6,15 @@
 // var g 
 
 // use jQuery to select the HTML elements we're going to manipulate
+// TODO wrap all these in an object, eg: var interface = { home: ... } 
 var homeGoButton = $('#home button')
 var homeDropdown = $('#home select')
 var homeSection = $('#home')
 var resultsSection = $('#results')
 var resultsBackButton = $('#results .back')
+var resultsToggleButton = $('#results .toggle')
 var resultsOL = $('#results ol')
+var resultsMap = $('#map')
 var detailsSection = $('#details')
 var detailsBackButton = $('#details .back')
 var detailsInfo = $('#details #info')
@@ -30,6 +33,7 @@ homeGoButton.click( function()
 
     // 3. show the results in the #results section
     showList(resultsList, resultsOL)
+    addMarkers(resultsList)
 
     // 4. what happens when someone clicks on a result?
     $('#results li').click( function() {
@@ -62,4 +66,27 @@ resultsBackButton.click( function(){
 detailsBackButton.click( function(){
    detailsSection.hide()
    resultsSection.show()
+})
+
+resultsToggleButton.click( function()
+{
+    // list or map?
+    // let's check the current state of the list
+    // if it's 'block' then we want to show the map
+    // otherwise we want to show the list
+    var state = resultsOL.css('display') == 'block' ? 'map' : 'list'
+
+    if (state == 'list') // show list
+    {
+        resultsOL.show()
+        resultsMap.hide()
+        resultsToggleButton.html('Map')
+    } 
+    else // show map
+    {
+        resultsOL.hide()
+        resultsMap.show() 
+        if (map) map.resize()
+        resultsToggleButton.html('List')
+    }
 })

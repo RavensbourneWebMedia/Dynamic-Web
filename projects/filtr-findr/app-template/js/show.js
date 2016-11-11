@@ -42,7 +42,7 @@ function makeDetailsHTML (data)
   return html;        
 }
 
-
+// TODO refactor to updateList
 function showList (dataList, interfaceList) 
 {
     // update the ul content with the result of makeListHTML(list)
@@ -50,6 +50,7 @@ function showList (dataList, interfaceList)
     interfaceList.html( makeListHTML(dataList) ); 
 }
 
+// TODO refactor to updateDetails
 function showDetails (data, interfaceElement) 
 {
   var detailsHTML = makeDetailsHTML(data)

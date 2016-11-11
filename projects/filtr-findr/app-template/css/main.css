@@ -47,6 +47,11 @@ button {
     border-radius: 50%;
 }
 
+.button
+{
+    cursor: pointer;
+}
+
 #results ol {
     margin: 0;
     padding: 0;
@@ -78,6 +83,27 @@ button {
     line-height: 1;
     font-size: 1.5rem;
     padding-bottom: calc(8rem - 1.5rem - 10px);
+}
+
+#results .toggle
+{
+    float: right;
+}
+
+#map {
+    width: 100%;
+    height: 30rem;
+    display: none;
+}
+
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 0, 0.6);
+  transform: translate(10px, 20px, 0);
 }
 
 

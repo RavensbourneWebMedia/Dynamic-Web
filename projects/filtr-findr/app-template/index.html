@@ -12,7 +12,9 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,700" rel="stylesheet">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/main.css">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -38,8 +40,9 @@
         <!-- this is the results section -->
         <section id="results">
             <a class="back button">Back</a>
-            <h1>I'd like someone to bake a cake</h1>
-            <p>2 people around you can bake a cake</p>
+            <a class="toggle button">Map</a>
+            <!-- <h1>I'd like someone to bake a cake</h1>
+            <p>2 people around you can bake a cake</p> -->
             <ol>
                 <li>
                     <img src="https://randomuser.me/api/portraits/women/53.jpg">
@@ -62,6 +65,7 @@
                     <p>About this person</p>
                 </li>
             </ol>
+            <div id='map'></div>
         </section>
         <!-- this is the details section -->
         <section id="details">
@@ -78,6 +82,9 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <!-- load Mapbox JS -->
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
+        <script src="js/mapbox.js"></script>
         <!-- load the Firebase library -->
         <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
         <script src="js/firebase.js"></script>

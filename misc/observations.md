@@ -169,8 +169,29 @@ Don't make an app for everyone, make it *niche*.
 `A dance music finder for babies` to kickstart the ideation process.
 
 
+## Week 4
+
+### Peer-learning
+
+#### Algorithms | Joe & Malore	
+
+* Examples of algorithms in daily life
+* Malore: maybe ask more questions, involve the audience
+* Joe: great little game, distributed cards with numbers written on them to people. Then passed on the winning number for people to work out if they won or not. What was the algorithm? Compare given number with winning number, if they're the same you have won the game, otherwise pass the number to the next person.
+
+#### Conditionals | Afsara & Rajeev
+
+* Afsara: defined conditionals.. some examples could have been useful before the explanation
+* Cool activity: given some real-life examples of algorithms, come up with a new example and fill in the `true` part of the statement, then pass it on to another group who will have to complete with the `else` part 
+
+#### Debugging | Tom & Ajay
+
+Ajay: starting with questions, eg what is a bug? what tools have we used to debug so far?
+Tom: debugging in everyday life `Trying to get in my house  and I have 50 keys`. Process: identify the problem, then try out solutions (which you have searched for on Google / StackOverflow)
+Nice one: debugging code examples in pairs
 
 
+	
 
 
 

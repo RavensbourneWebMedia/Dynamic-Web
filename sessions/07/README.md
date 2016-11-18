@@ -1,6 +1,19 @@
 # Week 7
 
-### Today, Thursday 12th November 2015
+### Today, Friday 25th November 2016
+
+* [Workshop](#workshop): add click functionality to the map markers 
+* [ ] Filter by string
+* [ ] Multiple criteria for filterAndSort
+* [Tutorials](#tutorials)
+
+
+
+
+
+
+
+
 
 1. [Workshop](#workshop): using *Node.js* to conquer the World(ish)!
 * Tutorials on [*Filter Bubbles*](#team-project)

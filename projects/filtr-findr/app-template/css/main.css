@@ -101,6 +101,11 @@ button {
   transform: translate(10px, 20px, 0);
 }
 
+.marker.user
+{
+   background-color: rgb(0, 253, 183); 
+}
+
 .marker.free
 {
     background-color: rgba(0, 255, 0, 0.6);

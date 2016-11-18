@@ -2,8 +2,8 @@
 
 ### Today, Friday 11th November 2016
 
-1. Workshop: plotting data on a map 
-* Tutorials on *Filtr Findr* 
+1. [Workshop](#worshop): plotting data on a map 
+* [Tutorials](#tutorials) on *Filtr Findr* 
 
 ### Your [homework](#homework) and [blog](#blog)
 
@@ -225,7 +225,7 @@ In small teams, you will research and prepare a **mini-lesson** (~15 minutes) to
 
 Your mini-lesson will be **interactive**. Screens and PowerPoint-style presentations are banned (seriously, don't prepare slides). Instead, use print-outs and plan **unplugged activities** for your peers to learn the topic you researched.
 
-Ispiration and resources for *unplugged activities*:
+Inspiration and resources for *unplugged activities*:
 
 * [CODE Fundamentals Unplugged](https://code.org/curriculum/unplugged)
 * [CS Unplugged](http://csunplugged.org/activities)

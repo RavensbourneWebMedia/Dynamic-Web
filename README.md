@@ -24,7 +24,7 @@ When | In class | Homework | Blog
 Week 4<br>Mozfest |
 [Friday<br>04.11](sessions/04)| **Formative presentations** | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Reflection blog 
 [Friday<br>11.11](sessions/05)| <ul><li>Workshop: plotting data on a map <li>Tutorials on *Filtr Findr* | <ul><li>Peer learning research <li>Work on *Filtr Findr* | WTF is an API?
-Friday<br>18.11| <ul><li>Peer learning <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | TBA
+[Friday<br>18.11](sessions/06)| <ul><li>Peer learning <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Lessons from the *story* of your project
 Friday<br>25.11| Tutorials on *Filtr Findr* | Prepare summative (tweak your work) | TBA
 Friday<br>02.12| **Summative presentations** 
 

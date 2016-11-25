@@ -8,7 +8,9 @@
 // use jQuery to select the HTML elements we're going to manipulate
 // TODO wrap all these in an object, eg: var interface = { home: ... } 
 var homeGoButton = $('#home button')
-var homeDropdown = $('#home select')
+//var homeDropdown = $('#home select')
+var skillsDropdown = $('#skills')
+var petsDropdown = $('#pets')
 var homeSection = $('#home')
 var resultsSection = $('#results')
 var resultsBackButton = $('#results .back')
@@ -23,12 +25,26 @@ var detailsInfo = $('#details #info')
 // tell the GO button to do something when we click it
 homeGoButton.click( function()
 {   
-    // 1. capture the user chosen option
-    var chosenOption = homeDropdown.val()
-    console.log("You picked " + chosenOption)
+    // 1. capture the user chosen options
+    var chosenSkill = skillsDropdown.val()
+    var chosenPet = petsDropdown.val()
+    console.log("You picked " + chosenSkill + " and " + chosenPet)
+    
+    var filters = 
+    [
+        {
+            // favouritePet is a string, so we need a value
+            key: 'favouritePet',
+            value: chosenPet
+        },
+        {
+            // chosenSkill is a number, so no need for a value
+            key: chosenSkill
+        }
+    ]
 
-    // 2. filter+sort people by user selection
-    var resultsList = filterAndSortList(peopleList, chosenOption)
+    // 2. filter+sort people by user selections
+    var resultsList = filterAndSortList(peopleList, filters)
     console.log(resultsList)
 
     // 3. show the results in the #results section
@@ -50,7 +66,7 @@ homeGoButton.click( function()
         resultsSection.hide()
         detailsSection.show()
     })
-
+       
     // 5. show the results!
     homeSection.hide()
     resultsSection.show()

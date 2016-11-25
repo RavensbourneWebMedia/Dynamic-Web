@@ -1,209 +1,91 @@
 # Week 8
 
-### Today, Thursday 19th November 2015
+### Today, Friday 2nd December 2016
 
-1. [Workshop](#workshop): using cloud databases
-* [What have tomatoes got to do with productivity?](#what-have-tomatoes-got-to-do-with-productivity)
-* Tutorials on [*Filter Bubbles*](#team-project)
-
-<!--- [ ] Announcement: Rik in da house -->
-
-### Your [homework](#homework) and [blog](#blog)
+1. **Summative presentations** 
+* Final [hand-in](#hand-in-package) of [project work](#filter-bubbles), [presentations](#presentations) and [blog posts](#blog-posts)
 
 
-# Workshop
+# Checklist
 
-### Why a *database* in the *cloud*?
+### Presentations
 
-Writing **server-side** code can be hard. 
+Add your peer-learning, formative and summative presentations **links** to your [hand-in package](#hand-in-package).
 
-Maintaining a server-side infrastructure can be even harder.
+* If you used **Google Slides**, make sure they're accessible by *everyone with the link* and add the link to your [hand-in package](#hand-in-package).
 
-A standard scenario:
+* If you used **slides.com**, make sure they're *published* and add the link to your [hand-in package](#hand-in-package).
 
-* You would create a MySQL database.
-* You may have a PHP class that is responsible for performing CRUD operations. Optionally, you could just have a bunch of PHP functions.
-* You may use JavaScript and Ajax on the client-side to call the respective PHP scripts and pass in query strings.
-* You would need to sanitise the input to protect against XSS attacks, as well as worry about database security in general.
-* If a collaborative app, you would need to track different users and manage their lists. More code, more tables, and more schemas.
-* You would need to make sure your database stays performant.
+* If you made a **presentation video**, upload it to YouTube (or similar) and add the link to your [hand-in package](#hand-in-package).
 
-Parse is a *database-as-a-service* platform, owned by Facebook.
+* If you used **KeyNote** or **PowerPoint** (ugh), **export** your slides as `.pdf`. No `.ppt` or `.key` please (don't assume people have the software to open your source files). Upload them to Google Drive (or similar) and then add the link to your [hand-in package](#hand-in-package).
 
-Instead of building and maintaining your own server-side stack, you can use Parse.
+### Blog posts 
 
-> Focus on creating a beautiful end-user experience and let Parse take care of the rest.
+Add all your blog **links** to your [hand-in package](#hand-in-package).
 
-Parse is not the only cloud database service. [Firebase](https://www.firebase.com) (owned by Google) is another one. [Amazon Web Services](https://aws.amazon.com/) offer various db solutions. Learn more about cloud databases [here](https://en.wikipedia.org/wiki/Cloud_database).
+Your blog will have **6 posts** (details in the links below):
 
-### All together now
+1. [Week 1](../01#blog): Analyse your favourite apps
+* [Week 2](../02#blog): *Filtr Findr* brainstorming
+* [Week 3](../03#blog): The best interface is no interface
+* [Week 4](../04#blog): Reflection blog
+* [Week 5](../05#blog): WTF is an API?
+* [Week 6](../06#blog): Lessons from the story of your project
 
-1. Go to [parse.com](https://parse.com) and sign up for a free account. 
-* The signup process will guide you through the creation of an *app*.
+Your blog posts can be published *anywhere* (we recommend [Medium](https://medium.com)), as long as they are publicly accessible and linked in your [hand-in package](#hand-in-package).
 
-	![](assets/parse-new-app.png)
+### Filtr Findr
 
-* Go to [Parse's quick-start page](https://parse.com/apps/quickstart) and choose `Data` > `Web` > `New project`. This will download a folder.
-* Open the downloaded folder in a code editor.
-* Notice the two scripts in the `head` of `index.html`
+Make sure all your project files are backed up on **GitHub** (use Google Drive for files larger than 50MB). 
 
-	```html
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-  ```
+Including but not limited to:
+
+* research
+* inspiration links
+* sketches
+* wireframes
+* broken code
+* working code
+* screenshots
+* mugshots
+
+Add all **links** to your [hand-in package](#hand-in-package).
+
+Publish your *Filtr Findr* web-app using [GitHub pages](https://pages.github.com/). 
+	
+### Hand-in package
+
+Create a `WEB14203-Name-Surname.md` MarkDown document (where `Name` is your own name and `Surname` is your own surname, like `WEB14203-Matteo-Menapace.md`).
+
+> You can edit MarkDown documents with the [Mou app](http://25.io/mou/) on OSX, the [MarkdownPad app](http://markdownpad.com/) on Windows, or online with [Dillinger](http://dillinger.io/) (all free).
+
+In that MarkDown document, include the following:
+
+- [ ] Link to your **summative presentation**   
+
+	Preferably a Google Slides link.   
   
-  jQuery and the Parse JavaScript SDK (**S**oftware **D**evelopment **K**it).
-* Just before the end of the `body`, there's a `script` in which Parse is initialised.
-
-	```js
-	Parse.initialize("APPLICATION_ID", "JAVASCRIPT_KEY")
-	```
+	If you use Keynote/Powerpoint export a PDF, upload it to Google Drive or SlideShare, and then grab the link to it.
 	
-	Change `APPLICATION_ID` to your app's id and `JAVASCRIPT_KEY` to your app's JS key. You can find those in your app > `Settings` > `Keys`
-	
-	![](assets/parse-keys.jpg)
-* Test the app in your browser.	
-* Go to your Parse app and click on `Core`.
+- [ ] Link to your **app** on `gh-pages` :octocat:
 
-	If you didn't get an error in the previous step, you should see there's a new row in the `TestObject` table, something like this
-	
-	![](assets/parse-table.png)
-	
-	What happened?
-	
-	Back to the code editor, notice how the `TestObject` *class* was created
-	
-	```js
-	var TestObject = Parse.Object.extend("TestObject")
-	```
-	
-	Then a new *instance* of that class was made
-	
-	```js
-	var testObject = new TestObject()
-	```
-	
-	And finally the *data object* `{foo: "bar"}` was saved
-	
-	```js
-	testObject.save({foo: "bar"}, 
-	{
-		...
-	})
-	```	
+- [ ] Link to your Thimble **Firebase pusher**
 
-	With two function to handle the `success` and `error` scenarios.
-  
-This is Parse in a nutshell. Now go to their [JavaScript Guide](https://parse.com/docs/js/guide#getting-started) and see what other things you can do with Parse.  
+- [ ] Links to your **blog posts** 
 
-* In particular, [Objects](https://parse.com/docs/js/guide#objects) are rather fundamental, as well as [Queries](https://parse.com/docs/js/guide#queries).
+- [ ] Link to your Codewars profile
 
-* If your app is **location-based**, you should check out [GeoPoints](https://parse.com/docs/js/guide#geopoints).
+- [ ] Any other links that you consider relevant
 
-* If you want to build a **user-base**, then [Users](https://parse.com/docs/js/guide#users) may be very useful to you.
+- [	] Images and texts to make your document more pleasant to read (see an example of an excellent `COURSECODE-Name-Surname.md` [here](https://github.com/TomSharmanWeb/HarrySeatonWebsite/blob/master/README.md)).
 
-* If you want to let your users upload **files**, then [Files](https://parse.com/docs/js/guide#files) are what you need.
+#### Moodle link
 
-**CONFUSED?** Try [this Codecademy Parse tutorial](https://www.codecademy.com/en/tracks/parse).
+> Make sure all the folders, pages, documents & presentations you linked in your `WEB14203-Name-Surname.md` are publicly accessible (not just private to you)!
 
-### What could **you** build with Parse?
+**Upload and submit** your `WEB14203-Name-Surname.md` through Moodle here [moodle.rave.ac.uk/mod/assign/view.php?id=89143](https://moodle.rave.ac.uk/mod/assign/view.php?id=89143) 
 
-Let's brainstorm a few ideas. These can be based on your *Filter Bubbles* projects, completely unrelated to them, or anything in between.
+#### Deadline
 
-# What have *tomatoes* got to do with *productivity*?
-
-Behavioural economists have talked at length about *ego-depletion*, which means that human beings have a limited amount of decision-making ability in each day. 
-
->  The main thing is to keep the main thing the main thing.
-
-> Steven Covey
-
-To be productive, you want to focus on the **main task of the day** first, before you start getting distracted with {insert your distraction of choice here, including emails}.
-
-### How to decide on the **main** thing?
-
-> If this were the only thing I accomplished today, would I be satisfied with my day?
-
-Write down the **3-5 things, and no more** that are making you most anxious or uncomfortable. 
-
-<!--  most important = usually most uncomfortable/most procrastinated upon -->
-
-###  The way you write your task can dictate whether it will get done
-
-Is this **concrete**? 
-
-Is it clearly **actionable**? 
-
-Is there any *ambiguity* about how to **get started**?
-
-### Back to tomatoes..
-
-The *Pomodoro* (Italian for tomato) Technique® gets its name from a tomato-shaped timer that its founder, Francesco Cirillo, first used to combat his procrastination.
-
-1. Decide on a clear task that you want to focus on that will take you at least **25 minutes** to do. 
-* Start a timer for 25 minutes and start working on the task. This time block is known as a *Pomodoro*. It is an indivisible unit of time. You can never do halfa *Pomodoro*. Do not work on anything else. If you get distracted, gently bring yourself back to work.It happens. Relax. If your distraction pulls you away from the task at hand, cancel the *Pomodoro* by resetting the timer to zero. * Once the timer ends, time for a mini-celebration! Get up, stretch, get some more water, do a happy dance. You have **5 minutes of break** time until you start the next *Pomodoro*.
-
-Read all about it in the [Productivity Planner](https://drive.google.com/open?id=0B0FP625GojKHRlJRZWQ4cjVvSFk)
-
-
-# Team project
-
-![](../../projects/filter-bubbles/assets/junk-food-analogy.png)
-
-### Filter Bubbles tutorials
-
-This **team project** is about pushing yourself out of your online comfort zone (aka *filter bubble*) to observe different communities and express your points of view through code.
-
-All the project material is [here](../../projects/filter-bubbles).
-
-### 6 teams
-
-### 20 minutes per team
-
-
-# Homework
-
-### Work on Filter Bubbles
-
-The **final deadline** is in two week's time and next week will be the last tutorial. 
-
-Between now and next week, your **team** should:
-
-* Download and use the [**Productivity Planner**](https://drive.google.com/open?id=0B0FP625GojKHRlJRZWQ4cjVvSFk).
-* Agree on a **shared list** of what's **to do** (see [tips above](#the-way-you-write-your-task-can-dictate-whether-it-will-get-done)).
-* Assign tasks to team members, so that you know **who does what and when**. Discuss how much time each task may take, how much time each of you have and who's going to be affected if a task is not completed in time.
-* **Work** on the agreed tasks <sup>OBVIOUSLY
-* **Track** the time you spend on each task. You could use the [Harvest app](https://www.getharvest.com) for that.
-
-### Stand-up
-
-Next week we'll start the day with a stand-up meeting, also known as **the huddle**.
-
-It shouldn't take more than 15 minutes.
-
-> The discomfort of standing for long periods is intended to keep the meetings short.
-
-Each team will answer **3 questions**:
-
-1. What did we accomplish **last week**?
-* What will we do **this week**?
-* What **obstacles** are impeding our progress?
-
-We won't discuss these obstacles in details. The idea is to **identify obstacles** (some may be shared by various teams), and tackle those later in follow-up meetings.
-
-Many companies (start-ups in particular) do daily stand-ups as a way to get an overview of what everyone is doing and plan the day ahead. 
-
-The better you become at summarising what you're working on and asking for help without faffing around with unnecessary details, the better suited you will be for your next job.
-
-### Blog 
-
-Write notes about the *challenges* you encountered in planning and executing your **team work**.
-
-Some questions that may guide your writing:
-
-* How is your team **organised**? Is there an appointed *leader*? Are there defined *roles*?
-* What **tools** are you using to collaborate? Any tips for making these tools work for your team?
-* How do you **decide** on ideas and solutions to pursue?
-* How do you go about solving **conflicts**? 
-
-Btw, these are all questions that you will be asked in future **job interviews**, so thinking about these aspect of your work and practicing answering those questions is rather important.
+Friday 2nd of December 2016 (aka *today)* at **23:55**!

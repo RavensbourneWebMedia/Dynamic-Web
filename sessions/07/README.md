@@ -18,7 +18,24 @@ Make sure we use `v0.28.0` of the JS API. In `index.html`, make sure the `script
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
 ```
 
-Then remix [this tutorial](https://www.mapbox.com/mapbox-gl-js/example/set-popup) 
+Define the resultsList outside of any function, in `main.js`
+
+```js
+var resultsList = []
+```
+
+Then in `mapbox.js`, in the `addMarkers` function after `markers.push(marker)`:
+
+```js
+// 1. update the details section with data from the selected result
+// 2. hide the results section
+// 3. show the details section
+var clickSteps = 'showDetails(resultsList['+i+'], detailsInfo); resultsSection.hide(); detailsSection.show(); '
+var popupHTML = '<a onclick="' + clickSteps + '">' + dataItem.name + '</a>'
+var popup = new mapboxgl.Popup({closeButton:false})
+popup.setHTML(popupHTML)
+marker.setPopup(popup)
+```
 
 
 # Multiple criteria for `filterAndSortList`

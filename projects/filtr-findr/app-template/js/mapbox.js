@@ -37,7 +37,7 @@ function addMarkers(dataList)
     // store the current data item in a variable
     var dataItem = dataList[i]
     // extract the data item coordinates
-    var coordinates = new mapboxgl.LngLat( dataItem.longitude, dataItem.latitude)
+    var coordinates = new mapboxgl.LngLat(dataItem.longitude, dataItem.latitude)
     // create a div element for the marker
     var div = document.createElement('div')
     // add a class called 'marker' to the div
@@ -47,10 +47,17 @@ function addMarkers(dataList)
       .setLngLat(coordinates) // set the marker position
       .addTo(map) // add the marker to map
     // add the marker to the list
-    markers.push(marker)  
+    markers.push(marker)
+    
+    // pOOpup
+    // 1. update the details section with data from the selected result
+    // 2. hide the results section
+    // 3. show the details section
+    var clickSteps = 'showDetails(resultsList['+i+'], detailsInfo); resultsSection.hide(); detailsSection.show(); '
+    var popupHTML = '<a onclick="' + clickSteps + '">' + dataItem.name + '</a>'
+    var popup = new mapboxgl.Popup({closeButton:false})
+    popup.setHTML(popupHTML)
+    marker.setPopup(popup)
   }
 }
-
-
-// TODO challenge: geolocate yourself and centre the map at your position
 

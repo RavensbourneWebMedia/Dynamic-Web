@@ -21,6 +21,8 @@ var detailsSection = $('#details')
 var detailsBackButton = $('#details .back')
 var detailsInfo = $('#details #info')
 
+// define the resultsList outside of any function
+var resultsList = []
 
 // tell the GO button to do something when we click it
 homeGoButton.click( function()
@@ -44,7 +46,7 @@ homeGoButton.click( function()
     ]
 
     // 2. filter+sort people by user selections
-    var resultsList = filterAndSortList(peopleList, filters)
+    resultsList = filterAndSortList(peopleList, filters)
     console.log(resultsList)
 
     // 3. show the results in the #results section
@@ -87,7 +89,7 @@ detailsBackButton.click( function(){
 // button to switch between list and map
 resultsToggleButton.click( function() {
     
-    console.log('clicked resultsToggleButton')
+    // console.log('clicked resultsToggleButton')
     
     // find out which element is currently visible
     // is the list visible?
@@ -95,7 +97,7 @@ resultsToggleButton.click( function() {
     if (listDisplay == 'block') isListVisible = true
     else isListVisible = false
     
-    console.log(isListVisible)
+    // console.log(isListVisible)
     
     // if the list is visible
     if (isListVisible)

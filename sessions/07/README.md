@@ -2,9 +2,8 @@
 
 ### Today, Friday 25th November 2016
 
-* [Workshop](#workshop): add click functionality to the map markers 
-* [ ] Filter by string
-* [ ] Multiple criteria for filterAndSort
+1. [Workshop](#workshop): add click functionality to the map markers 
+* Multiple criteria for `filterAndSortList`
 * [Tutorials](#tutorials)
 
 ### Your [homework](#homework) and [blog](#blog)
@@ -20,6 +19,60 @@ Make sure we use `v0.28.0` of the JS API. In `index.html`, make sure the `script
 ```
 
 Then remix [this tutorial](https://www.mapbox.com/mapbox-gl-js/example/set-popup) 
+
+
+# Multiple criteria for `filterAndSortList`
+
+In `index.html` make a couple of dropdowns
+
+```html
+<select id="skills">
+	<option value="bakingSkills">Bake a cake</option>
+    <option value="diySkills">Move my piano</option>
+    <option value="bakingSkills">Bake a pizza</option>
+    <option value="codingSkills">Code an app</option>
+</select>
+<select id="pets">
+	<option value="cat">cats</option>
+    <option value="dog">dogs</option>
+</select>
+```
+
+Update `filter.js` to the latest version, which you can find at [github.com/RavensbourneWebMedia/Dynamic-Web/blob/2016/projects/filtr-findr/app-template/js/filter.js](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2016/projects/filtr-findr/app-template/js/filter.js)
+
+In `main.js`
+
+```js
+var skillsDropdown = $('#skills')
+var petsDropdown = $('#pets')
+```
+
+Then further down
+
+```js
+// tell the GO button to do something when we click it
+homeGoButton.click( function()
+{   
+    // 1. capture the user chosen options
+    var chosenSkill = skillsDropdown.val()
+    var chosenPet = petsDropdown.val()
+    console.log("You picked " + chosenSkill + " and " + chosenPet)
+    var filters = 
+    [
+        {
+            // favouritePet is a string, so we need a value
+            key: 'favouritePet',
+            value: chosenPet
+        },
+        {
+            // chosenSkill is a number, so no need for a value
+            key: chosenSkill
+        }
+    ]
+    // 2. filter+sort people by user selections
+    var resultsList = filterAndSortList(peopleList, filters)
+	...
+```	
 
 
 # Tutorials

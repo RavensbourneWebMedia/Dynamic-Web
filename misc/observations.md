@@ -191,8 +191,9 @@ Tom: debugging in everyday life `Trying to get in my house  and I have 50 keys`.
 Nice one: debugging code examples in pairs
 
 
-	
+## General
 
+`interface.js`, `logic.js` and `data.js` could have been a more appropriate way to strucure the JS code. It links to the concepts we've been exploring, and it hints at the MVC (model-view-controller) pattern.
 
 
 

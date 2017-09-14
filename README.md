@@ -28,6 +28,10 @@ Week 4<br>Mozfest |
 [Friday<br>25.11](sessions/07)| Tutorials on *Filtr Findr* | Prepare summative (tweak your work) |
 [Friday<br>02.12](sessions/08)| **Summative presentations** 
 
+  
+
+
+
 
 # Project
 

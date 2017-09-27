@@ -23,24 +23,20 @@ In particular, you will:
 
 When | In class | Homework | Blog
 ---- | -------- | -------- | ----
-[Tuesday<br>03.10](sessions/01)| <ul><li>Welcome <li>How do you design a workshop? | Peer learning research: choose a topic to research and teach next week (teams of ~3) | Analyse your favourite apps
-[Tuesday<br>17.10](sessions/02)| <ul><li>Peer learning <li>Workshop: data and APIs | Codewars kata | *Filtr Findr* brain*storming*
-[Tuesday<br>24.10](sessions/03)| <ul><li>Brain*swarming* <li>Workshop: design your own database<li>Codewars kata | Prepare formative | The best interface is no interface
-Week 4<br>Mozfest | Workshop faciliation!
-[Tuesday<br>31.10](sessions/04)| **Formative presentations** | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Reflection blog
-[Tuesday<br>07.11](sessions/05)| <ul><li>Workshop: plotting data on a map <li>Tutorials on *Filtr Findr* | <ul><li>Peer learning research <li>Work on *Filtr Findr* | WTF is an API?
-[Tuesday<br>21.11](sessions/06)| <ul><li>Peer learning <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Lessons from the *story* of your project
-[Tuesday<br>05.11](sessions/07)| Tutorials on *Filtr Findr* | Prepare summative (tweak your work) |
-[Tuesday<br>12.12](sessions/08)| **Summative presentations** 
-
-
-
-
+[Tuesday<br>03.10](sessions/01)| <ul><li>Welcome <li>How do you design a workshop? | TBA | TBA
+[Tuesday<br>17.10](sessions/02)| <ul><li>Peer learning <li>Workshop: data and APIs | TBA | TBA
+[Tuesday<br>24.10](sessions/03)| Formative presentations | Tweak workshop design | TBA
+28.10 | Workshop faciliation! | | TBA
+[Tuesday<br>31.10](sessions/04)| TBA | TBA | TBA
+[Tuesday<br>07.11](sessions/05)| TBA | TBA |TBA
+[Tuesday<br>21.11](sessions/06)| TBA | TBA | TBA
+[Tuesday<br>05.11](sessions/07)| TBA | | TBA
+[Tuesday<br>12.12](sessions/08)| **Summative presentations**
 
 
 # Project
 
-### Part 1: Design and facilate a workshop at the Mozilla Festival where you can test your prototypes
+### Part 1: Design and facilitate a workshop at the Mozilla Festival where you can test your prototypes
 
 ### Part 2: Bring your prototypes to life with code
 
@@ -64,22 +60,9 @@ By the end of this course, you will be able to:
 * **Document** your design and development process, from the exploration of ideas to their practical implementation. Including *successes* and *failures*.
 * **Communicate** your ideas both technically and in an engaging way.
 
-<!--
-* Use the Git version-control system (through GitHub) to **collaborate** with your team and **back-up** your project files.
-* Identify **bugs** (unexpected behaviours in apps or code errors) using tools to *inspect* apps and come up with possible explanations.
-* Create **proof-of-concept prototypes** for Web apps, which manipulate data from online databases and/or **APIs**.
-* Discuss **app ideas** in terms of *interface*, *logic* and *data* with designers and developers.
-* **Visualise interaction flows** with analog (paper) and digital tools.
-* Break down **behaviour** (including human behaviour) into *algorithms*, that is step-by-step instructions that can be coded.  
-* Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*.
-* Understand how **data APIs** work (HTTP requests, API keys, URL parameters) and hook up one (or more) APIs to your Web application.
-* Critically analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
--->
-
-
 # Rules of the road
 
-* **Be present**. If you happen to be late or absent, make sure you email me about it before a session starts. We'll deduct 2% from your grade for each uncommunicated tardiness or absence (aka the *2% Tardiness Tax*).
+* **Be present**. If you happen to be late or absent, make sure you email me about it before a session starts. 
 * **Participate** in class debates and workshops. We'll make sure that your ideas have space to be heard and that nobody makes you feel uncomfortable about sharing them.
 * **Present** your work during formative and summative assessments. If you can't make it those days then you'll record your presentation and upload it to YouTube (or similar).
 * **Be responsible** for what happens in class. Organise with your peers to get class information and material that you may have missed.

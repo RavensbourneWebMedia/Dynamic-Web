@@ -1,12 +1,12 @@
 ### During this course you will learn how to:
-* Design and facilitate workshops 
-* Test your protypes with users 
-* mash up Web technologies to make tools (aka *apps*) that everyone can use. 
+* Design and facilitate workshops
+* Test your protypes with users
+* mash up Web technologies to make tools (aka *apps*) that everyone can use.
 
 In particular, you will:
 
-* Learn how to design a workshop 
-* Become familiar with facilitating a workshop 
+* Learn how to design a workshop
+* Become familiar with facilitating a workshop
 * Get familiar with the principles of programming, putting these into practice with **JavaScript**
 * Research and use code libraries (such as **jQuery**) and integrate them in your project
 * Develop your **computational thinking** skills with weekly coding challenges
@@ -21,19 +21,19 @@ In particular, you will:
 
 # Plan
 
-When | In class | Homework | Blog 
+When | In class | Homework | Blog
 ---- | -------- | -------- | ----
 [Tuesday<br>03.10](sessions/01)| <ul><li>Welcome <li>How do you design a workshop? | Peer learning research: choose a topic to research and teach next week (teams of ~3) | Analyse your favourite apps
 [Tuesday<br>17.10](sessions/02)| <ul><li>Peer learning <li>Workshop: data and APIs | Codewars kata | *Filtr Findr* brain*storming*
 [Tuesday<br>24.10](sessions/03)| <ul><li>Brain*swarming* <li>Workshop: design your own database<li>Codewars kata | Prepare formative | The best interface is no interface
-Week 4<br>Mozfest | Workshop faciliation! 
-[Tuesday<br>31.10](sessions/04)| **Formative presentations** | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Reflection blog 
+Week 4<br>Mozfest | Workshop faciliation!
+[Tuesday<br>31.10](sessions/04)| **Formative presentations** | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Reflection blog
 [Tuesday<br>07.11](sessions/05)| <ul><li>Workshop: plotting data on a map <li>Tutorials on *Filtr Findr* | <ul><li>Peer learning research <li>Work on *Filtr Findr* | WTF is an API?
 [Tuesday<br>21.11](sessions/06)| <ul><li>Peer learning <li>Tutorials on *Filtr Findr* | <ul><li>Codewars kata <li>Work on *Filtr Findr* | Lessons from the *story* of your project
 [Tuesday<br>05.11](sessions/07)| Tutorials on *Filtr Findr* | Prepare summative (tweak your work) |
-[Friday<br>12.12](sessions/08)| **Summative presentations** 
+[Tuesday<br>12.12](sessions/08)| **Summative presentations** 
 
-  
+
 
 
 
@@ -42,7 +42,7 @@ Week 4<br>Mozfest | Workshop faciliation!
 
 ### Part 1: Design and facilate a workshop at the Mozilla Festival where you can test your prototypes
 
-### Part 2: Bring your prototypes to life with code 
+### Part 2: Bring your prototypes to life with code
 
 This **individual project** is about using code and data to create a helpful experience for a community of people.
 
@@ -71,7 +71,7 @@ By the end of this course, you will be able to:
 * Discuss **app ideas** in terms of *interface*, *logic* and *data* with designers and developers.
 * **Visualise interaction flows** with analog (paper) and digital tools.
 * Break down **behaviour** (including human behaviour) into *algorithms*, that is step-by-step instructions that can be coded.  
-* Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*. 
+* Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*.
 * Understand how **data APIs** work (HTTP requests, API keys, URL parameters) and hook up one (or more) APIs to your Web application.
 * Critically analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
 -->

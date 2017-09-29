@@ -1,9 +1,9 @@
 # Week 1
 
-### Today, Friday 7th October 2016
+### Today, Tuesday 3rd October 2017
 
 1. [Welcome back](#welcome) :)
-* What are [apps](#what-is-an-app)? Key concepts: interface, data and logic 
+* What are [apps](#what-is-an-app)? Key concepts: interface, data and logic
 * Project: [Filtr Findr](#your-brief)
 * [Workshop](#workshop): HTML + CSS + JS recap, while building the `app template`
 
@@ -13,11 +13,11 @@
 # Welcome
 
 1. [What is this course about?](../../README.md)
-* [What's the plan?](../../README.md#plan) 
+* [What's the plan?](../../README.md#plan)
 * [What can you learn?](../../README.md#learning-goals)
 * [Rules of the road](../../README.md#rules-of-the-road)
 * Keeping a **journal** to record your creative process is extremely important. Don't let your ideas and thoughts fade away! Think of your blog as your *digital sketchbook* (more on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging)). We ask you to blog regularly and we'll check that you do it every week.
-* **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this unit you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
+* **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this unit you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)!
 
 
 # What is an app?
@@ -31,7 +31,7 @@ How do you explain what an app is to someone or something who's never seen/used 
 <!--
 ### Your turn
 
-Pretending one of us is an *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
+Pretending one of us is an *alien*, let's ask some obvious questions and jot down some answers and key words on post-its.
 
 If people answer with jargon, like *software* or *download*, then we ask them to explain those too to our *alien*.
 -->
@@ -65,11 +65,11 @@ Good apps do **one thing** and do it well.
 
 The parts of the app you directly interact with (touch, read, click, speak to etc.)
 
-A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work). 
+A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work).
 
 ### Data
 
-The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
+The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*).
 
 Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location coordinates apps stream...
 
@@ -90,12 +90,12 @@ Many `if {this} then {that}` blocks can build quite complex behaviours.
 
 No matter which data the app uses, its **logic** will be the same:
 
-1. **Load data** from an online database 
+1. **Load data** from an online database
 * Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
 * **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
-* Present a human-readable **output** 
+* Present a human-readable **output**
 
-All the project material is [here](../../projects/filtr-findr). 
+All the project material is [here](../../projects/filtr-findr).
 
 ### Interface
 
@@ -113,25 +113,25 @@ We'll also learn that you don't need to write all this code from scratch. There 
 
 ### Data
 
-We'll learn how to create structured data, aka a **database**. 
+We'll learn how to create structured data, aka a **database**.
 
-No scary formula or data crunching though! 
+No scary formula or data crunching though!
 
 ### Your own app
 
-In class we will demo how to build an example app, which we call the `app template`. This will happen during the first three weeks. You will then use the `app template` to build *your own* app, based on your own idea, and iterate that through the rest of the unit. 
+In class we will demo how to build an example app, which we call the `app template`. This will happen during the first three weeks. You will then use the `app template` to build *your own* app, based on your own idea, and iterate that through the rest of the unit.
 
 
 # Workshop
 
 We're going to refresh our brains and hands on how to:
 
-* Write HTML to **structure** your app interface 
+* Write HTML to **structure** your app interface
 	* Create several types of **text** (paragraphs, headings)
 	* Create **inputs** (dropdowns, buttons, text boxes)
 	* Create **links** to other Web pages
 	* Add **images**
-	 
+
 * Write CSS to **style** your app interface
 	* Design your app **typography**
 	* Set your app **colours**
@@ -181,7 +181,7 @@ It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogoge
 </section>
 ```
 
-Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. 
+Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files.
 
 > ```html
 <section>
@@ -189,9 +189,9 @@ Every `img` requires a link - either a weblink to the image or the location of t
 </section>
 ```
 
-If you're taking an image from the web you need to use the link to the image alone. 
+If you're taking an image from the web you need to use the link to the image alone.
 
-> Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "` 
+> Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "`
 
 > ```html
 <section>
@@ -247,7 +247,7 @@ It's a set of `options` that people can choose from.
 
 ### Button
 
-> Next you'll need a `Find` or `Search` button. 
+> Next you'll need a `Find` or `Search` button.
 
 > ```html
 <section>
@@ -260,7 +260,7 @@ It's a set of `options` that people can choose from.
 ### Hyperlinks
 
 You can add **hyperlinks** to our content using the `a` element.
-	
+
 ```html
 <a href="http://example.com"> the clickable text </a>
 ```
@@ -272,7 +272,7 @@ Did you know `a` is for *anchor*? :anchor:
 > ```html
 	...
 	<p>Made with love by <a href="http://example.com"> Your Name</a></p>
-</body>	
+</body>
 ```
 
 ## Styling
@@ -291,7 +291,7 @@ You can have more than just one CSS file, and it's good practice to work on seve
 
 You use CSS to style HTML.
 
-CSS looks and works differently than HTML. 
+CSS looks and works differently than HTML.
 
 ```css
 selector
@@ -336,13 +336,13 @@ p
 > * change the `color` of your `h1` or `h2` elements
 > * align some elements to the `center` (*google* how to do it)
 > * hide some elements
-> * change the `background-color` of the whole page 
+> * change the `background-color` of the whole page
 
 > What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
 
-### Search for solutions! 
+### Search for solutions!
 
-Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately. 
+Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately.
 
 **All the answers can be found on the Web! As coders, we must get used to searching online for solutions.**
 
@@ -360,9 +360,9 @@ You can also play with this code and change the way your favourite websites look
 
 ### Fonts
 
-Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout. 
+Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout.
 
-> You can grab a free **font** from [Google Fonts](https://fonts.google.com): 
+> You can grab a free **font** from [Google Fonts](https://fonts.google.com):
 
 > 1. Pick a typeface you like
 > * Click on the red `+` button
@@ -376,9 +376,9 @@ Text is the major carrier of information on an app, so it's good practice to sta
 		...
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/main.css">
-	</head>	
+	</head>
 	```
-> * In `style.css`, define the font for the `body` element (all other elements will inherit it). 
+> * In `style.css`, define the font for the `body` element (all other elements will inherit it).
 
 >	```css
 body
@@ -388,10 +388,10 @@ body
 ```
 
 We're using the font *Lato* as an example, but you can pick **whichever font** you like and change your CSS code accordingly. There are 700+ fonts available on Google Fonts!
-	
+
 Then you can set **more specific rules** for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
-	
-* `font-family` 
+
+* `font-family`
 * `font-size`
 * `font-weight`
 * `font-style`
@@ -401,10 +401,10 @@ Then you can set **more specific rules** for headings, paragraphs and bold eleme
 * `text-align`
 * `text-decoration`
 * `text-transform`
-* `text-indent`	
+* `text-indent`
 
 > `font-family`, `font-size` and `color` are a great place to start!
-	
+
 ### Background images
 
 You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
@@ -436,7 +436,7 @@ html
 
 By default background-images *tile*, but we want them to take up the whole available screen space, without losing their aspect ratio (no squashing). 
 
-We can achieve that with `background-size`. This property can take various values: pixel sizes, percentages, and then a couple of interesting keywords. 
+We can achieve that with `background-size`. This property can take various values: pixel sizes, percentages, and then a couple of interesting keywords.
 
 * `contain` will scale the image so as to be as large as possible providing that it is **contained** within the background positioning area. 
 * `cover` instead, will scale the image, this time to be as large as possible so that the background positioning area is completely **covered** by the background image.
@@ -449,7 +449,7 @@ html
 	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
  	background-size: cover;
 }
-```	
+```
 
 Now the image *covers* the content of your app, ie the `body` and you may have noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
 
@@ -471,16 +471,16 @@ To style your dropdown, you first need to know how it's called in HTML: `select`
 > ```css
 select
 {
-	background-color: red; 
+	background-color: red;
 }
 ```
 
-This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour. 
+This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour.
 
 > ```css
 select
 {
-	background-color: red; 
+	background-color: red;
 	color: white;
 }
 ```
@@ -499,22 +499,22 @@ select
 
 ### Button
 
-> Add a new CSS block that targets the `button` 
+> Add a new CSS block that targets the `button`
 
 > ```css
 button
 {
 	border: none;
-	background-color: red; 
+	background-color: red;
 	cursor: pointer;
 }
 ```
 
-> Change the `color` to match your design. 
+> Change the `color` to match your design.
 
 It's good practice to style all *interactive* interface elements the same **colour and prominent**.
 
-Now you can apply some of the styles from the dropdown to the `button`. 
+Now you can apply some of the styles from the dropdown to the `button`.
 
 > How do you make **rounded corners**? With `border-radius`.
 
@@ -538,11 +538,11 @@ button
 
 ### Button states
 
-As an interactive element, a `button` should respond to user interactions, through its look & feel. 
+As an interactive element, a `button` should respond to user interactions, through its look & feel.
 
 For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
 
-> Add a new CSS block that targets the `hover` state of your `button` 
+> Add a new CSS block that targets the `hover` state of your `button`
 
 > ```css
 button:hover
@@ -573,14 +573,14 @@ button
 So far we've styled individual elements like `a`, `img`, `select` and `button`. It's time to look at the bigger picture. Our design has a couple of issues:
 
 1. Texts over the background image are not *legible*.
-* On large screens, your app looks *odd*. 
+* On large screens, your app looks *odd*.
 
 To address these, we can add a semi-transparent background that will focus people's attention to where they should read and click.
 
 > Create a new CSS rule for `section` and give it a `background-color`.
 
 > ```css
-section 
+section
 {
 	background: rgba(255,255,255,0.6);
 	padding: 20px;
@@ -592,7 +592,7 @@ The CSS above will add a white semi-transparent background to the `section` and 
 It still looks *odd* on large screens though.
 
 > ```css
-section 
+section
 {
 	...
 	max-width: 500px;
@@ -600,15 +600,15 @@ section
 }
 ```
 
-`max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
+`max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre.
 
 There's much more to responsive design than this, but these quick tweaks will do for now.
 
 ## Making a list
 
-At the moment your interface features **input** elements and some text. 
+At the moment your interface features **input** elements and some text.
 
-What about the **output** elements? 
+What about the **output** elements?
 
 <!-- In other words, how your interface would display a **list of results** from the database. -->
 
@@ -633,7 +633,7 @@ So, we will mock up a **list** of results (people in our *community skill-swap* 
 
 Think about what you want your search results to display. For example we could have an image `img`, a heading `h2` and a short paragraph `p`.
 
-> Inside the `li` put some *placeholder* content. 
+> Inside the `li` put some *placeholder* content.
 
 >	```html
 <ul>
@@ -652,18 +652,18 @@ Think about what you want your search results to display. For example we could h
 
 A couple of list items will give us an idea of how your interface will display search results.
 
-We can now **style** these. 
+We can now **style** these.
 
 For example, how can we remove the *bullet points* from the list?
 
-> In `main.css` select the list `ul` and define its style. 
+> In `main.css` select the list `ul` and define its style.
 
 > ```css
 ul
 {
 	list-style: none;
 }
-``` 
+```
 
 In CSS you can select elements **nested** inside other elements like this
 
@@ -673,16 +673,16 @@ li img
 	width: 50px;
 }
 ```
-	
+
 The rule above will select all images `img` inside list items `li`.
 
-Confused? Play [CSS Diner flukeout.github.io](http://flukeout.github.io), an online game that teaches you **CSS selectors**! 
+Confused? Play [CSS Diner flukeout.github.io](http://flukeout.github.io), an online game that teaches you **CSS selectors**!
 
-> Go ahead and style the list and its components. 
-	
-> Remember, if you don't know how to style something, Google may have the answers! 
+> Go ahead and style the list and its components.
 
-When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve. 
+> Remember, if you don't know how to style something, Google may have the answers!
+
+When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve.
 
 For example `css how to round the corners of a button`.
 
@@ -691,7 +691,7 @@ For example `css how to round the corners of a button`.
 Our `app template` will have two sections:
 
 1. **Home** section with dropdown menu, `Find` button and search results
-* **Details** section for each item in the search results 
+* **Details** section for each item in the search results
 
 #### The `#home` section
 
@@ -705,7 +705,7 @@ You've already created two separate `section`s inside your HTML. One of those se
 <section id="home">
 	...
 </section>
-``` 
+```
 
 #### The `#details` section
 
@@ -716,13 +716,13 @@ Underneath the `<section id="home"> ... </section>` you should already have an e
 >```html
 <section id="details">
 </section>
-``` 
+```
 
 > Inside `<section id="details"> ... </section>` create a new `<div id="person"></div>`. This will be the *details* screen, where a selected person's profile will be displayed.
 
 In the `#home` section you created an unordered list `ul` with list items inside `li`. Within those you put an image `img`, a heading 2 `h2` and a paragraph `p`.
 
-We're going to use that `img`, `h2` and `p` in `#details`. 
+We're going to use that `img`, `h2` and `p` in `#details`.
 
 > Copy the `img`, `h2` and `p` from the `li` in `#home` and paste them inside `<div id="person"> </div>` like so
 
@@ -739,18 +739,18 @@ We're going to use that `img`, `h2` and `p` in `#details`.
 	</div>
 </section>
 ```
-   
+
 Your users may want to move back and forth between `#home` and `#details`. For that you'll need a `Back` button!
- 
+
 > Add in `<a id="back">Back</a>` above `<div id="person">`
 
 > ```html
 <section id="details">
 	<a id="back">Back</a>
-	<div id="person"> 
+	<div id="person">
  	...
-``` 
-	
+```
+
 Your users will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Matteo</a>`
 
 Your `<section id="details"></section>` will look something like this:
@@ -804,7 +804,7 @@ Your `<section id="details"></section>` will look something like this:
 
 * Make the app look proper on a phone. Google `how to stop phone zooming out pages`
 
-* Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
+* Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/)
 
 -->
 
@@ -819,7 +819,7 @@ To set things in motion, to have a truly interactive experience, we need another
 
 ##### **HTML** → content and structure  
 
-##### **CSS** → style and design 
+##### **CSS** → style and design
 
 ##### **JS** → behaviour and logic
 
@@ -835,7 +835,7 @@ The [first version of jQuery](http://ejohn.org/files/jquery-original.html) was w
 
 > Code libraries are **collections of pre-written functions** which you use to avoid re-writing the same code over and over again.   
 
-Over the years, jQuery has been peer-reviewed and enhanced by thousands of developers. It is currently the [the most popular JavaScript library](http://trends.builtwith.com/javascript) on the Web, with ~78% of the top 1 million websites using it! 
+Over the years, jQuery has been peer-reviewed and enhanced by thousands of developers. It is currently the [the most popular JavaScript library](http://trends.builtwith.com/javascript) on the Web, with ~78% of the top 1 million websites using it!
 
 And it's FREE!
 
@@ -856,22 +856,22 @@ For example, if you want to select all `h1` elements in your HTML, you can do it
 ```js
 jQuery('h1');
 // notice the lowercase j and capital Q in jQuery
-``` 
+```
 
 ...which is the equivalent of telling your browser to `select all h1 elements in the HTML`.
 
-You can then apply functions that **manipulate** those selected elements. 
+You can then apply functions that **manipulate** those selected elements.
 
 For example, if you want to hide all `h1` elements in your HTML, you can do it like this
 
 ```js
 jQuery('h1').hide();
-``` 
+```
 
 So to recap:
 
 1. Select
-* Manipulate 
+* Manipulate
 
 It's common practice to store a jQuery selection in a *variable*, and then use that variable throughout your code. That way you don't have to select the same HTML elements over and over again.
 
@@ -881,15 +881,15 @@ h1.hide();
 h1.fadeIn();
 ```
 
-Variable names are up to you, so in the example above you could call it `var heading1 = ...`, or `var my_h1 = ...` or even `var whatever = ...` 
+Variable names are up to you, so in the example above you could call it `var heading1 = ...`, or `var my_h1 = ...` or even `var whatever = ...`
 
 #### Dollar$
 
-There's a saying that goes like this: 
+There's a saying that goes like this:
 
 > A good programmer is a *lazy* programmer.
 
-In practical terms, it means that programmers really like their **shortcuts**. 
+In practical terms, it means that programmers really like their **shortcuts**.
 
 There's a shortcut for jQuery too, and it's `$`
 
@@ -897,7 +897,7 @@ There's a shortcut for jQuery too, and it's `$`
 
 #### Making stuff happen on demand
 
-Unlike HTML and CSS, JS is a *programming* language (more on that difference next week). 
+Unlike HTML and CSS, JS is a *programming* language (more on that difference next week).
 
 Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
 
@@ -911,7 +911,7 @@ var button = $('button');
 var h1 = $('h1');
 
 // when someone clicks the button, hide the h1
-button.click( function () 
+button.click( function ()
 {
 	h1.hide();
 });
@@ -926,8 +926,8 @@ button.click( function ()
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		...
 	</body>
-</html>	
-``` 
+</html>
+```
 
 ### Hide the `#details` section by default
 
@@ -948,7 +948,7 @@ The line above does two things:
 
 ### When someone clicks on the `Find` button, what happens?
 
-A lot of stuff will happen. For today, we'll start by hiding the `#home` section and showing the `#details` section. 
+A lot of stuff will happen. For today, we'll start by hiding the `#home` section and showing the `#details` section.
 
 > ```javascript
 $('button').click( function() {
@@ -966,7 +966,7 @@ $('button').click( function() {
 	...
 	...
 })
-``` 
+```
 
 1. `$('button')` selects the `Find` button.
 2. `.click( function() { ... })` says **when** the user **clicks** the selected element, *run* all the instructions inside this function.
@@ -978,9 +978,9 @@ $('#home').hide();
 $('#details').show();
 ```
 
-1. `$('#home')`: ask jQuery (`$` is a shortcut for `jQuery`) to select the element with an id `home` with 
+1. `$('#home')`: ask jQuery (`$` is a shortcut for `jQuery`) to select the element with an id `home` with
 * Apply the jQuery `hide()` function to the selection
-* `$('#details')`: select the element with an id `details` 
+* `$('#details')`: select the element with an id `details`
 * Apply the `show()` function to the selection
 
 ### When someone clicks on the `Back` button, what happens?
@@ -1001,7 +1001,7 @@ $('#back').click( function(){
 
 Next week we'll dive deeper into **JavaScript** and learn about the fundamental building blocks of **programming**.
 
-In small teams, you will research one programming concept or technique and prepare a **mini-lesson** (~15 minutes) to teach everyone else about it. 
+In small teams, you will research one programming concept or technique and prepare a **mini-lesson** (~15 minutes) to teach everyone else about it.
 
 Your mini-lesson will be **interactive**: no PowerPoint-style presentations, but instead **JavaScript demos** that everyone can follow on their computers and/or **unplugged activities**.
 
@@ -1019,7 +1019,7 @@ Ideas and resources for *unplugged activities*:
 
 * [CS Unplugged](http://csunplugged.org/activities)
 * [CODE Fundamentals Unplugged](https://code.org/curriculum/unplugged)
-* [CAS London Programming Unplugged](https://teachinglondoncomputing.org/free-workshops/programming-unplugged-programming-without-computers) 
+* [CAS London Programming Unplugged](https://teachinglondoncomputing.org/free-workshops/programming-unplugged-programming-without-computers)
 
 Ideas and resources for *JS demos*:
 
@@ -1028,18 +1028,18 @@ Ideas and resources for *JS demos*:
 * [JS for Cats](http://jsforcats.com)
 * You're welcome to scour the Web and find some more inspiration :)
 
-### Project 
+### Project
 
 Work on [*Filtr Findr*](../../projects/filtr-findr):
 
  - [ ] Create a GitHub repository for your project
  - [ ] Start jotting down ideas for your own app: how could you turn the `app template` into something related to your own interests, or the needs of a specific group of people?
 
-### Blog 
+### Blog
 
 - [ ] Analyse your favourite app in terms of [interface](#interface), [data](#data) and [logic](#logic). Some questions to help your analysis:
-	
+
 	- What *input* does the app require from you?
 	- Where does the app's *data* come from? Who creates it?
 	- What does the app do with that data (ie what's the app *logic*)?
-	- What *output* does the app produce? 
+	- What *output* does the app produce?

@@ -2,7 +2,7 @@
 
 ### Today, Friday 25th November 2016
 
-1. [Workshop](#workshop): add click functionality to the map markers 
+1. [Workshop](#workshop): add click functionality to the map markers
 * Multiple criteria for `filterAndSortList`
 * [Tutorials](#tutorials)
 
@@ -74,7 +74,7 @@ homeGoButton.click( function()
     var chosenSkill = skillsDropdown.val()
     var chosenPet = petsDropdown.val()
     console.log("You picked " + chosenSkill + " and " + chosenPet)
-    var filters = 
+    var filters =
     [
         {
             // favouritePet is a string, so we need a value
@@ -89,7 +89,7 @@ homeGoButton.click( function()
     // 2. filter+sort people by user selections
     var resultsList = filterAndSortList(peopleList, filters)
 	...
-```	
+```
 
 
 # Tutorials

@@ -31,13 +31,19 @@ There are 4 parts to the brief that you will need to answer.
 
 4. After the festival you will gather the insights and start building your ideas with advanced web technologies!
 
+Lecture
+
+In a workshop there are several different ingredients that need to be included.
+
+<img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/gamestorming2.jpg" width="900">
+
 # Workshop
 
 1. Start exploring what it means to create a workshop
 
 2. Explore the Mozilla themes in groups (Create a 5minute presentation)
 
-* What is the problem? 
+* What is the problem?
 
 * What is the need?
 

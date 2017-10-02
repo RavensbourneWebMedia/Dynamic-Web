@@ -40,7 +40,7 @@
 
 There are 4 parts to the brief that you will need to answer.
 
-1. In class you will design and make a prototype that helps to break down some of the barriers to the 5 spaces that Mozilla explores: Decentralization, Digital Inclusion, Digital Inclusion, Privacy and Security and Web Literacy. You will choose either one or two of those spaces for your prototype to tackle.
+1. In class you will design and make a prototype that helps to break down some of the barriers to the 5 spaces that Mozilla explores: Decentralization, Digital Inclusion, Digital Inclusion, Privacy and Security and Web Literacy.
 
 2. Collectively you will prepare and make a prototype web platform for the Mozilla festival that shares your concepts and ideas will the festival’s attendees.
 
@@ -71,7 +71,7 @@ When you have reached the final phase you would want to start to move towards co
 
 # Workshop
 
-1. Start exploring the Mozilla themes and understand the unmet need.
+### Start exploring the Mozilla themes and understand the unmet need.
 
 Who | What
 --- | -----------
@@ -91,11 +91,11 @@ Use design tools to articulate the problem (Create a 5minute presentation)
 
 * What is the unmet need?
 
-3. Start rapid prototyping ideas
+### Rapid prototyping ideas
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/prototypes.png" width="900">
 
-4. Workshop design
+### Workshop design
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshopdesign.png" width="900">
 

@@ -31,17 +31,34 @@ There are 4 parts to the brief that you will need to answer.
 
 4. After the festival you will gather the insights and start building your ideas with advanced web technologies!
 
-Lecture
+# Lecture
 
 In a workshop there are several different ingredients that need to be included.
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/gamestorming2.jpg" width="900">
+
+<img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/visual2.jpg" width="900">
+
+### Divergent
+
+The first phase is about opening the people minds to new possibilities and visions. You can think of this phase as the big bang! The opening is not the time for critical thinking or sceptisism; its the phase for blue-sky thinking, brainstorming, energy and optimisim.
+
+### Emergent
+
+In the second phase the energy has been set and the ideas should be flowing in the room. This is where you can test you ideas and see old things in a new light. Shift, sift and test things, and so on.
+
+### Convergent
+
+When you have reached the final phase you would want to start to move towards conclusions and decisions. This is the moment when you start to look at your feedback and ideas with a critical eye. You can not purpose every opportunities, therefore, this stage allows you to make decisions.
+
 
 # Workshop
 
 1. Start exploring what it means to create a workshop
 
 2. Explore the Mozilla themes in groups (Create a 5minute presentation)
+
+<img src="https://github.com/RavensbourneWebMedia/FinalMajorProject-/blob/2017/2018/assets%20/designkit.jpg" width="900">
 
 * What is the problem?
 
@@ -53,16 +70,18 @@ In a workshop there are several different ingredients that need to be included.
 
 ### Peer-learning research
 
+See shared PDF on Gamestorming and each group are going to cover a topic and present back your findings. The information can be found on page 15 to 26.
+
+* What did you learn from this section?
+* How will it influence your workshop?
 
 Who | What
 --- | -----------
-Will<br>Akvile | What are **algorithms**?
-Tom<br>Darren | What are **variables** and how do you use them?
-Josh<br>Dean | What are **functions** and how do you use them?
-Afsara<br>Malore | What are `if` statements (aka **conditionals**) and how do you use them?
-Francisco<br>Ajay | What are **loops** and how do you use them?
-Ben<br>Rosie | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
-Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?  
+Peyman<br>Claranz | Opening and Closing & Fire Starting
+Richardo<br>Jacob | Artifacts & Node Generation
+Muhammad<br>Emma<br>Callum| Meaninfull Space & Sketching and Model Making
+Domenic<br>Kevin | Randomness, reversal, and reframing & Improvisation
+Mayur<br>Kaleshe | Selection & Try something new
 
 
 

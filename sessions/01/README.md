@@ -93,6 +93,11 @@ Use design tools to articulate the problem (Create a 5minute presentation)
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/prototypes.png" width="900">
 
+4. Workshop design
+
+<img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshopdesign.png" width="900">
+
+
 # Homework
 
 ### Peer-learning research

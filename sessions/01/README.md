@@ -69,7 +69,7 @@ When you have reached the final phase you would want to start to move towards co
 
 # Workshop
 
-1. Start exploring the Mozilla themes.
+1. Start exploring the Mozilla themes and understand the unmet need.
 
 Who | What
 --- | -----------
@@ -79,17 +79,15 @@ Muhammad<br>Emma<br>Callum| Open Innovation
 Domenic<br>Kevin | Privacy and Security
 Mayur<br>Kaleshe | Web Literacy
 
-Create a 5minute presentation to presentation in class.
-
 Hot tip: [Start here](https://mozillafestival.org/spaces)
 
-2. Use design tools to articulate the problem (Create a 5minute presentation)
+Use design tools to articulate the problem (Create a 5minute presentation)
 
-<img src="https://github.com/RavensbourneWebMedia/FinalMajorProject-/blob/2017/2018/assets%20/designkit.jpg" width="900">
+<img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/unmetneed.png" width="900">
 
 * What is the problem?
 
-* What is the need?
+* What is the unmet need?
 
 3. Start rapid prototyping ideas
 

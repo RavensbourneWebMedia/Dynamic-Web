@@ -4,8 +4,8 @@
 
 * [Welcome back](#welcome) :)
 * How do you design and facilitate a workshop?
-* Project: The 'open' prototype (#your-brief)
-* [Workshop](#workshop):
+* Project: [The 'open' prototype] (#your-brief)
+* [Workshop](#workshop): Exploring Mozilla themes and designing workshop
 
 ### Your [homework](#homework) and [blog](#blog)!
 

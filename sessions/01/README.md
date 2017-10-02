@@ -4,12 +4,14 @@
 
 * [Welcome back](#welcome) :)
 * How do you design and facilitate a workshop?
-* Project: The 'open' app 
+* Project: The 'open' app
 * [Workshop](#workshop): Exploring Mozilla themes and designing workshop
 
 ### Your [homework](#homework) and [blog](#blog)!
 
 # Welcome
+
+<img src="https://media.giphy.com/media/qlobUUiz1sbTO/giphy.gif" width="900">
 
 1. [What is this course about?](../../README.md)
 * [What's the plan?](../../README.md#plan)

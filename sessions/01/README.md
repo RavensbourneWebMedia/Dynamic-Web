@@ -4,7 +4,7 @@
 
 * [Welcome back](#welcome) :)
 * How do you design and facilitate a workshop?
-* Project: The open protoype  and test(#your-brief)
+* Project: The 'open' prototype (#your-brief)
 * [Workshop](#workshop):
 
 ### Your [homework](#homework) and [blog](#blog)!
@@ -21,13 +21,13 @@
 **The goals for this session**
 
 * To get a broad understanding of the brief
-* To being to understand the diffrent phases in a workshop
+* To being to understand the different phases in a workshop
 * To explore the different themes from Mozilla
 * To start understanding the problem you would like to solve with your app
 
 **The questions you should be able to answer at then of this session**
 
-* When are the deadlines
+* When are the deadlines?
 * When is the Mozilla festival?
 * What is the workshop?
 * How did you feel about this session?
@@ -56,7 +56,7 @@ In a workshop there are several different ingredients that need to be included.
 
 ### Divergent
 
-The first phase is about opening the people minds to new possibilities and visions. You can think of this phase as the big bang! The opening is not the time for critical thinking or sceptisism; its the phase for blue-sky thinking, brainstorming, energy and optimisim.
+The first phase is about opening the people minds to new possibilities and visions. You can think of this phase as the big bang! The opening is not the time for critical thinking or scepticism; its the phase for blue-sky thinking, brainstorming, energy and optimism.
 
 ### Emergent
 
@@ -69,9 +69,19 @@ When you have reached the final phase you would want to start to move towards co
 
 # Workshop
 
-1. Start exploring what it means to create a workshop
+1. Start exploring the Mozilla themes.
 
-2. Explore the Mozilla themes in groups (Create a 5minute presentation)
+Who | What
+--- | -----------
+Peyman<br>Claranz | Decentralization
+Richardo<br>Jacob | Digital Inclusion
+Muhammad<br>Emma<br>Callum| Open Innovation
+Domenic<br>Kevin | Privacy and Security
+Mayur<br>Kaleshe | Web Literacy
+
+Create a 5minute presentation to present in class. 
+
+2. Use design tools to articulate the problem (Create a 5minute presentation)
 
 <img src="https://github.com/RavensbourneWebMedia/FinalMajorProject-/blob/2017/2018/assets%20/designkit.jpg" width="900">
 
@@ -104,7 +114,7 @@ Mayur<br>Kaleshe | Selection & Try something new
 
 There are 4 parts to the brief that you will need to answer.
 
-1. In class you will design and make a protoype that helps to break down some of the barriers to the 5 spaces that Mozilla explores: Decentralization	, Digital Inclusion, Digital Inclusion, Privacy and Security and Web Literacy. You will choose either one or two of those spaces for your prototype to tackle.
+1. In class you will design and make a protoype that helps to break down some of the barriers to the 5 spaces that Mozilla explores: Decentralization, Digital Inclusion, Open Innovation, Privacy and Security and Web Literacy. You will choose either one or two of those spaces for your prototype to tackle.
 
 2. Collectively you will prepare and make a prototype web platform for the Mozilla festival that shares your concepts and ideas will the festival’s attendees.
 

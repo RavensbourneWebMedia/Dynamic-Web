@@ -79,7 +79,9 @@ Muhammad<br>Emma<br>Callum| Open Innovation
 Domenic<br>Kevin | Privacy and Security
 Mayur<br>Kaleshe | Web Literacy
 
-Create a 5minute presentation to present in class. 
+Create a 5minute presentation to presentation in class.
+
+Hot tip: [Start here](https://mozillafestival.org/spaces)
 
 2. Use design tools to articulate the problem (Create a 5minute presentation)
 

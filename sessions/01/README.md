@@ -87,6 +87,8 @@ Use design tools to articulate the problem (Create a 5minute presentation)
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/unmetneed.png" width="900">
 
+[Link to PDF on unmet need](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshop-tools/7.-Unmet-Need-1.pdf)
+
 * What is the problem?
 
 * What is the unmet need?
@@ -95,10 +97,13 @@ Use design tools to articulate the problem (Create a 5minute presentation)
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/prototypes.png" width="900">
 
+[Link to PDF on protoyping ideas](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshop-tools/20.-Prototyping-Techniques-1.pdf)
+
 ### Workshop design
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshopdesign.png" width="900">
 
+[Link to PDF on workshop design](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshop-tools/16.-Jam-Designer-1.pdf)
 
 # Homework
 
@@ -134,4 +139,6 @@ There are 4 parts to the brief that you will need to answer.
 
 ### Blog
 
-What can be some of the challenges when running a workshop?
+Keeping a **journal** to record your creative process is extremely important. Don't let your ideas and thoughts fade away! Think of your blog as your *digital sketchbook* (more on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging)). We ask you to blog regularly and we'll check that you do it every week.
+
+**What can be some of the challenges when running a workshop?**

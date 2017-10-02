@@ -91,6 +91,8 @@ Use design tools to articulate the problem (Create a 5minute presentation)
 
 3. Start rapid prototyping ideas
 
+<img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/prototypes.png" width="900">
+
 # Homework
 
 ### Peer-learning research

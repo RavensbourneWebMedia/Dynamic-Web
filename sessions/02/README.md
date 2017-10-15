@@ -6,6 +6,8 @@
 2. Lets review your prototypes!
 3. Lets design the workshop together!
 
+### Your [homework](#homework) and [blog](#blog)!
+
 ### Peer-to-peer lecture
 
 Present your 5-10min lecture on the topic below.
@@ -24,9 +26,14 @@ Present your prototypes in class for feedback together first and then 1-2-1 Tuto
 
 <img src="https://i.pinimg.com/736x/22/a9/0e/22a90e03b0fc7c13d5fe957551f310b8--le-design-design-thinking.jpg" width="900">
 
-Print them out and hang it up on the wall for feedback.
+* Print them out and hang it up on the wall for feedback.
 
 ### How should we approach the design of the workshop?
+
+* How are you going to present your workshop?
+* What is going to be the icebreaker?
+* How will you collect feedback?
+* How will you conclude your workshop?
 
 <img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshopdesign.png" width="900">
 
@@ -35,4 +42,8 @@ Print them out and hang it up on the wall for feedback.
 * You need a breakdown of the flow
 * You need to have a presentation ready
 
-### Your [homework](#homework) and [blog](#blog)!
+### Homework
+
+Final tweaks on formative presentation
+
+### Blog

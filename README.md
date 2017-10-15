@@ -1,6 +1,6 @@
 ### During this course you will learn how to:
 * Design and facilitate workshops
-* Test your prototypes with users 
+* Test your prototypes with users
 * mash up Web technologies to make tools (aka *apps*) that everyone can use.
 
 In particular, you will:
@@ -23,8 +23,8 @@ In particular, you will:
 
 When | In class | Homework | Blog
 ---- | -------- | -------- | ----
-[Tuesday<br>03.10](sessions/01)| <ul><li>Welcome <li>How do you design a workshop? | TBA | TBA
-[Tuesday<br>17.10](sessions/02)| <ul><li>Peer learning <li>Workshop: data and APIs | TBA | TBA
+[Tuesday<br>03.10](sessions/01)| <ul><li>Welcome <li>How do you design a workshop? | Peer-learning  | What can be some of the challenges when running a workshop?
+[Tuesday<br>17.10](sessions/02)| <ul><li>Peer learning <li>How we do design a workshop? | Prepare for Formative | TBA
 [Tuesday<br>24.10](sessions/03)| Formative presentations | Tweak workshop design | TBA
 28.10 | Workshop faciliation! | | TBA
 [Tuesday<br>31.10](sessions/04)| TBA | TBA | TBA

@@ -20,27 +20,21 @@ Muhammad<br>Emma<br>Callum| Meaningful Space & Sketching and Model Making
 Domenic<br>Kevin | Randomness, reversal, and reframing & Improvisation
 Mayur<br>Kaleshe | Selection & Try something new
 
+# Workshop
+
 ### What is your prototypes looking like?
 
 Present your prototypes in class for feedback together first and then 1-2-1 Tutorials
-
-<img src="https://i.pinimg.com/736x/22/a9/0e/22a90e03b0fc7c13d5fe957551f310b8--le-design-design-thinking.jpg" width="900">
 
 * Print them out and hang it up on the wall for feedback.
 
 ### How should we approach the design of the workshop?
 
-* How are you going to present your workshop?
-* What is going to be the icebreaker?
+* You have 60minutes
+* What type of resources do you need?
+* How are you going to design your stand?
 * How will you collect feedback?
-* How will you conclude your workshop?
 
-<img src="https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshopdesign.png" width="900">
-
-[Link to PDF on workshop design](https://github.com/RavensbourneWebMedia/Dynamic-Web/blob/2017/resources/assets/workshop-tools/16.-Jam-Designer-1.pdf)
-
-* You need a breakdown of the flow
-* You need to have a presentation ready
 
 ### Homework
 

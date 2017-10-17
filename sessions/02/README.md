@@ -22,6 +22,10 @@ Mayur<br>Kaleshe | Selection & Try something new
 
 # Workshop
 
+**What is a prototype?**
+
+Find a defintion and share it with the class. 
+
 ### What is your prototypes looking like?
 
 Present your prototyped ideas in class for feedback together first and then 1-2-1 Tutorials

@@ -41,3 +41,5 @@ Present your prototypes in class for feedback together first and then 1-2-1 Tuto
 Final tweaks on formative presentation
 
 ### Blog
+
+Why is it important that we prototype our ideas and test it with users? 

@@ -2,8 +2,6 @@
 
 ### Today, Tuesday 17th October 2017
 
-<img src="https://media.giphy.com/media/ZJ8PyjjxwnWMg/giphy.gif" width="900">
-
 1. [Peer learning](#peer-learning)
 2. What is your prototypes looking like?
 3. How should we approach the design of the workshop?

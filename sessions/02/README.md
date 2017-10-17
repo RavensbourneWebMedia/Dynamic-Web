@@ -3,8 +3,8 @@
 ### Today, Tuesday 17th October 2017
 
 1. [Peer learning](#peer-learning)
-2. Lets review your prototypes!
-3. Lets design the workshop together!
+2. What is your prototypes looking like?
+3. How should we approach the design of the workshop?
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -24,7 +24,7 @@ Mayur<br>Kaleshe | Selection & Try something new
 
 ### What is your prototypes looking like?
 
-Present your prototypes in class for feedback together first and then 1-2-1 Tutorials
+Present your prototyped ideas in class for feedback together first and then 1-2-1 Tutorials
 
 * Print them out and hang it up on the wall for feedback.
 
@@ -35,11 +35,10 @@ Present your prototypes in class for feedback together first and then 1-2-1 Tuto
 * How are you going to design your stand?
 * How will you collect feedback?
 
-
 ### Homework
 
 Final tweaks on formative presentation
 
 ### Blog
 
-Why is it important that we prototype our ideas and test it with users? 
+Why is it important that we prototype our ideas and test it with users?

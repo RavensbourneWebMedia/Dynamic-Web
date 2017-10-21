@@ -341,8 +341,8 @@ Text is the major carrier of information on an app, so it's good practice to sta
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	```
-> * In `style.css`, define the font for the `body` element (all other elements will inherit it).
+```
+> In `style.css`, define the font for the `body` element (all other elements will inherit it).
 
 ```css
 body

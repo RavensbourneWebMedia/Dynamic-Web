@@ -250,3 +250,121 @@ There's a `link` in the `head` of your app which points to a CSS file called **m
 ```
 
 You can have more than just one CSS file, and it's good practice to work on several small files rather than one long document you may get lost into.
+
+### CSS basics
+
+You use CSS to style HTML.
+
+CSS looks and works differently than HTML.
+
+```css
+selector
+{
+	property: value;
+	property: value;
+}
+```
+
+The part before the curly brackets `{` and `}` is the **selector**. This ***selects* the element** from your HTML document.***
+
+In CSS you can select multiple HTML elements in one go.
+
+For example, to select all paragraphs you can write
+
+```css
+p
+{
+	/* your styles for paragraph here */
+}
+```
+
+CSS **properties** define how HTML elements are displayed.
+
+The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
+
+For example ...
+
+```css
+p
+{
+	color: green;
+}
+```
+
+... will turn *every* paragraph in your HTML green.
+
+### Play around a bit
+
+> Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
+
+> * change the `color` of your `h1` or `h2` elements
+> * align some elements to the `center` (*google* how to do it)
+> * hide some elements
+> * change the `background-color` of the whole page
+
+> What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
+
+### Search for solutions!
+
+Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately.
+
+**All the answers can be found on the Web! As coders, we must get used to searching online for solutions.**
+
+### Inspect websites you like
+
+Do you remember how to see the code behind every site on the Web? You can use the **Web Inspector** to do this. It's like x-ray specs for websites.
+
+> Go to a website (any website) and right-click anywhere on that page, then select `Inspect` (or `Inspect Element` in some browsers).
+
+On the **left panel** of the `Elements` tab you can see all the HTML code for the page you're inspecting. By clicking on an HTML element you'll reveal all the CSS applied to it, on the **right panel**.
+
+You can also play with this code and change the way your favourite websites look (don't worry, your changes won't affect how other people are experiencing that site). :scream:
+
+> Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
+
+### Fonts
+
+Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout.
+
+> You can grab a free **font** from [Google Fonts](https://fonts.google.com):
+
+> 1. Pick a typeface you like
+> * Click on the red `+` button
+> * Follow the instructions in the dark popup at the bottom of the page (where it says `1 Family Selected`)
+> * Copy the `link` code for it and paste it in your app `head` in Thimble. 
+
+>	Where? Before `main.css`
+
+```html
+	<head>
+		...
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	```
+> * In `style.css`, define the font for the `body` element (all other elements will inherit it).
+
+```css
+body
+{
+	font-family: 'Lato', sans-serif;
+}
+```
+
+We're using the font *Lato* as an example, but you can pick **whichever font** you like and change your CSS code accordingly. There are 700+ fonts available on Google Fonts!
+
+Then you can set **more specific rules** for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
+
+* `font-family`
+* `font-size`
+* `font-weight`
+* `font-style`
+* `line-height`
+* `letter-spacing`
+* `word-spacing`
+* `text-align`
+* `text-decoration`
+* `text-transform`
+* `text-indent`
+
+> `font-family`, `font-size` and `color` are a great place to start!

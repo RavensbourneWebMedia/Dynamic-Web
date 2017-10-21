@@ -368,3 +368,284 @@ Then you can set **more specific rules** for headings, paragraphs and bold eleme
 * `text-indent`
 
 > `font-family`, `font-size` and `color` are a great place to start!
+
+### Background images
+
+You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
+
+> In your `main.css` create a new `background-image` rule for `html`
+
+```css
+html
+{
+	background-image: url(  );
+}
+```
+
+You can use your own image files (put them inside the `img` folder) or use images from the Web (provided they're licensed for re-use).
+
+For now, we'll use [unsplash.com](https://unsplash.com), where you can find beautiful, high-res pictures that are free to use for *whatever* purpose you want. Amazing! Read their [licence](https://unsplash.com/license) if you don't believe me :)
+
+> 1. Find an image you like on [unsplash.com](https://unsplash.com)
+> * Click on the `↓` (Download) button on the bottom-right corner of the picture. This will open a new browser tab showing your chosen picture only.
+> * **Copy** the address (URL) of that image. It starts with `https://images.unsplash.com` and it's quite long.
+> * **Paste** it in your `main.css` inside the `body` `background-image` rule like so
+
+```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+}
+```
+
+By default background-images *tile*, but we want them to take up the whole available screen space, without losing their aspect ratio (no squashing). 
+
+We can achieve that with `background-size`. This property can take various values: pixel sizes, percentages, and then a couple of interesting keywords.
+
+* `contain` will scale the image so as to be as large as possible providing that it is **contained** within the background positioning area. 
+* `cover` instead, will scale the image, this time to be as large as possible so that the background positioning area is completely **covered** by the background image.
+
+> Add `background-size: cover;` to the `html` rule.
+
+```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+ 	background-size: cover;
+}
+```
+
+Now the image *covers* the content of your app, ie the `body` and you may have noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
+
+```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+ 	background-size: cover;
+ 	background-attachment: fixed;
+}
+```  
+
+### Dropdown
+
+To style your dropdown, you first need to know how it's called in HTML: `select`
+
+> In `main.css` add a new CSS block
+
+```css
+select
+{
+	background-color: red;
+}
+```
+
+This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour.
+
+```css
+select
+{
+	background-color: red;
+	color: white;
+}
+```
+
+Currently the dropdown looks too small and its text is not **comfortable to read**. How do you fix that?
+
+```css
+select
+{
+	...
+	font-size: 200%;
+}
+```
+
+> Adjust the `font-size` to suit your app content.
+
+### Button
+
+> Add a new CSS block that targets the `button`
+
+```css
+button
+{
+	border: none;
+	background-color: red;
+	cursor: pointer;
+}
+```
+
+> Change the `color` to match your design.
+
+It's good practice to style all *interactive* interface elements the same **colour and prominent**.
+
+Now you can apply some of the styles from the dropdown to the `button`.
+
+> How do you make **rounded corners**? With `border-radius`.
+
+```css
+button
+{
+	...
+	border-radius: 10px;
+}
+```
+
+Nice. It looks a bit squished though. We can use `padding` to add some space between the button text and its border.
+
+```css
+button
+{
+	...
+  	padding: 10px;
+}
+```
+
+### Button states
+
+As an interactive element, a `button` should respond to user interactions, through its look & feel.
+
+For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
+
+> Add a new CSS block that targets the `hover` state of your `button`
+
+```css
+button:hover
+{
+	color: black;
+}
+```
+
+Now when you roll over the button, its text will turn black.
+
+### Smooth transitions
+
+Currently the text colour flashes from the normal state to the `hover` state.
+
+> You can make that transition smooth using the `transition` CSS property
+
+```css
+button
+{
+	transition: 0.6s;
+}
+```
+
+`s` stands for seconds.
+
+### Responsive design
+
+So far we've styled individual elements like `a`, `img`, `select` and `button`. It's time to look at the bigger picture. Our design has a couple of issues:
+
+1. Texts over the background image are not *legible*.
+* On large screens, your app looks *odd*.
+
+To address these, we can add a semi-transparent background that will focus people's attention to where they should read and click.
+
+> Create a new CSS rule for `section` and give it a `background-color`.
+
+```css
+section
+{
+	background: rgba(255,255,255,0.6);
+	padding: 20px;
+}
+```
+
+The CSS above will add a white semi-transparent background to the `section` and a `20px` padding around its content, making it all more *legible*.
+
+It still looks *odd* on large screens though.
+
+```css
+section
+{
+	...
+	max-width: 500px;
+ 	margin: auto;
+}
+```
+
+`max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre.
+
+There's much more to responsive design than this, but these quick tweaks will do for now.
+
+## Making a list
+
+At the moment your interface features **input** elements and some text.
+
+What about the **output** elements?
+
+<!-- In other words, how your interface would display a **list of results** from the database. -->
+
+It's common practice to **mock up** interfaces with *fake data*, and then hook them up with *real data*.
+
+So, we will mock up a **list** of results (people in our *community skill-swap* app example) using HTML and CSS. In the next weeks we'll learn how to populate that list with real data using JS.
+
+> In `index.html` create an **unordered list `ul` under the `button`**
+
+```html
+<ul>
+</ul>
+```
+
+> Inside the `ul` create a **list item `li`**
+
+```html
+<ul>
+	<li></li>
+</ul>
+```
+
+Think about what you want your search results to display. For example we could have an image `img`, a heading `h2` and a short paragraph `p`.
+
+> Inside the `li` put some *placeholder* content.
+
+```html
+<ul>
+	<li>
+		<img src="http://api.randomuser.me/portraits/women/27.jpg">
+		<h2>Jo</h2>
+		<p>I like coding and pizza</p>
+	</li>
+	<li>
+		<img src="http://api.randomuser.me/portraits/men/33.jpg">
+		<h2>Mo</h2>
+		<p>I like cats and plants</p>
+	</li>
+</ul>
+```
+
+A couple of list items will give us an idea of how your interface will display search results.
+
+We can now **style** these.
+
+For example, how can we remove the *bullet points* from the list?
+
+> In `main.css` select the list `ul` and define its style.
+
+```css
+ul
+{
+	list-style: none;
+}
+```
+
+In CSS you can select elements **nested** inside other elements like this
+
+```css
+li img
+{
+	width: 50px;
+}
+```
+
+The rule above will select all images `img` inside list items `li`.
+
+Confused? Play [CSS Diner flukeout.github.io](http://flukeout.github.io), an online game that teaches you **CSS selectors**!
+
+> Go ahead and style the list and its components.
+
+> Remember, if you don't know how to style something, Google may have the answers!
+
+When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve.
+
+For example `css how to round the corners of a button`.

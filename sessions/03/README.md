@@ -730,3 +730,187 @@ Your `<section id="details"></section>` will look something like this:
 	</div>
 </section>
 ```
+
+## Meet JavaScript
+
+So far we learned (or rather recapped) how to build interfaces using **HTML** + **CSS**.
+
+Your app interface, despite being very stylish, doesn't do much (yet).
+
+To set things in motion, to have a truly interactive experience, we need another language: **JavaScript**.
+
+##### **HTML** → content and structure  
+
+##### **CSS** → style and design
+
+##### **JS** → behaviour and logic
+
+We'll have a proper dive into JS next week. For today we'll ease into it using one of the most popular JavaScript tools: **jQuery**.   
+
+### Meet jQuery
+
+![](assets/john-resig.jpg)
+
+
+The [first version of jQuery](http://ejohn.org/files/jquery-original.html) was written in 2006 by a guy called John Resig. He noticed how he was using the same JS functions over and over, across different projects. So he put together a JS toolkit, aka a *library*, and since it was working well for him, he decided to share it with the NYC Web dev community, and then with the rest of the WWW.
+
+> Code libraries are **collections of pre-written functions** which you use to avoid re-writing the same code over and over again.   
+
+Over the years, jQuery has been peer-reviewed and enhanced by thousands of developers. It is currently the [the most popular JavaScript library](http://trends.builtwith.com/javascript) on the Web, with ~78% of the top 1 million websites using it!
+
+And it's FREE!
+
+[![](assets/jQuery.png)](https://jquery.com)
+
+#### What is jQuery for?
+
+jQuery makes it easy to **select** HTML elements and *manipulate* them, for example hiding, showing, moving around and changing the content of a bunch of HTML elements.
+
+<!-- You may hear high-brow geeks say that `jQuery is a DOM manipulation library`. -->
+
+#### How does jQuery work?
+
+jQuery uses CSS-like **selectors**.
+
+For example, if you want to select all `h1` elements in your HTML, you can do it like this
+
+```js
+jQuery('h1');
+// notice the lowercase j and capital Q in jQuery
+```
+
+...which is the equivalent of telling your browser to `select all h1 elements in the HTML`.
+
+You can then apply functions that **manipulate** those selected elements.
+
+For example, if you want to hide all `h1` elements in your HTML, you can do it like this
+
+```js
+jQuery('h1').hide();
+```
+
+So to recap:
+
+1. Select
+* Manipulate
+
+It's common practice to store a jQuery selection in a *variable*, and then use that variable throughout your code. That way you don't have to select the same HTML elements over and over again.
+
+```js
+var h1 = jQuery('h1');
+h1.hide();
+h1.fadeIn();
+```
+
+Variable names are up to you, so in the example above you could call it `var heading1 = ...`, or `var my_h1 = ...` or even `var whatever = ...`
+
+#### Dollar$
+
+There's a saying that goes like this:
+
+> A good programmer is a *lazy* programmer.
+
+In practical terms, it means that programmers really like their **shortcuts**.
+
+There's a shortcut for jQuery too, and it's `$`
+
+`$('h1')` achieves the same as `jQuery('h1')` and it saves you 5 key strokes! :squirrel:
+
+#### Making stuff happen on demand
+
+Unlike HTML and CSS, JS is a *programming* language (more on that difference next week).
+
+Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
+
+For example, you may want to `hide` an element when you `click` on a button. Using jQuery, you can do it like this
+
+```js
+// select the button element(s)
+var button = $('button');
+
+// select the h1 element(s)
+var h1 = $('h1');
+
+// when someone clicks the button, hide the h1
+button.click( function ()
+{
+	h1.hide();
+});
+```
+
+### Your turn
+
+> Open `index.html`. Notice that just before the **end** of the `body` there's a `script` that loads jQuery like this
+
+```html
+		...
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		...
+	</body>
+</html>
+```
+
+### Hide the `#details` section by default
+
+When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result. For now, we just want to **hide** that part of the HTML.
+
+> In `main.js` write
+
+```js
+$('#details').hide();
+```
+
+![](assets/jQuery-diagram.png)
+
+The line above does two things:
+
+1. `$('#details')`: **select** the element with `id="details"`
+* Perform the `hide()` function on that selection
+
+### When someone clicks on the `Find` button, what happens?
+
+A lot of stuff will happen. For today, we'll start by hiding the `#home` section and showing the `#details` section.
+
+```javascript
+$('button').click( function() {
+  $('#home').hide();
+  $('#details').show();
+})
+```
+
+Let's break that code down.
+
+First the outer shell:
+
+```javascript
+$('button').click( function() {
+	...
+	...
+})
+```
+
+1. `$('button')` selects the `Find` button.
+2. `.click( function() { ... })` says **when** the user **clicks** the selected element, *run* all the instructions inside this function.
+
+Now *inside* the function...
+
+```javascript
+$('#home').hide();
+$('#details').show();
+```
+
+1. `$('#home')`: ask jQuery (`$` is a shortcut for `jQuery`) to select the element with an id `home` with
+* Apply the jQuery `hide()` function to the selection
+* `$('#details')`: select the element with an id `details`
+* Apply the `show()` function to the selection
+
+### When someone clicks on the `Back` button, what happens?
+
+> See if you can integrate the code below in your `main.js`.
+
+```js
+$('#back').click( function(){   
+  $('#home').show();
+  $('#details').hide();
+});
+```

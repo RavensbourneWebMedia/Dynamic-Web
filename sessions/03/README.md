@@ -649,3 +649,84 @@ Confused? Play [CSS Diner flukeout.github.io](http://flukeout.github.io), an onl
 When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve.
 
 For example `css how to round the corners of a button`.
+
+### Sections
+
+Our `app template` will have two sections:
+
+1. **Home** section with dropdown menu, `Find` button and search results
+* **Details** section for each item in the search results
+
+#### The `#home` section
+
+Let's finish off the home section interface.
+
+You've already created two separate `section`s inside your HTML. One of those sections contains the `dropdown`, the find `button` and the results list with placeholder content inside.
+
+> Give the first `section` (which contains the `dropdown` menu) an `id="home"`
+
+```html
+<section id="home">
+	...
+</section>
+```
+
+#### The `#details` section
+
+Underneath the `<section id="home"> ... </section>` you should already have an empty `<section></section>`.
+
+> Give this `section` an `id="details"` and make some space in between the opening and closing tag.
+
+```html
+<section id="details">
+</section>
+```
+
+> Inside `<section id="details"> ... </section>` create a new `<div id="person"></div>`. This will be the *details* screen, where a selected person's profile will be displayed.
+
+In the `#home` section you created an unordered list `ul` with list items inside `li`. Within those you put an image `img`, a heading 2 `h2` and a paragraph `p`.
+
+We're going to use that `img`, `h2` and `p` in `#details`.
+
+> Copy the `img`, `h2` and `p` from the `li` in `#home` and paste them inside `<div id="person"> </div>` like so
+
+```html
+<section id="details">
+	<div id="person">
+		<img src="https://avatars1.githubusercontent.com/u/116104">
+		<h2>
+			Matteo
+		</h2>
+		<p>
+			I like code and cake
+		</p>
+	</div>
+</section>
+```
+
+Your users may want to move back and forth between `#home` and `#details`. For that you'll need a `Back` button!
+
+> Add in `<a id="back">Back</a>` above `<div id="person">`
+
+```html
+<section id="details">
+	<a id="back">Back</a>
+	<div id="person">
+ 	...
+```
+
+Your users will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Matteo</a>`
+
+Your `<section id="details"></section>` will look something like this:
+
+```html
+<section id="details">
+	<a id="back">Back</a>
+	<div id="person">
+		<img src="https://avatars3.githubusercontent.com/u/9767977">
+		<h2>Aimee</h2>
+		<p>I like code and cake</p>
+		<a class="contactButton">Contact Aimee</a>
+	</div>
+</section>
+```

@@ -8,6 +8,10 @@
 
 ### Your [homework](#homework) and [blog](#blog)!
 
+# Present your prototypes for feedback
+
+[Link to google doc](https://docs.google.com/a/rave.ac.uk/document/d/1KFKgmmzs45ES1WO8G6stgM26ZKokOYqFU5PXqMOOFRo/edit?usp=sharing)
+
 # What is an app?
 
 Let's sketch a **working definition** of *app*.
@@ -927,13 +931,13 @@ Your mini-lesson will be **interactive**: no PowerPoint-style presentations, but
 
 Who | What
 --- | -----------
-Will<br>Akvile | What are **algorithms**?
-Tom<br>Darren | What are **variables** and how do you use them?
-Josh<br>Dean | What are **functions** and how do you use them?
-Afsara<br>Malore | What are `if` statements (aka **conditionals**) and how do you use them?
-Francisco<br>Ajay | What are **loops** and how do you use them?
-Ben<br>Rosie | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
-Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?  
+Emma<br>Jacob | What are **algorithms**?
+Callum | What are **variables** and how do you use them?
+Muhammad<br>Kevin | What are **functions** and how do you use them?
+Domenic | What are `if` statements (aka **conditionals**) and how do you use them?
+Kaleshe | What are **loops** and how do you use them?
+Muhammad<br>Kevin | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
+Mayur | What is the **GeoLocation** API and how do you use it?  
 
 Ideas and resources for *unplugged activities*:
 
@@ -955,4 +959,4 @@ Ideas and resources for *JS demos*:
 	- What *input* does the app require from you?
 	- Where does the app's *data* come from? Who creates it?
 	- What does the app do with that data (ie what's the app *logic*)?
-	- What *output* does the app produce? 
+	- What *output* does the app produce?

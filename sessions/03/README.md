@@ -914,3 +914,45 @@ $('#back').click( function(){
   $('#details').hide();
 });
 ```
+
+# Homework
+
+### Peer-learning research
+
+Next week we'll dive deeper into **JavaScript** and learn about the fundamental building blocks of **programming**.
+
+In small teams, you will research one programming concept or technique and prepare a **mini-lesson** (~15 minutes) to teach everyone else about it.
+
+Your mini-lesson will be **interactive**: no PowerPoint-style presentations, but instead **JavaScript demos** that everyone can follow on their computers and/or **unplugged activities**.
+
+Who | What
+--- | -----------
+Will<br>Akvile | What are **algorithms**?
+Tom<br>Darren | What are **variables** and how do you use them?
+Josh<br>Dean | What are **functions** and how do you use them?
+Afsara<br>Malore | What are `if` statements (aka **conditionals**) and how do you use them?
+Francisco<br>Ajay | What are **loops** and how do you use them?
+Ben<br>Rosie | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
+Joe<br>Rajeev | What is the **GeoLocation** API and how do you use it?  
+
+Ideas and resources for *unplugged activities*:
+
+* [CS Unplugged](http://csunplugged.org/activities)
+* [CODE Fundamentals Unplugged](https://code.org/curriculum/unplugged)
+* [CAS London Programming Unplugged](https://teachinglondoncomputing.org/free-workshops/programming-unplugged-programming-without-computers)
+
+Ideas and resources for *JS demos*:
+
+* [Jon Duckett's *JavaScript & jQuery* book](http://javascriptbook.com) (link to PDF download in Slack `#dynamic-web`)
+* [try.jquery.com](http://try.jquery.com)
+* [JS for Cats](http://jsforcats.com)
+* You're welcome to scour the Web and find some more inspiration :)
+
+### Blog
+
+- [ ] Analyse your favourite app in terms of [interface](#interface), [data](#data) and [logic](#logic). Some questions to help your analysis:
+
+	- What *input* does the app require from you?
+	- Where does the app's *data* come from? Who creates it?
+	- What does the app do with that data (ie what's the app *logic*)?
+	- What *output* does the app produce? 

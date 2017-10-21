@@ -110,3 +110,143 @@ We're going to refresh our brains and hands on how to:
 But let's not *reinvent the wheel*. We could start from scratch, creating a new `index.html` file and laying out the bare bones of an HTML document (remember `<html>`, `<head>` and `<body>`?). Instead, we assume that you know all that already, so we'll use a **boilerplate**.
 
 > Go to [html5boilerplate.com](https://html5boilerplate.com/) and download the latest version. Then open it in your favourite code editor.
+
+### Content first, style later!
+
+It's good practice to build the **HTML** first, and then make it _stylish_ with CSS.
+
+> Open `index.html`.
+
+As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged, which we won't get into for now. Let's concentrate on crafting the skeleton of our `app template`.
+
+> Inside the `body`, remove the `<paragraph>` and put in two `<section>` elements
+
+> ```html
+<body>
+	...
+	<!-- Add your site or application content here -->
+	<section></section>
+	<section></section>
+	...
+</body>
+```
+
+### Fancy logo
+
+It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogogenerator.com) for quick and easy hipster logos :)
+
+> Take a couple of minutes to quickly make your own fancy logo.
+
+> To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
+
+> ```html
+<section>
+	<img src=" ">
+</section>
+```
+
+Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files.
+
+> ```html
+<section>
+	<img src="img/hipsterlogo.jpg">
+</section>
+```
+
+If you're taking an image from the web you need to use the link to the image alone.
+
+> Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "`
+
+> ```html
+<section>
+	<img src="http://placekitten.com/200/300">
+</section>
+```
+
+Don't worry just now if it's too big, we'll resize it later on.
+
+### Headings
+
+> Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
+
+> ```html
+<section>
+	...
+	<h1>Your app name</h2>
+	<h2>What it does</h2>
+</section>
+```
+
+### Paragraphs
+
+> Write a paragraph to explain how your app works, and what you want people to do first.  
+
+> ```html
+<section>
+	...
+	<p>Swap skills and time with people in your community!</p>
+  	<p>Just choose an activity to get started.</p>
+</section>
+```
+
+### Dropdown
+
+This is the first interactive element of your app.
+
+It's a set of `options` that people can choose from.
+
+> Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
+
+> ```html
+<section>
+	...
+	<select>
+		<option>Keep my pet</option>
+		<option>Bake a cake</option>
+		<option>Move my piano</option>
+	</select>
+	...
+</section>
+```
+
+### Button
+
+> Next you'll need a `Find` or `Search` button.
+
+> ```html
+<section>
+	...
+	<button>Find</button>
+	...
+</section>
+```
+
+### Hyperlinks
+
+You can add **hyperlinks** to our content using the `a` element.
+
+```html
+<a href="http://example.com"> the clickable text </a>
+```
+
+Did you know `a` is for *anchor*? :anchor:
+
+> Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
+
+> ```html
+	...
+	<p>Made with love by <a href="http://example.com"> Your Name</a></p>
+</body>
+```
+
+## Styling
+
+Now the stylish part: **CSS**!
+
+There's a `link` in the `head` of your app which points to a CSS file called **main.css**. This is where you add your own styles.
+
+```html
+<link rel="stylesheet" href="css/main.css">
+```
+
+You can have more than just one CSS file, and it's good practice to work on several small files rather than one long document you may get lost into.

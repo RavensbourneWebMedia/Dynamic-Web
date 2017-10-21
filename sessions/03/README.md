@@ -121,7 +121,7 @@ As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged
 
 > Inside the `body`, remove the `<paragraph>` and put in two `<section>` elements
 
-> ```html
+```html
 <body>
 	...
 	<!-- Add your site or application content here -->
@@ -139,7 +139,7 @@ It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogoge
 
 > To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
 
-> ```html
+```html
 <section>
 	<img src=" ">
 </section>
@@ -147,7 +147,7 @@ It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogoge
 
 Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files.
 
-> ```html
+```html
 <section>
 	<img src="img/hipsterlogo.jpg">
 </section>
@@ -157,7 +157,7 @@ If you're taking an image from the web you need to use the link to the image alo
 
 > Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "`
 
-> ```html
+```html
 <section>
 	<img src="http://placekitten.com/200/300">
 </section>
@@ -169,7 +169,7 @@ Don't worry just now if it's too big, we'll resize it later on.
 
 > Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
 
-> ```html
+```html
 <section>
 	...
 	<h1>Your app name</h2>
@@ -181,7 +181,7 @@ Don't worry just now if it's too big, we'll resize it later on.
 
 > Write a paragraph to explain how your app works, and what you want people to do first.  
 
-> ```html
+```html
 <section>
 	...
 	<p>Swap skills and time with people in your community!</p>
@@ -197,7 +197,7 @@ It's a set of `options` that people can choose from.
 
 > Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
 
-> ```html
+```html
 <section>
 	...
 	<select>
@@ -213,7 +213,7 @@ It's a set of `options` that people can choose from.
 
 > Next you'll need a `Find` or `Search` button.
 
-> ```html
+```html
 <section>
 	...
 	<button>Find</button>
@@ -233,7 +233,7 @@ Did you know `a` is for *anchor*? :anchor:
 
 > Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
 
-> ```html
+```html
 	...
 	<p>Made with love by <a href="http://example.com"> Your Name</a></p>
 </body>

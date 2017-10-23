@@ -25,7 +25,7 @@ When | In class | Homework | Blog
 ---- | -------- | -------- | ----
 [Tuesday<br>03.10](sessions/01)| <ul><li>Welcome <li>How do you design a workshop? | Peer-learning  | What can be some of the challenges when running a workshop?
 [Tuesday<br>17.10](sessions/02)| <ul><li>Peer learning <li>How we do design a workshop? | Prepare for Formative | Why is it important that we prototype our ideas and test it with users?
-[Tuesday<br>24.10](sessions/03)| Formative presentations and intro to HTML/CSS/JavaScript | Tweak workshop design & Peer-to-peer mini lesson | Analyse your favourite app in terms of interface, data and logic
+[Tuesday<br>24.10](sessions/03)| <ul><li>Formative presentations <li>intro to HTML/CSS/JavaScript | <ul><li>Tweak workshop design <li>Peer-to-peer mini lesson | Analyse your favourite app in terms of interface, data and logic
 28.10 | Workshop faciliation! | | What is your biggest learning so far from this project? Create your own title!
 [Tuesday<br>31.10](sessions/04)| TBA | TBA | TBA
 [Tuesday<br>07.11](sessions/05)| TBA | TBA |TBA

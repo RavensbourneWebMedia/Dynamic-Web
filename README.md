@@ -42,7 +42,7 @@ When | In class | Homework | Blog
 
 This **individual project** is about using code and data to create a helpful experience for a community of people.
 
-All the project material is [here](projects/filtr-findr).
+<!-- All the project material is [here](projects/filtr-findr). -->
 
 
 # Learning goals

@@ -712,7 +712,7 @@ We're going to use that `img`, `h2` and `p` in `#details`.
 	<div id="person">
 		<img src="https://avatars1.githubusercontent.com/u/116104">
 		<h2>
-			Matteo
+			Tor
 		</h2>
 		<p>
 			I like code and cake

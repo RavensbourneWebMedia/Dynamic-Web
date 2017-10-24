@@ -65,6 +65,19 @@ At its core, the logic building blocks of an app are statement that sound like `
 
 Many `if {this} then {that}` blocks can build quite complex behaviours.
 
+# Your brief
+
+### Make an **app** that helps **people** sort through **data** to **find** who/what they are looking for.
+
+Use the spaces from Mozilla to generate content and information.
+
+No matter which data the app uses, its **logic** will be the same:
+
+1. **Load data** from an online database
+* Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
+* **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
+* Present a human-readable **output**
+
 ### Interface
 
 Here's an initial sketch of how the app may look and work.

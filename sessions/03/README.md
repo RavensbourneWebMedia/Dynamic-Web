@@ -65,11 +65,11 @@ At its core, the logic building blocks of an app are statement that sound like `
 
 Many `if {this} then {that}` blocks can build quite complex behaviours.
 
-# Your brief
+# Your second part of the brief
 
 ### Make an **app** that helps **people** sort through **data** to **find** who/what they are looking for.
 
-Use the spaces from Mozilla to generate content and information.
+We are going to use the spaces from Mozilla, your finished prototypes to generate content and information.
 
 No matter which data the app uses, its **logic** will be the same:
 

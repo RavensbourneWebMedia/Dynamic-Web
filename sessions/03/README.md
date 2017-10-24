@@ -947,9 +947,9 @@ Who | What
 Emma<br>Jacob | What are **algorithms**?
 Callum | What are **variables** and how do you use them?
 Muhammad<br>Kevin | What are **functions** and how do you use them?
-Domenic | What are `if` statements (aka **conditionals**) and how do you use them?
+Domonic| What are `if` statements (aka **conditionals**) and how do you use them?
 Kaleshe | What are **loops** and how do you use them?
-Muhammad<br>Kevin | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
+Peyman | What is the **JavaScript Console** and how do you use it? Check out [JS for Cats](http://jsforcats.com/) for some fun ideas
 Mayur | What is the **GeoLocation** API and how do you use it?  
 
 Ideas and resources for *unplugged activities*:

@@ -20,7 +20,7 @@ In class we will demo how to build an example app, which we call the `app templa
 
 
 * 3rd of October, project start
-	* [ ] Workshop: Brainstorm ideas and begin prototype
+	* [ ] Workshop: Brainstorm ideas and begin prototype for Mozilla
 * 17th of October
 	* [ ] Workshop: Finish ideas and prototypes
 * 24th of October

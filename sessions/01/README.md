@@ -371,7 +371,7 @@ Text is the major carrier of information on an app, so it's good practice to sta
 
 >	Where? Before `main.css`
 
->	```html
+```html
 	<head>
 		...
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
@@ -380,7 +380,7 @@ Text is the major carrier of information on an app, so it's good practice to sta
 	```
 > * In `style.css`, define the font for the `body` element (all other elements will inherit it). 
 
->	```css
+```css
 body
 {
 	font-family: 'Lato', sans-serif;
@@ -635,7 +635,7 @@ Think about what you want your search results to display. For example we could h
 
 > Inside the `li` put some *placeholder* content. 
 
->	```html
+```html
 <ul>
 	<li>
 		<img src="http://api.randomuser.me/portraits/women/27.jpg">
@@ -667,7 +667,7 @@ ul
 
 In CSS you can select elements **nested** inside other elements like this
 
->	```css
+```css
 li img
 {
 	width: 50px;

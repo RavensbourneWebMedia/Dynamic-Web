@@ -1,6 +1,6 @@
 # Week 4
 
-### Today, Friday 21st October 2017
+### Today, Tuesday 31st October 2017
 
 1. [Peer learning](#peer-learning)
 * Workshop: [data and APIs](#workshop)
@@ -219,7 +219,7 @@ Let's try it out.
 
 > Call `on('child_added', ...)` function from `peopleDatabase` to load a list of items and store each one in `peopleList`:
 
-> ```js
+```js
 peopleDatabase.on('child_added', function( firebaseObject )
 {
 	var person = firebaseObject.val();

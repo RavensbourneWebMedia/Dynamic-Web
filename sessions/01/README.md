@@ -3,9 +3,9 @@
 ### Today, Friday 7th October 2016
 
 1. [Welcome back](#welcome) :)
-* What are [apps](#what-is-an-app)? Key concepts: interface, data and logic 
-* Project: [Filtr Findr](#your-brief)
-* [Workshop](#workshop): HTML + CSS + JS recap, while building the `app template`
+2. What are [apps](#what-is-an-app)? Key concepts: interface, data and logic 
+3. Project: [Filtr Findr](#your-brief)
+4. [Workshop](#workshop): HTML + CSS + JS recap, while building the `app template`
 
 ### Your [homework](#homework) and [blog](#blog)!
 
@@ -13,11 +13,11 @@
 # Welcome
 
 1. [What is this course about?](../../README.md)
-* [What's the plan?](../../README.md#plan) 
-* [What can you learn?](../../README.md#learning-goals)
-* [Rules of the road](../../README.md#rules-of-the-road)
-* Keeping a **journal** to record your creative process is extremely important. Don't let your ideas and thoughts fade away! Think of your blog as your *digital sketchbook* (more on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging)). We ask you to blog regularly and we'll check that you do it every week.
-* **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this unit you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
+2. [What's the plan?](../../README.md#plan) 
+3. [What can you learn?](../../README.md#learning-goals)
+4. [Rules of the road](../../README.md#rules-of-the-road)
+5. Keeping a **journal** to record your creative process is extremely important. Don't let your ideas and thoughts fade away! Think of your blog as your *digital sketchbook* (more on that [here](https://github.com/RavensbourneWebMedia/Blogging#why-blogging)). We ask you to blog regularly and we'll check that you do it every week.
+6. **Peer learning**: [one of the most effective ways](http://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/hattie-ranking-teaching-effects/) to learn something is to teach it to someone else. During this unit you'll be sharing your skills and knowledge in class, leading mini-tutorials and moderating debates. Starting with [your homework for next week](#peer-learning-research)! 
 
 
 # What is an app?
@@ -91,9 +91,9 @@ Many `if {this} then {that}` blocks can build quite complex behaviours.
 No matter which data the app uses, its **logic** will be the same:
 
 1. **Load data** from an online database 
-* Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
-* **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
-* Present a human-readable **output** 
+2. Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
+3. **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
+4. Present a human-readable **output** 
 
 All the project material is [here](../../projects/filtr-findr). 
 
@@ -157,7 +157,7 @@ As you can see, HTML5Boilerplate comes with a lot of handy features pre-packaged
 
 > Inside the `body`, remove the `<paragraph>` and put in two `<section>` elements
 
-> ```html
+```html
 <body>
 	...
 	<!-- Add your site or application content here -->
@@ -175,7 +175,7 @@ It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogoge
 
 > To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
 
-> ```html
+```html
 <section>
 	<img src=" ">
 </section>
@@ -183,7 +183,7 @@ It's important. I recommend [hipsterlogogenerator.com](https://www.hipsterlogoge
 
 Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. 
 
-> ```html
+```html
 <section>
 	<img src="img/hipsterlogo.jpg">
 </section>
@@ -193,7 +193,7 @@ If you're taking an image from the web you need to use the link to the image alo
 
 > Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "` 
 
-> ```html
+```html
 <section>
 	<img src="http://placekitten.com/200/300">
 </section>
@@ -205,7 +205,7 @@ Don't worry just now if it's too big, we'll resize it later on.
 
 > Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
 
-> ```html
+```html
 <section>
 	...
 	<h1>Your app name</h2>
@@ -217,7 +217,7 @@ Don't worry just now if it's too big, we'll resize it later on.
 
 > Write a paragraph to explain how your app works, and what you want people to do first.  
 
-> ```html
+```html
 <section>
 	...
 	<p>Swap skills and time with people in your community!</p>
@@ -233,7 +233,7 @@ It's a set of `options` that people can choose from.
 
 > Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
 
-> ```html
+```html
 <section>
 	...
 	<select>
@@ -249,7 +249,7 @@ It's a set of `options` that people can choose from.
 
 > Next you'll need a `Find` or `Search` button. 
 
-> ```html
+```html
 <section>
 	...
 	<button>Find</button>
@@ -269,7 +269,7 @@ Did you know `a` is for *anchor*? :anchor:
 
 > Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
 
-> ```html
+```html
 	...
 	<p>Made with love by <a href="http://example.com"> Your Name</a></p>
 </body>	
@@ -411,7 +411,7 @@ You can add images to your app via CSS. This is useful if you want to set differ
 
 > In your `main.css` create a new `background-image` rule for `html`
 
-> ```css
+```css
 html
 {
 	background-image: url(  );
@@ -427,7 +427,7 @@ For now, we'll use [unsplash.com](https://unsplash.com), where you can find beau
 > * **Copy** the address (URL) of that image. It starts with `https://images.unsplash.com` and it's quite long.
 > * **Paste** it in your `main.css` inside the `body` `background-image` rule like so
 
-> ```css
+```css
 html
 {
 	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
@@ -443,7 +443,7 @@ We can achieve that with `background-size`. This property can take various value
 
 > Add `background-size: cover;` to the `html` rule.
 
-> ```css
+```css
 html
 {
 	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
@@ -453,7 +453,7 @@ html
 
 Now the image *covers* the content of your app, ie the `body` and you may have noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
 
-> ```css
+```css
 html
 {
 	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
@@ -468,7 +468,7 @@ To style your dropdown, you first need to know how it's called in HTML: `select`
 
 > In `main.css` add a new CSS block
 
-> ```css
+```css
 select
 {
 	background-color: red; 
@@ -477,7 +477,7 @@ select
 
 This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour. 
 
-> ```css
+```css
 select
 {
 	background-color: red; 
@@ -487,7 +487,7 @@ select
 
 Currently the dropdown looks too small and its text is not **comfortable to read**. How do you fix that?
 
-> ```css
+```css
 select
 {
 	...
@@ -501,7 +501,7 @@ select
 
 > Add a new CSS block that targets the `button` 
 
-> ```css
+```css
 button
 {
 	border: none;
@@ -518,7 +518,7 @@ Now you can apply some of the styles from the dropdown to the `button`.
 
 > How do you make **rounded corners**? With `border-radius`.
 
-> ```css
+```css
 button
 {
 	...
@@ -528,7 +528,7 @@ button
 
 Nice. It looks a bit squished though. We can use `padding` to add some space between the button text and its border.
 
-> ```css
+```css
 button
 {
 	...
@@ -544,7 +544,7 @@ For example, when you roll over a button, it's good practice for it to change it
 
 > Add a new CSS block that targets the `hover` state of your `button` 
 
-> ```css
+```css
 button:hover
 {
 	color: black;
@@ -559,7 +559,7 @@ Currently the text colour flashes from the normal state to the `hover` state.
 
 > You can make that transition smooth using the `transition` CSS property
 
-> ```css
+```css
 button
 {
 	transition: 0.6s;
@@ -579,7 +579,7 @@ To address these, we can add a semi-transparent background that will focus peopl
 
 > Create a new CSS rule for `section` and give it a `background-color`.
 
-> ```css
+```css
 section 
 {
 	background: rgba(255,255,255,0.6);
@@ -591,7 +591,7 @@ The CSS above will add a white semi-transparent background to the `section` and 
 
 It still looks *odd* on large screens though.
 
-> ```css
+```css
 section 
 {
 	...
@@ -618,14 +618,14 @@ So, we will mock up a **list** of results (people in our *community skill-swap* 
 
 > In `index.html` create an **u**nordered **l**ist `ul` under the `button`
 
-> ```html
+```html
 <ul>
 </ul>
 ```
 
 > Inside the `ul` create a **l**ist **i**tem `li`
 
-> ```html
+```html
 <ul>
 	<li></li>
 </ul>
@@ -658,7 +658,7 @@ For example, how can we remove the *bullet points* from the list?
 
 > In `main.css` select the list `ul` and define its style. 
 
-> ```css
+```css
 ul
 {
 	list-style: none;
@@ -726,7 +726,7 @@ We're going to use that `img`, `h2` and `p` in `#details`.
 
 > Copy the `img`, `h2` and `p` from the `li` in `#home` and paste them inside `<div id="person"> </div>` like so
 
-> ```html
+```html
 <section id="details">
 	<div id="person">
 		<img src="https://avatars1.githubusercontent.com/u/116104">
@@ -744,7 +744,7 @@ Your users may want to move back and forth between `#home` and `#details`. For t
  
 > Add in `<a id="back">Back</a>` above `<div id="person">`
 
-> ```html
+```html
 <section id="details">
 	<a id="back">Back</a>
 	<div id="person"> 
@@ -921,7 +921,7 @@ button.click( function ()
 
 > Open `index.html`. Notice that just before the **end** of the `body` there's a `script` that loads jQuery like this
 
-> ```html
+```html
 		...
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		...
@@ -935,7 +935,7 @@ When people open the app, we don't need them to see details about a person. Late
 
 > In `main.js` write
 
-> ```js
+```js
 $('#details').hide();
 ```
 
@@ -950,7 +950,7 @@ The line above does two things:
 
 A lot of stuff will happen. For today, we'll start by hiding the `#home` section and showing the `#details` section. 
 
-> ```javascript
+```javascript
 $('button').click( function() {
   $('#home').hide();
   $('#details').show();
@@ -987,7 +987,7 @@ $('#details').show();
 
 > See if you can integrate the code below in your `main.js`.
 
-> ```js
+```js
 $('#back').click( function(){   
   $('#home').show();
   $('#details').hide();

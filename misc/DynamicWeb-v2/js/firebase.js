@@ -1,4 +1,4 @@
-
+console.log("firebase.js ready to roll!")
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDqCowWm_tfPP6BlQZIWiRCWzSwsD1dnFM",
@@ -13,6 +13,8 @@
 var database = firebase.database();
 var peopleDatabase = database.ref('people');
 var peopleList = [];
+
+console.log(peopleList);
 
 peopleDatabase.on('child_added', function( firebaseObject )
 {

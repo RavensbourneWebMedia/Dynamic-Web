@@ -1,3 +1,5 @@
+console.log("main.js ready to roll!")
+
 $('#details').hide();
 
 $('button').click( function() {

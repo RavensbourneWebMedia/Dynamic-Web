@@ -23,7 +23,6 @@ homeGoButton.click( function()
   // get user input
   var selectedOption = homeDropdown.val();
   // using jQuery val(), see http://api.jquery.com/val
-
   console.log('You picked ' + selectedOption);
   var filters = [ {key:selectedOption} ]; // array of objects
    var resultsList = filterAndSortList(peopleList, filters);

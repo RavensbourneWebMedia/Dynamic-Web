@@ -28,10 +28,10 @@
   <p>Swap skills and time with people in your community!</p>
   	<p>Just choose an activity to get started.</p>
     <select>
-		<option>Keep my pet</option>
-		<option>Bake a cake</option>
-		<option>Move my piano</option>
-	</select>
+         <option value="bakingSkills">Bake a cake</option>
+         <option value="codingSkills">Move my furniture</option>
+         <option value="diySkills">Keep my pet</option>
+    </select>
 <button>Find</button>
 <a href="http://example.com"> the clickable text </a>
 <ul>
@@ -65,6 +65,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+
+        <script src="js/filter.js"></script>
+        <script src="js/show.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -74,5 +77,10 @@
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
         <p>Made with love by <a href="http://example.com"> Your Name</a></p>
+
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script src="js/firebase.js"></script>
+
+
     </body>
 </html>

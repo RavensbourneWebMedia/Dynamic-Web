@@ -125,9 +125,10 @@
 
   Users should be able to click through and see details about the person (or *thing*) they clicked on.
 
-	> In 'index.html' we need to create a  ```#results ``` section to make our app work properly. Therefore, we need add:
+	> In  index.html we need to create a  #results section to make our app work properly. Therefore, we need add:
 
- ```<section id="results">
+ ```
+ <section id="results">
 	            <a class="back button">Back</a>
 	            <!-- <h1>I'd like someone to bake a cake</h1>
 	            <p>2 people around you can bake a cake</p> -->

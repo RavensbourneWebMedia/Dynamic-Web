@@ -160,31 +160,32 @@ Users should be able to click through and see details about the person (or ***th
 </section>
  ```
 
-
  > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 
 ```js
  showList(resultsList, resultsOL)
  ```
- ```$('#results li').click( function() {
- 		// grab the id from the clicked item
- 		var resultId = $(this).attr('id')
- 		// use the id to get the right data
- 		var resultData = resultsList[resultId]
- 		console.log(resultData)
 
+ ```
+$('#results li').click( function() {
+// grab the id from the clicked item
+var resultId = $(this).attr('id')
+// use the id to get the right data
+var resultData = resultsList[resultId]
+console.log(resultData)
 
- 		showDetails(resultData, detailsInfo)
+// call the function showDetails()
+showDetails(resultData, detailsInfo)
 
-
-		resultsSection.hide()
+// show the details!
+resultsSection.hide()
 detailsSection.show()
 ```
 
 > Try to add this code, what happens?
 
-	 ```homeSection.hide()
-	    resultsSection.show()```
+```homeSection.hide()
+resultsSection.show()```
 
 > homeSection comes up as undefined, which is why we must define it with a variable.
 

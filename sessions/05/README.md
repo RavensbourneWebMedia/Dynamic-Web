@@ -221,7 +221,7 @@ homeSection.show()
 var resultsBackButton = $('#results .back')
 ```
 
-> Now, lets hide the results list from the front page.
+### Now, lets hide the results list from the front page.
 
 ```
 resultsToggleButton.click( function() {
@@ -255,9 +255,9 @@ resultsToggleButton.click( function() {
 })
 ```
 
-> But? It is all still there on the frontpage. As you can see in the code above, we are linking this with the CSS And need to add that for it to be hidden.
+But? It is all still there on the front page. As you can see in the code above, we are linking this with the CSS And need to add that for it to be hidden.
 
-> Moving on, in the CSS we need to style that section to make it look nice
+### Moving on, in the CSS we need to style that section to make it look nice
 
  ```
 #results, #details {

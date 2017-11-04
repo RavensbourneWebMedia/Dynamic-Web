@@ -166,19 +166,22 @@ Users should be able to click through and see details about the person (or ***th
 ```js
  showList(resultsList, resultsOL)
  ```
- ```$('#results li').click( function() {
-		 // grab the id from the clicked item
-		 var resultId = $(this).attr('id')
-		 // use the id to get the right data
-		 var resultData = resultsList[resultId]
-		 console.log(resultData)
+ ```
 
-		 // call the function showDetails()
-		 showDetails(resultData, detailsInfo)
+ $('#results li').click( function() {
+ 		// grab the id from the clicked item
+ 		var resultId = $(this).attr('id')
+ 		// use the id to get the right data
+ 		var resultData = resultsList[resultId]
+ 		console.log(resultData)
 
-		 // show the details!
-		 resultsSection.hide()
-		 detailsSection.show()
+ 		// call the function showDetails()
+ 		showDetails(resultData, detailsInfo)
+
+ 		// show the details!
+ 		resultsSection.hide()
+ 		detailsSection.show()
+
 		 ```
 
 > Try to add this code, what happens?

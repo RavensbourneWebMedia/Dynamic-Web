@@ -125,8 +125,7 @@ Lets finish the `app template`.
 
 Users should be able to click through and see details about the person (or ***thing***) they clicked on.
 
-> Therefore, to begin with in index.html we need to create a  #results section to make our app work.
-
+> Therefore, to begin with in index.html we need to create a `#results` section to make our app work.
  ```<section id="results">
 	            <a class="back button">Back</a>
 	            <!-- <h1>Id like someone to bake a cake</h1>
@@ -153,8 +152,8 @@ Users should be able to click through and see details about the person (or ***th
 	                    <p>About this person</p>
 	                </li>
 	            </ol>
-	</section>
-	```
+	</section>```
+
 
 > Moving on, in the CSS we need to style that section to make it look nice
 

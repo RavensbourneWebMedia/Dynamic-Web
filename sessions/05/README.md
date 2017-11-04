@@ -127,7 +127,7 @@ Lets finish the `app template`.
 
 > In index.html we need to create a  #results section to make our app work.
 
- ```<section id="results">
+<section id="results">
 	            <a class="back button">Back</a>
 	            <!-- <h1>Id like someone to bake a cake</h1>
 	            <p>2 people around you can bake a cake</p> -->
@@ -153,7 +153,7 @@ Lets finish the `app template`.
 	                    <p>About this person</p>
 	                </li>
 	            </ol>
-	        </section>```
+	</section>
 
   > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 

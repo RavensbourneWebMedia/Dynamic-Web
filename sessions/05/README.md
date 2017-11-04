@@ -182,9 +182,10 @@ resultsSection.hide()
 detailsSection.show()
 ```
 
-> Try to add this code, what happens?
+### Try to add this code, what happens?
 
-```homeSection.hide()
+```
+homeSection.hide()
 resultsSection.show()
 ```
 

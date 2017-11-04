@@ -189,15 +189,20 @@ homeSection.hide()
 resultsSection.show()
 ```
 
-> homeSection comes up as undefined, which is why we must define it with a variable.
+### What is the bug here?
+<!-- homeSection comes up as undefined, which is why we must define it with a variable. -->
 
-```var homeSection = $('#home')```
+```var homeSection = $('#home')
+```
 
-> resultsSection comes up as undefined, which is why we must define it with a variable.
+### Another bug?
 
-```var homeSection = $('#home')```
+<!--  resultsSection comes up as undefined, which is why we must define it with a variable. -->
 
-var resultsSection = $('#results')
+### More errors? What do we need to add?
+
+```var resultsSection = $('#results')
+```
 
 > Now the back button does not work and we need to tell it what to do!
 

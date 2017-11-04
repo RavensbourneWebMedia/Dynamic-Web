@@ -88,7 +88,7 @@
 	}
 	```
 
-	<!--3 messages in the browser's JS Console with the three names on a new line each -->
+	<!--3 messages in the browsers JS Console with the three names on a new line each -->
 * Where is better to put JavaScript `<script src="example.js"></script>` in your HTML?
 
 	- [ ] inside the `head`
@@ -125,12 +125,12 @@
 
   Users should be able to click through and see details about the person (or *thing*) they clicked on.
 
-	> In `index.html` we need to create a  #results section to make our app work.
+> In `index.html` we need to create a  #results section to make our app work.
 
  ```
  <section id="results">
 	            <a class="back button">Back</a>
-	            <!-- <h1>I'd like someone to bake a cake</h1>
+	            <!-- <h1>Id like someone to bake a cake</h1>
 	            <p>2 people around you can bake a cake</p> -->
 	            <ol>
 	                <li>
@@ -154,7 +154,8 @@
 	                    <p>About this person</p>
 	                </li>
 	            </ol>
-	        </section>```
+	        </section>
+					```
 
   > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 

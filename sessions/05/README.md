@@ -180,6 +180,7 @@ showDetails(resultData, detailsInfo)
 // show the details!
 resultsSection.hide()
 detailsSection.show()
+})
 ```
 
 ### Try to add this code, what happens?
@@ -187,7 +188,9 @@ detailsSection.show()
 ```
 homeSection.hide()
 resultsSection.show()
+})
 ```
+> This needs to be outside the results function
 
 ### What is the bug here?
 <!-- homeSection comes up as undefined, which is why we must define it with a variable. -->
@@ -196,27 +199,31 @@ resultsSection.show()
 var homeSection = $('#home')
 ```
 
-### Another bug?
+### Another error?
 <!--  resultsSection comes up as undefined, which is why we must define it with a variable. -->
 
 ```
 var resultsSection = $('#results')
 ```
 
-> Now the back button does not work and we need to tell it what to do!
+### Now the back button does not work and we need to tell it what to do!
 
-```resultsBackButton.click( function(){
-   resultsSection.hide()
-   homeSection.show()
-})```
+```
+resultsBackButton.click( function(){
+resultsSection.hide()
+homeSection.show()
+})
+```
 
-> Again, we have to define it!
+### Again, we have to define it!
 
- ```var resultsBackButton = $('#results .back')```
+```
+var resultsBackButton = $('#results .back')
+```
 
-> Now, lets hide the results list from the frontpage.
+> Now, lets hide the results list from the front page.
 
- ```
+```
 resultsToggleButton.click( function() {
 
     // console.log('clicked resultsToggleButton')
@@ -245,7 +252,8 @@ resultsToggleButton.click( function() {
         resultsMap.hide()
         // change the button text to say "Map"
     }
-}) ```
+})
+```
 
 > But? It is all still there on the frontpage. As you can see in the code above, we are linking this with the CSS And need to add that for it to be hidden.
 

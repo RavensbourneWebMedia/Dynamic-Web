@@ -161,6 +161,28 @@ Users should be able to click through and see details about the person (or ***th
  ```
 
 
+> If you chose a selection in the drop down and hit find the list should should change.
+
+After this we need to head back to the main.js to more code
+
+ ```
+// 4. what happens when someone clicks on a result?
+	$('#results li').click( function() {
+			// grab the id from the clicked item
+			var resultId = $(this).attr('id')
+			// use the id to get the right data
+			var resultData = resultsList[resultId]
+			console.log(resultData)
+
+			// call the function showDetails()
+			showDetails(resultData, detailsInfo)
+
+			// show the details!
+			resultsSection.hide()
+			detailsSection.show()
+	})
+	 ```
+
 > Moving on, in the CSS we need to style that section to make it look nice
 
  ```

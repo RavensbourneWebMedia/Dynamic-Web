@@ -165,9 +165,7 @@ Users should be able to click through and see details about the person (or ***th
 
 After this we need to head back to the main.js to more code
 
- ```
-// 4. what happens when someone clicks on a result?
-	$('#results li').click( function() {
+ ```$('#results li').click( function() {
 			// grab the id from the clicked item
 			var resultId = $(this).attr('id')
 			// use the id to get the right data
@@ -180,8 +178,7 @@ After this we need to head back to the main.js to more code
 			// show the details!
 			resultsSection.hide()
 			detailsSection.show()
-	})
-	 ```
+	})```
 
 > Moving on, in the CSS we need to style that section to make it look nice
 

@@ -127,7 +127,9 @@ Users should be able to click through and see details about the person (or ***th
 
 > Therefore, to begin with in index.html we need to create a `#results` section to make our app work.
 
- ```<section id="results"></section>```
+ ```
+ <section id="results"></section> 
+ ```
 
 
 > Moving on, in the CSS we need to style that section to make it look nice

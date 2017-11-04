@@ -119,13 +119,13 @@
 
   [Last week](../02#workshop) we used the Firebase API to connect the `app template` interface to the database. We also *programmed the behaviour* of the app, so that it can filter and sort data to present only relevant results to its users.
 
-`Lets finish the `app template`.
+Lets finish the `app template`.
 
   ## What happens when someone clicks on a result?
 
   Users should be able to click through and see details about the person (or *thing*) they clicked on.
 
-> In `index.html` we need to create a  #results section to make our app work.
+> In index.html we need to create a  #results section to make our app work.
 
  ```<section id="results">
 	            <a class="back button">Back</a>

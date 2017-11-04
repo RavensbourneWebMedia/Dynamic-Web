@@ -127,7 +127,7 @@ Users should be able to click through and see details about the person (or ***th
 
 > Therefore, to begin with in index.html we need to create a `#results` section to make our app work.
 
- ```
+ ```html
 <section id="results">
 
 <a class="back button">Back</a>
@@ -166,7 +166,7 @@ Users should be able to click through and see details about the person (or ***th
  showList(resultsList, resultsOL)
  ```
 
- ```
+ ```js
 $('#results li').click( function() {
 // grab the id from the clicked item
 var resultId = $(this).attr('id')
@@ -185,7 +185,7 @@ detailsSection.show()
 
 ### Try to add this code, what happens?
 
-```
+```js
 homeSection.hide()
 resultsSection.show()
 })
@@ -195,20 +195,20 @@ resultsSection.show()
 ### What is the bug here?
 <!-- homeSection comes up as undefined, which is why we must define it with a variable. -->
 
-```
+```js
 var homeSection = $('#home')
 ```
 
 ### Another error?
 <!--  resultsSection comes up as undefined, which is why we must define it with a variable. -->
 
-```
+```js
 var resultsSection = $('#results')
 ```
 
 ### Now the back button does not work and we need to tell it what to do!
 
-```
+```js
 resultsBackButton.click( function(){
 resultsSection.hide()
 homeSection.show()
@@ -217,13 +217,13 @@ homeSection.show()
 
 ### Again, we have to define it!
 
-```
+```js
 var resultsBackButton = $('#results .back')
 ```
 
 ### Now, lets hide the results list from the front page.
 
-```
+```js
 resultsToggleButton.click( function() {
 
     // console.log('clicked resultsToggleButton')
@@ -259,7 +259,7 @@ But? It is all still there on the front page. As you can see in the code above, 
 
 ### Moving on, in the CSS we need to style that section to make it look nice
 
- ```
+ ```css
 #results, #details {
     display: none;
 }
@@ -301,58 +301,11 @@ But? It is all still there on the front page. As you can see in the code above, 
 
 > Now it should all be hidden
 
-  > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
-
- ```js
-  showList(resultsList, resultsOL)
-  ```
-
-  > After that line, add a *click listener* to all the `li` elements inside `#results`
-
-```js
-  $('#results li').click( function() {
-  	// grab the id from the clicked item
-      var resultId = $(this).attr('id')
-      // use the id to get the right data
-      var resultData = resultsList[resultId]
-      console.log(resultData)
-  	// call the function showDetails()
-      showDetails(resultData, detailsInfo)
-      // show the details!
-      resultsSection.hide()
-     	detailsSection.show()
-  })
-  ```
-
-  ### First bug
+### Now lets test our app and see what errors we get!
 
   > Test your code.
 
-  You should get an error:
-
-  ```js
-  Uncaught ReferenceError: showDetails is not defined
-  ```
-
-  What does that mean?
-
-  We haven't defined the `showDetails` function.
-
-  > Let's teach the browser how to `showDetails`
-
-  ```js
-  function showDetails (data, interfaceElement)
-  {
-    var detailsHTML = makeDetailsHTML(data)
-    interfaceElement.html(detailsHTML)
-  }
-  ```
-
-  ### Second bug
-
-  > Test your code.
-
-  You should get a new error:
+  You should get a saying error:
 
   ```js
   Uncaught ReferenceError: detailsInfo is not defined
@@ -382,7 +335,7 @@ But? It is all still there on the front page. As you can see in the code above, 
   var detailsInfo = $('#details #info')
   ```   
 
-  ### Third bug
+  ### More buggs!!
 
   > Test your code.
 

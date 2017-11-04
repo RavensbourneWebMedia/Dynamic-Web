@@ -128,7 +128,36 @@ Users should be able to click through and see details about the person (or ***th
 > Therefore, to begin with in index.html we need to create a `#results` section to make our app work.
 
  ```
- <section id="results"></section> 
+<section id="results">
+
+<a class="back button">Back</a>
+<a class="toggle button">Map</a>
+<!-- <h1>I'd like someone to bake a cake</h1>
+<p>2 people around you can bake a cake</p> -->
+<ol>
+		<li>
+				<img src="https://randomuser.me/api/portraits/women/53.jpg">
+				<h2>Susan</h2>
+				<p>About Susan</p>
+		</li>
+		<li>
+				<img src="https://randomuser.me/api/portraits/men/83.jpg">
+				<h2>Name</h2>
+				<p>About this person</p>
+		</li>
+		<li>
+				<img src="https://randomuser.me/api/portraits/women/63.jpg">
+				<h2>Name</h2>
+				<p>About this person</p>
+		</li>
+		<li>
+				<img src="https://randomuser.me/api/portraits/men/3.jpg">
+				<h2>Remy</h2>
+				<p>About this person</p>
+		</li>
+</ol>
+
+</section>
  ```
 
 

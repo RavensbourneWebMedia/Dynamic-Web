@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+<!-- this is the home section -->
+        <section id="home">
+          <img class="headerimg" src="img/hipsterlogo.png">
+          <h1>Your app name</h2>
+	<h2>What it does</h2>
+  <p>Swap skills and time with people in your community!</p>
+  	<p>Just choose an activity to get started.</p>
+    <select>
+         <option value="bakingSkills">Bake a cake</option>
+         <option value="codingSkills">Move my furniture</option>
+         <option value="diySkills">Keep my pet</option>
+    </select>
+<button>GO</button>
+<p>Swap skills with people around you!</p>
+          <p>Pick an option to get started.</p>
+        </section>
+
+        <!-- this is the results section -->
+        <section id="results">
+            <a class="back button">Back</a>
+            <a class="toggle button">Map</a>
+            <!-- <h1>I'd like someone to bake a cake</h1>
+            <p>2 people around you can bake a cake</p> -->
+            <ol>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/53.jpg">
+                    <h2>Susan</h2>
+                    <p>About Susan</p>
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/83.jpg">
+                    <h2>Name</h2>
+                    <p>About this person</p>
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/63.jpg">
+                    <h2>Name</h2>
+                    <p>About this person</p>
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg">
+                    <h2>Remy</h2>
+                    <p>About this person</p>
+                </li>
+            </ol>
+        </section>
+        <!-- this is the details section -->
+        <section id="details">
+        	<a class="back button">Back</a>
+            <div id="info">
+            	<img src="https://randomuser.me/api/portraits/women/53.jpg">
+                <h2>Susan</h2>
+                <p>About Susan</p>
+                <a class="contact button">Contact Susan</a>
+        	</div>
+        </section>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+
+        <script src="js/filter.js"></script>
+        <script src="js/show.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <p>Made with love by <a href="http://example.com"> Your Name</a></p>
+
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script src="js/firebase.js"></script>
+
+
+    </body>
+</html>

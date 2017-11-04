@@ -161,24 +161,86 @@ Users should be able to click through and see details about the person (or ***th
  ```
 
 
-> If you chose a selection in the drop down and hit find the list should should change.
+ > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 
-After this we need to head back to the main.js to more code
-
+```js
+ showList(resultsList, resultsOL)
+ ```
  ```$('#results li').click( function() {
-			// grab the id from the clicked item
-			var resultId = $(this).attr('id')
-			// use the id to get the right data
-			var resultData = resultsList[resultId]
-			console.log(resultData)
+		 // grab the id from the clicked item
+		 var resultId = $(this).attr('id')
+		 // use the id to get the right data
+		 var resultData = resultsList[resultId]
+		 console.log(resultData)
 
-			// call the function showDetails()
-			showDetails(resultData, detailsInfo)
+		 // call the function showDetails()
+		 showDetails(resultData, detailsInfo)
 
-			// show the details!
-			resultsSection.hide()
-			detailsSection.show()
-	})```
+		 // show the details!
+		 resultsSection.hide()
+		 detailsSection.show()
+		 ```
+
+> Try to add this code, what happens?
+
+	 ```homeSection.hide()
+	    resultsSection.show()```
+
+> homeSection comes up as undefined, which is why we must define it with a variable.
+
+```var homeSection = $('#home')```
+
+> resultsSection comes up as undefined, which is why we must define it with a variable.
+
+```var homeSection = $('#home')```
+
+var resultsSection = $('#results')
+
+> Now the back button does not work and we need to tell it what to do!
+
+```resultsBackButton.click( function(){
+   resultsSection.hide()
+   homeSection.show()
+})```
+
+> Again, we have to define it!
+
+ ```var resultsBackButton = $('#results .back')```
+
+> Now, lets hide the results list from the frontpage.
+
+ ```
+resultsToggleButton.click( function() {
+
+    // console.log('clicked resultsToggleButton')
+
+    // find out which element is currently visible
+    // is the list visible?
+    var listDisplay = resultsOL.css('display')
+    if (listDisplay == 'block') isListVisible = true
+    else isListVisible = false
+
+    // console.log(isListVisible)
+
+    // if the list is visible
+    if (isListVisible)
+    {
+        // we want to show the map and hide the list
+        resultsMap.show()
+        map.resize() // get the map to take all the available space
+        resultsOL.hide()
+        // change the button text to say "List"
+    }
+    else
+    {
+        // we want to show the list and hide the map
+        resultsOL.show()
+        resultsMap.hide()
+        // change the button text to say "Map"
+    }
+}) ```
+
+> But? It is all still there on the frontpage. As you can see in the code above, we are linking this with the CSS And need to add that for it to be hidden.
 
 > Moving on, in the CSS we need to style that section to make it look nice
 
@@ -222,6 +284,7 @@ After this we need to head back to the main.js to more code
 }
  ```
 
+> Now it should all be hidden
 
   > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 

@@ -156,6 +156,49 @@ Users should be able to click through and see details about the person (or ***th
 	</section>
 	```
 
+> Moving on, in the CSS we need to style that section to make it look nice
+
+ ```
+#results, #details {
+    display: none;
+}
+
+
+#results ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#results li {
+    border: 1px solid #ccc;
+    margin-bottom: -1px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+#results li:hover {
+    background: #ccc;
+}
+
+#results img {
+    max-width: 8rem;
+    position: absolute;
+}
+
+#results h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: calc(8rem + 10px);
+    line-height: 1;
+    font-size: 1.5rem;
+    padding-bottom: calc(8rem - 1.5rem - 10px);
+}
+ ```
+
+
   > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 
  ```js

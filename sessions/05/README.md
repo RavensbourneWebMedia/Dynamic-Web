@@ -22,7 +22,7 @@
 * What is wrong with this JS code?
 
 	```js
-	var userName = 'Jo";
+	var userName = 'Jo';
 	```
 
 	<!--Quotation marks must match. You either use double or single quotes. So,
@@ -117,17 +117,17 @@
 
   # Workshop
 
-  [Last week](../02#workshop) we used the Firebase API to connect the `app template` interface to the database. We also *programmed the behaviour* of the app, so that it can filter and sort data to present only relevant results to its users.
+  [Last week](../04#workshop) we used the Firebase API to connect the `app template` interface to the database. We also *programmed the behaviour* of the app, so that it can filter and sort data to present only relevant results to its users.
 
 Lets finish the `app template`.
 
-  ## What happens when someone clicks on a result?
+## What happens when someone clicks on a result?
 
-  Users should be able to click through and see details about the person (or *thing*) they clicked on.
+  Users should be able to click through and see details about the person (or ***thing***) they clicked on.
 
 > In index.html we need to create a  #results section to make our app work.
 
-<section id="results">
+ ```<section id="results">
 	            <a class="back button">Back</a>
 	            <!-- <h1>Id like someone to bake a cake</h1>
 	            <p>2 people around you can bake a cake</p> -->
@@ -154,6 +154,7 @@ Lets finish the `app template`.
 	                </li>
 	            </ol>
 	</section>
+	```
 
   > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 

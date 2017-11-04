@@ -49,7 +49,8 @@ Let's finish the `app template`.
 	                    <p>About this person</p>
 	                </li>
 	            </ol>
-	        </section>```
+	        </section>
+					```
 
   > In `main.js` find the function that responds to users clicking on the `GO` button. Inside that function, find the line
 

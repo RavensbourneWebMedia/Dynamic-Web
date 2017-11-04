@@ -185,7 +185,8 @@ detailsSection.show()
 > Try to add this code, what happens?
 
 ```homeSection.hide()
-resultsSection.show()```
+resultsSection.show()
+```
 
 > homeSection comes up as undefined, which is why we must define it with a variable.
 

@@ -192,21 +192,21 @@ resultsSection.show()
 ```
 > This needs to be outside the results function
 
-### What is the bug here?
+### First bug
 <!-- homeSection comes up as undefined, which is why we must define it with a variable. -->
 
 ```js
 var homeSection = $('#home')
 ```
 
-### Another error?
+### Second bug
 <!--  resultsSection comes up as undefined, which is why we must define it with a variable. -->
 
 ```js
 var resultsSection = $('#results')
 ```
 
-### Now the back button does not work and we need to tell it what to do!
+### Third bug
 
 ```js
 resultsBackButton.click( function(){
@@ -215,7 +215,7 @@ homeSection.show()
 })
 ```
 
-### Again, we have to define it!
+### Fourth bug
 
 ```js
 var resultsBackButton = $('#results .back')

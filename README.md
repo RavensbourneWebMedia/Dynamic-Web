@@ -28,7 +28,7 @@ When | In class | Homework | Blog
 [Tuesday<br>24.10](sessions/03)| <ul><li>Formative presentations <li>intro to HTML/CSS/JavaScript | <ul><li>Tweak workshop design <li>Peer-to-peer mini lesson | Analyse your favourite app in terms of interface, data and logic
 28.10 | Workshop faciliation! | | What is your biggest learning so far from this project? Create your own title!
 [Tuesday<br>31.10](sessions/04)| <ul><li>Mini-lesson <li>Data & Api's <li>Codewars | Complete at least 2 challenges (aka katas) on the beginner level (aka 8 kyu) | Pair up with another person (not your team mate) and give each other feedback on your peer learning mini-lessons.
-[Tuesday<br>07.11](sessions/05)| TBA | TBA |TBA
+[Tuesday<br>07.11](sessions/05)| <ul><li>Quiz time! <li>Finishing app template <li>Design your own database <li>Codewars  | Tweak your app | Watch [The best interface is no interface
 [Tuesday<br>21.11](sessions/06)| TBA | TBA | TBA
 [Tuesday<br>05.11](sessions/07)| TBA | | TBA
 [Tuesday<br>12.12](sessions/08)| **Summative presentations**

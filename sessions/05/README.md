@@ -22,7 +22,7 @@
 * What is wrong with this JS code?
 
 	```js
-	var userName = 'Jo';
+	var userName = 'Jo";
 	```
 
 	<!--Quotation marks must match. You either use double or single quotes. So,

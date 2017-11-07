@@ -206,7 +206,7 @@ var homeSection = $('#home')
 var resultsSection = $('#results')
 ```
 
-### Third bug
+### Now add this
 
 ```js
 resultsBackButton.click( function(){
@@ -215,7 +215,7 @@ homeSection.show()
 })
 ```
 
-### Fourth bug
+### Third bug
 
 ```js
 var resultsBackButton = $('#results .back')
@@ -301,19 +301,9 @@ But? It is all still there on the front page. As you can see in the code above, 
 
 > Now it should all be hidden
 
-### Now lets test our app and see what errors we get!
+<!--  What does that mean?
 
-  > Test your code.
-
-  You should get a saying error:
-
-  ```js
-  Uncaught ReferenceError: detailsInfo is not defined
-  ```
-
-  What does that mean?
-
-  We haven't defined the `detailsInfo` variable. We want `detailsInfo` to be a jQuery selection of the part of the `#details` where we can show the info about the chosen person. Should that be the whole `#details` section? Well, no... because the `Back` button is not part of the specific info about a person. We need to separate the interface elements that won't change (aka *static*), like the `Back` button, from the interface elements that will change (aka *dynamic*) like the `img`, the `h2` etc. We can do that by wrapping all the *dynamic* elements in a `div` and give that div an id.
+  We haven't defined the `detailsInfo` variable. We want `detailsInfo` to be a jQuery selection of the part of the `#details` where we can show the info about the chosen person. Should that be the whole `#details` section? Well, no... because the `Back` button is not part of the specific info about a person. We need to separate the interface elements that won't change (aka *static*), like the `Back` button, from the interface elements that will change (aka *dynamic*) like the `img`, the `h2` etc. We can do that by wrapping all the *dynamic* elements in a `div` and give that div an id. -->
 
   > In `index.html` find the `#details` section, then wrap `img`, `h2`, `p` and `a` in a `div#info`
 
@@ -352,6 +342,14 @@ But? It is all still there on the front page. As you can see in the code above, 
   ```js
   var detailsSection = $('#details')
   ```
+
+	> Test your code.
+
+	### Lastly, you need to add this.
+
+	```js
+	Uncaught ReferenceError: detailsInfo is not defined
+	```
 
   > Test your code. :tada:
 

@@ -22,7 +22,7 @@
 * What is wrong with this JS code?
 
 	```js
-	var userName = 'Jo";
+	var userName = 'Jo';
 	```
 
 	<!--Quotation marks must match. You either use double or single quotes. So,
@@ -78,6 +78,7 @@
 	```
 
 	<!--It will return "yes"-->
+
 * What will this JS code produce?
 
 	```js
@@ -89,6 +90,7 @@
 	```
 
 	<!--3 messages in the browsers JS Console with the three names on a new line each -->
+	
 * Where is better to put JavaScript `<script src="example.js"></script>` in your HTML?
 
 	- [ ] inside the `head`

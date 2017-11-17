@@ -90,7 +90,7 @@
 	```
 
 	<!--3 messages in the browsers JS Console with the three names on a new line each -->
-	
+
 * Where is better to put JavaScript `<script src="example.js"></script>` in your HTML?
 
 	- [ ] inside the `head`
@@ -535,10 +535,6 @@ Make sure you join the `RaveWebMedia` clan. This way we'll be part of the same t
 - [ ] Tweak the CSS of your app
 - [ ] Start adapting your app JS to your own database
 - [ ] Publish it to GitHub `gh-pages`
-- [ ] Prepare the **formative** presentation. On the 4th of November (2 weeks from today) you'll hand in on Moodle:
-	- your formative presentation
-	- link to your app on `gh-pages`
-	- links to all the blog posts so far
 
 ### Blog
 

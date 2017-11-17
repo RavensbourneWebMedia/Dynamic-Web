@@ -90,4 +90,4 @@ In that MarkDown document, include the following:
 
 #### Deadline
 
-Friday 2nd of December 2016 (aka *today)* at **23:55**!
+Tuesday 12th of December 2017 (aka *today)* at **4pm**!

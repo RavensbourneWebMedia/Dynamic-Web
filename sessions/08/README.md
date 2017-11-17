@@ -1,6 +1,6 @@
 # Week 8
 
-### Today, Friday 2nd December 2016
+### Today, Tuesday 12th of December 2017
 
 1. **Summative presentations**
 * Final [hand-in](#hand-in-package) of [project work](#filter-bubbles), [presentations](#presentations) and [blog posts](#blog-posts)

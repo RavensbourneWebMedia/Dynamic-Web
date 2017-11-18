@@ -261,7 +261,6 @@ homeGoButton.click( function()
     ]
     // 2. filter+sort people by user selections
     var resultsList = filterAndSortList(peopleList, filters)
-	...
 ```
 
 
@@ -275,38 +274,6 @@ Here's the [feedback document](add link here).
 - [ ] Review your blogs
 
 # Homework
-
-### Peer-learning research
-
-In small teams, you will research and prepare a **mini-lesson** (~15 minutes) to teach everyone else.
-
-Your mini-lesson will be **interactive**. Screens and PowerPoint-style presentations are banned (seriously, don't prepare slides). Instead, use print-outs and plan **unplugged activities** for your peers to learn the topic you researched.
-
-Inspiration and resources for *unplugged activities*:
-
-* [CODE Fundamentals Unplugged](https://code.org/curriculum/unplugged)
-* [CS Unplugged](http://csunplugged.org/activities)
-* [CAS London Programming Unplugged](https://teachinglondoncomputing.org/free-workshops/programming-unplugged-programming-without-computers)
-
-Who | What
---- | -----------
-Joe<br>Malore | Algorithms
-Akvile<br>Darren | Variables
-Josh<br>Will | Functions
-Afsara<br>Rajeev | Conditionals
-Ben<br>Dean | Loops
-Tom<br>Ajay | Debugging
-Rosie<br>Francisco | Events
-
-<!--
-
-1. [Objects of intense feeling: the case of the Twitter API](http://computationalculture.net/article/objects-of-intense-feeling-the-case-of-the-twitter-api)
-* The [Critical Engineering Manifesto](http://criticalengineering.org/)
-* [Below the API](http://www.forbes.com/sites/anthonykosner/2015/02/04/google-cabs-and-uber-bots-will-challenge-jobs-below-the-api/)
-* Computational thinking
-* **Mapping (mis)behaviours**: [CrimeTimeline](http://crimetimeline.io), [PrisonMap](http://prisonmap.com/about), [The Refugee Project](http://www.therefugeeproject.org), [Dronestagram](http://shorttermmemoryloss.com/portfolio/project/dronestagram/) and [Pathways](http://www.nationalgeographic.com/pathways). You are welcome to research and present more projects that mash up different APIs and datasets in interesting ways.
-
--->
 
 ### Homework
 

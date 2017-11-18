@@ -2,7 +2,7 @@
 
 ### Today, Tuesday 21st November 2017
 
-1. [Workshop](#worshop): plotting data on a map
+1. [Workshop](#worshop): plotting data on a map & adding further functionality
 * [Tutorials](#tutorials) on *Filtr Findr*
 
 ### Your [homework](#homework) and [blog](#blog)

@@ -233,7 +233,6 @@ Update `filter.js` to the latest version, which you can find at [github.com/Rave
 In `main.js`
 
 ```js
-var skillsDropdown = $('#skills')
 var petsDropdown = $('#pets')
 ```
 
@@ -246,11 +245,25 @@ homeGoButton.click( function()
   // get user input
   var selectedOption = homeDropdown.val();
   var chosenPet = petsDropdown.val()
-  // using jQuery val(), see http://api.jquery.com/val
+
+	// using jQuery val(), see http://api.jquery.com/val
   console.log("You picked " + selectedOption + " and " + chosenPet)
 
-  var filters = [ {key:selectedOption},{key: 'favouritePet', value: chosenPet} ]; // array of objects
-    var resultsList = filterAndSortList(peopleList, filters);
+  var filters = [
+		{
+
+			key:selectedOption
+
+		},
+		{
+
+			key: 'favouritePet', value: chosenPet
+
+		} 
+
+		]; // array of objects
+
+		var resultsList = filterAndSortList(peopleList, filters);
 ```
 
 

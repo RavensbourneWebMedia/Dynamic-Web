@@ -3,10 +3,10 @@
 // var homegobutton
 // var home_go_button
 // var goBtn
-// var g 
+// var g
 
 // use jQuery to select the HTML elements we're going to manipulate
-// TODO wrap all these in an object, eg: var interface = { home: ... } 
+// TODO wrap all these in an object, eg: var interface = { home: ... }
 var homeGoButton = $('#home button')
 //var homeDropdown = $('#home select')
 var skillsDropdown = $('#skills')
@@ -26,13 +26,13 @@ var resultsList = []
 
 // tell the GO button to do something when we click it
 homeGoButton.click( function()
-{   
+{
     // 1. capture the user chosen options
     var chosenSkill = skillsDropdown.val()
     var chosenPet = petsDropdown.val()
     console.log("You picked " + chosenSkill + " and " + chosenPet)
-    
-    var filters = 
+
+    var filters =
     [
         {
             // favouritePet is a string, so we need a value
@@ -68,7 +68,7 @@ homeGoButton.click( function()
         resultsSection.hide()
         detailsSection.show()
     })
-       
+
     // 5. show the results!
     homeSection.hide()
     resultsSection.show()
@@ -88,17 +88,17 @@ detailsBackButton.click( function(){
 
 // button to switch between list and map
 resultsToggleButton.click( function() {
-    
+
     // console.log('clicked resultsToggleButton')
-    
+
     // find out which element is currently visible
     // is the list visible?
     var listDisplay = resultsOL.css('display')
     if (listDisplay == 'block') isListVisible = true
     else isListVisible = false
-    
+
     // console.log(isListVisible)
-    
+
     // if the list is visible
     if (isListVisible)
     {
@@ -114,8 +114,5 @@ resultsToggleButton.click( function() {
         resultsOL.show()
         resultsMap.hide()
         // change the button text to say "Map"
-    } 
+    }
 })
-
-
-

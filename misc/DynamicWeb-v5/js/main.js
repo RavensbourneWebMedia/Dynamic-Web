@@ -23,7 +23,7 @@ homeGoButton.click( function()
   var selectedOption = homeDropdown.val();
   var chosenPet = petsDropdown.val()
   // using jQuery val(), see http://api.jquery.com/val
-  console.log('You picked ' + selectedOption);
+  console.log("You picked " + selectedOption + " and " + chosenPet)
 
   var filters = [ {key:selectedOption},{key: 'favouritePet', value: chosenPet} ]; // array of objects
     var resultsList = filterAndSortList(peopleList, filters);

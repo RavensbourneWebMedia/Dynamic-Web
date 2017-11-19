@@ -242,25 +242,15 @@ Then further down
 ```js
 // tell the GO button to do something when we click it
 homeGoButton.click( function()
-{   
-    // 1. capture the user chosen options
-    var chosenSkill = skillsDropdown.val()
-    var chosenPet = petsDropdown.val()
-    console.log("You picked " + chosenSkill + " and " + chosenPet)
-    var filters =
-    [
-        {
-            // favouritePet is a string, so we need a value
-            key: 'favouritePet',
-            value: chosenPet
-        },
-        {
-            // chosenSkill is a number, so no need for a value
-            key: chosenSkill
-        }
-    ]
-    // 2. filter+sort people by user selections
-    var resultsList = filterAndSortList(peopleList, filters)
+{
+  // get user input
+  var selectedOption = homeDropdown.val();
+  var chosenPet = petsDropdown.val()
+  // using jQuery val(), see http://api.jquery.com/val
+  console.log("You picked " + selectedOption + " and " + chosenPet)
+
+  var filters = [ {key:selectedOption},{key: 'favouritePet', value: chosenPet} ]; // array of objects
+    var resultsList = filterAndSortList(peopleList, filters);
 ```
 
 

@@ -1,31 +1,49 @@
 // use jQuery to select the HTML elements we're going to manipulate
 var homeGoButton = $('#home button');
 var homeDropdown = $('#home select');
-var resultsOL = $('#results ol');
 var homeSection = $('#home')
-var resultsSection = $('#results')
-var resultsBackButton = $('#results .back')
-var resultsToggleButton = $('#results .toggle')
 var detailsSection = $('#details')
 var detailsBackButton = $('#details .back')
 var detailsInfo = $('#details #info')
+var resultsOL = $('#results ol');
+var resultsSection = $('#results')
+var resultsBackButton = $('#results .back')
+var resultsToggleButton = $('#results .toggle')
+var resultsMap = $('#map')
+var resultsList = []
 
+var petsDropdown = $('#pets')
 
+// tell the GO button to do something when we click it
 // tell the GO button to do something when we click it
 homeGoButton.click( function()
 {
   // get user input
   var selectedOption = homeDropdown.val();
-  // using jQuery val(), see http://api.jquery.com/val
-  console.log('You picked ' + selectedOption);
+  var chosenPet = petsDropdown.val()
 
-  var filters = [ {key:selectedOption} ]; // array of objects
-    var resultsList = filterAndSortList(peopleList, filters);
+	// using jQuery val(), see http://api.jquery.com/val
+  console.log("You picked " + selectedOption + " and " + chosenPet)
+
+  var filters = [
+		{
+			key:selectedOption
+		},
+		{
+			key: 'favouritePet', value: chosenPet
+		}
+
+		]; // array of objects
+
+		var resultsList = filterAndSortList(peopleList, filters);
 
   	console.log(resultsList);
 
     // show the results in the #results section
   	showList(resultsList, resultsOL);
+
+
+
 
     // 4. what happens when someone clicks on a result?
   $('#results li').click( function() {
@@ -61,33 +79,24 @@ detailsBackButton.click( function(){
    resultsSection.show()
 })
 
-// button to switch between list and map
-resultsToggleButton.click( function() {
-
-    // console.log('clicked resultsToggleButton')
-
-    // find out which element is currently visible
-    // is the list visible?
-    var listDisplay = resultsOL.css('display')
-    if (listDisplay == 'block') isListVisible = true
-    else isListVisible = false
-
-    // console.log(isListVisible)
-
-    // if the list is visible
-    if (isListVisible)
+resultsToggleButton.click( function()
+{
+    // list or map?
+    // let's check the current state of the list
+    // if it's 'block' then we want to show the map
+    // otherwise we want to show the list
+    var state = resultsOL.css('display') == 'block' ? 'map' : 'list'
+    if (state == 'list')
     {
-        // we want to show the map and hide the list
-        resultsMap.show()
-        map.resize() // get the map to take all the available space
-        resultsOL.hide()
-        // change the button text to say "List"
+        resultsOL.show()
+        resultsMap.hide()
+        resultsToggleButton.html('Map')
     }
     else
     {
-        // we want to show the list and hide the map
-        resultsOL.show()
-        resultsMap.hide()
-        // change the button text to say "Map"
+        resultsOL.hide()
+        resultsMap.show()
+        map.resize() // see https://www.mapbox.com/mapbox-gl-js/api/#Map#resize
+        resultsToggleButton.html('List')
     }
 })

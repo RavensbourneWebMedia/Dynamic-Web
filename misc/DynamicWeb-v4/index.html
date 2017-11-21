@@ -13,6 +13,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet'>
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -32,6 +34,14 @@
          <option value="codingSkills">Move my furniture</option>
          <option value="diySkills">Keep my pet</option>
     </select>
+
+
+    <select id="pets">
+    	<option value="cat">cats</option>
+        <option value="dog">dogs</option>
+    </select>
+
+
 <button>Find</button>
         </section>
 
@@ -64,7 +74,7 @@
                           <p>About this person</p>
                       </li>
                   </ol>
-                  <div id="map"></div>
+                 <div id="map"></div>
               </section>
 
 
@@ -85,6 +95,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
 
         <script src="js/filter.js"></script>
         <script src="js/show.js"></script>

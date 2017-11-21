@@ -68,36 +68,6 @@ detailsBackButton.click( function(){
    resultsSection.show()
 })
 
-// button to switch between list and map
-resultsToggleButton.click( function() {
-
-    // console.log('clicked resultsToggleButton')
-
-    // find out which element is currently visible
-    // is the list visible?
-    var listDisplay = resultsOL.css('display')
-    if (listDisplay == 'block') isListVisible = true
-    else isListVisible = false
-
-    // console.log(isListVisible)
-
-    // if the list is visible
-    if (isListVisible)
-    {
-        // we want to show the map and hide the list
-        resultsMap.show()
-        map.resize() // get the map to take all the available space
-        resultsOL.hide()
-        // change the button text to say "List"
-    }
-    else
-    {
-        // we want to show the list and hide the map
-        resultsOL.show()
-        resultsMap.hide()
-        // change the button text to say "Map"
-    }
-})
 
 resultsToggleButton.click( function()
 {

@@ -259,7 +259,7 @@ homeGoButton.click( function()
 
 			key: 'favouritePet', value: chosenPet
 
-		} 
+		}
 
 		]; // array of objects
 
